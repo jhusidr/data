@@ -1,0 +1,69 @@
+name: Census return rate
+version: '1.0'
+last_updated: '2025-06-05'
+domain: civics
+indicator: census_return_rate
+data_file: census_return_rate.csv
+geography: census_tract
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: The 2010 Census return rate, measured as the number of 2010 Census mail
+  forms completed and returned over the number of valid occupied housing units where
+  a Census form was expected to be delivered for mail return to Census. Taken from
+  the Census planning database.
+data_quality:
+  missing_pct: 0.42
+data_summary:
+  row_count: 74044
+  variable_count: 5
+variables:
+- name: fips_state
+  type: numeric
+  summary:
+    min: 1.0
+    max: 72.0
+    mean: 28.31
+    p25: 13.0
+    p75: 42.0
+    sd: 16.452
+    missing_pct: 0.0
+    unique_count: 52
+- name: fips_county
+  type: numeric
+  summary:
+    min: 1.0
+    max: 840.0
+    mean: 85.82
+    p25: 29.0
+    p75: 109.0
+    sd: 99.154
+    missing_pct: 0.0
+    unique_count: 327
+- name: fips_tract
+  type: numeric
+  summary:
+    min: 100.0
+    max: 993000.0
+    mean: 260195.99
+    p25: 10303.0
+    p75: 480100.0
+    sd: 350123.467
+    missing_pct: 0.0
+    unique_count: 23974
+- name: mail_return_rate_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 1.7
+    unique_count: 578
+    max_length: 18
+    min_length: 3
+    avg_length: 13.8
+  source_variable: mail_return_rate2010

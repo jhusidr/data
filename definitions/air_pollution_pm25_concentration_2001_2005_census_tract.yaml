@@ -1,0 +1,172 @@
+name: 'Air pollution: PM2.5 concentration 2001-2005 (census tract)'
+version: '1.0'
+last_updated: '2025-06-05'
+domain: environment
+indicator: air_pollution_pm25_concentration_2001_2005_census_tract
+data_file: air_pollution_pm25_concentration_2001_2005_census_tract.csv
+geography: census_tract
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: PM2.5 concentration at the Census tract level
+data_quality:
+  missing_pct: 0.0
+data_summary:
+  row_count: 72283
+  variable_count: 12
+variables:
+- name: fips_tract
+  type: numeric
+  summary:
+    min: 1001020100.0
+    max: 56045951300.0
+    mean: 27945406967.51
+    p25: 12127091003.0
+    p75: 41045970250.0
+    sd: 15795928915.086
+    missing_pct: 0.0
+    unique_count: 72283
+- name: annual_avg_24hr_pm25_ppb_2001
+  type: numeric
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    min: 5.83
+    max: 25.67
+    mean: 13.2
+    p25: 10.83
+    p75: 15.34
+    sd: 3.259
+    missing_pct: 0.0
+    unique_count: 72039
+- name: annual_avg_stderr_pm25_ppb_2001
+  type: numeric
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    min: 2.19
+    max: 4.79
+    mean: 3.51
+    p25: 3.27
+    p75: 3.79
+    sd: 0.401
+    missing_pct: 0.0
+    unique_count: 71816
+- name: annual_avg_24hr_pm25_ppb_2002
+  type: numeric
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    min: 4.74
+    max: 23.51
+    mean: 12.43
+    p25: 10.28
+    p75: 14.41
+    sd: 3.008
+    missing_pct: 0.0
+    unique_count: 72017
+- name: annual_avg_stderr_pm25_ppb_2002
+  type: numeric
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    min: 1.99
+    max: 4.81
+    mean: 3.16
+    p25: 2.86
+    p75: 3.45
+    sd: 0.414
+    missing_pct: 0.0
+    unique_count: 71823
+- name: annual_avg_24hr_pm25_ppb_2003
+  type: numeric
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    min: 4.88
+    max: 19.34
+    mean: 12.21
+    p25: 10.2
+    p75: 14.15
+    sd: 2.73
+    missing_pct: 0.0
+    unique_count: 71992
+- name: annual_avg_stderr_pm25_ppb_2003
+  type: numeric
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    min: 2.55
+    max: 5.18
+    mean: 3.78
+    p25: 3.51
+    p75: 3.99
+    sd: 0.442
+    missing_pct: 0.0
+    unique_count: 71748
+- name: annual_avg_24hr_pm25_ppb_2004
+  type: numeric
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    min: 4.97
+    max: 19.27
+    mean: 11.84
+    p25: 10.06
+    p75: 13.69
+    sd: 2.506
+    missing_pct: 0.0
+    unique_count: 72007
+- name: annual_avg_stderr_pm25_ppb_2004
+  type: numeric
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    min: 1.98
+    max: 4.39
+    mean: 3.12
+    p25: 2.86
+    p75: 3.4
+    sd: 0.356
+    missing_pct: 0.0
+    unique_count: 71813
+- name: annual_avg_24hr_pm25_ppb_2005
+  type: numeric
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    min: 4.58
+    max: 18.3
+    mean: 12.38
+    p25: 10.6
+    p75: 14.46
+    sd: 2.596
+    missing_pct: 0.0
+    unique_count: 72030
+- name: annual_avg_stderr_pm25_ppb_2005
+  type: numeric
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    min: 2.08
+    max: 4.42
+    mean: 3.36
+    p25: 3.06
+    p75: 3.66
+    sd: 0.394
+    missing_pct: 0.0
+    unique_count: 71825

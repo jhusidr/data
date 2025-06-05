@@ -1,0 +1,78 @@
+name: 'Taxes on chips and soda: 2014'
+version: '1.0'
+last_updated: '2025-06-05'
+domain: media_marketing
+indicator: taxes_on_chips_soda_2014
+data_file: taxes_on_chips_soda_2014.csv
+geography: county
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: Tax rate on chips in vending machines in 2014
+data_quality:
+  missing_pct: 0.0
+data_summary:
+  row_count: 3143
+  variable_count: 6
+variables:
+- name: fips_county
+  type: numeric
+  summary:
+    min: 1001.0
+    max: 56045.0
+    mean: 30390.41
+    p25: 18178.0
+    p75: 45082.0
+    sd: 15164.718
+    missing_pct: 0.0
+    unique_count: 3143
+- name: county_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 1832
+    max_length: 21
+    min_length: 3
+    avg_length: 7.0
+- name: state_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 51
+    max_length: 2
+    min_length: 2
+    avg_length: 2.0
+- name: chips_vendmach_tax_rate_2014
+  type: numeric
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    min: 0.0
+    max: 8.0
+    mean: 3.88
+    p25: 1.0
+    p75: 6.0
+    sd: 2.632
+    missing_pct: 0.0
+    unique_count: 21
+  source_variable: CHIPSTAX_VENDM14
+- name: soda_vendmach_tax_rate_2014
+  type: numeric
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    min: 0.0
+    max: 8.0
+    mean: 4.68
+    p25: 4.0
+    p75: 6.15
+    sd: 2.17
+    missing_pct: 0.0
+    unique_count: 22
+  source_variable: SODATAX_VENDM14

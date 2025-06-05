@@ -1,0 +1,1242 @@
+name: Home loan denials by race
+version: '1.0'
+last_updated: '2025-06-05'
+domain: income_credit_wealth
+indicator: home_loan_denials_by_race
+data_file: home_loan_denials_by_race.csv
+geography: county
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: Loan denial % for Black borrowers compared to white borrowers
+data_quality:
+  missing_pct: 10.04
+data_summary:
+  row_count: 3226
+  variable_count: 112
+variables:
+- name: fips_county
+  type: numeric
+  summary:
+    min: 1001.0
+    max: 78010.0
+    mean: 31391.78
+    p25: 19029.5
+    p75: 46108.5
+    sd: 16327.685
+    missing_pct: 0.0
+    unique_count: 3226
+- name: fips_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 0.3
+    unique_count: 3215
+    max_length: 7
+    min_length: 3
+    avg_length: 6.9
+- name: loan_applications_black_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 0.3
+    unique_count: 678
+    max_length: 7
+    min_length: 3
+    avg_length: 3.9
+- name: loan_applications_white_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 0.3
+    unique_count: 1877
+    max_length: 8
+    min_length: 3
+    avg_length: 5.3
+- name: loan_denial_pct_black_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 20.1
+    unique_count: 1125
+    max_length: 18
+    min_length: 3
+    avg_length: 10.8
+- name: loan_denial_pct_white_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 0.3
+    unique_count: 2812
+    max_length: 18
+    min_length: 3
+    avg_length: 17.2
+- name: loan_denial_ratio_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 20.1
+    unique_count: 2361
+    max_length: 18
+    min_length: 3
+    avg_length: 13.5
+- name: loan_denials_black_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 20.1
+    unique_count: 532
+    max_length: 7
+    min_length: 3
+    avg_length: 3.7
+- name: loan_denials_white_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 0.3
+    unique_count: 1220
+    max_length: 7
+    min_length: 3
+    avg_length: 4.8
+- name: loan_originations_black_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 20.1
+    unique_count: 535
+    max_length: 7
+    min_length: 3
+    avg_length: 3.7
+- name: loan_originations_white_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 0.3
+    unique_count: 1650
+    max_length: 8
+    min_length: 3
+    avg_length: 5.1
+- name: fips_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 0.3
+    unique_count: 3215
+    max_length: 7
+    min_length: 3
+    avg_length: 6.9
+- name: loan_applications_black_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 0.3
+    unique_count: 584
+    max_length: 7
+    min_length: 3
+    avg_length: 3.7
+- name: loan_applications_white_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 0.3
+    unique_count: 1765
+    max_length: 8
+    min_length: 3
+    avg_length: 5.2
+- name: loan_denial_pct_black_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 23.5
+    unique_count: 1034
+    max_length: 18
+    min_length: 3
+    avg_length: 10.2
+- name: loan_denial_pct_white_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 0.3
+    unique_count: 2781
+    max_length: 18
+    min_length: 3
+    avg_length: 17.0
+- name: loan_denial_ratio_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 23.5
+    unique_count: 2244
+    max_length: 18
+    min_length: 3
+    avg_length: 13.0
+- name: loan_denials_black_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 23.5
+    unique_count: 440
+    max_length: 7
+    min_length: 3
+    avg_length: 3.6
+- name: loan_denials_white_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 0.3
+    unique_count: 1094
+    max_length: 7
+    min_length: 3
+    avg_length: 4.7
+- name: loan_originations_black_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 23.5
+    unique_count: 444
+    max_length: 7
+    min_length: 3
+    avg_length: 3.6
+- name: loan_originations_white_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 0.3
+    unique_count: 1522
+    max_length: 7
+    min_length: 3
+    avg_length: 5.0
+- name: fips_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.4
+    unique_count: 3214
+    max_length: 7
+    min_length: 3
+    avg_length: 6.9
+- name: loan_applications_black_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.4
+    unique_count: 511
+    max_length: 7
+    min_length: 3
+    avg_length: 3.7
+- name: loan_applications_white_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.4
+    unique_count: 1807
+    max_length: 8
+    min_length: 3
+    avg_length: 5.2
+- name: loan_denial_pct_black_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 25.7
+    unique_count: 955
+    max_length: 18
+    min_length: 3
+    avg_length: 9.7
+- name: loan_denial_pct_white_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.4
+    unique_count: 2746
+    max_length: 18
+    min_length: 3
+    avg_length: 17.1
+- name: loan_denial_ratio_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 25.7
+    unique_count: 2064
+    max_length: 18
+    min_length: 3
+    avg_length: 12.1
+- name: loan_denials_black_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 25.7
+    unique_count: 355
+    max_length: 6
+    min_length: 3
+    avg_length: 3.5
+- name: loan_denials_white_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.4
+    unique_count: 1019
+    max_length: 7
+    min_length: 3
+    avg_length: 4.6
+- name: loan_originations_black_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 25.7
+    unique_count: 437
+    max_length: 7
+    min_length: 3
+    avg_length: 3.5
+- name: loan_originations_white_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.4
+    unique_count: 1626
+    max_length: 8
+    min_length: 3
+    avg_length: 5.1
+- name: fips_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 0.2
+    unique_count: 3218
+    max_length: 7
+    min_length: 3
+    avg_length: 6.9
+- name: loan_applications_black_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 0.2
+    unique_count: 498
+    max_length: 7
+    min_length: 3
+    avg_length: 3.6
+- name: loan_applications_white_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 0.2
+    unique_count: 1695
+    max_length: 8
+    min_length: 3
+    avg_length: 5.2
+- name: loan_denial_pct_black_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 27.4
+    unique_count: 925
+    max_length: 18
+    min_length: 3
+    avg_length: 9.7
+- name: loan_denial_pct_white_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 0.3
+    unique_count: 2700
+    max_length: 18
+    min_length: 3
+    avg_length: 17.1
+- name: loan_denial_ratio_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 27.4
+    unique_count: 2034
+    max_length: 18
+    min_length: 3
+    avg_length: 12.0
+- name: loan_denials_black_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 27.4
+    unique_count: 330
+    max_length: 6
+    min_length: 3
+    avg_length: 3.5
+- name: loan_denials_white_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 0.3
+    unique_count: 962
+    max_length: 7
+    min_length: 3
+    avg_length: 4.6
+- name: loan_originations_black_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 27.4
+    unique_count: 402
+    max_length: 6
+    min_length: 3
+    avg_length: 3.5
+- name: loan_originations_white_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 0.3
+    unique_count: 1529
+    max_length: 8
+    min_length: 3
+    avg_length: 5.0
+- name: fips_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 0.4
+    unique_count: 3213
+    max_length: 7
+    min_length: 3
+    avg_length: 6.9
+- name: loan_applications_black_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 0.4
+    unique_count: 475
+    max_length: 7
+    min_length: 3
+    avg_length: 3.6
+- name: loan_applications_white_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 0.4
+    unique_count: 1647
+    max_length: 8
+    min_length: 3
+    avg_length: 5.1
+- name: loan_denial_pct_black_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 28.0
+    unique_count: 892
+    max_length: 18
+    min_length: 3
+    avg_length: 9.5
+- name: loan_denial_pct_white_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 0.4
+    unique_count: 2694
+    max_length: 18
+    min_length: 3
+    avg_length: 17.0
+- name: loan_denial_ratio_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 28.0
+    unique_count: 2012
+    max_length: 18
+    min_length: 3
+    avg_length: 12.0
+- name: loan_denials_black_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 28.0
+    unique_count: 313
+    max_length: 6
+    min_length: 3
+    avg_length: 3.4
+- name: loan_denials_white_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 0.4
+    unique_count: 927
+    max_length: 7
+    min_length: 3
+    avg_length: 4.6
+- name: loan_originations_black_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 28.0
+    unique_count: 374
+    max_length: 6
+    min_length: 3
+    avg_length: 3.5
+- name: loan_originations_white_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 0.4
+    unique_count: 1465
+    max_length: 8
+    min_length: 3
+    avg_length: 5.0
+- name: fips_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 0.3
+    unique_count: 3217
+    max_length: 7
+    min_length: 3
+    avg_length: 6.9
+- name: loan_applications_black_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 0.3
+    unique_count: 517
+    max_length: 7
+    min_length: 3
+    avg_length: 3.7
+- name: loan_applications_white_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 0.3
+    unique_count: 1767
+    max_length: 8
+    min_length: 3
+    avg_length: 5.2
+- name: loan_denial_pct_black_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 25.6
+    unique_count: 977
+    max_length: 18
+    min_length: 3
+    avg_length: 9.9
+- name: loan_denial_pct_white_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 0.3
+    unique_count: 2734
+    max_length: 18
+    min_length: 3
+    avg_length: 17.1
+- name: loan_denial_ratio_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 25.6
+    unique_count: 2069
+    max_length: 18
+    min_length: 3
+    avg_length: 12.1
+- name: loan_denials_black_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 25.6
+    unique_count: 343
+    max_length: 6
+    min_length: 3
+    avg_length: 3.5
+- name: loan_denials_white_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 0.3
+    unique_count: 990
+    max_length: 7
+    min_length: 3
+    avg_length: 4.6
+- name: loan_originations_black_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 25.6
+    unique_count: 436
+    max_length: 7
+    min_length: 3
+    avg_length: 3.5
+- name: loan_originations_white_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 0.3
+    unique_count: 1600
+    max_length: 8
+    min_length: 3
+    avg_length: 5.1
+- name: fips_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 0.3
+    unique_count: 3217
+    max_length: 7
+    min_length: 3
+    avg_length: 6.9
+- name: loan_applications_black_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 0.3
+    unique_count: 526
+    max_length: 7
+    min_length: 3
+    avg_length: 3.7
+- name: loan_applications_white_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 0.3
+    unique_count: 1713
+    max_length: 8
+    min_length: 3
+    avg_length: 5.2
+- name: loan_denial_pct_black_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 24.8
+    unique_count: 966
+    max_length: 18
+    min_length: 3
+    avg_length: 9.8
+- name: loan_denial_pct_white_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 0.3
+    unique_count: 2726
+    max_length: 18
+    min_length: 3
+    avg_length: 17.1
+- name: loan_denial_ratio_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 24.8
+    unique_count: 2061
+    max_length: 18
+    min_length: 3
+    avg_length: 12.1
+- name: loan_denials_black_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 24.8
+    unique_count: 340
+    max_length: 6
+    min_length: 3
+    avg_length: 3.5
+- name: loan_denials_white_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 0.3
+    unique_count: 959
+    max_length: 7
+    min_length: 3
+    avg_length: 4.6
+- name: loan_originations_black_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 24.8
+    unique_count: 424
+    max_length: 7
+    min_length: 3
+    avg_length: 3.5
+- name: loan_originations_white_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 0.3
+    unique_count: 1539
+    max_length: 8
+    min_length: 3
+    avg_length: 5.0
+- name: fips_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 0.5
+    unique_count: 3210
+    max_length: 7
+    min_length: 3
+    avg_length: 6.9
+- name: loan_applications_black_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 0.5
+    unique_count: 493
+    max_length: 7
+    min_length: 3
+    avg_length: 3.6
+- name: loan_applications_white_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 0.5
+    unique_count: 1521
+    max_length: 8
+    min_length: 3
+    avg_length: 5.0
+- name: loan_denial_pct_black_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 25.8
+    unique_count: 912
+    max_length: 18
+    min_length: 3
+    avg_length: 9.6
+- name: loan_denial_pct_white_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 0.5
+    unique_count: 2624
+    max_length: 18
+    min_length: 3
+    avg_length: 16.9
+- name: loan_denial_ratio_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 25.9
+    unique_count: 2038
+    max_length: 18
+    min_length: 3
+    avg_length: 12.1
+- name: loan_denials_black_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 25.8
+    unique_count: 338
+    max_length: 6
+    min_length: 3
+    avg_length: 3.5
+- name: loan_denials_white_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 0.5
+    unique_count: 822
+    max_length: 7
+    min_length: 3
+    avg_length: 4.5
+- name: loan_originations_black_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 25.8
+    unique_count: 402
+    max_length: 6
+    min_length: 3
+    avg_length: 3.5
+- name: loan_originations_white_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 0.5
+    unique_count: 1368
+    max_length: 7
+    min_length: 3
+    avg_length: 4.9
+- name: fips_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 0.5
+    unique_count: 3210
+    max_length: 7
+    min_length: 3
+    avg_length: 6.9
+- name: loan_applications_black_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 0.5
+    unique_count: 513
+    max_length: 7
+    min_length: 3
+    avg_length: 3.7
+- name: loan_applications_white_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 0.5
+    unique_count: 1626
+    max_length: 8
+    min_length: 3
+    avg_length: 5.1
+- name: loan_denial_pct_black_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 24.6
+    unique_count: 936
+    max_length: 18
+    min_length: 3
+    avg_length: 9.7
+- name: loan_denial_pct_white_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 0.5
+    unique_count: 2615
+    max_length: 18
+    min_length: 3
+    avg_length: 16.8
+- name: loan_denial_ratio_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 24.6
+    unique_count: 2042
+    max_length: 18
+    min_length: 3
+    avg_length: 12.1
+- name: loan_denials_black_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 24.6
+    unique_count: 347
+    max_length: 6
+    min_length: 3
+    avg_length: 3.5
+- name: loan_denials_white_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 0.5
+    unique_count: 875
+    max_length: 7
+    min_length: 3
+    avg_length: 4.5
+- name: loan_originations_black_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 24.6
+    unique_count: 426
+    max_length: 6
+    min_length: 3
+    avg_length: 3.5
+- name: loan_originations_white_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 0.5
+    unique_count: 1436
+    max_length: 8
+    min_length: 3
+    avg_length: 5.0
+- name: fips_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 0.3
+    unique_count: 3216
+    max_length: 7
+    min_length: 3
+    avg_length: 6.9
+- name: loan_applications_black_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 0.3
+    unique_count: 558
+    max_length: 7
+    min_length: 3
+    avg_length: 3.7
+- name: loan_applications_white_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 0.3
+    unique_count: 1645
+    max_length: 8
+    min_length: 3
+    avg_length: 5.1
+- name: loan_denial_pct_black_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 23.1
+    unique_count: 1033
+    max_length: 18
+    min_length: 3
+    avg_length: 10.1
+- name: loan_denial_pct_white_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 0.3
+    unique_count: 2659
+    max_length: 18
+    min_length: 3
+    avg_length: 17.0
+- name: loan_denial_ratio_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 23.1
+    unique_count: 2136
+    max_length: 18
+    min_length: 3
+    avg_length: 12.5
+- name: loan_denials_black_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 23.1
+    unique_count: 392
+    max_length: 6
+    min_length: 3
+    avg_length: 3.5
+- name: loan_denials_white_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 0.3
+    unique_count: 954
+    max_length: 7
+    min_length: 3
+    avg_length: 4.6
+- name: loan_originations_black_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 23.1
+    unique_count: 456
+    max_length: 7
+    min_length: 3
+    avg_length: 3.6
+- name: loan_originations_white_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 0.3
+    unique_count: 1485
+    max_length: 8
+    min_length: 3
+    avg_length: 5.0
+- name: fips_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 0.3
+    unique_count: 3216
+    max_length: 7
+    min_length: 3
+    avg_length: 6.9
+- name: loan_applications_black_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 0.3
+    unique_count: 532
+    max_length: 7
+    min_length: 3
+    avg_length: 3.7
+- name: loan_applications_white_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 0.3
+    unique_count: 1591
+    max_length: 8
+    min_length: 3
+    avg_length: 5.1
+- name: loan_denial_pct_black_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 24.3
+    unique_count: 1005
+    max_length: 18
+    min_length: 3
+    avg_length: 9.9
+- name: loan_denial_pct_white_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 0.3
+    unique_count: 2647
+    max_length: 18
+    min_length: 3
+    avg_length: 16.9
+- name: loan_denial_ratio_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 24.4
+    unique_count: 2045
+    max_length: 18
+    min_length: 3
+    avg_length: 12.1
+- name: loan_denials_black_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 24.3
+    unique_count: 341
+    max_length: 6
+    min_length: 3
+    avg_length: 3.5
+- name: loan_denials_white_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 0.3
+    unique_count: 796
+    max_length: 7
+    min_length: 3
+    avg_length: 4.4
+- name: loan_originations_black_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 24.3
+    unique_count: 458
+    max_length: 7
+    min_length: 3
+    avg_length: 3.6
+- name: loan_originations_white_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 0.3
+    unique_count: 1452
+    max_length: 7
+    min_length: 3
+    avg_length: 5.0

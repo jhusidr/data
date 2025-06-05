@@ -1,0 +1,95 @@
+name: 'Flu vaccinations & preventable hospital days by race: 2022'
+version: '1.0'
+last_updated: '2025-06-05'
+domain: healthcare
+indicator: flu_vaccinations_preventable_hospital_days_by_race_2022
+data_file: flu_vaccinations_preventable_hospital_days_by_race_2022.csv
+geography: county
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: Flu vaccination & preventable hospital says, by race (2022)
+data_quality:
+  missing_pct: 28.5
+data_summary:
+  row_count: 3193
+  variable_count: 8
+variables:
+- name: fips_county
+  type: numeric
+  summary:
+    min: 1000.0
+    max: 56045.0
+    mean: 30360.92
+    p25: 18173.0
+    p75: 45075.0
+    sd: 15171.912
+    missing_pct: 0.0
+    unique_count: 3193
+  source_variable: FIPS
+- name: county_name
+  type: string
+  summary:
+    missing_pct: 1.6
+    unique_count: 1850
+    max_length: 21
+    min_length: 3
+    avg_length: 7.0
+  source_variable: County
+- name: state_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 51
+    max_length: 20
+    min_length: 4
+    avg_length: 8.1
+  source_variable: State
+- name: fluvacc_black_white_2022
+  type: string
+  time_varying: true
+  years:
+  - 2022
+  summary:
+    missing_pct: 40.6
+    unique_count: 63
+    max_length: 5
+    min_length: 3
+    avg_length: 4.0
+- name: fluvacc_hispanic_white_2022
+  type: string
+  time_varying: true
+  years:
+  - 2022
+  summary:
+    missing_pct: 38.8
+    unique_count: 66
+    max_length: 5
+    min_length: 3
+    avg_length: 3.9
+- name: prevhosp_black_white_2022
+  type: string
+  time_varying: true
+  years:
+  - 2022
+  summary:
+    missing_pct: 52.9
+    unique_count: 1327
+    max_length: 7
+    min_length: 3
+    avg_length: 4.4
+- name: prevhosp_hispanic_white_2022
+  type: string
+  time_varying: true
+  years:
+  - 2022
+  summary:
+    missing_pct: 65.6
+    unique_count: 995
+    max_length: 7
+    min_length: 3
+    avg_length: 4.0

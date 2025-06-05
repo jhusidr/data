@@ -1,0 +1,116 @@
+name: Police-involved deaths by race
+version: '1.0'
+last_updated: '2025-06-05'
+domain: policing
+indicator: police_involved_deaths_by_race
+data_file: police_involved_deaths_by_race.csv
+geography: county
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: Police-involved deaths by race
+data_quality:
+  missing_pct: 1.65
+data_summary:
+  row_count: 6046
+  variable_count: 11
+variables:
+- name: fips_state
+  type: numeric
+  summary:
+    min: 1.0
+    max: 56.0
+    mean: 28.9
+    p25: 13.0
+    p75: 42.0
+    sd: 16.141
+    missing_pct: 0.0
+    unique_count: 51
+- name: state_abbr
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 51
+    max_length: 2
+    min_length: 2
+    avg_length: 2.0
+- name: fips_county
+  type: numeric
+  summary:
+    min: 1003.0
+    max: 56041.0
+    mean: 28995.75
+    p25: 13193.0
+    p75: 42102.5
+    sd: 16163.061
+    missing_pct: 0.0
+    unique_count: 1904
+- name: county_name
+  type: string
+  summary:
+    missing_pct: 0.1
+    unique_count: 1313
+    max_length: 31
+    min_length: 3
+    avg_length: 7.3
+- name: zip
+  type: string
+  summary:
+    missing_pct: 1.5
+    unique_count: 4545
+    max_length: 8
+    min_length: 3
+    avg_length: 6.9
+- name: pol_inv_death_count
+  type: numeric
+  summary:
+    min: 1.0
+    max: 57.0
+    mean: 2.08
+    p25: 1.0
+    p75: 2.0
+    sd: 3.079
+    missing_pct: 0.0
+    unique_count: 40
+  source_variable: plinvdeathN
+- name: death_bl_per_bl_resident
+  type: string
+  summary:
+    missing_pct: 5.0
+    unique_count: 5007
+    max_length: 18
+    min_length: 3
+    avg_length: 16.5
+  source_variable: death_black
+- name: death_wh_per_wh_resident
+  type: numeric
+  summary:
+    min: 0.08
+    max: 626.96
+    mean: 3.38
+    p25: 0.67
+    p75: 3.06
+    sd: 12.457
+    missing_pct: 0.0
+    unique_count: 5853
+  source_variable: death_white
+- name: diff_death_bl_wh
+  type: string
+  summary:
+    missing_pct: 5.0
+    unique_count: 5612
+    max_length: 19
+    min_length: 3
+    avg_length: 16.7
+- name: ratio_death_bl_wh
+  type: string
+  summary:
+    missing_pct: 5.0
+    unique_count: 5466
+    max_length: 18
+    min_length: 3
+    avg_length: 16.6

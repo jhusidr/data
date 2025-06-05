@@ -1,0 +1,3576 @@
+name: Incarcerations by race
+version: '1.0'
+last_updated: '2025-06-05'
+domain: policing
+indicator: incarcerations_by_race
+data_file: incarcerations_by_race.csv
+geography: county
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: Incarcerations by race
+data_quality:
+  missing_pct: 27.75
+data_summary:
+  row_count: 3139
+  variable_count: 325
+variables:
+- name: state_abbr
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 51
+    max_length: 2
+    min_length: 2
+    avg_length: 2.0
+- name: fips_county
+  type: numeric
+  summary:
+    min: 1001.0
+    max: 56045.0
+    mean: 30367.47
+    p25: 18174.0
+    p75: 45082.0
+    sd: 15176.695
+    missing_pct: 0.0
+    unique_count: 3139
+- name: county_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 1876
+    max_length: 33
+    min_length: 10
+    avg_length: 14.0
+- name: urbanicity
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 4
+    max_length: 9
+    min_length: 3
+    avg_length: 6.3
+- name: total_jail_pop_rate_1970
+  type: string
+  time_varying: true
+  years:
+  - 1970
+  summary:
+    missing_pct: 6.8
+    unique_count: 2526
+    max_length: 7
+    min_length: 3
+    avg_length: 5.0
+- name: total_prison_pop_rate_1970
+  type: string
+  time_varying: true
+  years:
+  - 1970
+  summary:
+    missing_pct: 95.3
+    unique_count: 145
+    max_length: 6
+    min_length: 3
+    avg_length: 3.1
+- name: total_jail_pop_rate_1971
+  type: string
+  time_varying: true
+  years:
+  - 1971
+  summary:
+    missing_pct: 8.3
+    unique_count: 2610
+    max_length: 7
+    min_length: 3
+    avg_length: 5.0
+- name: total_prison_pop_rate_1971
+  type: string
+  time_varying: true
+  years:
+  - 1971
+  summary:
+    missing_pct: 95.2
+    unique_count: 150
+    max_length: 6
+    min_length: 3
+    avg_length: 3.1
+- name: total_jail_pop_rate_1972
+  type: string
+  time_varying: true
+  years:
+  - 1972
+  summary:
+    missing_pct: 8.3
+    unique_count: 2601
+    max_length: 7
+    min_length: 3
+    avg_length: 5.0
+- name: total_prison_pop_rate_1972
+  type: string
+  time_varying: true
+  years:
+  - 1972
+  summary:
+    missing_pct: 95.2
+    unique_count: 150
+    max_length: 6
+    min_length: 3
+    avg_length: 3.1
+- name: total_jail_pop_rate_1973
+  type: string
+  time_varying: true
+  years:
+  - 1973
+  summary:
+    missing_pct: 8.3
+    unique_count: 2612
+    max_length: 7
+    min_length: 3
+    avg_length: 5.0
+- name: total_prison_pop_rate_1973
+  type: string
+  time_varying: true
+  years:
+  - 1973
+  summary:
+    missing_pct: 95.1
+    unique_count: 153
+    max_length: 6
+    min_length: 3
+    avg_length: 3.1
+- name: total_jail_pop_rate_1974
+  type: string
+  time_varying: true
+  years:
+  - 1974
+  summary:
+    missing_pct: 8.3
+    unique_count: 2604
+    max_length: 7
+    min_length: 3
+    avg_length: 5.0
+- name: total_prison_pop_rate_1974
+  type: string
+  time_varying: true
+  years:
+  - 1974
+  summary:
+    missing_pct: 95.0
+    unique_count: 155
+    max_length: 6
+    min_length: 3
+    avg_length: 3.1
+- name: total_jail_pop_rate_1975
+  type: string
+  time_varying: true
+  years:
+  - 1975
+  summary:
+    missing_pct: 8.3
+    unique_count: 2587
+    max_length: 7
+    min_length: 3
+    avg_length: 5.0
+- name: total_prison_pop_rate_1975
+  type: string
+  time_varying: true
+  years:
+  - 1975
+  summary:
+    missing_pct: 95.0
+    unique_count: 156
+    max_length: 7
+    min_length: 3
+    avg_length: 3.1
+- name: total_jail_pop_rate_1976
+  type: string
+  time_varying: true
+  years:
+  - 1976
+  summary:
+    missing_pct: 8.3
+    unique_count: 2604
+    max_length: 7
+    min_length: 3
+    avg_length: 5.0
+- name: total_prison_pop_rate_1976
+  type: string
+  time_varying: true
+  years:
+  - 1976
+  summary:
+    missing_pct: 95.0
+    unique_count: 157
+    max_length: 6
+    min_length: 3
+    avg_length: 3.1
+- name: total_jail_pop_rate_1977
+  type: string
+  time_varying: true
+  years:
+  - 1977
+  summary:
+    missing_pct: 8.3
+    unique_count: 2611
+    max_length: 7
+    min_length: 3
+    avg_length: 5.0
+- name: total_prison_pop_rate_1977
+  type: string
+  time_varying: true
+  years:
+  - 1977
+  summary:
+    missing_pct: 95.0
+    unique_count: 156
+    max_length: 6
+    min_length: 3
+    avg_length: 3.1
+- name: total_jail_pop_rate_1978
+  type: string
+  time_varying: true
+  years:
+  - 1978
+  summary:
+    missing_pct: 6.0
+    unique_count: 2665
+    max_length: 7
+    min_length: 3
+    avg_length: 5.1
+- name: total_prison_pop_rate_1978
+  type: string
+  time_varying: true
+  years:
+  - 1978
+  summary:
+    missing_pct: 95.0
+    unique_count: 157
+    max_length: 6
+    min_length: 3
+    avg_length: 3.1
+- name: total_jail_pop_rate_1979
+  type: string
+  time_varying: true
+  years:
+  - 1979
+  summary:
+    missing_pct: 6.9
+    unique_count: 2658
+    max_length: 7
+    min_length: 3
+    avg_length: 5.1
+- name: total_prison_pop_rate_1979
+  type: string
+  time_varying: true
+  years:
+  - 1979
+  summary:
+    missing_pct: 95.0
+    unique_count: 158
+    max_length: 6
+    min_length: 3
+    avg_length: 3.1
+- name: total_jail_pop_rate_1980
+  type: string
+  time_varying: true
+  years:
+  - 1980
+  summary:
+    missing_pct: 6.8
+    unique_count: 2701
+    max_length: 7
+    min_length: 3
+    avg_length: 5.2
+- name: total_prison_pop_rate_1980
+  type: string
+  time_varying: true
+  years:
+  - 1980
+  summary:
+    missing_pct: 95.0
+    unique_count: 155
+    max_length: 6
+    min_length: 3
+    avg_length: 3.1
+- name: total_jail_pop_rate_1981
+  type: string
+  time_varying: true
+  years:
+  - 1981
+  summary:
+    missing_pct: 6.8
+    unique_count: 2690
+    max_length: 7
+    min_length: 3
+    avg_length: 5.2
+- name: total_prison_pop_rate_1981
+  type: string
+  time_varying: true
+  years:
+  - 1981
+  summary:
+    missing_pct: 95.0
+    unique_count: 157
+    max_length: 6
+    min_length: 3
+    avg_length: 3.1
+- name: total_jail_pop_rate_1982
+  type: string
+  time_varying: true
+  years:
+  - 1982
+  summary:
+    missing_pct: 6.8
+    unique_count: 2698
+    max_length: 7
+    min_length: 3
+    avg_length: 5.2
+- name: total_prison_pop_rate_1982
+  type: string
+  time_varying: true
+  years:
+  - 1982
+  summary:
+    missing_pct: 95.0
+    unique_count: 155
+    max_length: 6
+    min_length: 3
+    avg_length: 3.1
+- name: total_jail_pop_rate_1983
+  type: string
+  time_varying: true
+  years:
+  - 1983
+  summary:
+    missing_pct: 5.8
+    unique_count: 2751
+    max_length: 7
+    min_length: 3
+    avg_length: 5.3
+- name: total_prison_pop_rate_1983
+  type: string
+  time_varying: true
+  years:
+  - 1983
+  summary:
+    missing_pct: 42.6
+    unique_count: 1670
+    max_length: 8
+    min_length: 3
+    avg_length: 4.5
+- name: total_jail_pop_rate_1984
+  type: string
+  time_varying: true
+  years:
+  - 1984
+  summary:
+    missing_pct: 6.3
+    unique_count: 2762
+    max_length: 7
+    min_length: 3
+    avg_length: 5.3
+- name: total_prison_pop_rate_1984
+  type: string
+  time_varying: true
+  years:
+  - 1984
+  summary:
+    missing_pct: 35.6
+    unique_count: 1890
+    max_length: 7
+    min_length: 3
+    avg_length: 4.7
+- name: total_jail_pop_rate_1985
+  type: string
+  time_varying: true
+  years:
+  - 1985
+  summary:
+    missing_pct: 6.3
+    unique_count: 2755
+    max_length: 7
+    min_length: 3
+    avg_length: 5.4
+- name: total_prison_pop_rate_1985
+  type: string
+  time_varying: true
+  years:
+  - 1985
+  summary:
+    missing_pct: 32.6
+    unique_count: 1976
+    max_length: 8
+    min_length: 3
+    avg_length: 4.8
+- name: total_jail_pop_rate_1986
+  type: string
+  time_varying: true
+  years:
+  - 1986
+  summary:
+    missing_pct: 6.3
+    unique_count: 2787
+    max_length: 7
+    min_length: 3
+    avg_length: 5.4
+- name: total_prison_pop_rate_1986
+  type: string
+  time_varying: true
+  years:
+  - 1986
+  summary:
+    missing_pct: 32.0
+    unique_count: 2000
+    max_length: 7
+    min_length: 3
+    avg_length: 4.8
+- name: total_jail_pop_rate_1987
+  type: string
+  time_varying: true
+  years:
+  - 1987
+  summary:
+    missing_pct: 6.3
+    unique_count: 2781
+    max_length: 7
+    min_length: 3
+    avg_length: 5.4
+- name: total_prison_pop_rate_1987
+  type: string
+  time_varying: true
+  years:
+  - 1987
+  summary:
+    missing_pct: 29.2
+    unique_count: 2083
+    max_length: 7
+    min_length: 3
+    avg_length: 4.9
+- name: total_jail_pop_rate_1988
+  type: string
+  time_varying: true
+  years:
+  - 1988
+  summary:
+    missing_pct: 6.0
+    unique_count: 2806
+    max_length: 7
+    min_length: 3
+    avg_length: 5.5
+- name: total_prison_pop_rate_1988
+  type: string
+  time_varying: true
+  years:
+  - 1988
+  summary:
+    missing_pct: 25.0
+    unique_count: 2213
+    max_length: 7
+    min_length: 3
+    avg_length: 5.0
+- name: total_jail_pop_rate_1989
+  type: string
+  time_varying: true
+  years:
+  - 1989
+  summary:
+    missing_pct: 6.2
+    unique_count: 2799
+    max_length: 7
+    min_length: 3
+    avg_length: 5.5
+- name: total_prison_pop_rate_1989
+  type: string
+  time_varying: true
+  years:
+  - 1989
+  summary:
+    missing_pct: 22.1
+    unique_count: 2311
+    max_length: 8
+    min_length: 3
+    avg_length: 5.1
+- name: black_jail_pop_rate_1990
+  type: string
+  time_varying: true
+  years:
+  - 1990
+  summary:
+    missing_pct: 17.1
+    unique_count: 1947
+    max_length: 9
+    min_length: 3
+    avg_length: 5.2
+- name: black_prison_pop_rate_1990
+  type: string
+  time_varying: true
+  years:
+  - 1990
+  summary:
+    missing_pct: 64.4
+    unique_count: 830
+    max_length: 9
+    min_length: 3
+    avg_length: 4.0
+- name: diff_jail_black_white_1990
+  type: string
+  time_varying: true
+  years:
+  - 1990
+  summary:
+    missing_pct: 17.1
+    unique_count: 2567
+    max_length: 19
+    min_length: 3
+    avg_length: 7.5
+- name: diff_prison_black_white_1990
+  type: string
+  time_varying: true
+  years:
+  - 1990
+  summary:
+    missing_pct: 65.5
+    unique_count: 1058
+    max_length: 18
+    min_length: 3
+    avg_length: 4.8
+- name: ratio_jail_black_white_1990
+  type: string
+  time_varying: true
+  years:
+  - 1990
+  summary:
+    missing_pct: 17.9
+    unique_count: 2081
+    max_length: 18
+    min_length: 3
+    avg_length: 12.4
+- name: ratio_prison_black_white_1990
+  type: string
+  time_varying: true
+  years:
+  - 1990
+  summary:
+    missing_pct: 66.3
+    unique_count: 814
+    max_length: 18
+    min_length: 3
+    avg_length: 6.7
+- name: total_jail_pop_rate_1990
+  type: string
+  time_varying: true
+  years:
+  - 1990
+  summary:
+    missing_pct: 6.2
+    unique_count: 2802
+    max_length: 7
+    min_length: 3
+    avg_length: 5.6
+- name: total_prison_pop_rate_1990
+  type: string
+  time_varying: true
+  years:
+  - 1990
+  summary:
+    missing_pct: 21.2
+    unique_count: 2330
+    max_length: 8
+    min_length: 3
+    avg_length: 5.1
+- name: white_jail_pop_rate_1990
+  type: string
+  time_varying: true
+  years:
+  - 1990
+  summary:
+    missing_pct: 8.3
+    unique_count: 2680
+    max_length: 7
+    min_length: 3
+    avg_length: 5.3
+- name: white_prison_pop_rate_1990
+  type: string
+  time_varying: true
+  years:
+  - 1990
+  summary:
+    missing_pct: 48.8
+    unique_count: 1518
+    max_length: 8
+    min_length: 3
+    avg_length: 4.4
+- name: black_jail_pop_rate_1991
+  type: string
+  time_varying: true
+  years:
+  - 1991
+  summary:
+    missing_pct: 16.3
+    unique_count: 1956
+    max_length: 9
+    min_length: 3
+    avg_length: 5.2
+- name: black_prison_pop_rate_1991
+  type: string
+  time_varying: true
+  years:
+  - 1991
+  summary:
+    missing_pct: 54.9
+    unique_count: 1124
+    max_length: 10
+    min_length: 3
+    avg_length: 4.3
+- name: diff_jail_black_white_1991
+  type: string
+  time_varying: true
+  years:
+  - 1991
+  summary:
+    missing_pct: 16.3
+    unique_count: 2596
+    max_length: 19
+    min_length: 3
+    avg_length: 7.5
+- name: diff_prison_black_white_1991
+  type: string
+  time_varying: true
+  years:
+  - 1991
+  summary:
+    missing_pct: 56.4
+    unique_count: 1351
+    max_length: 19
+    min_length: 3
+    avg_length: 5.3
+- name: ratio_jail_black_white_1991
+  type: string
+  time_varying: true
+  years:
+  - 1991
+  summary:
+    missing_pct: 17.0
+    unique_count: 2060
+    max_length: 18
+    min_length: 3
+    avg_length: 12.4
+- name: ratio_prison_black_white_1991
+  type: string
+  time_varying: true
+  years:
+  - 1991
+  summary:
+    missing_pct: 57.1
+    unique_count: 1102
+    max_length: 18
+    min_length: 3
+    avg_length: 8.0
+- name: total_jail_pop_rate_1991
+  type: string
+  time_varying: true
+  years:
+  - 1991
+  summary:
+    missing_pct: 6.1
+    unique_count: 2807
+    max_length: 7
+    min_length: 3
+    avg_length: 5.6
+- name: total_prison_pop_rate_1991
+  type: string
+  time_varying: true
+  years:
+  - 1991
+  summary:
+    missing_pct: 18.8
+    unique_count: 2406
+    max_length: 8
+    min_length: 3
+    avg_length: 5.2
+- name: white_jail_pop_rate_1991
+  type: string
+  time_varying: true
+  years:
+  - 1991
+  summary:
+    missing_pct: 8.3
+    unique_count: 2679
+    max_length: 7
+    min_length: 3
+    avg_length: 5.3
+- name: white_prison_pop_rate_1991
+  type: string
+  time_varying: true
+  years:
+  - 1991
+  summary:
+    missing_pct: 40.8
+    unique_count: 1755
+    max_length: 8
+    min_length: 3
+    avg_length: 4.6
+- name: black_jail_pop_rate_1992
+  type: string
+  time_varying: true
+  years:
+  - 1992
+  summary:
+    missing_pct: 16.4
+    unique_count: 1964
+    max_length: 9
+    min_length: 3
+    avg_length: 5.3
+- name: black_prison_pop_rate_1992
+  type: string
+  time_varying: true
+  years:
+  - 1992
+  summary:
+    missing_pct: 59.5
+    unique_count: 1016
+    max_length: 8
+    min_length: 3
+    avg_length: 4.2
+- name: diff_jail_black_white_1992
+  type: string
+  time_varying: true
+  years:
+  - 1992
+  summary:
+    missing_pct: 16.4
+    unique_count: 2601
+    max_length: 19
+    min_length: 3
+    avg_length: 7.6
+- name: diff_prison_black_white_1992
+  type: string
+  time_varying: true
+  years:
+  - 1992
+  summary:
+    missing_pct: 60.9
+    unique_count: 1209
+    max_length: 19
+    min_length: 3
+    avg_length: 5.1
+- name: ratio_jail_black_white_1992
+  type: string
+  time_varying: true
+  years:
+  - 1992
+  summary:
+    missing_pct: 17.1
+    unique_count: 2100
+    max_length: 18
+    min_length: 3
+    avg_length: 12.5
+- name: ratio_prison_black_white_1992
+  type: string
+  time_varying: true
+  years:
+  - 1992
+  summary:
+    missing_pct: 61.5
+    unique_count: 990
+    max_length: 18
+    min_length: 3
+    avg_length: 7.5
+- name: total_jail_pop_rate_1992
+  type: string
+  time_varying: true
+  years:
+  - 1992
+  summary:
+    missing_pct: 6.1
+    unique_count: 2831
+    max_length: 7
+    min_length: 3
+    avg_length: 5.6
+- name: total_prison_pop_rate_1992
+  type: string
+  time_varying: true
+  years:
+  - 1992
+  summary:
+    missing_pct: 18.6
+    unique_count: 2431
+    max_length: 8
+    min_length: 3
+    avg_length: 5.3
+- name: white_jail_pop_rate_1992
+  type: string
+  time_varying: true
+  years:
+  - 1992
+  summary:
+    missing_pct: 8.3
+    unique_count: 2709
+    max_length: 7
+    min_length: 3
+    avg_length: 5.3
+- name: white_prison_pop_rate_1992
+  type: string
+  time_varying: true
+  years:
+  - 1992
+  summary:
+    missing_pct: 44.1
+    unique_count: 1652
+    max_length: 7
+    min_length: 3
+    avg_length: 4.5
+- name: black_jail_pop_rate_1993
+  type: string
+  time_varying: true
+  years:
+  - 1993
+  summary:
+    missing_pct: 15.3
+    unique_count: 1930
+    max_length: 9
+    min_length: 3
+    avg_length: 5.3
+- name: black_prison_pop_rate_1993
+  type: string
+  time_varying: true
+  years:
+  - 1993
+  summary:
+    missing_pct: 57.3
+    unique_count: 1056
+    max_length: 8
+    min_length: 3
+    avg_length: 4.3
+- name: diff_jail_black_white_1993
+  type: string
+  time_varying: true
+  years:
+  - 1993
+  summary:
+    missing_pct: 15.3
+    unique_count: 2636
+    max_length: 19
+    min_length: 3
+    avg_length: 7.4
+- name: diff_prison_black_white_1993
+  type: string
+  time_varying: true
+  years:
+  - 1993
+  summary:
+    missing_pct: 58.5
+    unique_count: 1283
+    max_length: 19
+    min_length: 3
+    avg_length: 5.2
+- name: ratio_jail_black_white_1993
+  type: string
+  time_varying: true
+  years:
+  - 1993
+  summary:
+    missing_pct: 16.0
+    unique_count: 2107
+    max_length: 18
+    min_length: 3
+    avg_length: 12.6
+- name: ratio_prison_black_white_1993
+  type: string
+  time_varying: true
+  years:
+  - 1993
+  summary:
+    missing_pct: 59.2
+    unique_count: 1039
+    max_length: 18
+    min_length: 3
+    avg_length: 7.7
+- name: total_jail_pop_rate_1993
+  type: string
+  time_varying: true
+  years:
+  - 1993
+  summary:
+    missing_pct: 5.9
+    unique_count: 2837
+    max_length: 7
+    min_length: 3
+    avg_length: 5.6
+- name: total_prison_pop_rate_1993
+  type: string
+  time_varying: true
+  years:
+  - 1993
+  summary:
+    missing_pct: 18.1
+    unique_count: 2450
+    max_length: 8
+    min_length: 3
+    avg_length: 5.3
+- name: white_jail_pop_rate_1993
+  type: string
+  time_varying: true
+  years:
+  - 1993
+  summary:
+    missing_pct: 7.0
+    unique_count: 2754
+    max_length: 7
+    min_length: 3
+    avg_length: 5.4
+- name: white_prison_pop_rate_1993
+  type: string
+  time_varying: true
+  years:
+  - 1993
+  summary:
+    missing_pct: 41.1
+    unique_count: 1750
+    max_length: 8
+    min_length: 3
+    avg_length: 4.6
+- name: black_jail_pop_rate_1994
+  type: string
+  time_varying: true
+  years:
+  - 1994
+  summary:
+    missing_pct: 15.2
+    unique_count: 2140
+    max_length: 9
+    min_length: 3
+    avg_length: 5.5
+- name: black_prison_pop_rate_1994
+  type: string
+  time_varying: true
+  years:
+  - 1994
+  summary:
+    missing_pct: 57.8
+    unique_count: 1058
+    max_length: 8
+    min_length: 3
+    avg_length: 4.3
+- name: diff_jail_black_white_1994
+  type: string
+  time_varying: true
+  years:
+  - 1994
+  summary:
+    missing_pct: 15.2
+    unique_count: 2630
+    max_length: 19
+    min_length: 3
+    avg_length: 7.5
+- name: diff_prison_black_white_1994
+  type: string
+  time_varying: true
+  years:
+  - 1994
+  summary:
+    missing_pct: 58.9
+    unique_count: 1276
+    max_length: 19
+    min_length: 3
+    avg_length: 5.2
+- name: ratio_jail_black_white_1994
+  type: string
+  time_varying: true
+  years:
+  - 1994
+  summary:
+    missing_pct: 16.1
+    unique_count: 2252
+    max_length: 18
+    min_length: 3
+    avg_length: 13.3
+- name: ratio_prison_black_white_1994
+  type: string
+  time_varying: true
+  years:
+  - 1994
+  summary:
+    missing_pct: 59.4
+    unique_count: 1041
+    max_length: 18
+    min_length: 3
+    avg_length: 7.7
+- name: total_jail_pop_rate_1994
+  type: string
+  time_varying: true
+  years:
+  - 1994
+  summary:
+    missing_pct: 6.1
+    unique_count: 2828
+    max_length: 7
+    min_length: 3
+    avg_length: 5.6
+- name: total_prison_pop_rate_1994
+  type: string
+  time_varying: true
+  years:
+  - 1994
+  summary:
+    missing_pct: 17.8
+    unique_count: 2463
+    max_length: 8
+    min_length: 3
+    avg_length: 5.3
+- name: white_jail_pop_rate_1994
+  type: string
+  time_varying: true
+  years:
+  - 1994
+  summary:
+    missing_pct: 7.1
+    unique_count: 2744
+    max_length: 7
+    min_length: 3
+    avg_length: 5.4
+- name: white_prison_pop_rate_1994
+  type: string
+  time_varying: true
+  years:
+  - 1994
+  summary:
+    missing_pct: 40.6
+    unique_count: 1765
+    max_length: 8
+    min_length: 3
+    avg_length: 4.6
+- name: black_jail_pop_rate_1995
+  type: string
+  time_varying: true
+  years:
+  - 1995
+  summary:
+    missing_pct: 15.1
+    unique_count: 2174
+    max_length: 9
+    min_length: 3
+    avg_length: 5.6
+- name: black_prison_pop_rate_1995
+  type: string
+  time_varying: true
+  years:
+  - 1995
+  summary:
+    missing_pct: 56.3
+    unique_count: 1146
+    max_length: 8
+    min_length: 3
+    avg_length: 4.4
+- name: diff_jail_black_white_1995
+  type: string
+  time_varying: true
+  years:
+  - 1995
+  summary:
+    missing_pct: 15.1
+    unique_count: 2636
+    max_length: 19
+    min_length: 3
+    avg_length: 7.6
+- name: diff_prison_black_white_1995
+  type: string
+  time_varying: true
+  years:
+  - 1995
+  summary:
+    missing_pct: 57.0
+    unique_count: 1337
+    max_length: 19
+    min_length: 3
+    avg_length: 5.4
+- name: ratio_jail_black_white_1995
+  type: string
+  time_varying: true
+  years:
+  - 1995
+  summary:
+    missing_pct: 15.9
+    unique_count: 2283
+    max_length: 18
+    min_length: 3
+    avg_length: 13.4
+- name: ratio_prison_black_white_1995
+  type: string
+  time_varying: true
+  years:
+  - 1995
+  summary:
+    missing_pct: 57.6
+    unique_count: 1136
+    max_length: 18
+    min_length: 3
+    avg_length: 8.1
+- name: total_jail_pop_rate_1995
+  type: string
+  time_varying: true
+  years:
+  - 1995
+  summary:
+    missing_pct: 6.1
+    unique_count: 2821
+    max_length: 7
+    min_length: 3
+    avg_length: 5.6
+- name: total_prison_pop_rate_1995
+  type: string
+  time_varying: true
+  years:
+  - 1995
+  summary:
+    missing_pct: 17.8
+    unique_count: 2465
+    max_length: 8
+    min_length: 3
+    avg_length: 5.3
+- name: white_jail_pop_rate_1995
+  type: string
+  time_varying: true
+  years:
+  - 1995
+  summary:
+    missing_pct: 7.1
+    unique_count: 2778
+    max_length: 7
+    min_length: 3
+    avg_length: 5.4
+- name: white_prison_pop_rate_1995
+  type: string
+  time_varying: true
+  years:
+  - 1995
+  summary:
+    missing_pct: 40.1
+    unique_count: 1793
+    max_length: 8
+    min_length: 3
+    avg_length: 4.6
+- name: black_jail_pop_rate_1996
+  type: string
+  time_varying: true
+  years:
+  - 1996
+  summary:
+    missing_pct: 15.1
+    unique_count: 2128
+    max_length: 9
+    min_length: 3
+    avg_length: 5.6
+- name: black_prison_pop_rate_1996
+  type: string
+  time_varying: true
+  years:
+  - 1996
+  summary:
+    missing_pct: 61.9
+    unique_count: 1009
+    max_length: 9
+    min_length: 3
+    avg_length: 4.2
+- name: diff_jail_black_white_1996
+  type: string
+  time_varying: true
+  years:
+  - 1996
+  summary:
+    missing_pct: 15.1
+    unique_count: 2636
+    max_length: 19
+    min_length: 3
+    avg_length: 7.7
+- name: diff_prison_black_white_1996
+  type: string
+  time_varying: true
+  years:
+  - 1996
+  summary:
+    missing_pct: 62.6
+    unique_count: 1158
+    max_length: 19
+    min_length: 3
+    avg_length: 5.1
+- name: ratio_jail_black_white_1996
+  type: string
+  time_varying: true
+  years:
+  - 1996
+  summary:
+    missing_pct: 15.8
+    unique_count: 2291
+    max_length: 18
+    min_length: 3
+    avg_length: 13.4
+- name: ratio_prison_black_white_1996
+  type: string
+  time_varying: true
+  years:
+  - 1996
+  summary:
+    missing_pct: 63.2
+    unique_count: 994
+    max_length: 18
+    min_length: 3
+    avg_length: 7.5
+- name: total_jail_pop_rate_1996
+  type: string
+  time_varying: true
+  years:
+  - 1996
+  summary:
+    missing_pct: 6.1
+    unique_count: 2825
+    max_length: 7
+    min_length: 3
+    avg_length: 5.6
+- name: total_prison_pop_rate_1996
+  type: string
+  time_varying: true
+  years:
+  - 1996
+  summary:
+    missing_pct: 17.6
+    unique_count: 2494
+    max_length: 7
+    min_length: 3
+    avg_length: 5.4
+- name: white_jail_pop_rate_1996
+  type: string
+  time_varying: true
+  years:
+  - 1996
+  summary:
+    missing_pct: 7.1
+    unique_count: 2772
+    max_length: 7
+    min_length: 3
+    avg_length: 5.5
+- name: white_prison_pop_rate_1996
+  type: string
+  time_varying: true
+  years:
+  - 1996
+  summary:
+    missing_pct: 47.7
+    unique_count: 1568
+    max_length: 8
+    min_length: 3
+    avg_length: 4.4
+- name: black_jail_pop_rate_1997
+  type: string
+  time_varying: true
+  years:
+  - 1997
+  summary:
+    missing_pct: 15.3
+    unique_count: 2203
+    max_length: 9
+    min_length: 3
+    avg_length: 5.6
+- name: black_prison_pop_rate_1997
+  type: string
+  time_varying: true
+  years:
+  - 1997
+  summary:
+    missing_pct: 64.6
+    unique_count: 977
+    max_length: 8
+    min_length: 3
+    avg_length: 4.2
+- name: diff_jail_black_white_1997
+  type: string
+  time_varying: true
+  years:
+  - 1997
+  summary:
+    missing_pct: 15.3
+    unique_count: 2629
+    max_length: 19
+    min_length: 3
+    avg_length: 7.6
+- name: diff_prison_black_white_1997
+  type: string
+  time_varying: true
+  years:
+  - 1997
+  summary:
+    missing_pct: 65.2
+    unique_count: 1083
+    max_length: 19
+    min_length: 3
+    avg_length: 5.0
+- name: ratio_jail_black_white_1997
+  type: string
+  time_varying: true
+  years:
+  - 1997
+  summary:
+    missing_pct: 16.0
+    unique_count: 2296
+    max_length: 18
+    min_length: 3
+    avg_length: 13.4
+- name: ratio_prison_black_white_1997
+  type: string
+  time_varying: true
+  years:
+  - 1997
+  summary:
+    missing_pct: 65.7
+    unique_count: 967
+    max_length: 18
+    min_length: 3
+    avg_length: 7.4
+- name: total_jail_pop_rate_1997
+  type: string
+  time_varying: true
+  years:
+  - 1997
+  summary:
+    missing_pct: 6.1
+    unique_count: 2843
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_1997
+  type: string
+  time_varying: true
+  years:
+  - 1997
+  summary:
+    missing_pct: 17.8
+    unique_count: 2477
+    max_length: 8
+    min_length: 3
+    avg_length: 5.4
+- name: white_jail_pop_rate_1997
+  type: string
+  time_varying: true
+  years:
+  - 1997
+  summary:
+    missing_pct: 7.1
+    unique_count: 2772
+    max_length: 7
+    min_length: 3
+    avg_length: 5.5
+- name: white_prison_pop_rate_1997
+  type: string
+  time_varying: true
+  years:
+  - 1997
+  summary:
+    missing_pct: 51.7
+    unique_count: 1445
+    max_length: 8
+    min_length: 3
+    avg_length: 4.3
+- name: black_jail_pop_rate_1998
+  type: string
+  time_varying: true
+  years:
+  - 1998
+  summary:
+    missing_pct: 15.1
+    unique_count: 2218
+    max_length: 9
+    min_length: 3
+    avg_length: 5.6
+- name: black_prison_pop_rate_1998
+  type: string
+  time_varying: true
+  years:
+  - 1998
+  summary:
+    missing_pct: 64.0
+    unique_count: 995
+    max_length: 8
+    min_length: 3
+    avg_length: 4.2
+- name: diff_jail_black_white_1998
+  type: string
+  time_varying: true
+  years:
+  - 1998
+  summary:
+    missing_pct: 15.1
+    unique_count: 2639
+    max_length: 19
+    min_length: 3
+    avg_length: 7.8
+- name: diff_prison_black_white_1998
+  type: string
+  time_varying: true
+  years:
+  - 1998
+  summary:
+    missing_pct: 64.8
+    unique_count: 1097
+    max_length: 19
+    min_length: 3
+    avg_length: 5.0
+- name: ratio_jail_black_white_1998
+  type: string
+  time_varying: true
+  years:
+  - 1998
+  summary:
+    missing_pct: 15.8
+    unique_count: 2298
+    max_length: 18
+    min_length: 3
+    avg_length: 13.4
+- name: ratio_prison_black_white_1998
+  type: string
+  time_varying: true
+  years:
+  - 1998
+  summary:
+    missing_pct: 65.1
+    unique_count: 978
+    max_length: 18
+    min_length: 3
+    avg_length: 7.4
+- name: total_jail_pop_rate_1998
+  type: string
+  time_varying: true
+  years:
+  - 1998
+  summary:
+    missing_pct: 6.1
+    unique_count: 2836
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_1998
+  type: string
+  time_varying: true
+  years:
+  - 1998
+  summary:
+    missing_pct: 18.2
+    unique_count: 2484
+    max_length: 8
+    min_length: 3
+    avg_length: 5.4
+- name: white_jail_pop_rate_1998
+  type: string
+  time_varying: true
+  years:
+  - 1998
+  summary:
+    missing_pct: 7.1
+    unique_count: 2769
+    max_length: 7
+    min_length: 3
+    avg_length: 5.5
+- name: white_prison_pop_rate_1998
+  type: string
+  time_varying: true
+  years:
+  - 1998
+  summary:
+    missing_pct: 52.8
+    unique_count: 1431
+    max_length: 8
+    min_length: 3
+    avg_length: 4.3
+- name: black_jail_pop_rate_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 14.3
+    unique_count: 2078
+    max_length: 9
+    min_length: 3
+    avg_length: 5.6
+- name: black_prison_pop_rate_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 60.6
+    unique_count: 1127
+    max_length: 8
+    min_length: 3
+    avg_length: 4.4
+- name: diff_jail_black_white_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 14.3
+    unique_count: 2663
+    max_length: 19
+    min_length: 3
+    avg_length: 7.8
+- name: diff_prison_black_white_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 61.2
+    unique_count: 1209
+    max_length: 19
+    min_length: 3
+    avg_length: 5.2
+- name: ratio_jail_black_white_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 15.1
+    unique_count: 2303
+    max_length: 18
+    min_length: 3
+    avg_length: 13.5
+- name: ratio_prison_black_white_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 61.5
+    unique_count: 1124
+    max_length: 18
+    min_length: 3
+    avg_length: 8.1
+- name: total_jail_pop_rate_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 5.5
+    unique_count: 2847
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 18.3
+    unique_count: 2486
+    max_length: 8
+    min_length: 3
+    avg_length: 5.4
+- name: white_jail_pop_rate_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 5.9
+    unique_count: 2812
+    max_length: 7
+    min_length: 3
+    avg_length: 5.5
+- name: white_prison_pop_rate_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 50.3
+    unique_count: 1509
+    max_length: 8
+    min_length: 3
+    avg_length: 4.4
+- name: black_jail_pop_rate_2000
+  type: string
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 7.7
+    unique_count: 2345
+    max_length: 9
+    min_length: 3
+    avg_length: 5.8
+- name: black_prison_pop_rate_2000
+  type: string
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 63.5
+    unique_count: 1014
+    max_length: 8
+    min_length: 3
+    avg_length: 4.3
+- name: diff_jail_black_white_2000
+  type: string
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 7.7
+    unique_count: 2850
+    max_length: 19
+    min_length: 3
+    avg_length: 8.1
+- name: diff_prison_black_white_2000
+  type: string
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 63.8
+    unique_count: 1119
+    max_length: 19
+    min_length: 3
+    avg_length: 5.0
+- name: ratio_jail_black_white_2000
+  type: string
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 9.0
+    unique_count: 2483
+    max_length: 18
+    min_length: 3
+    avg_length: 14.3
+- name: ratio_prison_black_white_2000
+  type: string
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 64.4
+    unique_count: 1028
+    max_length: 18
+    min_length: 3
+    avg_length: 7.6
+- name: total_jail_pop_rate_2000
+  type: string
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 5.9
+    unique_count: 2836
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_2000
+  type: string
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 20.3
+    unique_count: 2434
+    max_length: 8
+    min_length: 3
+    avg_length: 5.4
+- name: white_jail_pop_rate_2000
+  type: string
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 6.2
+    unique_count: 2809
+    max_length: 7
+    min_length: 3
+    avg_length: 5.5
+- name: white_prison_pop_rate_2000
+  type: string
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 54.9
+    unique_count: 1372
+    max_length: 8
+    min_length: 3
+    avg_length: 4.3
+- name: black_jail_pop_rate_2001
+  type: string
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    missing_pct: 7.7
+    unique_count: 2415
+    max_length: 9
+    min_length: 3
+    avg_length: 5.9
+- name: black_prison_pop_rate_2001
+  type: string
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    missing_pct: 62.4
+    unique_count: 1036
+    max_length: 8
+    min_length: 3
+    avg_length: 4.3
+- name: diff_jail_black_white_2001
+  type: string
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    missing_pct: 7.7
+    unique_count: 2869
+    max_length: 19
+    min_length: 3
+    avg_length: 8.3
+- name: diff_prison_black_white_2001
+  type: string
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    missing_pct: 62.7
+    unique_count: 1145
+    max_length: 19
+    min_length: 3
+    avg_length: 5.2
+- name: ratio_jail_black_white_2001
+  type: string
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    missing_pct: 8.3
+    unique_count: 2522
+    max_length: 18
+    min_length: 3
+    avg_length: 14.4
+- name: ratio_prison_black_white_2001
+  type: string
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    missing_pct: 63.5
+    unique_count: 1049
+    max_length: 18
+    min_length: 3
+    avg_length: 7.7
+- name: total_jail_pop_rate_2001
+  type: string
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    missing_pct: 5.9
+    unique_count: 2846
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_2001
+  type: string
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    missing_pct: 20.2
+    unique_count: 2432
+    max_length: 8
+    min_length: 3
+    avg_length: 5.4
+- name: white_jail_pop_rate_2001
+  type: string
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    missing_pct: 6.2
+    unique_count: 2818
+    max_length: 7
+    min_length: 3
+    avg_length: 5.6
+- name: white_prison_pop_rate_2001
+  type: string
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    missing_pct: 53.3
+    unique_count: 1406
+    max_length: 7
+    min_length: 3
+    avg_length: 4.3
+- name: black_jail_pop_rate_2002
+  type: string
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    missing_pct: 7.6
+    unique_count: 2348
+    max_length: 9
+    min_length: 3
+    avg_length: 5.9
+- name: black_prison_pop_rate_2002
+  type: string
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    missing_pct: 60.1
+    unique_count: 1130
+    max_length: 8
+    min_length: 3
+    avg_length: 4.4
+- name: diff_jail_black_white_2002
+  type: string
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    missing_pct: 7.6
+    unique_count: 2881
+    max_length: 19
+    min_length: 3
+    avg_length: 8.3
+- name: diff_prison_black_white_2002
+  type: string
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    missing_pct: 60.3
+    unique_count: 1225
+    max_length: 19
+    min_length: 3
+    avg_length: 5.4
+- name: ratio_jail_black_white_2002
+  type: string
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    missing_pct: 8.0
+    unique_count: 2544
+    max_length: 18
+    min_length: 3
+    avg_length: 14.6
+- name: ratio_prison_black_white_2002
+  type: string
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    missing_pct: 61.0
+    unique_count: 1143
+    max_length: 18
+    min_length: 3
+    avg_length: 8.2
+- name: total_jail_pop_rate_2002
+  type: string
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    missing_pct: 5.9
+    unique_count: 2831
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_2002
+  type: string
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    missing_pct: 17.2
+    unique_count: 2527
+    max_length: 8
+    min_length: 3
+    avg_length: 5.5
+- name: white_jail_pop_rate_2002
+  type: string
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    missing_pct: 6.2
+    unique_count: 2835
+    max_length: 8
+    min_length: 3
+    avg_length: 5.6
+- name: white_prison_pop_rate_2002
+  type: string
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    missing_pct: 50.2
+    unique_count: 1515
+    max_length: 8
+    min_length: 3
+    avg_length: 4.4
+- name: black_jail_pop_rate_2003
+  type: string
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    missing_pct: 7.4
+    unique_count: 2446
+    max_length: 9
+    min_length: 3
+    avg_length: 6.0
+- name: black_prison_pop_rate_2003
+  type: string
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    missing_pct: 59.0
+    unique_count: 1165
+    max_length: 8
+    min_length: 3
+    avg_length: 4.4
+- name: diff_jail_black_white_2003
+  type: string
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    missing_pct: 7.4
+    unique_count: 2886
+    max_length: 19
+    min_length: 3
+    avg_length: 8.3
+- name: diff_prison_black_white_2003
+  type: string
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    missing_pct: 59.2
+    unique_count: 1260
+    max_length: 19
+    min_length: 3
+    avg_length: 5.4
+- name: ratio_jail_black_white_2003
+  type: string
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    missing_pct: 7.8
+    unique_count: 2551
+    max_length: 18
+    min_length: 3
+    avg_length: 14.6
+- name: ratio_prison_black_white_2003
+  type: string
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    missing_pct: 59.9
+    unique_count: 1182
+    max_length: 18
+    min_length: 3
+    avg_length: 8.3
+- name: total_jail_pop_rate_2003
+  type: string
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    missing_pct: 5.9
+    unique_count: 2861
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_2003
+  type: string
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    missing_pct: 16.9
+    unique_count: 2540
+    max_length: 7
+    min_length: 3
+    avg_length: 5.5
+- name: white_jail_pop_rate_2003
+  type: string
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    missing_pct: 6.2
+    unique_count: 2852
+    max_length: 8
+    min_length: 3
+    avg_length: 5.6
+- name: white_prison_pop_rate_2003
+  type: string
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    missing_pct: 49.3
+    unique_count: 1545
+    max_length: 8
+    min_length: 3
+    avg_length: 4.4
+- name: black_jail_pop_rate_2004
+  type: string
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    missing_pct: 7.4
+    unique_count: 2465
+    max_length: 9
+    min_length: 3
+    avg_length: 6.0
+- name: black_prison_pop_rate_2004
+  type: string
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    missing_pct: 58.2
+    unique_count: 1166
+    max_length: 8
+    min_length: 3
+    avg_length: 4.4
+- name: diff_jail_black_white_2004
+  type: string
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    missing_pct: 7.4
+    unique_count: 2886
+    max_length: 19
+    min_length: 3
+    avg_length: 8.3
+- name: diff_prison_black_white_2004
+  type: string
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    missing_pct: 58.4
+    unique_count: 1282
+    max_length: 19
+    min_length: 3
+    avg_length: 5.5
+- name: ratio_jail_black_white_2004
+  type: string
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    missing_pct: 7.8
+    unique_count: 2554
+    max_length: 18
+    min_length: 3
+    avg_length: 14.6
+- name: ratio_prison_black_white_2004
+  type: string
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    missing_pct: 59.1
+    unique_count: 1189
+    max_length: 18
+    min_length: 3
+    avg_length: 8.4
+- name: total_jail_pop_rate_2004
+  type: string
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    missing_pct: 5.9
+    unique_count: 2846
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_2004
+  type: string
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    missing_pct: 16.6
+    unique_count: 2544
+    max_length: 8
+    min_length: 3
+    avg_length: 5.5
+- name: white_jail_pop_rate_2004
+  type: string
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    missing_pct: 6.2
+    unique_count: 2850
+    max_length: 8
+    min_length: 3
+    avg_length: 5.6
+- name: white_prison_pop_rate_2004
+  type: string
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    missing_pct: 48.1
+    unique_count: 1567
+    max_length: 8
+    min_length: 3
+    avg_length: 4.5
+- name: black_jail_pop_rate_2005
+  type: string
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    missing_pct: 6.8
+    unique_count: 2264
+    max_length: 9
+    min_length: 3
+    avg_length: 5.9
+- name: black_prison_pop_rate_2005
+  type: string
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    missing_pct: 51.2
+    unique_count: 1353
+    max_length: 8
+    min_length: 3
+    avg_length: 4.7
+- name: diff_jail_black_white_2005
+  type: string
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    missing_pct: 6.8
+    unique_count: 2895
+    max_length: 19
+    min_length: 3
+    avg_length: 8.5
+- name: diff_prison_black_white_2005
+  type: string
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    missing_pct: 51.5
+    unique_count: 1497
+    max_length: 19
+    min_length: 3
+    avg_length: 5.9
+- name: ratio_jail_black_white_2005
+  type: string
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    missing_pct: 7.5
+    unique_count: 2536
+    max_length: 18
+    min_length: 3
+    avg_length: 14.5
+- name: ratio_prison_black_white_2005
+  type: string
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    missing_pct: 52.2
+    unique_count: 1382
+    max_length: 18
+    min_length: 3
+    avg_length: 9.3
+- name: total_jail_pop_rate_2005
+  type: string
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    missing_pct: 6.0
+    unique_count: 2834
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_2005
+  type: string
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    missing_pct: 16.2
+    unique_count: 2567
+    max_length: 8
+    min_length: 3
+    avg_length: 5.5
+- name: white_jail_pop_rate_2005
+  type: string
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    missing_pct: 6.2
+    unique_count: 2847
+    max_length: 8
+    min_length: 3
+    avg_length: 5.6
+- name: white_prison_pop_rate_2005
+  type: string
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    missing_pct: 38.3
+    unique_count: 1882
+    max_length: 7
+    min_length: 3
+    avg_length: 4.8
+- name: black_jail_pop_rate_2006
+  type: string
+  time_varying: true
+  years:
+  - 2006
+  summary:
+    missing_pct: 6.8
+    unique_count: 2490
+    max_length: 9
+    min_length: 3
+    avg_length: 6.0
+- name: black_prison_pop_rate_2006
+  type: string
+  time_varying: true
+  years:
+  - 2006
+  summary:
+    missing_pct: 50.2
+    unique_count: 1381
+    max_length: 9
+    min_length: 3
+    avg_length: 4.7
+- name: diff_jail_black_white_2006
+  type: string
+  time_varying: true
+  years:
+  - 2006
+  summary:
+    missing_pct: 6.8
+    unique_count: 2906
+    max_length: 19
+    min_length: 3
+    avg_length: 8.6
+- name: diff_prison_black_white_2006
+  type: string
+  time_varying: true
+  years:
+  - 2006
+  summary:
+    missing_pct: 50.4
+    unique_count: 1541
+    max_length: 19
+    min_length: 3
+    avg_length: 6.0
+- name: ratio_jail_black_white_2006
+  type: string
+  time_varying: true
+  years:
+  - 2006
+  summary:
+    missing_pct: 7.2
+    unique_count: 2630
+    max_length: 18
+    min_length: 3
+    avg_length: 15.0
+- name: ratio_prison_black_white_2006
+  type: string
+  time_varying: true
+  years:
+  - 2006
+  summary:
+    missing_pct: 50.9
+    unique_count: 1422
+    max_length: 18
+    min_length: 3
+    avg_length: 9.4
+- name: total_jail_pop_rate_2006
+  type: string
+  time_varying: true
+  years:
+  - 2006
+  summary:
+    missing_pct: 6.0
+    unique_count: 2858
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_2006
+  type: string
+  time_varying: true
+  years:
+  - 2006
+  summary:
+    missing_pct: 16.3
+    unique_count: 2564
+    max_length: 8
+    min_length: 3
+    avg_length: 5.5
+- name: white_jail_pop_rate_2006
+  type: string
+  time_varying: true
+  years:
+  - 2006
+  summary:
+    missing_pct: 6.2
+    unique_count: 2853
+    max_length: 8
+    min_length: 3
+    avg_length: 5.6
+- name: white_prison_pop_rate_2006
+  type: string
+  time_varying: true
+  years:
+  - 2006
+  summary:
+    missing_pct: 37.5
+    unique_count: 1901
+    max_length: 8
+    min_length: 3
+    avg_length: 4.8
+- name: black_jail_pop_rate_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 6.7
+    unique_count: 2479
+    max_length: 9
+    min_length: 3
+    avg_length: 6.1
+- name: black_prison_pop_rate_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 49.4
+    unique_count: 1404
+    max_length: 8
+    min_length: 3
+    avg_length: 4.8
+- name: diff_jail_black_white_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 6.7
+    unique_count: 2914
+    max_length: 19
+    min_length: 3
+    avg_length: 8.6
+- name: diff_prison_black_white_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 49.6
+    unique_count: 1559
+    max_length: 19
+    min_length: 3
+    avg_length: 6.0
+- name: ratio_jail_black_white_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 6.9
+    unique_count: 2655
+    max_length: 18
+    min_length: 3
+    avg_length: 15.1
+- name: ratio_prison_black_white_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 50.4
+    unique_count: 1451
+    max_length: 18
+    min_length: 3
+    avg_length: 9.6
+- name: total_jail_pop_rate_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 5.9
+    unique_count: 2852
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 16.4
+    unique_count: 2558
+    max_length: 8
+    min_length: 3
+    avg_length: 5.5
+- name: white_jail_pop_rate_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 6.1
+    unique_count: 2855
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: white_prison_pop_rate_2007
+  type: string
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    missing_pct: 36.1
+    unique_count: 1945
+    max_length: 8
+    min_length: 3
+    avg_length: 4.9
+- name: black_jail_pop_rate_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 6.6
+    unique_count: 2525
+    max_length: 9
+    min_length: 3
+    avg_length: 6.1
+- name: black_prison_pop_rate_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 50.0
+    unique_count: 1402
+    max_length: 8
+    min_length: 3
+    avg_length: 4.8
+- name: diff_jail_black_white_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 6.6
+    unique_count: 2912
+    max_length: 19
+    min_length: 3
+    avg_length: 8.6
+- name: diff_prison_black_white_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 50.1
+    unique_count: 1541
+    max_length: 19
+    min_length: 3
+    avg_length: 6.1
+- name: ratio_jail_black_white_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 6.9
+    unique_count: 2660
+    max_length: 18
+    min_length: 3
+    avg_length: 15.1
+- name: ratio_prison_black_white_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 50.8
+    unique_count: 1443
+    max_length: 18
+    min_length: 3
+    avg_length: 9.5
+- name: total_jail_pop_rate_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 5.9
+    unique_count: 2850
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 16.2
+    unique_count: 2568
+    max_length: 7
+    min_length: 3
+    avg_length: 5.5
+- name: white_jail_pop_rate_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 6.1
+    unique_count: 2850
+    max_length: 7
+    min_length: 3
+    avg_length: 5.7
+- name: white_prison_pop_rate_2008
+  type: string
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    missing_pct: 37.1
+    unique_count: 1913
+    max_length: 8
+    min_length: 3
+    avg_length: 4.8
+- name: black_jail_pop_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 6.6
+    unique_count: 2460
+    max_length: 9
+    min_length: 3
+    avg_length: 6.1
+- name: black_prison_pop_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 50.4
+    unique_count: 1391
+    max_length: 8
+    min_length: 3
+    avg_length: 4.7
+- name: diff_jail_black_white_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 6.6
+    unique_count: 2912
+    max_length: 19
+    min_length: 3
+    avg_length: 8.6
+- name: diff_prison_black_white_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 50.6
+    unique_count: 1536
+    max_length: 19
+    min_length: 3
+    avg_length: 6.0
+- name: ratio_jail_black_white_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 6.9
+    unique_count: 2662
+    max_length: 18
+    min_length: 3
+    avg_length: 15.1
+- name: ratio_prison_black_white_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 51.1
+    unique_count: 1429
+    max_length: 18
+    min_length: 3
+    avg_length: 9.5
+- name: total_jail_pop_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 5.9
+    unique_count: 2865
+    max_length: 8
+    min_length: 3
+    avg_length: 5.8
+- name: total_prison_pop_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 16.1
+    unique_count: 2572
+    max_length: 8
+    min_length: 3
+    avg_length: 5.5
+- name: white_jail_pop_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 6.1
+    unique_count: 2875
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: white_prison_pop_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 38.5
+    unique_count: 1885
+    max_length: 8
+    min_length: 3
+    avg_length: 4.8
+- name: black_jail_pop_rate_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 6.5
+    unique_count: 2573
+    max_length: 9
+    min_length: 3
+    avg_length: 6.0
+- name: black_prison_pop_rate_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 50.7
+    unique_count: 1390
+    max_length: 8
+    min_length: 3
+    avg_length: 4.7
+- name: diff_jail_black_white_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 6.5
+    unique_count: 2923
+    max_length: 19
+    min_length: 3
+    avg_length: 8.7
+- name: diff_prison_black_white_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 50.8
+    unique_count: 1525
+    max_length: 19
+    min_length: 3
+    avg_length: 6.0
+- name: ratio_jail_black_white_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 6.7
+    unique_count: 2668
+    max_length: 18
+    min_length: 3
+    avg_length: 15.1
+- name: ratio_prison_black_white_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 51.4
+    unique_count: 1423
+    max_length: 18
+    min_length: 3
+    avg_length: 9.4
+- name: total_jail_pop_rate_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 5.9
+    unique_count: 2865
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 15.9
+    unique_count: 2581
+    max_length: 8
+    min_length: 3
+    avg_length: 5.6
+- name: white_jail_pop_rate_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 6.1
+    unique_count: 2861
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: white_prison_pop_rate_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 38.7
+    unique_count: 1880
+    max_length: 8
+    min_length: 3
+    avg_length: 4.8
+- name: black_jail_pop_rate_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 6.2
+    unique_count: 2534
+    max_length: 9
+    min_length: 3
+    avg_length: 6.0
+- name: black_prison_pop_rate_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 47.7
+    unique_count: 1498
+    max_length: 8
+    min_length: 3
+    avg_length: 4.9
+- name: diff_jail_black_white_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 6.2
+    unique_count: 2933
+    max_length: 19
+    min_length: 3
+    avg_length: 8.9
+- name: diff_prison_black_white_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 47.9
+    unique_count: 1612
+    max_length: 19
+    min_length: 3
+    avg_length: 6.3
+- name: ratio_jail_black_white_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 6.5
+    unique_count: 2675
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- name: ratio_prison_black_white_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 48.6
+    unique_count: 1527
+    max_length: 18
+    min_length: 3
+    avg_length: 9.9
+- name: total_jail_pop_rate_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 5.9
+    unique_count: 2862
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: total_prison_pop_rate_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 15.8
+    unique_count: 2589
+    max_length: 7
+    min_length: 3
+    avg_length: 5.6
+- name: white_jail_pop_rate_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 6.1
+    unique_count: 2870
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: white_prison_pop_rate_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 34.7
+    unique_count: 2004
+    max_length: 7
+    min_length: 3
+    avg_length: 4.9
+- name: black_jail_pop_rate_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 6.2
+    unique_count: 2561
+    max_length: 9
+    min_length: 3
+    avg_length: 6.0
+- name: black_prison_pop_rate_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 48.5
+    unique_count: 1458
+    max_length: 8
+    min_length: 3
+    avg_length: 4.8
+- name: diff_jail_black_white_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 6.2
+    unique_count: 2922
+    max_length: 19
+    min_length: 3
+    avg_length: 8.8
+- name: diff_prison_black_white_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 48.6
+    unique_count: 1589
+    max_length: 19
+    min_length: 3
+    avg_length: 6.2
+- name: ratio_jail_black_white_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 6.7
+    unique_count: 2661
+    max_length: 18
+    min_length: 3
+    avg_length: 15.1
+- name: ratio_prison_black_white_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 49.3
+    unique_count: 1500
+    max_length: 18
+    min_length: 3
+    avg_length: 9.8
+- name: total_jail_pop_rate_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 5.9
+    unique_count: 2858
+    max_length: 8
+    min_length: 3
+    avg_length: 5.8
+- name: total_prison_pop_rate_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 16.4
+    unique_count: 2558
+    max_length: 7
+    min_length: 3
+    avg_length: 5.6
+- name: white_jail_pop_rate_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 6.1
+    unique_count: 2872
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: white_prison_pop_rate_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 35.5
+    unique_count: 1967
+    max_length: 7
+    min_length: 3
+    avg_length: 4.9
+- name: black_jail_pop_rate_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 5.8
+    unique_count: 2398
+    max_length: 9
+    min_length: 3
+    avg_length: 6.0
+- name: black_prison_pop_rate_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 43.3
+    unique_count: 1596
+    max_length: 8
+    min_length: 3
+    avg_length: 5.0
+- name: diff_jail_black_white_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 5.8
+    unique_count: 2940
+    max_length: 19
+    min_length: 3
+    avg_length: 8.8
+- name: diff_prison_black_white_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 43.4
+    unique_count: 1745
+    max_length: 19
+    min_length: 3
+    avg_length: 6.5
+- name: ratio_jail_black_white_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 6.1
+    unique_count: 2682
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- name: ratio_prison_black_white_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 44.4
+    unique_count: 1648
+    max_length: 18
+    min_length: 3
+    avg_length: 10.5
+- name: total_jail_pop_rate_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 5.7
+    unique_count: 2853
+    max_length: 8
+    min_length: 3
+    avg_length: 5.8
+- name: total_prison_pop_rate_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 15.8
+    unique_count: 2578
+    max_length: 7
+    min_length: 3
+    avg_length: 5.6
+- name: white_jail_pop_rate_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 5.6
+    unique_count: 2893
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: white_prison_pop_rate_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 29.7
+    unique_count: 2146
+    max_length: 7
+    min_length: 3
+    avg_length: 5.1
+- name: black_jail_pop_rate_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 5.7
+    unique_count: 2444
+    max_length: 9
+    min_length: 3
+    avg_length: 6.0
+- name: black_prison_pop_rate_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 47.5
+    unique_count: 1468
+    max_length: 8
+    min_length: 3
+    avg_length: 4.8
+- name: diff_jail_black_white_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 5.7
+    unique_count: 2946
+    max_length: 19
+    min_length: 3
+    avg_length: 8.9
+- name: diff_prison_black_white_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 47.7
+    unique_count: 1616
+    max_length: 19
+    min_length: 3
+    avg_length: 6.3
+- name: ratio_jail_black_white_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 6.0
+    unique_count: 2683
+    max_length: 18
+    min_length: 3
+    avg_length: 15.3
+- name: ratio_prison_black_white_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 48.5
+    unique_count: 1514
+    max_length: 18
+    min_length: 3
+    avg_length: 9.9
+- name: total_jail_pop_rate_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 5.7
+    unique_count: 2864
+    max_length: 8
+    min_length: 3
+    avg_length: 5.8
+- name: total_prison_pop_rate_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 19.7
+    unique_count: 2476
+    max_length: 7
+    min_length: 3
+    avg_length: 5.5
+- name: white_jail_pop_rate_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 5.6
+    unique_count: 2883
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: white_prison_pop_rate_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 33.3
+    unique_count: 2046
+    max_length: 7
+    min_length: 3
+    avg_length: 5.0
+- name: black_jail_pop_rate_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 5.7
+    unique_count: 2427
+    max_length: 9
+    min_length: 3
+    avg_length: 6.0
+- name: black_prison_pop_rate_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 51.4
+    unique_count: 1392
+    max_length: 8
+    min_length: 3
+    avg_length: 4.7
+- name: diff_jail_black_white_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 5.7
+    unique_count: 2939
+    max_length: 19
+    min_length: 3
+    avg_length: 9.1
+- name: diff_prison_black_white_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 51.6
+    unique_count: 1499
+    max_length: 19
+    min_length: 3
+    avg_length: 6.1
+- name: ratio_jail_black_white_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 6.0
+    unique_count: 2682
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- name: ratio_prison_black_white_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 52.3
+    unique_count: 1432
+    max_length: 18
+    min_length: 3
+    avg_length: 9.5
+- name: total_jail_pop_rate_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 5.7
+    unique_count: 2877
+    max_length: 8
+    min_length: 3
+    avg_length: 5.8
+- name: total_prison_pop_rate_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 25.9
+    unique_count: 2277
+    max_length: 7
+    min_length: 3
+    avg_length: 5.3
+- name: white_jail_pop_rate_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 5.6
+    unique_count: 2888
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: white_prison_pop_rate_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 40.0
+    unique_count: 1846
+    max_length: 7
+    min_length: 3
+    avg_length: 4.8
+- name: black_jail_pop_rate_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 5.7
+    unique_count: 2444
+    max_length: 9
+    min_length: 3
+    avg_length: 6.0
+- name: black_prison_pop_rate_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 51.5
+    unique_count: 1358
+    max_length: 8
+    min_length: 3
+    avg_length: 4.7
+- name: diff_jail_black_white_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 5.7
+    unique_count: 2947
+    max_length: 19
+    min_length: 3
+    avg_length: 8.9
+- name: diff_prison_black_white_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 51.8
+    unique_count: 1489
+    max_length: 19
+    min_length: 3
+    avg_length: 6.1
+- name: ratio_jail_black_white_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 6.0
+    unique_count: 2685
+    max_length: 18
+    min_length: 3
+    avg_length: 15.3
+- name: ratio_prison_black_white_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 52.5
+    unique_count: 1413
+    max_length: 18
+    min_length: 3
+    avg_length: 9.4
+- name: total_jail_pop_rate_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 5.7
+    unique_count: 2859
+    max_length: 8
+    min_length: 3
+    avg_length: 5.8
+- name: total_prison_pop_rate_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 27.0
+    unique_count: 2243
+    max_length: 7
+    min_length: 3
+    avg_length: 5.3
+- name: white_jail_pop_rate_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 5.6
+    unique_count: 2887
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: white_prison_pop_rate_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 40.5
+    unique_count: 1824
+    max_length: 7
+    min_length: 3
+    avg_length: 4.8
+- name: black_jail_pop_rate_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 5.7
+    unique_count: 2425
+    max_length: 9
+    min_length: 3
+    avg_length: 6.0
+- name: diff_jail_black_white_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 5.7
+    unique_count: 2943
+    max_length: 19
+    min_length: 3
+    avg_length: 9.2
+- name: ratio_jail_black_white_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 6.0
+    unique_count: 2686
+    max_length: 18
+    min_length: 3
+    avg_length: 15.3
+- name: total_jail_pop_rate_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 5.7
+    unique_count: 2874
+    max_length: 8
+    min_length: 3
+    avg_length: 5.8
+- name: white_jail_pop_rate_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 5.6
+    unique_count: 2889
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7
+- name: black_jail_pop_rate_2018
+  type: string
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    missing_pct: 5.6
+    unique_count: 2407
+    max_length: 9
+    min_length: 3
+    avg_length: 6.0
+- name: diff_jail_black_white_2018
+  type: string
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    missing_pct: 5.6
+    unique_count: 2943
+    max_length: 19
+    min_length: 3
+    avg_length: 9.1
+- name: ratio_jail_black_white_2018
+  type: string
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    missing_pct: 6.2
+    unique_count: 2659
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- name: total_jail_pop_rate_2018
+  type: string
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    missing_pct: 5.7
+    unique_count: 2871
+    max_length: 8
+    min_length: 3
+    avg_length: 5.8
+- name: white_jail_pop_rate_2018
+  type: string
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    missing_pct: 5.6
+    unique_count: 2864
+    max_length: 8
+    min_length: 3
+    avg_length: 5.7

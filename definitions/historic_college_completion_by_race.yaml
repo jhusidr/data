@@ -1,0 +1,62 @@
+name: Historic college completion by race
+version: '1.0'
+last_updated: '2025-06-05'
+domain: education
+indicator: historic_college_completion_by_race
+data_file: historic_college_completion_by_race.csv
+geography: county
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: 1970/1980 Black college completion (%) - White college completion (%)
+data_quality:
+  missing_pct: 15.8
+data_summary:
+  row_count: 3143
+  variable_count: 5
+variables:
+- name: fips_county
+  type: numeric
+  summary:
+    min: 1001.0
+    max: 56045.0
+    mean: 30390.41
+    p25: 18178.0
+    p75: 45082.0
+    sd: 15164.718
+    missing_pct: 0.0
+    unique_count: 3143
+- name: county_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 1877
+    max_length: 33
+    min_length: 10
+    avg_length: 14.0
+- name: college_compl_diff_bl_wh_1970
+  type: string
+  time_varying: true
+  years:
+  - 1970
+  summary:
+    missing_pct: 29.0
+    unique_count: 2232
+    max_length: 22
+    min_length: 3
+    avg_length: 14.2
+- name: college_compl_diff_bl_wh_1980
+  type: string
+  time_varying: true
+  years:
+  - 1980
+  summary:
+    missing_pct: 34.2
+    unique_count: 2066
+    max_length: 21
+    min_length: 3
+    avg_length: 13.3

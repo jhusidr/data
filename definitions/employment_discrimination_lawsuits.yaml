@@ -1,0 +1,189 @@
+name: Employment discrimination lawsuits
+version: '1.0'
+last_updated: '2025-06-05'
+domain: employment
+indicator: employment_discrimination_lawsuits
+data_file: employment_discrimination_lawsuits.csv
+geography: state
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: '# of federal charges for employment discrimination based on race per
+  100,000 Black residents in XXXX year'
+data_quality:
+  missing_pct: 0.0
+data_summary:
+  row_count: 52
+  variable_count: 14
+variables:
+- name: fips_state
+  type: numeric
+  summary:
+    min: 1.0
+    max: 72.0
+    mean: 29.79
+    p25: 16.75
+    p75: 42.5
+    sd: 16.775
+    missing_pct: 0.0
+    unique_count: 52
+- name: state_abbr
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 52
+    max_length: 2
+    min_length: 2
+    avg_length: 2.0
+- name: state_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 52
+    max_length: 20
+    min_length: 4
+    avg_length: 8.7
+- name: eeoc_per_black_2012
+  type: numeric
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    min: 149.9
+    max: 6420.23
+    mean: 962.32
+    p25: 364.35
+    p75: 1105.8
+    sd: 1127.862
+    missing_pct: 0.0
+    unique_count: 52
+- name: eeoc_per_black_2013
+  type: numeric
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    min: 161.47
+    max: 5879.7
+    mean: 893.93
+    p25: 332.98
+    p75: 1069.42
+    sd: 985.221
+    missing_pct: 0.0
+    unique_count: 52
+- name: eeoc_per_black_2014
+  type: numeric
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    min: 137.69
+    max: 5021.76
+    mean: 877.9
+    p25: 340.38
+    p75: 1034.04
+    sd: 900.889
+    missing_pct: 0.0
+    unique_count: 52
+- name: eeoc_per_black_2015
+  type: numeric
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    min: 134.14
+    max: 4600.12
+    mean: 829.25
+    p25: 340.32
+    p75: 1028.79
+    sd: 806.153
+    missing_pct: 0.0
+    unique_count: 52
+- name: eeoc_per_black_2016
+  type: numeric
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    min: 147.04
+    max: 4812.07
+    mean: 841.96
+    p25: 354.44
+    p75: 934.22
+    sd: 843.045
+    missing_pct: 0.0
+    unique_count: 52
+- name: eeoc_per_black_2017
+  type: numeric
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    min: 96.57
+    max: 4491.91
+    mean: 743.81
+    p25: 330.36
+    p75: 957.89
+    sd: 728.116
+    missing_pct: 0.0
+    unique_count: 52
+- name: eeoc_per_black_2018
+  type: numeric
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    min: 120.82
+    max: 3141.42
+    mean: 640.54
+    p25: 301.1
+    p75: 754.9
+    sd: 563.622
+    missing_pct: 0.0
+    unique_count: 52
+- name: eeoc_per_black_2019
+  type: numeric
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    min: 143.27
+    max: 3093.18
+    mean: 634.55
+    p25: 302.74
+    p75: 718.49
+    sd: 536.579
+    missing_pct: 0.0
+    unique_count: 52
+- name: eeoc_per_black_2020
+  type: numeric
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    min: 97.85
+    max: 2908.26
+    mean: 662.29
+    p25: 278.26
+    p75: 783.91
+    sd: 575.79
+    missing_pct: 0.0
+    unique_count: 52
+- name: eeoc_per_black_2021
+  type: numeric
+  time_varying: true
+  years:
+  - 2021
+  summary:
+    min: 99.2
+    max: 1925.95
+    mean: 586.61
+    p25: 264.48
+    p75: 733.26
+    sd: 462.877
+    missing_pct: 0.0
+    unique_count: 52

@@ -1,0 +1,96 @@
+name: Major housing issues
+version: '1.0'
+last_updated: '2025-06-05'
+domain: neighborhood
+indicator: major_housing_issues
+data_file: major_housing_issues.csv
+geography: county
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: Count and proportion of housing units in need of major repairs in 1940
+data_quality:
+  missing_pct: 1.2
+data_summary:
+  row_count: 3108
+  variable_count: 9
+variables:
+- name: fips_state
+  type: numeric
+  summary:
+    min: 1.0
+    max: 56.0
+    mean: 30.48
+    p25: 19.0
+    p75: 45.0
+    sd: 14.966
+    missing_pct: 0.0
+    unique_count: 51
+- name: fips_county
+  type: numeric
+  summary:
+    min: 1001.0
+    max: 56047.0
+    mean: 30576.34
+    p25: 19030.5
+    p75: 45085.5
+    sd: 14982.43
+    missing_pct: 0.0
+    unique_count: 3108
+- name: county_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 1818
+    max_length: 36
+    min_length: 3
+    avg_length: 7.1
+- name: county_state_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 3108
+    max_length: 50
+    min_length: 16
+    avg_length: 24.2
+  source_variable: countystate_name
+- name: need_no_major_repair_count
+  type: string
+  summary:
+    missing_pct: 0.2
+    unique_count: 2615
+    max_length: 8
+    min_length: 3
+    avg_length: 6.1
+  source_variable: cnt_norepair
+- name: need_major_repair_count
+  type: string
+  summary:
+    missing_pct: 4.6
+    unique_count: 2036
+    max_length: 8
+    min_length: 3
+    avg_length: 5.5
+  source_variable: cnt_repair
+- name: not_need_repair_proportion
+  type: string
+  summary:
+    missing_pct: 0.2
+    unique_count: 3099
+    max_length: 18
+    min_length: 3
+    avg_length: 17.8
+  source_variable: prc_norepair
+- name: need_repair_proportion
+  type: string
+  summary:
+    missing_pct: 4.6
+    unique_count: 2958
+    max_length: 18
+    min_length: 3
+    avg_length: 17.2
+  source_variable: prc_repair

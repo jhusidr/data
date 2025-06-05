@@ -1,0 +1,416 @@
+name: School segregation lawsuits
+version: '1.0'
+last_updated: '2025-06-05'
+domain: education
+indicator: school_segregation_lawsuits
+data_file: school_segregation_lawsuits.csv
+geography: county
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: School segregation lawsuits by year and county.
+data_quality:
+  missing_pct: 10.91
+data_summary:
+  row_count: 886
+  variable_count: 36
+variables:
+- name: fips_state
+  type: numeric
+  summary:
+    min: 1.0
+    max: 55.0
+    mean: 25.19
+    p25: 13.0
+    p75: 37.0
+    sd: 14.883
+    missing_pct: 0.0
+    unique_count: 40
+- name: state_abbr
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 40
+    max_length: 2
+    min_length: 2
+    avg_length: 2.0
+- name: fips_county
+  type: numeric
+  summary:
+    min: 1001.0
+    max: 55133.0
+    mean: 25297.52
+    p25: 13186.0
+    p75: 37120.5
+    sd: 14907.25
+    missing_pct: 0.0
+    unique_count: 886
+- name: county_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 659
+    max_length: 27
+    min_length: 3
+    avg_length: 7.8
+- name: state_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 40
+    max_length: 20
+    min_length: 4
+    avg_length: 8.8
+- name: nces_id
+  type: numeric
+  summary:
+    min: 100030.0
+    max: 5513620.0
+    mean: 2525311.36
+    p25: 1303367.5
+    p75: 3702392.5
+    sd: 1490189.098
+    missing_pct: 0.0
+    unique_count: 885
+- name: case_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 299
+    max_length: 95
+    min_length: 12
+    avg_length: 38.4
+  source_variable: casename
+- name: school_segregation_case
+  type: string
+  summary:
+    missing_pct: 14.1
+    unique_count: 1
+    max_length: 3
+    min_length: 3
+    avg_length: 3.0
+  source_variable: schoolsegregationcase
+- name: court_desegregation_plan
+  type: string
+  summary:
+    missing_pct: 14.1
+    unique_count: 2
+    max_length: 3
+    min_length: 2
+    avg_length: 2.6
+  source_variable: courtdesegregationplan
+- name: type_of_plan
+  type: string
+  summary:
+    missing_pct: 53.4
+    unique_count: 107
+    max_length: 484
+    min_length: 3
+    avg_length: 23.0
+  source_variable: typeofplan
+- name: case_description
+  type: string
+  summary:
+    missing_pct: 14.2
+    unique_count: 250
+    max_length: 10102
+    min_length: 3
+    avg_length: 942.7
+  source_variable: casedescription
+- name: case_or_plan_status
+  type: string
+  summary:
+    missing_pct: 14.1
+    unique_count: 21
+    max_length: 43
+    min_length: 3
+    avg_length: 11.1
+  source_variable: caseorplanstatus
+- name: year_status
+  type: string
+  summary:
+    missing_pct: 14.1
+    unique_count: 46
+    max_length: 6
+    min_length: 3
+    avg_length: 5.6
+  source_variable: yearstatus
+- name: hew_action
+  type: string
+  summary:
+    missing_pct: 85.9
+    unique_count: 1
+    max_length: 3
+    min_length: 3
+    avg_length: 3.0
+  source_variable: hewaction
+- name: hew_description
+  type: string
+  summary:
+    missing_pct: 85.9
+    unique_count: 112
+    max_length: 333
+    min_length: 3
+    avg_length: 15.6
+  source_variable: hewdescription
+- name: hew_year
+  type: string
+  summary:
+    missing_pct: 85.9
+    unique_count: 15
+    max_length: 6
+    min_length: 3
+    avg_length: 3.4
+  source_variable: hewyear
+- name: year_cat
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 5
+    max_length: 15
+    min_length: 15
+    avg_length: 15.0
+- name: county_state
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 886
+    max_length: 42
+    min_length: 10
+    avg_length: 18.5
+- name: tot_pop_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 2077.0
+    max: 9519338.0
+    mean: 188564.36
+    p25: 20349.75
+    p75: 142578.5
+    sd: 500107.42
+    missing_pct: 0.0
+    unique_count: 881
+- name: wh_pop_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 793.0
+    max: 4637062.0
+    mean: 130408.19
+    p25: 13479.5
+    p75: 111915.25
+    sd: 296221.422
+    missing_pct: 0.0
+    unique_count: 879
+- name: bl_pop_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 7.0
+    max: 1405361.0
+    mean: 32250.5
+    p25: 2904.75
+    p75: 21122.25
+    sd: 93613.537
+    missing_pct: 0.0
+    unique_count: 855
+- name: aian_pop_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 1.0
+    max: 76988.0
+    mean: 1112.55
+    p25: 46.0
+    p75: 687.75
+    sd: 4381.835
+    missing_pct: 0.0
+    unique_count: 519
+- name: asian_pop_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 0.0
+    max: 1137500.0
+    mean: 7748.9
+    p25: 42.0
+    p75: 1513.75
+    sd: 47232.409
+    missing_pct: 0.0
+    unique_count: 549
+- name: nhpi_pop_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 0.0
+    max: 27053.0
+    mean: 198.9
+    p25: 3.0
+    p75: 63.75
+    sd: 1236.555
+    missing_pct: 0.0
+    unique_count: 230
+- name: othrace_pop_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 0.0
+    max: 2239997.0
+    mean: 12124.72
+    p25: 86.0
+    p75: 2498.25
+    sd: 85419.417
+    missing_pct: 0.0
+    unique_count: 665
+- name: multrace_pop_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 14.0
+    max: 469781.0
+    mean: 4720.6
+    p25: 140.0
+    p75: 2026.75
+    sd: 20130.762
+    missing_pct: 0.0
+    unique_count: 671
+- name: pct_wh_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 13.06
+    max: 99.1
+    mean: 72.31
+    p25: 60.77
+    p75: 86.91
+    sd: 18.148
+    missing_pct: 0.0
+    unique_count: 831
+- name: pct_bl_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 0.03
+    max: 86.49
+    mean: 22.21
+    p25: 6.34
+    p75: 34.35
+    sd: 18.817
+    missing_pct: 0.0
+    unique_count: 789
+- name: pct_aian_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 0.03
+    max: 55.69
+    mean: 0.69
+    p25: 0.19
+    p75: 0.44
+    sd: 2.76
+    missing_pct: 0.0
+    unique_count: 156
+- name: pct_asian_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 0.0
+    max: 30.84
+    mean: 1.12
+    p25: 0.2
+    p75: 1.08
+    sd: 2.259
+    missing_pct: 0.0
+    unique_count: 272
+- name: pct_nhpi_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 0.0
+    max: 1.33
+    mean: 0.04
+    p25: 0.01
+    p75: 0.04
+    sd: 0.077
+    missing_pct: 0.0
+    unique_count: 39
+- name: pct_othrace_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 0.0
+    max: 39.08
+    mean: 2.35
+    p25: 0.34
+    p75: 2.41
+    sd: 4.091
+    missing_pct: 0.0
+    unique_count: 387
+- name: pct_multrace_2000
+  type: numeric
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    min: 0.19
+    max: 6.05
+    mean: 1.27
+    p25: 0.68
+    p75: 1.52
+    sd: 0.914
+    missing_pct: 0.0
+    unique_count: 264
+- name: num_case
+  type: numeric
+  summary:
+    min: 1.0
+    max: 76.0
+    mean: 3.77
+    p25: 1.0
+    p75: 4.0
+    sd: 6.524
+    missing_pct: 0.0
+    unique_count: 38
+- name: num_case_black
+  type: numeric
+  summary:
+    min: 0.2
+    max: 30769.23
+    mean: 527.7
+    p25: 10.23
+    p75: 76.25
+    sd: 2365.201
+    missing_pct: 0.0
+    unique_count: 864

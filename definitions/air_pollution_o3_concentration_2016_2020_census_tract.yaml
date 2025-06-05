@@ -1,0 +1,148 @@
+name: 'Air pollution: o3 concentration 2016-2020 (census tract)'
+version: '1.0'
+last_updated: '2025-06-05'
+domain: environment
+indicator: air_pollution_o3_concentration_2016_2020_census_tract
+data_file: air_pollution_o3_concentration_2016_2020_census_tract.csv
+geography: census_tract
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: O3 concentration at the Census tract level
+data_quality:
+  missing_pct: 9.98
+data_summary:
+  row_count: 83776
+  variable_count: 12
+variables:
+- name: fips_tract
+  type: numeric
+  summary:
+    min: 1001020100.0
+    max: 56045951300.0
+    mean: 27992816424.31
+    p25: 12125960275.5
+    p75: 42003080750.0
+    sd: 15921642464.223
+    missing_pct: 0.0
+    unique_count: 83776
+- name: annual_avg_8hr_o3_ppb_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 13.7
+    unique_count: 71319
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- name: annual_avg_stderr_o3_ppb_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 13.7
+    unique_count: 71621
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- name: annual_avg_8hr_o3_ppb_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 13.7
+    unique_count: 71069
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- name: annual_avg_stderr_o3_ppb_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 13.7
+    unique_count: 71568
+    max_length: 18
+    min_length: 3
+    avg_length: 15.1
+- name: annual_avg_8hr_o3_ppb_2018
+  type: string
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    missing_pct: 13.7
+    unique_count: 70896
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- name: annual_avg_stderr_o3_ppb_2018
+  type: string
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    missing_pct: 13.7
+    unique_count: 71539
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- name: annual_avg_8hr_o3_ppb_2019
+  type: string
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 13.7
+    unique_count: 71089
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- name: annual_avg_stderr_o3_ppb_2019
+  type: string
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 13.7
+    unique_count: 71523
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- name: annual_avg_8hr_o3_ppb_2020
+  type: numeric
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    min: 27.5
+    max: 59.78
+    mean: 37.01
+    p25: 34.74
+    p75: 37.36
+    sd: 4.255
+    missing_pct: 0.0
+    unique_count: 81772
+- name: annual_avg_stderr_o3_ppb_2020
+  type: numeric
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    min: 3.34
+    max: 6.56
+    mean: 4.31
+    p25: 3.99
+    p75: 4.54
+    sd: 0.47
+    missing_pct: 0.0
+    unique_count: 82691

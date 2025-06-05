@@ -1,0 +1,743 @@
+name: Historic school term length
+version: '1.0'
+last_updated: '2025-06-05'
+domain: education
+indicator: historic_school_term_length
+data_file: historic_school_term_length.csv
+geography: state
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: School term length (days) in all schools for each year, by racial group.
+data_quality:
+  missing_pct: 39.45
+data_summary:
+  row_count: 57
+  variable_count: 65
+variables:
+- name: fips_state
+  type: string
+  summary:
+    missing_pct: 10.5
+    unique_count: 51
+    max_length: 4
+    min_length: 3
+    avg_length: 3.8
+- name: all_1920
+  type: string
+  time_varying: true
+  years:
+  - 1920
+  summary:
+    missing_pct: 5.3
+    unique_count: 45
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: black_1920
+  type: string
+  time_varying: true
+  years:
+  - 1920
+  summary:
+    missing_pct: 78.9
+    unique_count: 12
+    max_length: 5
+    min_length: 3
+    avg_length: 3.4
+- name: white_1920
+  type: string
+  time_varying: true
+  years:
+  - 1920
+  summary:
+    missing_pct: 78.9
+    unique_count: 11
+    max_length: 5
+    min_length: 3
+    avg_length: 3.4
+- name: all_1922
+  type: string
+  time_varying: true
+  years:
+  - 1922
+  summary:
+    missing_pct: 3.5
+    unique_count: 33
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: black_1922
+  type: string
+  time_varying: true
+  years:
+  - 1922
+  summary:
+    missing_pct: 78.9
+    unique_count: 12
+    max_length: 5
+    min_length: 3
+    avg_length: 3.4
+- name: white_1922
+  type: string
+  time_varying: true
+  years:
+  - 1922
+  summary:
+    missing_pct: 78.9
+    unique_count: 11
+    max_length: 5
+    min_length: 3
+    avg_length: 3.4
+- name: all_1926
+  type: numeric
+  time_varying: true
+  years:
+  - 1926
+  summary:
+    min: 134.7
+    max: 203.0
+    mean: 171.12
+    p25: 165.0
+    p75: 180.7
+    sd: 15.696
+    missing_pct: 0.0
+    unique_count: 53
+- name: black_1926
+  type: string
+  time_varying: true
+  years:
+  - 1926
+  summary:
+    missing_pct: 73.7
+    unique_count: 15
+    max_length: 5
+    min_length: 3
+    avg_length: 3.5
+- name: white_1926
+  type: string
+  time_varying: true
+  years:
+  - 1926
+  summary:
+    missing_pct: 73.7
+    unique_count: 14
+    max_length: 5
+    min_length: 3
+    avg_length: 3.5
+- name: all_1928
+  type: numeric
+  time_varying: true
+  years:
+  - 1928
+  summary:
+    min: 138.9
+    max: 206.1
+    mean: 173.13
+    p25: 165.0
+    p75: 181.5
+    sd: 14.592
+    missing_pct: 0.0
+    unique_count: 53
+- name: black_1928
+  type: string
+  time_varying: true
+  years:
+  - 1928
+  summary:
+    missing_pct: 73.7
+    unique_count: 14
+    max_length: 5
+    min_length: 3
+    avg_length: 3.5
+- name: white_1928
+  type: string
+  time_varying: true
+  years:
+  - 1928
+  summary:
+    missing_pct: 73.7
+    unique_count: 13
+    max_length: 5
+    min_length: 3
+    avg_length: 3.5
+- name: all_1930
+  type: numeric
+  time_varying: true
+  years:
+  - 1930
+  summary:
+    min: 133.4
+    max: 207.6
+    mean: 172.92
+    p25: 165.0
+    p75: 181.2
+    sd: 14.937
+    missing_pct: 0.0
+    unique_count: 53
+- name: black_1930
+  type: string
+  time_varying: true
+  years:
+  - 1930
+  summary:
+    missing_pct: 70.2
+    unique_count: 17
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: white_1930
+  type: string
+  time_varying: true
+  years:
+  - 1930
+  summary:
+    missing_pct: 70.2
+    unique_count: 12
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: all_1932
+  type: numeric
+  time_varying: true
+  years:
+  - 1932
+  summary:
+    min: 132.9
+    max: 213.7
+    mean: 172.31
+    p25: 164.4
+    p75: 180.6
+    sd: 14.899
+    missing_pct: 0.0
+    unique_count: 56
+- name: black_1932
+  type: string
+  time_varying: true
+  years:
+  - 1932
+  summary:
+    missing_pct: 73.7
+    unique_count: 14
+    max_length: 5
+    min_length: 3
+    avg_length: 3.5
+- name: white_1932
+  type: string
+  time_varying: true
+  years:
+  - 1932
+  summary:
+    missing_pct: 73.7
+    unique_count: 13
+    max_length: 5
+    min_length: 3
+    avg_length: 3.5
+- name: all_1934
+  type: numeric
+  time_varying: true
+  years:
+  - 1934
+  summary:
+    min: 132.5
+    max: 223.3
+    mean: 173.54
+    p25: 170.0
+    p75: 180.8
+    sd: 14.487
+    missing_pct: 0.0
+    unique_count: 56
+- name: black_1934
+  type: string
+  time_varying: true
+  years:
+  - 1934
+  summary:
+    missing_pct: 68.4
+    unique_count: 16
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: white_1934
+  type: string
+  time_varying: true
+  years:
+  - 1934
+  summary:
+    missing_pct: 68.4
+    unique_count: 16
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: all_1936
+  type: numeric
+  time_varying: true
+  years:
+  - 1936
+  summary:
+    min: 132.5
+    max: 198.5
+    mean: 173.91
+    p25: 171.0
+    p75: 181.1
+    sd: 12.014
+    missing_pct: 0.0
+    unique_count: 53
+- name: black_1936
+  type: string
+  time_varying: true
+  years:
+  - 1936
+  summary:
+    missing_pct: 68.4
+    unique_count: 17
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: white_1936
+  type: string
+  time_varying: true
+  years:
+  - 1936
+  summary:
+    missing_pct: 68.4
+    unique_count: 16
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: all_1938
+  type: numeric
+  time_varying: true
+  years:
+  - 1938
+  summary:
+    min: 142.4
+    max: 215.1
+    mean: 175.55
+    p25: 170.8
+    p75: 180.7
+    sd: 10.659
+    missing_pct: 0.0
+    unique_count: 54
+- name: black_1938
+  type: string
+  time_varying: true
+  years:
+  - 1938
+  summary:
+    missing_pct: 68.4
+    unique_count: 18
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: white_1938
+  type: string
+  time_varying: true
+  years:
+  - 1938
+  summary:
+    missing_pct: 68.4
+    unique_count: 18
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: all_1940
+  type: string
+  time_varying: true
+  years:
+  - 1940
+  summary:
+    missing_pct: 14.0
+    unique_count: 47
+    max_length: 5
+    min_length: 3
+    avg_length: 4.7
+- name: black_1940
+  type: string
+  time_varying: true
+  years:
+  - 1940
+  summary:
+    missing_pct: 68.4
+    unique_count: 17
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: white_1940
+  type: string
+  time_varying: true
+  years:
+  - 1940
+  summary:
+    missing_pct: 68.4
+    unique_count: 18
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: all_1942
+  type: string
+  time_varying: true
+  years:
+  - 1942
+  summary:
+    missing_pct: 7.0
+    unique_count: 46
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: black_1942
+  type: string
+  time_varying: true
+  years:
+  - 1942
+  summary:
+    missing_pct: 68.4
+    unique_count: 17
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: white_1942
+  type: string
+  time_varying: true
+  years:
+  - 1942
+  summary:
+    missing_pct: 68.4
+    unique_count: 18
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: all_1944
+  type: string
+  time_varying: true
+  years:
+  - 1944
+  summary:
+    missing_pct: 5.3
+    unique_count: 47
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: black_1944
+  type: string
+  time_varying: true
+  years:
+  - 1944
+  summary:
+    missing_pct: 68.4
+    unique_count: 18
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: white_1944
+  type: string
+  time_varying: true
+  years:
+  - 1944
+  summary:
+    missing_pct: 68.4
+    unique_count: 17
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: all_1946
+  type: string
+  time_varying: true
+  years:
+  - 1946
+  summary:
+    missing_pct: 7.0
+    unique_count: 44
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: black_1946
+  type: string
+  time_varying: true
+  years:
+  - 1946
+  summary:
+    missing_pct: 68.4
+    unique_count: 18
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: white_1946
+  type: string
+  time_varying: true
+  years:
+  - 1946
+  summary:
+    missing_pct: 68.4
+    unique_count: 16
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: all_1948
+  type: string
+  time_varying: true
+  years:
+  - 1948
+  summary:
+    missing_pct: 7.0
+    unique_count: 44
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: black_1948
+  type: string
+  time_varying: true
+  years:
+  - 1948
+  summary:
+    missing_pct: 68.4
+    unique_count: 17
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: white_1948
+  type: string
+  time_varying: true
+  years:
+  - 1948
+  summary:
+    missing_pct: 68.4
+    unique_count: 17
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: all_1950
+  type: string
+  time_varying: true
+  years:
+  - 1950
+  summary:
+    missing_pct: 5.3
+    unique_count: 41
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: black_1950
+  type: string
+  time_varying: true
+  years:
+  - 1950
+  summary:
+    missing_pct: 68.4
+    unique_count: 16
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: white_1950
+  type: string
+  time_varying: true
+  years:
+  - 1950
+  summary:
+    missing_pct: 68.4
+    unique_count: 16
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: all_1952
+  type: string
+  time_varying: true
+  years:
+  - 1952
+  summary:
+    missing_pct: 3.5
+    unique_count: 44
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: black_1952
+  type: string
+  time_varying: true
+  years:
+  - 1952
+  summary:
+    missing_pct: 68.4
+    unique_count: 16
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: white_1952
+  type: string
+  time_varying: true
+  years:
+  - 1952
+  summary:
+    missing_pct: 68.4
+    unique_count: 16
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: all_1954
+  type: string
+  time_varying: true
+  years:
+  - 1954
+  summary:
+    missing_pct: 5.3
+    unique_count: 41
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: black_1954
+  type: string
+  time_varying: true
+  years:
+  - 1954
+  summary:
+    missing_pct: 68.4
+    unique_count: 14
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: white_1954
+  type: string
+  time_varying: true
+  years:
+  - 1954
+  summary:
+    missing_pct: 68.4
+    unique_count: 14
+    max_length: 5
+    min_length: 3
+    avg_length: 3.6
+- name: all_1956
+  type: string
+  time_varying: true
+  years:
+  - 1956
+  summary:
+    missing_pct: 1.8
+    unique_count: 44
+    max_length: 5
+    min_length: 3
+    avg_length: 5.0
+- name: all_1958
+  type: string
+  time_varying: true
+  years:
+  - 1958
+  summary:
+    missing_pct: 1.8
+    unique_count: 38
+    max_length: 5
+    min_length: 3
+    avg_length: 5.0
+- name: all_1960
+  type: string
+  time_varying: true
+  years:
+  - 1960
+  summary:
+    missing_pct: 1.8
+    unique_count: 40
+    max_length: 5
+    min_length: 3
+    avg_length: 5.0
+- name: all_1962
+  type: string
+  time_varying: true
+  years:
+  - 1962
+  summary:
+    missing_pct: 1.8
+    unique_count: 36
+    max_length: 5
+    min_length: 3
+    avg_length: 5.0
+- name: all_1964
+  type: string
+  time_varying: true
+  years:
+  - 1964
+  summary:
+    missing_pct: 5.3
+    unique_count: 33
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: all_1966
+  type: string
+  time_varying: true
+  years:
+  - 1966
+  summary:
+    missing_pct: 1.8
+    unique_count: 39
+    max_length: 5
+    min_length: 3
+    avg_length: 5.0
+- name: all_1968
+  type: string
+  time_varying: true
+  years:
+  - 1968
+  summary:
+    missing_pct: 5.3
+    unique_count: 30
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: all_1970
+  type: string
+  time_varying: true
+  years:
+  - 1970
+  summary:
+    missing_pct: 7.0
+    unique_count: 31
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: all_1972
+  type: string
+  time_varying: true
+  years:
+  - 1972
+  summary:
+    missing_pct: 1.8
+    unique_count: 32
+    max_length: 5
+    min_length: 3
+    avg_length: 5.0
+- name: all_1974
+  type: string
+  time_varying: true
+  years:
+  - 1974
+  summary:
+    missing_pct: 5.3
+    unique_count: 28
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: all_1976
+  type: string
+  time_varying: true
+  years:
+  - 1976
+  summary:
+    missing_pct: 3.5
+    unique_count: 29
+    max_length: 5
+    min_length: 3
+    avg_length: 4.9
+- name: all_1980
+  type: string
+  time_varying: true
+  years:
+  - 1980
+  summary:
+    missing_pct: 10.5
+    unique_count: 28
+    max_length: 5
+    min_length: 3
+    avg_length: 4.8

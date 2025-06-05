@@ -1,0 +1,289 @@
+name: 'Air pollution: pm2.5 concentration'
+version: '1.0'
+last_updated: '2025-06-05'
+domain: environment
+indicator: air_pollution_pm25_concentration
+data_file: air_pollution_pm25_concentration.csv
+geography: county
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: Annual average PM2.5 concentration (μg/m3) (monitor + modeled data)
+data_quality:
+  missing_pct: 0.42
+data_summary:
+  row_count: 3143
+  variable_count: 24
+variables:
+- name: fips_state
+  type: numeric
+  summary:
+    min: 1.0
+    max: 56.0
+    mean: 30.29
+    p25: 18.0
+    p75: 45.0
+    sd: 15.146
+    missing_pct: 0.0
+    unique_count: 51
+- name: fips_county
+  type: numeric
+  summary:
+    min: 1001.0
+    max: 56045.0
+    mean: 30390.41
+    p25: 18178.0
+    p75: 45082.0
+    sd: 15164.718
+    missing_pct: 0.0
+    unique_count: 3143
+- name: county_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 1839
+    max_length: 33
+    min_length: 3
+    avg_length: 7.1
+- name: state_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 51
+    max_length: 20
+    min_length: 4
+    avg_length: 8.1
+- name: pm25_mean_2001
+  type: string
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    missing_pct: 0.5
+    unique_count: 152
+    max_length: 18
+    min_length: 3
+    avg_length: 14.8
+- name: pm25_mean_2002
+  type: numeric
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    min: 0.0
+    max: 27.5
+    mean: 10.91
+    p25: 8.8
+    p75: 13.0
+    sd: 3.067
+    missing_pct: 0.0
+    unique_count: 149
+- name: pm25_mean_2003
+  type: numeric
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    min: 0.0
+    max: 24.9
+    mean: 10.89
+    p25: 8.9
+    p75: 12.9
+    sd: 2.844
+    missing_pct: 0.0
+    unique_count: 137
+- name: pm25_mean_2004
+  type: numeric
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    min: 0.0
+    max: 22.0
+    mean: 10.66
+    p25: 8.95
+    p75: 12.5
+    sd: 2.7
+    missing_pct: 0.0
+    unique_count: 136
+- name: pm25_mean_2005
+  type: numeric
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    min: 0.0
+    max: 21.7
+    mean: 11.43
+    p25: 9.3
+    p75: 13.7
+    sd: 3.125
+    missing_pct: 0.0
+    unique_count: 152
+- name: pm25_mean_2006
+  type: numeric
+  time_varying: true
+  years:
+  - 2006
+  summary:
+    min: 0.0
+    max: 22.4
+    mean: 10.65
+    p25: 8.7
+    p75: 12.7
+    sd: 2.748
+    missing_pct: 0.0
+    unique_count: 132
+- name: pm25_mean_2007
+  type: numeric
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    min: 0.0
+    max: 22.6
+    mean: 11.04
+    p25: 8.8
+    p75: 13.4
+    sd: 3.073
+    missing_pct: 0.0
+    unique_count: 143
+- name: pm25_mean_2008
+  type: numeric
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    min: 0.0
+    max: 23.2
+    mean: 10.08
+    p25: 8.5
+    p75: 11.8
+    sd: 2.416
+    missing_pct: 0.0
+    unique_count: 124
+- name: pm25_mean_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.8
+    unique_count: 107
+    max_length: 18
+    min_length: 3
+    avg_length: 14.4
+- name: pm25_mean_2010
+  type: string
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 1.0
+    unique_count: 111
+    max_length: 18
+    min_length: 3
+    avg_length: 14.8
+- name: pm25_mean_2011
+  type: string
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    missing_pct: 0.9
+    unique_count: 107
+    max_length: 18
+    min_length: 3
+    avg_length: 14.5
+- name: pm25_mean_2012
+  type: string
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    missing_pct: 0.9
+    unique_count: 99
+    max_length: 18
+    min_length: 3
+    avg_length: 14.6
+- name: pm25_mean_2013
+  type: string
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 0.8
+    unique_count: 104
+    max_length: 18
+    min_length: 3
+    avg_length: 14.4
+- name: pm25_mean_2014
+  type: string
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 1.0
+    unique_count: 109
+    max_length: 18
+    min_length: 3
+    avg_length: 14.3
+- name: pm25_mean_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 0.7
+    unique_count: 112
+    max_length: 18
+    min_length: 3
+    avg_length: 14.3
+- name: pm25_mean_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 0.6
+    unique_count: 111
+    max_length: 18
+    min_length: 3
+    avg_length: 14.2
+- name: pm25_mean_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 0.9
+    unique_count: 113
+    max_length: 18
+    min_length: 3
+    avg_length: 14.1
+- name: pm25_mean_2018
+  type: string
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    missing_pct: 0.8
+    unique_count: 120
+    max_length: 18
+    min_length: 3
+    avg_length: 14.2
+- name: pm25_mean_2019
+  type: string
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 0.7
+    unique_count: 104
+    max_length: 18
+    min_length: 3
+    avg_length: 14.2

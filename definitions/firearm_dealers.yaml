@@ -1,0 +1,71 @@
+name: Firearm dealers
+version: '1.0'
+last_updated: '2025-06-05'
+domain: media_marketing
+indicator: firearm_dealers
+data_file: firearm_dealers.csv
+geography: zipcode
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: Number of firearm dealers (Federal Firearms License (FFL) type 01 - Dealer
+  in firearms other than destructive devices including Gunsmiths & FFL type 09 - Dealer
+  in destructive devices were counted by Zipcode)
+data_quality:
+  missing_pct: 0.0
+data_summary:
+  row_count: 23900
+  variable_count: 6
+variables:
+- name: count
+  type: numeric
+  summary:
+    min: 1.0
+    max: 28.0
+    mean: 2.22
+    p25: 1.0
+    p75: 3.0
+    sd: 2.176
+    missing_pct: 0.0
+    unique_count: 26
+  source_variable: countN
+- name: mail_state
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 55
+    max_length: 2
+    min_length: 2
+    avg_length: 2.0
+  source_variable: MAIL_STATE
+- name: mail_zipcode
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 21448
+    max_length: 9
+    min_length: 5
+    avg_length: 6.3
+  source_variable: MAIL_ZIP_CODE
+- name: premise_state
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 55
+    max_length: 2
+    min_length: 2
+    avg_length: 2.0
+  source_variable: PREMISE_STATE
+- name: premise_zipcode
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 23900
+    max_length: 9
+    min_length: 5
+    avg_length: 6.3
+  source_variable: PREMISE_ZIP_CODE

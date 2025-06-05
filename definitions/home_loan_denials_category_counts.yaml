@@ -1,0 +1,846 @@
+name: Count of White/Black/Other Race/Spanish Families by income category
+version: '1.0'
+last_updated: '2025-06-05'
+domain: income_credit_wealth
+indicator: home_loan_denials_category_counts
+data_file: home_loan_denials_category_counts.csv
+geography: county
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: 'Counts by race/ethnicity category. '
+data_quality:
+  missing_pct: 13.65
+data_summary:
+  row_count: 3221
+  variable_count: 73
+variables:
+- name: state_abbr
+  type: numeric
+  summary:
+    min: 1.0
+    max: 72.0
+    mean: 31.3
+    p25: 19.0
+    p75: 46.0
+    sd: 16.278
+    missing_pct: 0.0
+    unique_count: 52
+- name: fips_county
+  type: numeric
+  summary:
+    min: 1001.0
+    max: 72153.0
+    mean: 31399.89
+    p25: 19033.0
+    p75: 46109.0
+    sd: 16293.347
+    missing_pct: 0.0
+    unique_count: 3221
+- name: county_name
+  type: numeric
+  summary:
+    min: 1.0
+    max: 840.0
+    mean: 103.09
+    p25: 35.0
+    p75: 133.0
+    sd: 106.96
+    missing_pct: 0.0
+    unique_count: 325
+- name: census_tract
+  type: string
+  summary:
+    missing_pct: 100.0
+    unique_count: 0
+    max_length: 3
+    min_length: 3
+    avg_length: 3.0
+  source_variable: CT
+- name: name_of_area
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 1955
+    max_length: 33
+    min_length: 10
+    avg_length: 14.1
+  source_variable: NAME
+- name: qualifying_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 3221
+    max_length: 42
+    min_length: 16
+    avg_length: 24.3
+  source_variable: QName
+- name: nation
+  type: numeric
+  summary:
+    min: 0.0
+    max: 0.0
+    mean: 0.0
+    p25: 0.0
+    p75: 0.0
+    sd: 0.0
+    missing_pct: 0.0
+    unique_count: 1
+  source_variable: NATION
+- name: median_family_income_1969_dlrs
+  type: string
+  summary:
+    missing_pct: 2.8
+    unique_count: 2487
+    max_length: 7
+    min_length: 3
+    avg_length: 6.0
+  source_variable: T501_001
+- name: count_white_fam
+  type: string
+  summary:
+    missing_pct: 2.8
+    unique_count: 2794
+    max_length: 16
+    min_length: 3
+    avg_length: 6.2
+  source_variable: T065_001
+- name: count_white_fam_under_1000
+  type: string
+  time_varying: true
+  years:
+  - 1000
+  summary:
+    missing_pct: 2.8
+    unique_count: 780
+    max_length: 16
+    min_length: 3
+    avg_length: 4.7
+  source_variable: T065_002
+- name: count_white_fam_1000_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 2.8
+    unique_count: 1019
+    max_length: 16
+    min_length: 3
+    avg_length: 4.9
+  source_variable: T065_003
+- name: count_white_fam_2000_2999
+  type: string
+  time_varying: true
+  years:
+  - 2999
+  summary:
+    missing_pct: 2.8
+    unique_count: 1146
+    max_length: 16
+    min_length: 3
+    avg_length: 5.0
+  source_variable: T065_004
+- name: count_white_fam_3000_3999
+  type: string
+  time_varying: true
+  years:
+  - 3999
+  summary:
+    missing_pct: 2.8
+    unique_count: 1191
+    max_length: 16
+    min_length: 3
+    avg_length: 5.0
+  source_variable: T065_005
+- name: count_white_fam_4000_4999
+  type: string
+  time_varying: true
+  years:
+  - 4999
+  summary:
+    missing_pct: 2.8
+    unique_count: 1230
+    max_length: 16
+    min_length: 3
+    avg_length: 5.0
+  source_variable: T065_006
+- name: count_white_fam_5000_5999
+  type: string
+  time_varying: true
+  years:
+  - 5999
+  summary:
+    missing_pct: 2.8
+    unique_count: 1314
+    max_length: 16
+    min_length: 3
+    avg_length: 5.1
+  source_variable: T065_007
+- name: count_white_fam_6000_6999
+  type: string
+  time_varying: true
+  years:
+  - 6999
+  summary:
+    missing_pct: 2.8
+    unique_count: 1360
+    max_length: 16
+    min_length: 3
+    avg_length: 5.1
+  source_variable: T065_008
+- name: count_white_fam_7000_7999
+  type: string
+  time_varying: true
+  years:
+  - 7999
+  summary:
+    missing_pct: 2.8
+    unique_count: 1414
+    max_length: 16
+    min_length: 3
+    avg_length: 5.1
+  source_variable: T065_009
+- name: count_white_fam_8000_8999
+  type: string
+  time_varying: true
+  years:
+  - 8999
+  summary:
+    missing_pct: 2.8
+    unique_count: 1406
+    max_length: 16
+    min_length: 3
+    avg_length: 5.1
+  source_variable: T065_010
+- name: count_white_fam_9000_9999
+  type: string
+  time_varying: true
+  years:
+  - 9999
+  summary:
+    missing_pct: 2.8
+    unique_count: 1342
+    max_length: 16
+    min_length: 3
+    avg_length: 5.0
+  source_variable: T065_011
+- name: count_white_fam_10000_11999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 2.8
+    unique_count: 1678
+    max_length: 16
+    min_length: 3
+    avg_length: 5.3
+  source_variable: T065_012
+- name: count_white_fam_12000_14999
+  type: string
+  time_varying: true
+  years:
+  - 4999
+  summary:
+    missing_pct: 2.8
+    unique_count: 1593
+    max_length: 16
+    min_length: 3
+    avg_length: 5.2
+  source_variable: T065_013
+- name: count_white_fam_15000_24999
+  type: string
+  time_varying: true
+  years:
+  - 4999
+  summary:
+    missing_pct: 2.8
+    unique_count: 1517
+    max_length: 16
+    min_length: 3
+    avg_length: 5.2
+  source_variable: T065_014
+- name: count_white_fam_25000_49999
+  type: string
+  time_varying: true
+  years:
+  - 9999
+  summary:
+    missing_pct: 2.8
+    unique_count: 822
+    max_length: 16
+    min_length: 3
+    avg_length: 4.5
+  source_variable: T065_015
+- name: count_white_fam_50000_plus
+  type: string
+  summary:
+    missing_pct: 2.8
+    unique_count: 438
+    max_length: 16
+    min_length: 3
+    avg_length: 3.8
+  source_variable: T065_016
+- name: count_black_fam
+  type: string
+  summary:
+    missing_pct: 26.1
+    unique_count: 1220
+    max_length: 16
+    min_length: 3
+    avg_length: 4.4
+  source_variable: T066_001
+- name: count_black_fam_under_1000
+  type: string
+  time_varying: true
+  years:
+  - 1000
+  summary:
+    missing_pct: 26.1
+    unique_count: 474
+    max_length: 17
+    min_length: 3
+    avg_length: 3.7
+  source_variable: T066_002
+- name: count_black_fam_1000_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 26.1
+    unique_count: 559
+    max_length: 17
+    min_length: 3
+    avg_length: 3.8
+  source_variable: T066_003
+- name: count_black_fam_2000_2999
+  type: string
+  time_varying: true
+  years:
+  - 2999
+  summary:
+    missing_pct: 26.1
+    unique_count: 567
+    max_length: 17
+    min_length: 3
+    avg_length: 3.8
+  source_variable: T066_004
+- name: count_black_fam_3000_3999
+  type: string
+  time_varying: true
+  years:
+  - 3999
+  summary:
+    missing_pct: 26.1
+    unique_count: 541
+    max_length: 17
+    min_length: 3
+    avg_length: 3.8
+  source_variable: T066_005
+- name: count_black_fam_4000_4999
+  type: string
+  time_varying: true
+  years:
+  - 4999
+  summary:
+    missing_pct: 26.1
+    unique_count: 518
+    max_length: 16
+    min_length: 3
+    avg_length: 3.8
+  source_variable: T066_006
+- name: count_black_fam_5000_5999
+  type: string
+  time_varying: true
+  years:
+  - 5999
+  summary:
+    missing_pct: 26.1
+    unique_count: 482
+    max_length: 16
+    min_length: 3
+    avg_length: 3.8
+  source_variable: T066_007
+- name: count_black_fam_6000_6999
+  type: string
+  time_varying: true
+  years:
+  - 6999
+  summary:
+    missing_pct: 26.1
+    unique_count: 461
+    max_length: 17
+    min_length: 3
+    avg_length: 3.7
+  source_variable: T066_008
+- name: count_black_fam_7000_7999
+  type: string
+  time_varying: true
+  years:
+  - 7999
+  summary:
+    missing_pct: 26.1
+    unique_count: 438
+    max_length: 17
+    min_length: 3
+    avg_length: 3.7
+  source_variable: T066_009
+- name: count_black_fam_8000_8999
+  type: string
+  time_varying: true
+  years:
+  - 8999
+  summary:
+    missing_pct: 26.1
+    unique_count: 400
+    max_length: 16
+    min_length: 3
+    avg_length: 3.6
+  source_variable: T066_010
+- name: count_black_fam_9000_9999
+  type: string
+  time_varying: true
+  years:
+  - 9999
+  summary:
+    missing_pct: 26.1
+    unique_count: 365
+    max_length: 16
+    min_length: 3
+    avg_length: 3.6
+  source_variable: T066_011
+- name: count_black_fam_10000_11999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 26.1
+    unique_count: 411
+    max_length: 16
+    min_length: 3
+    avg_length: 3.6
+  source_variable: T066_012
+- name: count_black_fam_12000_14999
+  type: string
+  time_varying: true
+  years:
+  - 4999
+  summary:
+    missing_pct: 26.1
+    unique_count: 390
+    max_length: 16
+    min_length: 3
+    avg_length: 3.6
+  source_variable: T066_013
+- name: count_black_fam_15000_24999
+  type: string
+  time_varying: true
+  years:
+  - 4999
+  summary:
+    missing_pct: 26.1
+    unique_count: 349
+    max_length: 16
+    min_length: 3
+    avg_length: 3.5
+  source_variable: T066_014
+- name: count_black_fam_25000_49999
+  type: string
+  time_varying: true
+  years:
+  - 9999
+  summary:
+    missing_pct: 26.1
+    unique_count: 138
+    max_length: 11
+    min_length: 3
+    avg_length: 3.2
+  source_variable: T066_015
+- name: count_black_fam_50000_plus
+  type: string
+  summary:
+    missing_pct: 26.1
+    unique_count: 79
+    max_length: 10
+    min_length: 3
+    avg_length: 3.1
+  source_variable: T066_016
+- name: other_race_fam
+  type: string
+  summary:
+    missing_pct: 2.8
+    unique_count: 472
+    max_length: 21
+    min_length: 3
+    avg_length: 3.8
+  source_variable: T067_001
+- name: other_race_fam_under_1000
+  type: string
+  time_varying: true
+  years:
+  - 1000
+  summary:
+    missing_pct: 2.8
+    unique_count: 147
+    max_length: 23
+    min_length: 3
+    avg_length: 3.3
+  source_variable: T067_002
+- name: other_race_fam_1000_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 2.8
+    unique_count: 150
+    max_length: 23
+    min_length: 3
+    avg_length: 3.3
+  source_variable: T067_003
+- name: other_race_fam_2000_2999
+  type: string
+  time_varying: true
+  years:
+  - 2999
+  summary:
+    missing_pct: 2.8
+    unique_count: 163
+    max_length: 22
+    min_length: 3
+    avg_length: 3.3
+  source_variable: T067_004
+- name: other_race_fam_3000_3999
+  type: string
+  time_varying: true
+  years:
+  - 3999
+  summary:
+    missing_pct: 2.8
+    unique_count: 178
+    max_length: 20
+    min_length: 3
+    avg_length: 3.3
+  source_variable: T067_005
+- name: other_race_fam_4000_4999
+  type: string
+  time_varying: true
+  years:
+  - 4999
+  summary:
+    missing_pct: 2.8
+    unique_count: 172
+    max_length: 23
+    min_length: 3
+    avg_length: 3.3
+  source_variable: T067_006
+- name: other_race_fam_5000_5999
+  type: string
+  time_varying: true
+  years:
+  - 5999
+  summary:
+    missing_pct: 2.8
+    unique_count: 169
+    max_length: 23
+    min_length: 3
+    avg_length: 3.3
+  source_variable: T067_007
+- name: other_race_fam_6000_6999
+  type: string
+  time_varying: true
+  years:
+  - 6999
+  summary:
+    missing_pct: 2.8
+    unique_count: 167
+    max_length: 23
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T067_008
+- name: other_race_fam_7000_7999
+  type: string
+  time_varying: true
+  years:
+  - 7999
+  summary:
+    missing_pct: 2.8
+    unique_count: 163
+    max_length: 23
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T067_009
+- name: other_race_fam_8000_8999
+  type: string
+  time_varying: true
+  years:
+  - 8999
+  summary:
+    missing_pct: 2.8
+    unique_count: 156
+    max_length: 22
+    min_length: 3
+    avg_length: 3.3
+  source_variable: T067_010
+- name: other_race_fam_9000_9999
+  type: string
+  time_varying: true
+  years:
+  - 9999
+  summary:
+    missing_pct: 2.8
+    unique_count: 156
+    max_length: 23
+    min_length: 3
+    avg_length: 3.3
+  source_variable: T067_011
+- name: other_race_fam_10000_11999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 2.8
+    unique_count: 188
+    max_length: 23
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T067_012
+- name: other_race_fam_12000_14999
+  type: string
+  time_varying: true
+  years:
+  - 4999
+  summary:
+    missing_pct: 2.8
+    unique_count: 193
+    max_length: 23
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T067_013
+- name: other_race_fam_15000_24999
+  type: string
+  time_varying: true
+  years:
+  - 4999
+  summary:
+    missing_pct: 2.8
+    unique_count: 196
+    max_length: 21
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T067_014
+- name: other_race_fam_25000_49999
+  type: string
+  time_varying: true
+  years:
+  - 9999
+  summary:
+    missing_pct: 2.8
+    unique_count: 105
+    max_length: 23
+    min_length: 3
+    avg_length: 3.2
+  source_variable: T067_015
+- name: other_race_fam_50000_plus
+  type: string
+  summary:
+    missing_pct: 2.8
+    unique_count: 49
+    max_length: 23
+    min_length: 3
+    avg_length: 3.1
+  source_variable: T067_016
+- name: count_spanish_fam
+  type: string
+  summary:
+    missing_pct: 23.3
+    unique_count: 672
+    max_length: 16
+    min_length: 3
+    avg_length: 4.1
+  source_variable: T068_001
+- name: count_spanish_fam_under_1000
+  type: string
+  time_varying: true
+  years:
+  - 1000
+  summary:
+    missing_pct: 23.3
+    unique_count: 198
+    max_length: 16
+    min_length: 3
+    avg_length: 3.3
+  source_variable: T068_002
+- name: count_spanish_fam_1000_1999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 23.3
+    unique_count: 219
+    max_length: 16
+    min_length: 3
+    avg_length: 3.3
+  source_variable: T068_003
+- name: count_spanish_fam_2000_2999
+  type: string
+  time_varying: true
+  years:
+  - 2999
+  summary:
+    missing_pct: 23.3
+    unique_count: 245
+    max_length: 16
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T068_004
+- name: count_spanish_fam_3000_3999
+  type: string
+  time_varying: true
+  years:
+  - 3999
+  summary:
+    missing_pct: 23.3
+    unique_count: 263
+    max_length: 16
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T068_005
+- name: count_spanish_fam_4000_4999
+  type: string
+  time_varying: true
+  years:
+  - 4999
+  summary:
+    missing_pct: 23.3
+    unique_count: 264
+    max_length: 16
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T068_006
+- name: count_spanish_fam_5000_5999
+  type: string
+  time_varying: true
+  years:
+  - 5999
+  summary:
+    missing_pct: 23.3
+    unique_count: 263
+    max_length: 16
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T068_007
+- name: count_spanish_fam_6000_6999
+  type: string
+  time_varying: true
+  years:
+  - 6999
+  summary:
+    missing_pct: 23.3
+    unique_count: 272
+    max_length: 16
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T068_008
+- name: count_spanish_fam_7000_7999
+  type: string
+  time_varying: true
+  years:
+  - 7999
+  summary:
+    missing_pct: 23.3
+    unique_count: 263
+    max_length: 16
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T068_009
+- name: count_spanish_fam_8000_8999
+  type: string
+  time_varying: true
+  years:
+  - 8999
+  summary:
+    missing_pct: 23.3
+    unique_count: 256
+    max_length: 16
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T068_010
+- name: count_spanish_fam_9000_9999
+  type: string
+  time_varying: true
+  years:
+  - 9999
+  summary:
+    missing_pct: 23.3
+    unique_count: 243
+    max_length: 16
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T068_011
+- name: count_spanish_fam_10000_11999
+  type: string
+  time_varying: true
+  years:
+  - 1999
+  summary:
+    missing_pct: 23.3
+    unique_count: 291
+    max_length: 16
+    min_length: 3
+    avg_length: 3.5
+  source_variable: T068_012
+- name: count_spanish_fam_12000_14999
+  type: string
+  time_varying: true
+  years:
+  - 4999
+  summary:
+    missing_pct: 23.3
+    unique_count: 276
+    max_length: 16
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T068_013
+- name: count_spanish_fam_15000_24999
+  type: string
+  time_varying: true
+  years:
+  - 4999
+  summary:
+    missing_pct: 23.3
+    unique_count: 265
+    max_length: 16
+    min_length: 3
+    avg_length: 3.4
+  source_variable: T068_014
+- name: count_spanish_fam_25000_49999
+  type: string
+  time_varying: true
+  years:
+  - 9999
+  summary:
+    missing_pct: 23.3
+    unique_count: 143
+    max_length: 16
+    min_length: 3
+    avg_length: 3.2
+  source_variable: T068_015
+- name: count_spanish_fam_50000_plus
+  type: string
+  summary:
+    missing_pct: 23.3
+    unique_count: 78
+    max_length: 18
+    min_length: 3
+    avg_length: 3.1
+  source_variable: T068_016

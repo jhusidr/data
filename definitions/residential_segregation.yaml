@@ -1,0 +1,136 @@
+name: Residential segregation
+version: '1.0'
+last_updated: '2025-06-05'
+domain: neighborhood
+indicator: residential_segregation
+data_file: residential_segregation.csv
+geography: county
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: Index of dissimilarity of Black and White residential segregation
+data_quality:
+  missing_pct: 25.49
+data_summary:
+  row_count: 3199
+  variable_count: 12
+variables:
+- name: fips_county
+  type: numeric
+  summary:
+    min: 1000.0
+    max: 56045.0
+    mean: 30337.3
+    p25: 18168.0
+    p75: 45076.0
+    sd: 15197.391
+    missing_pct: 0.0
+    unique_count: 3199
+- name: county_name
+  type: string
+  summary:
+    missing_pct: 1.6
+    unique_count: 1855
+    max_length: 31
+    min_length: 3
+    avg_length: 7.0
+- name: state_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 51
+    max_length: 20
+    min_length: 4
+    avg_length: 8.1
+- name: bw_residseg_2016
+  type: string
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 37.3
+    unique_count: 2005
+    max_length: 12
+    min_length: 3
+    avg_length: 8.6
+- name: bw_residseg_2017
+  type: string
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 36.4
+    unique_count: 2035
+    max_length: 12
+    min_length: 3
+    avg_length: 8.7
+- name: bw_residseg_2018
+  type: string
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    missing_pct: 35.9
+    unique_count: 2051
+    max_length: 12
+    min_length: 3
+    avg_length: 8.7
+- name: bw_residseg_2019
+  type: string
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 35.6
+    unique_count: 2059
+    max_length: 12
+    min_length: 3
+    avg_length: 8.7
+- name: bw_residseg_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 33.7
+    unique_count: 2119
+    max_length: 12
+    min_length: 3
+    avg_length: 8.9
+- name: bw_residseg_2021
+  type: string
+  time_varying: true
+  years:
+  - 2021
+  summary:
+    missing_pct: 33.1
+    unique_count: 2140
+    max_length: 12
+    min_length: 3
+    avg_length: 9.0
+- name: bw_residseg_2022
+  type: string
+  time_varying: true
+  years:
+  - 2022
+  summary:
+    missing_pct: 33.4
+    unique_count: 2128
+    max_length: 12
+    min_length: 3
+    avg_length: 8.9
+- name: bw_residseg_2023
+  type: string
+  time_varying: true
+  years:
+  - 2023
+  summary:
+    missing_pct: 33.3
+    unique_count: 2133
+    max_length: 12
+    min_length: 3
+    avg_length: 8.9

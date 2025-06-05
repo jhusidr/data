@@ -1,0 +1,75 @@
+name: 'Air quality related cancer risk: 2019'
+version: '1.0'
+last_updated: '2025-06-05'
+domain: environment
+indicator: air_quality_related_cancer_risk_2019
+data_file: air_quality_related_cancer_risk_2019.csv
+geography: census_tract
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: Probability of contracting cancer over the course of a lifetime, assuming
+  continuous exposure (assumed in NATA to be 70 years)
+data_quality:
+  missing_pct: 0.0
+data_summary:
+  row_count: 76726
+  variable_count: 6
+variables:
+- name: state_abbr
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 54
+    max_length: 2
+    min_length: 2
+    avg_length: 2.0
+- name: fips_county
+  type: numeric
+  summary:
+    min: 0.0
+    max: 78030.0
+    mean: 28514.5
+    p25: 13073.0
+    p75: 42003.0
+    sd: 16486.115
+    missing_pct: 0.0
+    unique_count: 3277
+- name: county_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 1930
+    max_length: 21
+    min_length: 3
+    avg_length: 7.5
+- name: census_tract
+  type: numeric
+  summary:
+    min: 0.0
+    max: 78030961200.0
+    mean: 28514739994.34
+    p25: 13073030105.25
+    p75: 42003512875.0
+    sd: 16486121668.849
+    missing_pct: 0.0
+    unique_count: 76726
+- name: cancer_risk_2019
+  type: numeric
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    min: 5.0
+    max: 400.0
+    mean: 25.06
+    p25: 20.0
+    p75: 30.0
+    sd: 8.462
+    missing_pct: 0.0
+    unique_count: 18
+  source_variable: cancrisk2019

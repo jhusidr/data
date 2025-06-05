@@ -1,0 +1,107 @@
+name: School segregation of students in elementary grades, 1970
+version: '1.0'
+last_updated: '2025-06-05'
+domain: education
+indicator: school_segregation_lawsuits_elementary_grades_1970
+data_file: school_segregation_lawsuits_elementary_grades_1970.csv
+geography: school_district
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: School segregation lawsuits by year and county.
+data_quality:
+  missing_pct: 9.61
+data_summary:
+  row_count: 4256
+  variable_count: 9
+variables:
+- name: state_abbr
+  type: numeric
+  summary:
+    min: 1.0
+    max: 56.0
+    mean: 29.5
+    p25: 18.0
+    p75: 40.0
+    sd: 14.466
+    missing_pct: 0.0
+    unique_count: 49
+- name: county_name
+  type: string
+  summary:
+    missing_pct: 1.6
+    unique_count: 636
+    max_length: 16
+    min_length: 3
+    avg_length: 7.2
+- name: zip
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 3973
+    max_length: 7
+    min_length: 1
+    avg_length: 7.0
+- name: nces_id
+  type: numeric
+  summary:
+    min: 100090.0
+    max: 5604510.0
+    mean: 2963226.01
+    p25: 1800052.5
+    p75: 4004740.0
+    sd: 1445908.232
+    missing_pct: 0.0
+    unique_count: 4256
+- name: white_asian_sch_disssim_1970
+  type: string
+  time_varying: true
+  years:
+  - 1970
+  summary:
+    missing_pct: 27.7
+    unique_count: 2736
+    max_length: 7
+    min_length: 3
+    avg_length: 5.5
+  source_variable: SD03_687
+- name: white_black_sch_disssim_1970
+  type: string
+  time_varying: true
+  years:
+  - 1970
+  summary:
+    missing_pct: 18.5
+    unique_count: 3041
+    max_length: 7
+    min_length: 3
+    avg_length: 5.7
+  source_variable: sd01_687
+- name: white_hisp_sch_disssim_1970
+  type: string
+  time_varying: true
+  years:
+  - 1970
+  summary:
+    missing_pct: 27.6
+    unique_count: 2695
+    max_length: 7
+    min_length: 3
+    avg_length: 5.4
+  source_variable: SD02_687
+- name: white_minority_sch_disssim_1970
+  type: string
+  time_varying: true
+  years:
+  - 1970
+  summary:
+    missing_pct: 1.6
+    unique_count: 3570
+    max_length: 7
+    min_length: 3
+    avg_length: 6.2
+  source_variable: sd04_687

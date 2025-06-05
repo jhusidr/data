@@ -1,0 +1,417 @@
+name: Legislature % Black
+version: '1.0'
+last_updated: '2025-06-05'
+domain: civics
+indicator: legislature_pct_black
+data_file: legislature_pct_black.csv
+geography: state
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: (Black legislatures in XXXX year in a state / Black population in XXXX
+  year in a state) - (White legislatures in XXXX year in a state / White population
+  in XXXX year in a state). Black and White population data were from ACS 5-year estimates
+  (2011-2015, 2016-2020)
+data_quality:
+  missing_pct: 9.75
+data_summary:
+  row_count: 57
+  variable_count: 37
+variables:
+- name: ansi
+  type: numeric
+  summary:
+    min: 68085.0
+    max: 1878752.0
+    mean: 1529200.3
+    p25: 1455989.0
+    p75: 1779801.0
+    sd: 463094.76
+    missing_pct: 0.0
+    unique_count: 57
+  source_variable: STATENS
+- name: fips_state
+  type: numeric
+  summary:
+    min: 1.0
+    max: 78.0
+    mean: 33.26
+    p25: 18.0
+    p75: 47.0
+    sd: 19.686
+    missing_pct: 0.0
+    unique_count: 57
+- name: state_abbr
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 57
+    max_length: 2
+    min_length: 2
+    avg_length: 2.0
+  source_variable: STUSAB
+- name: state_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 57
+    max_length: 27
+    min_length: 4
+    avg_length: 9.5
+  source_variable: STATE_NAME
+- name: aina_legislatures_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 6
+    max_length: 4
+    min_length: 3
+    avg_length: 3.2
+- name: aina_population_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.6
+- name: asian_legislatures_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 7
+    max_length: 4
+    min_length: 3
+    avg_length: 3.3
+- name: asian_population_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.5
+- name: black_leg_pop_ratio_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 47
+    max_length: 18
+    min_length: 3
+    avg_length: 15.0
+- name: black_legislatures_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 24
+    max_length: 4
+    min_length: 3
+    avg_length: 3.8
+- name: black_population_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.6
+- name: black_white_ratio_diff_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 50
+    max_length: 19
+    min_length: 3
+    avg_length: 16.8
+- name: hawaiian_population_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 21
+    min_length: 3
+    avg_length: 16.7
+- name: hispanic_legislatures_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 13
+    max_length: 4
+    min_length: 3
+    avg_length: 3.6
+- name: multi_legislatures_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 12
+    max_length: 4
+    min_length: 3
+    avg_length: 3.7
+- name: multi_population_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.6
+- name: nodata_legislatures_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 4
+    max_length: 4
+    min_length: 3
+    avg_length: 3.1
+- name: white_leg_pop_ratio_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 50
+    max_length: 18
+    min_length: 3
+    avg_length: 15.8
+- name: white_legislatures_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 30
+    max_length: 4
+    min_length: 3
+    avg_length: 3.8
+- name: white_population_2015
+  type: string
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.5
+- name: aina_legislatures_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 12.3
+    unique_count: 6
+    max_length: 4
+    min_length: 3
+    avg_length: 3.3
+- name: aina_population_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.6
+- name: asian_legislatures_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 12.3
+    unique_count: 7
+    max_length: 4
+    min_length: 3
+    avg_length: 3.4
+- name: asian_population_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.6
+- name: black_leg_pop_ratio_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 12.3
+    unique_count: 47
+    max_length: 18
+    min_length: 3
+    avg_length: 15.0
+- name: black_legislatures_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 12.3
+    unique_count: 22
+    max_length: 4
+    min_length: 3
+    avg_length: 3.8
+- name: black_population_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.5
+- name: black_white_ratio_diff_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 12.3
+    unique_count: 50
+    max_length: 19
+    min_length: 3
+    avg_length: 16.6
+- name: hawaiian_population_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 21
+    min_length: 3
+    avg_length: 16.6
+- name: hispanic_legislatures_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 12.3
+    unique_count: 18
+    max_length: 4
+    min_length: 3
+    avg_length: 3.7
+- name: multi_legislatures_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 12.3
+    unique_count: 7
+    max_length: 4
+    min_length: 3
+    avg_length: 3.4
+- name: multi_population_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.6
+- name: nodata_legislatures_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 12.3
+    unique_count: 12
+    max_length: 4
+    min_length: 3
+    avg_length: 3.5
+- name: white_leg_pop_ratio_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 12.3
+    unique_count: 50
+    max_length: 18
+    min_length: 3
+    avg_length: 16.0
+- name: white_legislatures_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 12.3
+    unique_count: 31
+    max_length: 4
+    min_length: 3
+    avg_length: 3.8
+- name: white_population_2020
+  type: string
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.5

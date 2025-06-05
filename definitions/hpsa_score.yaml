@@ -1,0 +1,92 @@
+name: HPSA Score
+version: '1.0'
+last_updated: '2025-06-05'
+domain: healthcare
+indicator: hpsa_score
+data_file: hpsa_score.csv
+geography: county
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: Categorized health professional shortage area (HPSA) sore (None of the
+  county is shortage area; Part of county is shortage area; Whole county is shortage
+  area)
+data_quality:
+  missing_pct: 0.0
+data_summary:
+  row_count: 3143
+  variable_count: 8
+variables:
+- name: fips_state
+  type: numeric
+  summary:
+    min: 1.0
+    max: 56.0
+    mean: 30.27
+    p25: 18.0
+    p75: 45.0
+    sd: 15.15
+    missing_pct: 0.0
+    unique_count: 51
+  source_variable: stste_fips
+- name: state_abbr
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 51
+    max_length: 2
+    min_length: 2
+    avg_length: 2.0
+- name: fips_county
+  type: numeric
+  summary:
+    min: 1001.0
+    max: 56045.0
+    mean: 30374.58
+    p25: 18176.0
+    p75: 45080.0
+    sd: 15168.625
+    missing_pct: 0.0
+    unique_count: 3143
+- name: county_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 1878
+    max_length: 33
+    min_length: 10
+    avg_length: 14.0
+- name: state_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 51
+    max_length: 20
+    min_length: 4
+    avg_length: 8.1
+- name: hspa_cat_2022
+  type: string
+  time_varying: true
+  years:
+  - 2022
+  summary:
+    missing_pct: 0.0
+    unique_count: 3
+    max_length: 31
+    min_length: 29
+    avg_length: 29.7
+- name: hspa_cat_2024
+  type: string
+  time_varying: true
+  years:
+  - 2024
+  summary:
+    missing_pct: 0.0
+    unique_count: 3
+    max_length: 31
+    min_length: 29
+    avg_length: 29.6

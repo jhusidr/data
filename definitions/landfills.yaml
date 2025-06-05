@@ -1,0 +1,66 @@
+name: Landfills
+version: '1.0'
+last_updated: '2025-06-05'
+domain: environment
+indicator: landfills
+data_file: landfills.csv
+geography: zipcode
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: Count of open/closed landfill sites by ZipCode as of July 2023
+data_quality:
+  missing_pct: 0.02
+data_summary:
+  row_count: 2122
+  variable_count: 6
+variables:
+- name: state_abbr
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 52
+    max_length: 2
+    min_length: 2
+    avg_length: 2.0
+- name: county_name
+  type: string
+  summary:
+    missing_pct: 0.1
+    unique_count: 1010
+    max_length: 20
+    min_length: 3
+    avg_length: 7.3
+- name: zip
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 2122
+    max_length: 10
+    min_length: 5
+    avg_length: 5.0
+- name: landfill_count
+  type: numeric
+  summary:
+    min: 1.0
+    max: 4.0
+    mean: 1.07
+    p25: 1.0
+    p75: 1.0
+    sd: 0.294
+    missing_pct: 0.0
+    unique_count: 4
+  source_variable: count_landfill_zip
+- name: city
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 1761
+    max_length: 25
+    min_length: 3
+    avg_length: 8.6
+  source_variable: City

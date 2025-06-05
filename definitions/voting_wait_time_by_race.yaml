@@ -1,0 +1,158 @@
+name: Voting wait time by race
+version: '1.0'
+last_updated: '2025-06-05'
+domain: civics
+indicator: voting_wait_time_by_race
+data_file: voting_wait_time_by_race.csv
+geography: congressional_district
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: Estimates of the disparity in voting wait times
+data_quality:
+  missing_pct: 0.0
+data_summary:
+  row_count: 410
+  variable_count: 12
+variables:
+- name: fips_state
+  type: numeric
+  summary:
+    min: 1.0
+    max: 56.0
+    mean: 27.28
+    p25: 12.0
+    p75: 40.0
+    sd: 15.796
+    missing_pct: 0.0
+    unique_count: 46
+- name: state_abbr
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 46
+    max_length: 2
+    min_length: 2
+    avg_length: 2.0
+- name: state_name
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 46
+    max_length: 20
+    min_length: 4
+    avg_length: 8.4
+- name: fips_congdist
+  type: numeric
+  summary:
+    min: 101.0
+    max: 5601.0
+    mean: 2738.34
+    p25: 1223.25
+    p75: 4003.75
+    sd: 1577.232
+    missing_pct: 0.0
+    unique_count: 410
+  source_variable: geo_congrdistr
+- name: disparity_2016
+  type: numeric
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    min: -158.01
+    max: 142.74
+    mean: 3.69
+    p25: -5.58
+    p75: 11.18
+    sd: 26.562
+    missing_pct: 0.0
+    unique_count: 402
+- name: disparity_adj_2016
+  type: numeric
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    min: -28.3
+    max: 19.24
+    mean: 1.97
+    p25: -0.81
+    p75: 5.35
+    sd: 5.72
+    missing_pct: 0.0
+    unique_count: 361
+- name: mean_2016
+  type: numeric
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    min: 10.89
+    max: 40.97
+    mean: 18.72
+    p25: 15.56
+    p75: 21.16
+    sd: 4.399
+    missing_pct: 0.0
+    unique_count: 354
+- name: mean_adj_2016
+  type: numeric
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    min: 10.99
+    max: 39.95
+    mean: 18.66
+    p25: 15.68
+    p75: 20.96
+    sd: 4.171
+    missing_pct: 0.0
+    unique_count: 359
+- name: n_2016
+  type: numeric
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    min: 64.0
+    max: 1408.0
+    mean: 376.79
+    p25: 215.0
+    p75: 506.75
+    sd: 225.401
+    missing_pct: 0.0
+    unique_count: 297
+- name: sd_2016
+  type: numeric
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    min: 8.88
+    max: 29.21
+    mean: 15.85
+    p25: 13.49
+    p75: 17.89
+    sd: 3.358
+    missing_pct: 0.0
+    unique_count: 356
+- name: se_2016
+  type: numeric
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    min: 1.73
+    max: 192.9
+    mean: 16.29
+    p25: 6.07
+    p75: 19.13
+    sd: 19.799
+    missing_pct: 0.0
+    unique_count: 372

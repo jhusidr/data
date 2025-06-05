@@ -1,0 +1,172 @@
+name: 'Air pollution: o3 concentration 2001-2005 (census tract)'
+version: '1.0'
+last_updated: '2025-06-05'
+domain: environment
+indicator: air_pollution_o3_concentration_2001_2005_census_tract
+data_file: air_pollution_o3_concentration_2001_2005_census_tract.csv
+geography: census_tract
+availability: private
+data_source:
+  from: ''
+  data_downloaded: ''
+  license: ''
+  comments: ''
+notes: []
+description: O3 concentration at the Census tract level
+data_quality:
+  missing_pct: 0.0
+data_summary:
+  row_count: 72283
+  variable_count: 12
+variables:
+- name: fips_tract
+  type: numeric
+  summary:
+    min: 1001020100.0
+    max: 56045951300.0
+    mean: 27945406967.51
+    p25: 12127091003.0
+    p75: 41045970250.0
+    sd: 15795928915.086
+    missing_pct: 0.0
+    unique_count: 72283
+- name: annual_avg_8hr_o3_ppb_2001
+  type: numeric
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    min: 25.37
+    max: 58.06
+    mean: 39.87
+    p25: 37.23
+    p75: 42.97
+    sd: 4.836
+    missing_pct: 0.0
+    unique_count: 71705
+- name: annual_avg_stderr_o3_ppb_2001
+  type: numeric
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    min: 3.86
+    max: 10.07
+    mean: 6.02
+    p25: 5.31
+    p75: 6.61
+    sd: 1.062
+    missing_pct: 0.0
+    unique_count: 71928
+- name: annual_avg_8hr_o3_ppb_2002
+  type: numeric
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    min: 21.8
+    max: 59.37
+    mean: 40.01
+    p25: 37.61
+    p75: 42.61
+    sd: 4.696
+    missing_pct: 0.0
+    unique_count: 71587
+- name: annual_avg_stderr_o3_ppb_2002
+  type: numeric
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    min: 3.94
+    max: 9.45
+    mean: 5.75
+    p25: 5.12
+    p75: 6.28
+    sd: 0.887
+    missing_pct: 0.0
+    unique_count: 71857
+- name: annual_avg_8hr_o3_ppb_2003
+  type: numeric
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    min: 26.78
+    max: 58.36
+    mean: 39.3
+    p25: 36.91
+    p75: 41.91
+    sd: 4.559
+    missing_pct: 0.0
+    unique_count: 71595
+- name: annual_avg_stderr_o3_ppb_2003
+  type: numeric
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    min: 3.64
+    max: 9.52
+    mean: 5.64
+    p25: 4.99
+    p75: 6.18
+    sd: 0.958
+    missing_pct: 0.0
+    unique_count: 71898
+- name: annual_avg_8hr_o3_ppb_2004
+  type: numeric
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    min: 27.44
+    max: 56.82
+    mean: 38.21
+    p25: 35.69
+    p75: 40.77
+    sd: 4.501
+    missing_pct: 0.0
+    unique_count: 71563
+- name: annual_avg_stderr_o3_ppb_2004
+  type: numeric
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    min: 3.71
+    max: 8.84
+    mean: 5.52
+    p25: 4.97
+    p75: 5.99
+    sd: 0.822
+    missing_pct: 0.0
+    unique_count: 71797
+- name: annual_avg_8hr_o3_ppb_2005
+  type: numeric
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    min: 26.63
+    max: 55.68
+    mean: 39.97
+    p25: 37.61
+    p75: 42.99
+    sd: 4.304
+    missing_pct: 0.0
+    unique_count: 71599
+- name: annual_avg_stderr_o3_ppb_2005
+  type: numeric
+  time_varying: true
+  years:
+  - 2005
+  summary:
+    min: 3.69
+    max: 9.01
+    mean: 5.5
+    p25: 4.91
+    p75: 6.0
+    sd: 0.852
+    missing_pct: 0.0
+    unique_count: 71816
