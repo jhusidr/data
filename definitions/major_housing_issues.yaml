@@ -1,54 +1,29 @@
 name: Major housing issues
-version: '1.0'
-last_updated: '2025-06-05'
 domain: neighborhood
 indicator: major_housing_issues
-data_file: major_housing_issues.csv
+indicator_file: major_housing_issues.csv
 geography: county
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: Count and proportion of housing units in need of major repairs in 1940
 data_quality:
-  missing_pct: 1.2
+  limitations: ''
 data_summary:
-  row_count: 3108
+  sha256_hash: f991549a483110d845af0f5a8ff8b4846ddd3b044010e0d9ee42ebc5b07ae9ab
+  rows: 3108
   variable_count: 9
+  admin_variable_count: 4
+  non_admin_variable_count: 5
+  non_admin_missing_pct: 1.92
+  data_size_mb: 0.32
+  years_covered:
+  - 1940
 variables:
-- name: fips_state
-  type: numeric
-  summary:
-    min: 1.0
-    max: 56.0
-    mean: 30.48
-    p25: 19.0
-    p75: 45.0
-    sd: 14.966
-    missing_pct: 0.0
-    unique_count: 51
-- name: fips_county
-  type: numeric
-  summary:
-    min: 1001.0
-    max: 56047.0
-    mean: 30576.34
-    p25: 19030.5
-    p75: 45085.5
-    sd: 14982.43
-    missing_pct: 0.0
-    unique_count: 3108
-- name: county_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 1818
-    max_length: 36
-    min_length: 3
-    avg_length: 7.1
 - name: county_state_name
   type: string
   summary:

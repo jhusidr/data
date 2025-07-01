@@ -1,110 +1,39 @@
 name: Wage growth over time
-version: '1.0'
-last_updated: '2025-06-05'
 domain: employment
 indicator: wage_growth_over_time
-data_file: wage_growth_over_time.csv
+indicator_file: wage_growth_over_time.csv
 geography: census_tract
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: Wages are constructed by dividing the average high school graduate annual
   earnings by the product of overall average weekly hours worked and 52. The difference
   in logarithms between high school graduate wages in 2010-2014 and school graduate
   wages in 2005-2009. Wages are measured in the 2005-2009 and 2010-2014 American Community
   Surveys.
 data_quality:
-  missing_pct: 2.85
+  limitations: ''
 data_summary:
-  row_count: 74044
+  sha256_hash: e3d4fdc101979f77b69aab9497ed22c6d9c4611773b5347ee3a9dbd5d6a87c7a
+  rows: 74044
   variable_count: 41
+  admin_variable_count: 9
+  non_admin_variable_count: 32
+  non_admin_missing_pct: 3.49
+  data_size_mb: 43.85
+  years_covered:
+  - 1990
+  - 2000
+  - 2010
+  - 2013
+  - 2014
+  - 2015
+  - 2016
 variables:
-- name: fips_state
-  type: numeric
-  summary:
-    min: 1.0
-    max: 72.0
-    mean: 28.31
-    p25: 13.0
-    p75: 42.0
-    sd: 16.452
-    missing_pct: 0.0
-    unique_count: 52
-- name: state_abbr
-  type: numeric
-  summary:
-    min: 1.0
-    max: 72.0
-    mean: 28.31
-    p25: 13.0
-    p75: 42.0
-    sd: 16.452
-    missing_pct: 0.0
-    unique_count: 52
-- name: fips_county
-  type: numeric
-  summary:
-    min: 1.0
-    max: 840.0
-    mean: 85.82
-    p25: 29.0
-    p75: 109.0
-    sd: 99.154
-    missing_pct: 0.0
-    unique_count: 327
-- name: county_name
-  type: numeric
-  summary:
-    min: 1.0
-    max: 840.0
-    mean: 85.82
-    p25: 29.0
-    p75: 109.0
-    sd: 99.154
-    missing_pct: 0.0
-    unique_count: 327
-- name: fips_tract
-  type: numeric
-  summary:
-    min: 100.0
-    max: 993000.0
-    mean: 260195.99
-    p25: 10303.0
-    p75: 480100.0
-    sd: 350123.467
-    missing_pct: 0.0
-    unique_count: 23974
-- name: census_tract
-  type: numeric
-  summary:
-    min: 1001020100.0
-    max: 72153750602.0
-    mean: 28392091715.09
-    p25: 13039010402.75
-    p75: 42003413226.5
-    sd: 16475009569.702
-    missing_pct: 0.0
-    unique_count: 74044
-- name: cz
-  type: string
-  summary:
-    missing_pct: 1.3
-    unique_count: 741
-    max_length: 7
-    min_length: 3
-    avg_length: 6.7
-- name: cz_name
-  type: string
-  summary:
-    missing_pct: 1.3
-    unique_count: 685
-    max_length: 22
-    min_length: 3
-    avg_length: 8.7
 - name: ln_wage_growth_hs_grad_2005_2014
   type: string
   time_varying: true

@@ -1,0 +1,70 @@
+name: Distance to Pediatric ICU
+domain: healthcare
+indicator: distance_to_pediatric_icu
+indicator_file: distance_to_pediatric_icu.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level distances to nearest pediatric intensive care unit.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 0f1d920f731af1e2f32105b435ed2662365822f47a3c256159258f1604985eb5
+  rows: 3233
+  variable_count: 7
+  admin_variable_count: 3
+  non_admin_variable_count: 4
+  non_admin_missing_pct: 0.74
+  data_size_mb: 0.17
+  years_covered:
+  - 2009
+variables:
+- name: max_dist_ped_icu_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.7
+    unique_count: 2800
+    max_length: 6
+    min_length: 3
+    avg_length: 5.0
+- name: mean_dist_ped_icu_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.7
+    unique_count: 2784
+    max_length: 6
+    min_length: 3
+    avg_length: 4.9
+- name: median_dist_ped_icu_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.7
+    unique_count: 2788
+    max_length: 6
+    min_length: 3
+    avg_length: 4.9
+- name: min_dist_ped_icu_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.7
+    unique_count: 2667
+    max_length: 6
+    min_length: 3
+    avg_length: 4.8

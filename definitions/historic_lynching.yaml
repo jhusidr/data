@@ -1,55 +1,30 @@
 name: Historic lynching
-version: '1.0'
-last_updated: '2025-06-05'
 domain: policing
 indicator: historic_lynching
-data_file: historic_lynching.csv
+indicator_file: historic_lynching.csv
 geography: county
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: '# of lynchings of Black residents between 1877-1950/Black residents
   in 1940 * 100,000'
 data_quality:
-  missing_pct: 8.86
+  limitations: ''
 data_summary:
-  row_count: 3110
+  sha256_hash: e75920c6c0612a691a1652be95b4bb6307224c6ec0000c6ab672e0114c2e964c
+  rows: 3110
   variable_count: 9
+  admin_variable_count: 4
+  non_admin_variable_count: 5
+  non_admin_missing_pct: 14.18
+  data_size_mb: 0.19
+  years_covered:
+  - 1940
 variables:
-- name: fips_state
-  type: numeric
-  summary:
-    min: 1.0
-    max: 56.0
-    mean: 30.48
-    p25: 19.0
-    p75: 45.0
-    sd: 14.97
-    missing_pct: 0.0
-    unique_count: 51
-- name: fips_county
-  type: numeric
-  summary:
-    min: 1001.0
-    max: 56047.0
-    mean: 30577.22
-    p25: 19029.5
-    p75: 45086.5
-    sd: 14986.12
-    missing_pct: 0.0
-    unique_count: 3110
-- name: county_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 1820
-    max_length: 36
-    min_length: 3
-    avg_length: 7.1
 - name: black_population_1940
   type: string
   time_varying: true

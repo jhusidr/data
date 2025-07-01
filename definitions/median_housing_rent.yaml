@@ -1,0 +1,37 @@
+name: Median Housing Rent
+domain: income_credit_wealth
+indicator: median_housing_rent
+indicator_file: median_housing_rent.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level median housing rent from the American Community Survey.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 7a8b0801bd8e1d5bca44d94d2160e820b33fd4e4d1ecbc23230d719a5511713c
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.4
+  data_size_mb: 0.12
+  years_covered:
+  - 2009
+variables:
+- name: median_rent_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.4
+    unique_count: 717
+    max_length: 6
+    min_length: 3
+    avg_length: 5.0

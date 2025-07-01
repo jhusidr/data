@@ -1,54 +1,29 @@
 name: 'Flu vaccinations & preventable hospital days by race: 2023'
-version: '1.0'
-last_updated: '2025-06-05'
 domain: healthcare
 indicator: flu_vaccinations_preventable_hospital_days_by_race_2023
-data_file: flu_vaccinations_preventable_hospital_days_by_race_2023.csv
+indicator_file: flu_vaccinations_preventable_hospital_days_by_race_2023.csv
 geography: county
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: Flu vaccination & preventable hospital says, by race (2023)
 data_quality:
-  missing_pct: 29.52
+  limitations: ''
 data_summary:
-  row_count: 3193
+  sha256_hash: 014a162b2e2d6a953de3551def599e045797307bd7b563cc0d5f2d6965e0641e
+  rows: 3193
   variable_count: 8
+  admin_variable_count: 4
+  non_admin_variable_count: 4
+  non_admin_missing_pct: 51.25
+  data_size_mb: 0.16
+  years_covered:
+  - 2023
 variables:
-- name: fips_county
-  type: numeric
-  summary:
-    min: 1000.0
-    max: 56045.0
-    mean: 30360.92
-    p25: 18173.0
-    p75: 45075.0
-    sd: 15171.912
-    missing_pct: 0.0
-    unique_count: 3193
-  source_variable: FIPS
-- name: county_name
-  type: string
-  summary:
-    missing_pct: 1.6
-    unique_count: 1850
-    max_length: 21
-    min_length: 3
-    avg_length: 7.0
-  source_variable: County
-- name: state_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 51
-    max_length: 20
-    min_length: 4
-    avg_length: 8.1
-  source_variable: State
 - name: fluvacc_black_white_2023
   type: string
   time_varying: true

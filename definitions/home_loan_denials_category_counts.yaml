@@ -1,66 +1,38 @@
 name: Count of White/Black/Other Race/Spanish Families by income category
-version: '1.0'
-last_updated: '2025-06-05'
 domain: income_credit_wealth
 indicator: home_loan_denials_category_counts
-data_file: home_loan_denials_category_counts.csv
+indicator_file: home_loan_denials_category_counts.csv
 geography: county
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: 'Counts by race/ethnicity category. '
 data_quality:
-  missing_pct: 13.65
+  limitations: ''
 data_summary:
-  row_count: 3221
+  sha256_hash: 3d64c9507f02be592fafaa7ff1b74dd12eee9ba6d313b62829285cf741e3ed9c
+  rows: 3221
   variable_count: 73
+  admin_variable_count: 5
+  non_admin_variable_count: 68
+  non_admin_missing_pct: 12.99
+  data_size_mb: 1.19
+  years_covered:
+  - 1000
+  - 1999
+  - 2999
+  - 3999
+  - 4999
+  - 5999
+  - 6999
+  - 7999
+  - 8999
+  - 9999
 variables:
-- name: state_abbr
-  type: numeric
-  summary:
-    min: 1.0
-    max: 72.0
-    mean: 31.3
-    p25: 19.0
-    p75: 46.0
-    sd: 16.278
-    missing_pct: 0.0
-    unique_count: 52
-- name: fips_county
-  type: numeric
-  summary:
-    min: 1001.0
-    max: 72153.0
-    mean: 31399.89
-    p25: 19033.0
-    p75: 46109.0
-    sd: 16293.347
-    missing_pct: 0.0
-    unique_count: 3221
-- name: county_name
-  type: numeric
-  summary:
-    min: 1.0
-    max: 840.0
-    mean: 103.09
-    p25: 35.0
-    p75: 133.0
-    sd: 106.96
-    missing_pct: 0.0
-    unique_count: 325
-- name: census_tract
-  type: string
-  summary:
-    missing_pct: 100.0
-    unique_count: 0
-    max_length: 3
-    min_length: 3
-    avg_length: 3.0
-  source_variable: CT
 - name: name_of_area
   type: string
   summary:

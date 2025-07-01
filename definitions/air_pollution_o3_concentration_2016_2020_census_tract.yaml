@@ -1,35 +1,33 @@
 name: 'Air pollution: o3 concentration 2016-2020 (census tract)'
-version: '1.0'
-last_updated: '2025-06-05'
 domain: environment
 indicator: air_pollution_o3_concentration_2016_2020_census_tract
-data_file: air_pollution_o3_concentration_2016_2020_census_tract.csv
+indicator_file: air_pollution_o3_concentration_2016_2020_census_tract.csv
 geography: census_tract
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: O3 concentration at the Census tract level
 data_quality:
-  missing_pct: 9.98
+  limitations: ''
 data_summary:
-  row_count: 83776
+  sha256_hash: bc8773d65d917b495ce0aed7576f6b62368b2008d95b35391c592531e6510a51
+  rows: 83776
   variable_count: 12
+  admin_variable_count: 2
+  non_admin_variable_count: 10
+  non_admin_missing_pct: 10.97
+  data_size_mb: 14.98
+  years_covered:
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
 variables:
-- name: fips_tract
-  type: numeric
-  summary:
-    min: 1001020100.0
-    max: 56045951300.0
-    mean: 27992816424.31
-    p25: 12125960275.5
-    p75: 42003080750.0
-    sd: 15921642464.223
-    missing_pct: 0.0
-    unique_count: 83776
 - name: annual_avg_8hr_o3_ppb_2016
   type: string
   time_varying: true

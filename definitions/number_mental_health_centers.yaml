@@ -1,0 +1,37 @@
+name: Number of Mental Health Centers
+domain: healthcare
+indicator: number_mental_health_centers
+indicator_file: number_mental_health_centers.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level rate of community mental health centers.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: d93ebbbeb5f63f522e49febe61f1cda554e10b416ff546b174beb18d1c835793
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.06
+  data_size_mb: 0.11
+  years_covered:
+  - 2009
+variables:
+- name: cmhc_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.1
+    unique_count: 19
+    max_length: 4
+    min_length: 3
+    avg_length: 3.2

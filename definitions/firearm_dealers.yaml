@@ -1,25 +1,30 @@
 name: Firearm dealers
-version: '1.0'
-last_updated: '2025-06-05'
 domain: media_marketing
 indicator: firearm_dealers
-data_file: firearm_dealers.csv
+indicator_file: firearm_dealers.csv
 geography: zipcode
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: Number of firearm dealers (Federal Firearms License (FFL) type 01 - Dealer
   in firearms other than destructive devices including Gunsmiths & FFL type 09 - Dealer
   in destructive devices were counted by Zipcode)
 data_quality:
-  missing_pct: 0.0
+  limitations: ''
 data_summary:
-  row_count: 23900
+  sha256_hash: b57a9d38f065b6ced63589ff455ac439003771c8cd3a7582fb69ba963478ebc2
+  rows: 23900
   variable_count: 6
+  admin_variable_count: 1
+  non_admin_variable_count: 5
+  non_admin_missing_pct: 0.0
+  data_size_mb: 0.92
+  years_covered:
+  - 2021
 variables:
 - name: count
   type: numeric

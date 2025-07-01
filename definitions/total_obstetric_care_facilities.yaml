@@ -1,0 +1,37 @@
+name: Total Number of Obstetric Care Facilities
+domain: healthcare
+indicator: total_obstetric_care_facilities
+indicator_file: total_obstetric_care_facilities.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level total count of hospitals with obstetric care.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 9533c73fbce00ad609a39a1f08800936c8ab778e292e43dbe8ac8fc3b9f982ec
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.06
+  data_size_mb: 0.11
+  years_covered:
+  - 2009
+variables:
+- name: tot_hosp_obstetric_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.1
+    unique_count: 24
+    max_length: 5
+    min_length: 3
+    avg_length: 3.0

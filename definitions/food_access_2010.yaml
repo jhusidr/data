@@ -1,53 +1,31 @@
 name: 'Food access: 2010'
-version: '1.0'
-last_updated: '2025-06-05'
 domain: neighborhood
 indicator: food_access_2010
-data_file: food_access_2010.csv
+indicator_file: food_access_2010.csv
 geography: census_tract
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: A low-income tract with at least 500 people, or 33 percent of the population,
   living more than one mile (urban areas) or more than 10 miles (rural areas) from
   the nearest supermarket, supercenter, or large grocery store.
 data_quality:
-  missing_pct: 0.0
+  limitations: ''
 data_summary:
-  row_count: 72864
+  sha256_hash: 57d5840dab32b1e5549e62c06a83a22043bb4fa49fcaa29c7538ca8a86617d5e
+  rows: 72864
   variable_count: 5
+  admin_variable_count: 4
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.0
+  data_size_mb: 2.72
+  years_covered:
+  - 2010
 variables:
-- name: state_abbr
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 51
-    max_length: 2
-    min_length: 2
-    avg_length: 2.0
-- name: county_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 1838
-    max_length: 21
-    min_length: 3
-    avg_length: 7.5
-- name: fips_tract
-  type: numeric
-  summary:
-    min: 1001020100.0
-    max: 56045951300.0
-    mean: 27830449761.55
-    p25: 12127082877.0
-    p75: 41039000325.5
-    sd: 15812555232.983
-    missing_pct: 0.0
-    unique_count: 72864
 - name: lila_tracts_1_and_10_2010
   type: boolean
   time_varying: true

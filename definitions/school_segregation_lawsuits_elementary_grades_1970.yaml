@@ -1,62 +1,29 @@
 name: School segregation of students in elementary grades, 1970
-version: '1.0'
-last_updated: '2025-06-05'
 domain: education
 indicator: school_segregation_lawsuits_elementary_grades_1970
-data_file: school_segregation_lawsuits_elementary_grades_1970.csv
+indicator_file: school_segregation_lawsuits_elementary_grades_1970.csv
 geography: school_district
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: School segregation lawsuits by year and county.
 data_quality:
-  missing_pct: 9.61
+  limitations: ''
 data_summary:
-  row_count: 4256
+  sha256_hash: fb17b755080923a86944c196d303aebce52ed8f36708c12595d1a280bcabba14
+  rows: 4256
   variable_count: 9
+  admin_variable_count: 5
+  non_admin_variable_count: 4
+  non_admin_missing_pct: 18.83
+  data_size_mb: 0.28
+  years_covered:
+  - 1970
 variables:
-- name: state_abbr
-  type: numeric
-  summary:
-    min: 1.0
-    max: 56.0
-    mean: 29.5
-    p25: 18.0
-    p75: 40.0
-    sd: 14.466
-    missing_pct: 0.0
-    unique_count: 49
-- name: county_name
-  type: string
-  summary:
-    missing_pct: 1.6
-    unique_count: 636
-    max_length: 16
-    min_length: 3
-    avg_length: 7.2
-- name: zip
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 3973
-    max_length: 7
-    min_length: 1
-    avg_length: 7.0
-- name: nces_id
-  type: numeric
-  summary:
-    min: 100090.0
-    max: 5604510.0
-    mean: 2963226.01
-    p25: 1800052.5
-    p75: 4004740.0
-    sd: 1445908.232
-    missing_pct: 0.0
-    unique_count: 4256
 - name: white_asian_sch_disssim_1970
   type: string
   time_varying: true

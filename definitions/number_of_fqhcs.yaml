@@ -1,0 +1,38 @@
+name: Number of Federally Qualified Health Centers (FQHCs)
+domain: healthcare
+indicator: number_of_fqhcs
+indicator_file: number_of_fqhcs.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level data on the rate of Federally Qualified Health Centers (FQHCs)
+  per population.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 9744b53b94a1d218265b835c56f87d5eff94019546eccc36c2275493c2561c55
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.06
+  data_size_mb: 0.11
+  years_covered:
+  - 2009
+variables:
+- name: fqhc_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.1
+    unique_count: 75
+    max_length: 4
+    min_length: 3
+    avg_length: 3.4

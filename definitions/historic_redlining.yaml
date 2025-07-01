@@ -1,0 +1,73 @@
+name: Historic Redlining
+domain: policing
+indicator: historic_redlining
+indicator_file: historic_redlining.csv
+geography: census_tract
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: Census tract-level data on historic redlining practices from 1940.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 1acca923891af3550b3f7fbc832b1863de2bc883eab75abd2f468fe4639107ac
+  rows: 12888
+  variable_count: 6
+  admin_variable_count: 2
+  non_admin_variable_count: 4
+  non_admin_missing_pct: 0.0
+  data_size_mb: 0.76
+  years_covered:
+  - 1940
+variables:
+- name: CBSA
+  type: numeric
+  summary:
+    min: 10420.0
+    max: 49660.0
+    mean: 30101.55
+    p25: 19780.0
+    p75: 35620.0
+    sd: 10029.957
+    missing_pct: 0.0
+    unique_count: 143
+- name: METRO_NAME
+  type: string
+  summary:
+    missing_pct: 0.0
+    unique_count: 143
+    max_length: 30
+    min_length: 1
+    avg_length: 25.4
+- name: cat_redlining_1940
+  type: numeric
+  time_varying: true
+  years:
+  - 1940
+  summary:
+    min: 1.0
+    max: 4.0
+    mean: 2.99
+    p25: 2.0
+    p75: 4.0
+    sd: 0.891
+    missing_pct: 0.0
+    unique_count: 4
+- name: num_redlining_1940
+  type: numeric
+  time_varying: true
+  years:
+  - 1940
+  summary:
+    min: 1.0
+    max: 4.0
+    mean: 2.96
+    p25: 2.45
+    p75: 3.6
+    sd: 0.78
+    missing_pct: 0.0
+    unique_count: 301

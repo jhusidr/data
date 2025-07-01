@@ -1,0 +1,37 @@
+name: Number of Hospitals with Burn Care
+domain: healthcare
+indicator: number_hospitals_burn_care
+indicator_file: number_hospitals_burn_care.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level rate of hospitals with burn care units.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 86c1ea8611e4ea357eba80e6c7fb6431c3d789e730a8f911e353e4c385b482a4
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.06
+  data_size_mb: 0.11
+  years_covered:
+  - 2009
+variables:
+- name: hosp_burn_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.1
+    unique_count: 19
+    max_length: 4
+    min_length: 3
+    avg_length: 3.0

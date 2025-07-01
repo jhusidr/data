@@ -1,46 +1,29 @@
 name: Racial income inequality
-version: '1.0'
-last_updated: '2025-06-05'
 domain: income_credit_wealth
 indicator: racial_income_inequality
-data_file: racial_income_inequality.csv
+indicator_file: racial_income_inequality.csv
 geography: census_tract
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: Ratio of median white to median black income
 data_quality:
-  missing_pct: 3.89
+  limitations: ''
 data_summary:
-  row_count: 74002
+  sha256_hash: 9111f381721a6784b7c0838fc1f956dd5f6bdb1dab3d1b4e1bc86c75d9b11338
+  rows: 74002
   variable_count: 5
+  admin_variable_count: 3
+  non_admin_variable_count: 2
+  non_admin_missing_pct: 7.77
+  data_size_mb: 4.13
+  years_covered:
+  - 2000
 variables:
-- name: fips_state
-  type: numeric
-  summary:
-    min: 1.0
-    max: 72.0
-    mean: 28.31
-    p25: 13.0
-    p75: 42.0
-    sd: 16.453
-    missing_pct: 0.0
-    unique_count: 52
-- name: fips_tract
-  type: numeric
-  summary:
-    min: 1001020100.0
-    max: 72153750602.0
-    mean: 28391241080.03
-    p25: 13039010401.25
-    p75: 42003413950.75
-    sd: 16475848250.555
-    missing_pct: 0.0
-    unique_count: 74002
 - name: bw_diff_income_2000
   type: string
   time_varying: true

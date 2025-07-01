@@ -1,81 +1,29 @@
 name: School segregation lawsuits
-version: '1.0'
-last_updated: '2025-06-05'
 domain: education
 indicator: school_segregation_lawsuits
-data_file: school_segregation_lawsuits.csv
+indicator_file: school_segregation_lawsuits.csv
 geography: county
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: School segregation lawsuits by year and county.
 data_quality:
-  missing_pct: 10.91
+  limitations: ''
 data_summary:
-  row_count: 886
+  sha256_hash: 5094dd3dd3063f1d287ceee18c98473b050436b9597fb72f5d391d09cd19e096
+  rows: 886
   variable_count: 36
+  admin_variable_count: 7
+  non_admin_variable_count: 29
+  non_admin_missing_pct: 13.16
+  data_size_mb: 1.16
+  years_covered:
+  - 2000
 variables:
-- name: fips_state
-  type: numeric
-  summary:
-    min: 1.0
-    max: 55.0
-    mean: 25.19
-    p25: 13.0
-    p75: 37.0
-    sd: 14.883
-    missing_pct: 0.0
-    unique_count: 40
-- name: state_abbr
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 40
-    max_length: 2
-    min_length: 2
-    avg_length: 2.0
-- name: fips_county
-  type: numeric
-  summary:
-    min: 1001.0
-    max: 55133.0
-    mean: 25297.52
-    p25: 13186.0
-    p75: 37120.5
-    sd: 14907.25
-    missing_pct: 0.0
-    unique_count: 886
-- name: county_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 659
-    max_length: 27
-    min_length: 3
-    avg_length: 7.8
-- name: state_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 40
-    max_length: 20
-    min_length: 4
-    avg_length: 8.8
-- name: nces_id
-  type: numeric
-  summary:
-    min: 100030.0
-    max: 5513620.0
-    mean: 2525311.36
-    p25: 1303367.5
-    p75: 3702392.5
-    sd: 1490189.098
-    missing_pct: 0.0
-    unique_count: 885
 - name: case_name
   type: string
   summary:

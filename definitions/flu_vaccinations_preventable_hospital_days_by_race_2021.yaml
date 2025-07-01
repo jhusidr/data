@@ -1,54 +1,29 @@
 name: 'Flu vaccinations & preventable hospital days by race: 2021'
-version: '1.0'
-last_updated: '2025-06-05'
 domain: healthcare
 indicator: flu_vaccinations_preventable_hospital_days_by_race_2021
-data_file: flu_vaccinations_preventable_hospital_days_by_race_2021.csv
+indicator_file: flu_vaccinations_preventable_hospital_days_by_race_2021.csv
 geography: county
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: Flu vaccination & preventable hospital says, by race (2021)
 data_quality:
-  missing_pct: 28.13
+  limitations: ''
 data_summary:
-  row_count: 3193
+  sha256_hash: 6886ab4a3a8b06a2c5111d728414a337393d20d6d892a23b357e32f78fcd5795
+  rows: 3193
   variable_count: 8
+  admin_variable_count: 4
+  non_admin_variable_count: 4
+  non_admin_missing_pct: 48.83
+  data_size_mb: 0.16
+  years_covered:
+  - 2021
 variables:
-- name: fips_county
-  type: numeric
-  summary:
-    min: 1000.0
-    max: 56045.0
-    mean: 30360.92
-    p25: 18173.0
-    p75: 45075.0
-    sd: 15171.912
-    missing_pct: 0.0
-    unique_count: 3193
-  source_variable: FIPS
-- name: county_name
-  type: string
-  summary:
-    missing_pct: 1.6
-    unique_count: 1850
-    max_length: 21
-    min_length: 3
-    avg_length: 7.0
-  source_variable: County
-- name: state_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 51
-    max_length: 20
-    min_length: 4
-    avg_length: 8.1
-  source_variable: State
 - name: fluvacc_black_white_2021
   type: string
   time_varying: true

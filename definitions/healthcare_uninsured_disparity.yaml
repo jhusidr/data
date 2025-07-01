@@ -1,0 +1,85 @@
+name: Black-White disparity in health insurance
+domain: healthcare
+indicator: healthcare_uninsured_disparity
+indicator_file: healthcare_uninsured_disparity.csv
+geography: state
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: 1970/1980 Black college completion (%) - White college completion (%)
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 332d734212b75d771561c250edf84a4d2c74687c49e857391a7d882271588481
+  rows: 816
+  variable_count: 7
+  admin_variable_count: 3
+  non_admin_variable_count: 4
+  non_admin_missing_pct: 0.0
+  data_size_mb: 0.07
+  years_covered:
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+variables:
+- name: bl_uninsured
+  type: numeric
+  summary:
+    min: 3.6
+    max: 30.6
+    mean: 14.86
+    p25: 10.08
+    p75: 19.1
+    sd: 5.639
+    missing_pct: 0.0
+    unique_count: 222
+- name: wh_uninsured
+  type: numeric
+  summary:
+    min: 1.8
+    max: 19.8
+    mean: 10.14
+    p25: 7.1
+    p75: 12.9
+    sd: 4.045
+    missing_pct: 0.0
+    unique_count: 164
+- name: ratio_black_white_uninsured
+  type: numeric
+  summary:
+    min: 1.07
+    max: 2.22
+    mean: 1.49
+    p25: 1.33
+    p75: 1.64
+    sd: 0.201
+    missing_pct: 0.0
+    unique_count: 731
+- name: diff_black_white_uninsured
+  type: numeric
+  summary:
+    min: 0.3
+    max: 11.1
+    mean: 4.72
+    p25: 2.9
+    p75: 6.3
+    sd: 2.248
+    missing_pct: 0.0
+    unique_count: 240

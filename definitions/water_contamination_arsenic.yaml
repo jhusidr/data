@@ -1,0 +1,82 @@
+name: Water Contamination - Arsenic Levels
+domain: environment
+indicator: water_contamination_arsenic
+indicator_file: water_contamination_arsenic.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level water contamination data focusing on arsenic levels in community
+  water systems.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 49d2879ba5f93ca7e8b266dbb73b91a8189dfe51678a67459934d05a63a89fb2
+  rows: 3233
+  variable_count: 8
+  admin_variable_count: 3
+  non_admin_variable_count: 5
+  non_admin_missing_pct: 72.32
+  data_size_mb: 0.15
+  years_covered:
+  - 2009
+variables:
+- name: arsenic_mean_csw_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 65.1
+    unique_count: 413
+    max_length: 5
+    min_length: 3
+    avg_length: 3.2
+- name: arsenic_mean_pop_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 65.1
+    unique_count: 357
+    max_length: 6
+    min_length: 3
+    avg_length: 3.2
+- name: pct_arsenic_mcl_greater10_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 95.2
+    unique_count: 123
+    max_length: 5
+    min_length: 3
+    avg_length: 3.1
+- name: pct_arsenic_mcl_less10_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 65.6
+    unique_count: 127
+    max_length: 5
+    min_length: 3
+    avg_length: 3.7
+- name: pct_arsenic_mcl_notdetect_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 70.5
+    unique_count: 476
+    max_length: 5
+    min_length: 3
+    avg_length: 3.5

@@ -1,0 +1,37 @@
+name: Number of Hospitals with Medical-Surgical ICU
+domain: healthcare
+indicator: number_hospitals_medsurg_icu
+indicator_file: number_hospitals_medsurg_icu.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level rate of hospitals with medical-surgical intensive care units.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: a36b0e3addb74b521f69326bc6607c648639d9a055f563f256d1f7ed469f8e39
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.06
+  data_size_mb: 0.11
+  years_covered:
+  - 2009
+variables:
+- name: hosp_medsurg_icu_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.1
+    unique_count: 62
+    max_length: 4
+    min_length: 3
+    avg_length: 3.6

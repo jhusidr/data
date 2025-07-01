@@ -1,0 +1,70 @@
+name: Distance to Health Clinic
+domain: healthcare
+indicator: distance_to_health_clinic
+indicator_file: distance_to_health_clinic.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level distances to nearest health clinic.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 3e08fcd2f9363d94f0574e335bb72664923fd50bf1c5b9195ffd3d6eacfda1dd
+  rows: 3233
+  variable_count: 7
+  admin_variable_count: 3
+  non_admin_variable_count: 4
+  non_admin_missing_pct: 0.56
+  data_size_mb: 0.16
+  years_covered:
+  - 2009
+variables:
+- name: max_dist_clinic_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.6
+    unique_count: 1841
+    max_length: 6
+    min_length: 3
+    avg_length: 4.5
+- name: mean_dist_clinic_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.6
+    unique_count: 1411
+    max_length: 6
+    min_length: 3
+    avg_length: 4.1
+- name: median_dist_clinic_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.6
+    unique_count: 1466
+    max_length: 6
+    min_length: 3
+    avg_length: 4.1
+- name: min_dist_clinic_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.6
+    unique_count: 956
+    max_length: 6
+    min_length: 3
+    avg_length: 4.0

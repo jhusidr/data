@@ -1,35 +1,32 @@
 name: 'Air pollution: o3 concentration'
-version: '1.0'
-last_updated: '2025-06-05'
 domain: environment
 indicator: air_pollution_o3_concentration
-data_file: air_pollution_o3_concentration.csv
+indicator_file: air_pollution_o3_concentration.csv
 geography: county
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: O3 concentration at the Census tract level
 data_quality:
-  missing_pct: 0.0
+  limitations: ''
 data_summary:
-  row_count: 3107
+  sha256_hash: 338b72cc40c0cd13efbb5ad9754e310e4cf6a4f3b335b5d2bedebde3c6f8680d
+  rows: 3107
   variable_count: 18
+  admin_variable_count: 2
+  non_admin_variable_count: 16
+  non_admin_missing_pct: 0.0
+  data_size_mb: 0.91
+  years_covered:
+  - 2016
+  - 2017
+  - 2018
+  - 2019
 variables:
-- name: fips_county
-  type: numeric
-  summary:
-    min: 1001.0
-    max: 56045.0
-    mean: 30666.87
-    p25: 19044.0
-    p75: 46006.0
-    sd: 14983.62
-    missing_pct: 0.0
-    unique_count: 3107
 - name: o3_max_pred_2016
   type: numeric
   time_varying: true

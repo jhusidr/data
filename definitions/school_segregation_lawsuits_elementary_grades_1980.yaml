@@ -1,59 +1,29 @@
 name: School segregation of students in elementary grades, 1980
-version: '1.0'
-last_updated: '2025-06-05'
 domain: education
 indicator: school_segregation_lawsuits_elementary_grades_1980
-data_file: school_segregation_lawsuits_elementary_grades_1980.csv
+indicator_file: school_segregation_lawsuits_elementary_grades_1980.csv
 geography: school_district
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: School segregation lawsuits by year and county.
 data_quality:
-  missing_pct: 29.23
+  limitations: ''
 data_summary:
-  row_count: 8578
+  sha256_hash: 82cc983624900583045ac550cdcfafb01824f8ee6626b16404a94d82e6845892
+  rows: 8578
   variable_count: 8
+  admin_variable_count: 5
+  non_admin_variable_count: 3
+  non_admin_missing_pct: 20.8
+  data_size_mb: 0.66
+  years_covered:
+  - 1980
 variables:
-- name: state_abbr
-  type: string
-  summary:
-    missing_pct: 45.2
-    unique_count: 51
-    max_length: 4
-    min_length: 3
-    avg_length: 3.5
-- name: county_name
-  type: string
-  summary:
-    missing_pct: 51.4
-    unique_count: 642
-    max_length: 16
-    min_length: 3
-    avg_length: 5.1
-- name: zip
-  type: string
-  summary:
-    missing_pct: 45.6
-    unique_count: 4349
-    max_length: 7
-    min_length: 1
-    avg_length: 5.2
-- name: nces_id
-  type: numeric
-  summary:
-    min: 100005.0
-    max: 5606240.0
-    mean: 3009763.99
-    p25: 1808137.5
-    p75: 4203502.5
-    sd: 1480949.059
-    missing_pct: 0.0
-    unique_count: 8578
 - name: white_asian_dist_disssim_1980
   type: string
   time_varying: true

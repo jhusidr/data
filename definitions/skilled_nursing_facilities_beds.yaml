@@ -1,0 +1,37 @@
+name: Skilled Nursing Facilities Beds
+domain: healthcare
+indicator: skilled_nursing_facilities_beds
+indicator_file: skilled_nursing_facilities_beds.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level rate of skilled nursing facility beds.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: f1caa384f1558a1b63b2ac61ccbeac741bfbf3e0af4a501e0f2fb1726a225093
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.06
+  data_size_mb: 0.11
+  years_covered:
+  - 2009
+variables:
+- name: snf_beds_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.1
+    unique_count: 141
+    max_length: 4
+    min_length: 3
+    avg_length: 3.2

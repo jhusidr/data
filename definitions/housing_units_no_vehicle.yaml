@@ -1,0 +1,37 @@
+name: Housing Units Without Vehicle
+domain: income_credit_wealth
+indicator: housing_units_no_vehicle
+indicator_file: housing_units_no_vehicle.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level percentage of housing units without access to a vehicle.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 76e53d06216b11ee14dc88bebfcac49a9f8877b813f29faf49eeaf4e6265c169
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.37
+  data_size_mb: 0.11
+  years_covered:
+  - 2009
+variables:
+- name: pct_hu_no_vehicle_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.4
+    unique_count: 1096
+    max_length: 5
+    min_length: 3
+    avg_length: 4.0

@@ -1,51 +1,36 @@
 name: Residential segregation
-version: '1.0'
-last_updated: '2025-06-05'
 domain: neighborhood
 indicator: residential_segregation
-data_file: residential_segregation.csv
+indicator_file: residential_segregation.csv
 geography: county
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: Index of dissimilarity of Black and White residential segregation
 data_quality:
-  missing_pct: 25.49
+  limitations: ''
 data_summary:
-  row_count: 3199
+  sha256_hash: 4e333c92490b499cbdaa08bd18350692b31625c221efba91212dee4733e819fc
+  rows: 3199
   variable_count: 12
+  admin_variable_count: 4
+  non_admin_variable_count: 8
+  non_admin_missing_pct: 34.85
+  data_size_mb: 0.34
+  years_covered:
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
 variables:
-- name: fips_county
-  type: numeric
-  summary:
-    min: 1000.0
-    max: 56045.0
-    mean: 30337.3
-    p25: 18168.0
-    p75: 45076.0
-    sd: 15197.391
-    missing_pct: 0.0
-    unique_count: 3199
-- name: county_name
-  type: string
-  summary:
-    missing_pct: 1.6
-    unique_count: 1855
-    max_length: 31
-    min_length: 3
-    avg_length: 7.0
-- name: state_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 51
-    max_length: 20
-    min_length: 4
-    avg_length: 8.1
 - name: bw_residseg_2016
   type: string
   time_varying: true

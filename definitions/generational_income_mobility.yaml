@@ -1,59 +1,37 @@
 name: Generational income mobility
-version: '1.0'
-last_updated: '2025-06-05'
 domain: income_credit_wealth
 indicator: generational_income_mobility
-data_file: generational_income_mobility.csv
+indicator_file: generational_income_mobility.csv
 geography: county
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: ''
 data_quality:
-  missing_pct: 50.74
+  limitations: ''
 data_summary:
-  row_count: 3138
+  sha256_hash: 087a685ff690a1db1f4ed597d34d2d332c9ffcca767727ffa84ed82daca7c85d
+  rows: 3138
   variable_count: 37
+  admin_variable_count: 5
+  non_admin_variable_count: 32
+  non_admin_missing_pct: 57.09
+  data_size_mb: 1.06
+  years_covered:
+  - 1980
+  - 1981
+  - 1982
+  - 1983
+  - 1984
+  - 1985
+  - 1986
+  - 1987
+  - 1988
 variables:
-- name: county_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 1843
-    max_length: 31
-    min_length: 3
-    avg_length: 7.1
-- name: state_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 51
-    max_length: 20
-    min_length: 4
-    avg_length: 8.1
-- name: cz
-  type: numeric
-  summary:
-    min: 100.0
-    max: 39400.0
-    mean: 20374.38
-    p25: 10725.25
-    p75: 29506.0
-    sd: 11184.404
-    missing_pct: 0.0
-    unique_count: 741
-- name: cz_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 685
-    max_length: 22
-    min_length: 3
-    avg_length: 8.7
 - name: perm_res_p25_kr24_1980
   type: string
   time_varying: true

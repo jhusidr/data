@@ -1,51 +1,29 @@
 name: Voting wait time by race
-version: '1.0'
-last_updated: '2025-06-05'
 domain: civics
 indicator: voting_wait_time_by_race
-data_file: voting_wait_time_by_race.csv
+indicator_file: voting_wait_time_by_race.csv
 geography: congressional_district
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: Estimates of the disparity in voting wait times
 data_quality:
-  missing_pct: 0.0
+  limitations: ''
 data_summary:
-  row_count: 410
+  sha256_hash: 948352d0a58baa9cff4ee2092c7c6ebce724de1f4d9bebc74f49afb19b0a8db7
+  rows: 410
   variable_count: 12
+  admin_variable_count: 4
+  non_admin_variable_count: 8
+  non_admin_missing_pct: 0.0
+  data_size_mb: 0.03
+  years_covered:
+  - 2016
 variables:
-- name: fips_state
-  type: numeric
-  summary:
-    min: 1.0
-    max: 56.0
-    mean: 27.28
-    p25: 12.0
-    p75: 40.0
-    sd: 15.796
-    missing_pct: 0.0
-    unique_count: 46
-- name: state_abbr
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 46
-    max_length: 2
-    min_length: 2
-    avg_length: 2.0
-- name: state_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 46
-    max_length: 20
-    min_length: 4
-    avg_length: 8.4
 - name: fips_congdist
   type: numeric
   summary:

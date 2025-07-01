@@ -1,0 +1,62 @@
+name: School Dropouts
+domain: education
+indicator: school_dropouts
+indicator_file: school_dropouts.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: Proportion of Whites ages 16 to 21 who are not high school graduate or
+  not enrolled (dropped out) Proportion of Blacks ages 16 to 21 who are not high school
+  graduate or not enrolled (dropped out)whdrop - bldrop whdrop / bldrop
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 94f845ce3e369865b0b17264db4fb33fd7929f117f853b6ef321a18dc438bf07
+  rows: 3221
+  variable_count: 7
+  admin_variable_count: 3
+  non_admin_variable_count: 4
+  non_admin_missing_pct: 28.96
+  data_size_mb: 0.31
+  years_covered:
+  - 1970
+variables:
+- name: dropout_white
+  type: string
+  summary:
+    missing_pct: 2.9
+    unique_count: 3072
+    max_length: 18
+    min_length: 3
+    avg_length: 17.3
+  source_variable: whdrop
+- name: dropout_black
+  type: string
+  summary:
+    missing_pct: 34.2
+    unique_count: 1537
+    max_length: 18
+    min_length: 3
+    avg_length: 10.9
+  source_variable: bldrop
+- name: dropout_white_black_diff
+  type: string
+  summary:
+    missing_pct: 34.2
+    unique_count: 2116
+    max_length: 21
+    min_length: 3
+    avg_length: 13.2
+- name: dropout_white_black_ratio
+  type: string
+  summary:
+    missing_pct: 44.6
+    unique_count: 1784
+    max_length: 18
+    min_length: 3
+    avg_length: 11.2

@@ -1,52 +1,39 @@
 name: Employment discrimination lawsuits
-version: '1.0'
-last_updated: '2025-06-05'
 domain: employment
 indicator: employment_discrimination_lawsuits
-data_file: employment_discrimination_lawsuits.csv
+indicator_file: employment_discrimination_lawsuits.csv
 geography: state
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: '# of federal charges for employment discrimination based on race per
   100,000 Black residents in XXXX year'
 data_quality:
-  missing_pct: 0.0
+  limitations: ''
 data_summary:
-  row_count: 52
+  sha256_hash: 2ebf4c11b29c14e1f7576a6dcdac6d5010bba846bbcff501941f4617fae44cfe
+  rows: 52
   variable_count: 14
+  admin_variable_count: 4
+  non_admin_variable_count: 10
+  non_admin_missing_pct: 0.0
+  data_size_mb: 0.01
+  years_covered:
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
 variables:
-- name: fips_state
-  type: numeric
-  summary:
-    min: 1.0
-    max: 72.0
-    mean: 29.79
-    p25: 16.75
-    p75: 42.5
-    sd: 16.775
-    missing_pct: 0.0
-    unique_count: 52
-- name: state_abbr
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 52
-    max_length: 2
-    min_length: 2
-    avg_length: 2.0
-- name: state_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 52
-    max_length: 20
-    min_length: 4
-    avg_length: 8.7
 - name: eeoc_per_black_2012
   type: numeric
   time_varying: true

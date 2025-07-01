@@ -1,0 +1,37 @@
+name: Number of Nursing Facilities
+domain: healthcare
+indicator: number_nursing_facilities
+indicator_file: number_nursing_facilities.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level rate of nursing facilities.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 5794808f8e6a17d3b37089a2668a40dfe1a9ab30bb1a231f7520234f1062192a
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.06
+  data_size_mb: 0.11
+  years_covered:
+  - 2009
+variables:
+- name: nf_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.1
+    unique_count: 116
+    max_length: 4
+    min_length: 3
+    avg_length: 3.8

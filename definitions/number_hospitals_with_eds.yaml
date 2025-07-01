@@ -1,0 +1,37 @@
+name: Number of Hospitals with Emergency Departments
+domain: healthcare
+indicator: number_hospitals_with_eds
+indicator_file: number_hospitals_with_eds.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level rate of hospitals with emergency departments.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 67fadbd06e36cb41e229d54dc0098d9608c4ba1e3e896ad855b9aef592ff7fee
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.06
+  data_size_mb: 0.11
+  years_covered:
+  - 2009
+variables:
+- name: hosp_ed_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.1
+    unique_count: 57
+    max_length: 4
+    min_length: 3
+    avg_length: 3.4

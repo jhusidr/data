@@ -1,43 +1,38 @@
 name: Adult asthma by race
-version: '1.0'
-last_updated: '2025-06-05'
 domain: environment
 indicator: adult_asthma_by_race
-data_file: adult_asthma_by_race.csv
+indicator_file: adult_asthma_by_race.csv
 geography: state
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: '% (GROUP) with asthma - % White with asthma by state in XXXX year '
 data_quality:
-  missing_pct: 52.38
+  limitations: ''
 data_summary:
-  row_count: 52
+  sha256_hash: 6b401b0e7c89104e11e0307df2e2d1bd98e998172abb636f8f108c559c69c832
+  rows: 52
   variable_count: 43
+  admin_variable_count: 3
+  non_admin_variable_count: 40
+  non_admin_missing_pct: 55.0
+  data_size_mb: 0.02
+  years_covered:
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
 variables:
-- name: fips_state
-  type: numeric
-  summary:
-    min: 0.0
-    max: 56.0
-    mean: 28.4
-    p25: 15.75
-    p75: 41.25
-    sd: 16.183
-    missing_pct: 0.0
-    unique_count: 52
-- name: state_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 52
-    max_length: 20
-    min_length: 4
-    avg_length: 8.8
 - name: aian_wh_2013
   type: string
   time_varying: true

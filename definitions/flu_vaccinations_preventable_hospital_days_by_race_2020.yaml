@@ -1,62 +1,29 @@
 name: 'Flu vaccinations & preventable hospital days by race: 2020'
-version: '1.0'
-last_updated: '2025-06-05'
 domain: healthcare
 indicator: flu_vaccinations_preventable_hospital_days_by_race_2020
-data_file: flu_vaccinations_preventable_hospital_days_by_race_2020.csv
+indicator_file: flu_vaccinations_preventable_hospital_days_by_race_2020.csv
 geography: county
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: Flu vaccination & preventable hospital says, by race (2020)
 data_quality:
-  missing_pct: 25.63
+  limitations: ''
 data_summary:
-  row_count: 3194
+  sha256_hash: 28fb3eb772d02eac98292557f963022c3f6c21a7db313bafb5d73435911992b4
+  rows: 3194
   variable_count: 9
+  admin_variable_count: 5
+  non_admin_variable_count: 4
+  non_admin_missing_pct: 51.27
+  data_size_mb: 0.22
+  years_covered:
+  - 2020
 variables:
-- name: fips_state
-  type: numeric
-  summary:
-    min: 0.0
-    max: 56.0
-    mean: 30.25
-    p25: 18.0
-    p75: 45.0
-    sd: 15.161
-    missing_pct: 0.0
-    unique_count: 52
-- name: state_abbr
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 52
-    max_length: 2
-    min_length: 2
-    avg_length: 2.0
-- name: fips_county
-  type: numeric
-  summary:
-    min: 0.0
-    max: 56045.0
-    mean: 30351.42
-    p25: 18171.5
-    p75: 45074.5
-    sd: 15179.046
-    missing_pct: 0.0
-    unique_count: 3194
-- name: county_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 1928
-    max_length: 33
-    min_length: 4
-    avg_length: 13.9
 - name: fluvacc_black_white_2020
   type: string
   time_varying: true

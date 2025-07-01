@@ -1,68 +1,33 @@
 name: Legislature % Black
-version: '1.0'
-last_updated: '2025-06-05'
 domain: civics
 indicator: legislature_pct_black
-data_file: legislature_pct_black.csv
+indicator_file: legislature_pct_black.csv
 geography: state
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: (Black legislatures in XXXX year in a state / Black population in XXXX
   year in a state) - (White legislatures in XXXX year in a state / White population
   in XXXX year in a state). Black and White population data were from ACS 5-year estimates
   (2011-2015, 2016-2020)
 data_quality:
-  missing_pct: 9.75
+  limitations: ''
 data_summary:
-  row_count: 57
+  sha256_hash: b5a458d00a5689deb911b0d6b9f54f0fea460a149a548e9130d26787f3bd5980
+  rows: 57
   variable_count: 37
+  admin_variable_count: 5
+  non_admin_variable_count: 32
+  non_admin_missing_pct: 10.96
+  data_size_mb: 0.02
+  years_covered:
+  - 2015
+  - 2020
 variables:
-- name: ansi
-  type: numeric
-  summary:
-    min: 68085.0
-    max: 1878752.0
-    mean: 1529200.3
-    p25: 1455989.0
-    p75: 1779801.0
-    sd: 463094.76
-    missing_pct: 0.0
-    unique_count: 57
-  source_variable: STATENS
-- name: fips_state
-  type: numeric
-  summary:
-    min: 1.0
-    max: 78.0
-    mean: 33.26
-    p25: 18.0
-    p75: 47.0
-    sd: 19.686
-    missing_pct: 0.0
-    unique_count: 57
-- name: state_abbr
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 57
-    max_length: 2
-    min_length: 2
-    avg_length: 2.0
-  source_variable: STUSAB
-- name: state_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 57
-    max_length: 27
-    min_length: 4
-    avg_length: 9.5
-  source_variable: STATE_NAME
 - name: aina_legislatures_2015
   type: string
   time_varying: true

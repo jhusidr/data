@@ -1,35 +1,33 @@
 name: 'Air pollution: PM2.5 concentration 2001-2005 (census tract)'
-version: '1.0'
-last_updated: '2025-06-05'
 domain: environment
 indicator: air_pollution_pm25_concentration_2001_2005_census_tract
-data_file: air_pollution_pm25_concentration_2001_2005_census_tract.csv
+indicator_file: air_pollution_pm25_concentration_2001_2005_census_tract.csv
 geography: census_tract
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: PM2.5 concentration at the Census tract level
 data_quality:
-  missing_pct: 0.0
+  limitations: ''
 data_summary:
-  row_count: 72283
+  sha256_hash: ac8e6e135ffd7d5cedfffbd819024b0af62c94beeb638684fb5b02f76404b99b
+  rows: 72283
   variable_count: 12
+  admin_variable_count: 2
+  non_admin_variable_count: 10
+  non_admin_missing_pct: 0.0
+  data_size_mb: 14.33
+  years_covered:
+  - 2001
+  - 2002
+  - 2003
+  - 2004
+  - 2005
 variables:
-- name: fips_tract
-  type: numeric
-  summary:
-    min: 1001020100.0
-    max: 56045951300.0
-    mean: 27945406967.51
-    p25: 12127091003.0
-    p75: 41045970250.0
-    sd: 15795928915.086
-    missing_pct: 0.0
-    unique_count: 72283
 - name: annual_avg_24hr_pm25_ppb_2001
   type: numeric
   time_varying: true

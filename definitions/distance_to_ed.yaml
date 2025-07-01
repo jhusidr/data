@@ -1,0 +1,70 @@
+name: Distance to Emergency Department
+domain: healthcare
+indicator: distance_to_ed
+indicator_file: distance_to_ed.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level data on distance to nearest emergency department.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: abc08b48ed626014360ed6e27c47edf9cc1d58a3877b724ced588a212dba19c8
+  rows: 3233
+  variable_count: 7
+  admin_variable_count: 3
+  non_admin_variable_count: 4
+  non_admin_missing_pct: 0.59
+  data_size_mb: 0.17
+  years_covered:
+  - 2009
+variables:
+- name: max_dist_ed_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.6
+    unique_count: 2167
+    max_length: 6
+    min_length: 3
+    avg_length: 4.8
+- name: mean_dist_ed_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.6
+    unique_count: 2049
+    max_length: 6
+    min_length: 3
+    avg_length: 4.4
+- name: median_dist_ed_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.6
+    unique_count: 2052
+    max_length: 6
+    min_length: 3
+    avg_length: 4.4
+- name: min_dist_ed_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.6
+    unique_count: 1577
+    max_length: 6
+    min_length: 3
+    avg_length: 4.3

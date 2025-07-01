@@ -1,0 +1,37 @@
+name: Number of Hospitals with Obstetric Care
+domain: healthcare
+indicator: number_hospitals_obstetric_care
+indicator_file: number_hospitals_obstetric_care.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level rate of hospitals with obstetric care services.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 00ba4ec7f9d4c2a0e7165b77399c42f9058f9122f1c5145e36fb7e85c56cd6a1
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.06
+  data_size_mb: 0.11
+  years_covered:
+  - 2009
+variables:
+- name: hosp_obstetric_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.1
+    unique_count: 72
+    max_length: 4
+    min_length: 3
+    avg_length: 3.6

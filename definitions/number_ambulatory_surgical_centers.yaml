@@ -1,0 +1,37 @@
+name: Number of Ambulatory Surgical Centers
+domain: healthcare
+indicator: number_ambulatory_surgical_centers
+indicator_file: number_ambulatory_surgical_centers.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level rate of ambulatory surgical centers.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 94f888c703d07721b2cb1d9a5543d1a638d229d980d961c9cd6445ecff7596fe
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.06
+  data_size_mb: 0.11
+  years_covered:
+  - 2009
+variables:
+- name: asc_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.1
+    unique_count: 18
+    max_length: 4
+    min_length: 3
+    avg_length: 3.3

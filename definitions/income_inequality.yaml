@@ -1,0 +1,37 @@
+name: Income Inequality
+domain: income_credit_wealth
+indicator: income_inequality
+indicator_file: income_inequality.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level income inequality measured by the Gini Index.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: 89f7337dd2e11f4eade4f4654de81e50b625aa8c4afcc72e3c9df6f876d9867c
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.37
+  data_size_mb: 0.11
+  years_covered:
+  - 2009
+variables:
+- name: gini_index_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.4
+    unique_count: 34
+    max_length: 4
+    min_length: 3
+    avg_length: 3.9

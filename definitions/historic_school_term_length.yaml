@@ -1,32 +1,57 @@
 name: Historic school term length
-version: '1.0'
-last_updated: '2025-06-05'
 domain: education
 indicator: historic_school_term_length
-data_file: historic_school_term_length.csv
+indicator_file: historic_school_term_length.csv
 geography: state
-availability: private
-data_source:
-  from: ''
-  data_downloaded: ''
-  license: ''
-  comments: ''
-notes: []
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
 description: School term length (days) in all schools for each year, by racial group.
 data_quality:
-  missing_pct: 39.45
+  limitations: ''
 data_summary:
-  row_count: 57
+  sha256_hash: a1d71eeb389a076f089bb8e92e3c9aa26d4afa9ca98c70986ad98feaf3a17e99
+  rows: 57
   variable_count: 65
+  admin_variable_count: 2
+  non_admin_variable_count: 63
+  non_admin_missing_pct: 39.91
+  data_size_mb: 0.02
+  years_covered:
+  - 1920
+  - 1922
+  - 1926
+  - 1928
+  - 1930
+  - 1932
+  - 1934
+  - 1936
+  - 1938
+  - 1940
+  - 1942
+  - 1944
+  - 1946
+  - 1948
+  - 1950
+  - 1952
+  - 1954
+  - 1956
+  - 1958
+  - 1960
+  - 1962
+  - 1964
+  - 1966
+  - 1968
+  - 1970
+  - 1972
+  - 1974
+  - 1976
+  - 1980
 variables:
-- name: fips_state
-  type: string
-  summary:
-    missing_pct: 10.5
-    unique_count: 51
-    max_length: 4
-    min_length: 3
-    avg_length: 3.8
 - name: all_1920
   type: string
   time_varying: true

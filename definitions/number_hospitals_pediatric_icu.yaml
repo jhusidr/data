@@ -1,0 +1,37 @@
+name: Number of Hospitals with Pediatric ICU
+domain: healthcare
+indicator: number_hospitals_pediatric_icu
+indicator_file: number_hospitals_pediatric_icu.csv
+geography: county
+sources:
+- title: ''
+  authors: ''
+  year: ''
+  url: ''
+  accessed: ''
+  citation: ''
+description: County-level rate of hospitals with pediatric intensive care units.
+data_quality:
+  limitations: ''
+data_summary:
+  sha256_hash: c4b58c77e8c08e0e420b0fd47c7440b256f641e8845e6921bccd01a021e4da12
+  rows: 3233
+  variable_count: 4
+  admin_variable_count: 3
+  non_admin_variable_count: 1
+  non_admin_missing_pct: 0.06
+  data_size_mb: 0.11
+  years_covered:
+  - 2009
+variables:
+- name: hosp_ped_icu_rate_2009
+  type: string
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    missing_pct: 0.1
+    unique_count: 19
+    max_length: 4
+    min_length: 3
+    avg_length: 3.0
