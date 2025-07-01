@@ -40,3 +40,5 @@ build/
 .Rproj.user
 .Rproj.user/
 *.Rproj 
+
+.DS_Store
