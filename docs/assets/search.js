@@ -7,7 +7,7 @@ function initializeSearch(datasets) {
     const resetButton = document.getElementById('reset-filters');
     const resultsCount = document.getElementById('results-count');
     const cards = document.querySelectorAll('.dataset-card');
-    const rows = document.querySelectorAll('.dataset-row');
+    const listItems = document.querySelectorAll('.dataset-list-item');
     const listViewBtn = document.getElementById('list-view-btn');
     const tileViewBtn = document.getElementById('tile-view-btn');
     const listView = document.getElementById('list-view');
@@ -61,9 +61,9 @@ function initializeSearch(datasets) {
                 cards[index].style.display = isVisible ? 'block' : 'none';
             }
             
-            // Update row visibility
-            if (rows[index]) {
-                rows[index].style.display = isVisible ? 'table-row' : 'none';
+            // Update list item visibility
+            if (listItems[index]) {
+                listItems[index].style.display = isVisible ? 'block' : 'none';
             }
             
             if (isVisible) visibleCount++;
