@@ -1,0 +1,4520 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.29">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Incarcerations by race – JH-SIDR Data Documentation</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-fef08fedf655b9fdf21809183a9bf772.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body class="floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">JH-SIDR Data Documentation</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#data-source" id="toc-data-source" class="nav-link" data-scroll-target="#data-source">Data Source</a></li>
+  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables">Variables</a></li>
+  <li><a href="#data-quality-summary" id="toc-data-quality-summary" class="nav-link" data-scroll-target="#data-quality-summary">Data Quality &amp; Summary</a></li>
+  <li><a href="#download" id="toc-download" class="nav-link" data-scroll-target="#download">Download</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Incarcerations by race</h1>
+<p class="subtitle lead">incarcerations_by_race</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+
+<div class="dataset-overview">
+    <div class="overview-grid">
+        <div class="overview-item">
+            <strong>Domain:</strong> <span class="domain-badge" style="background-color: #666666">Policing</span>
+        </div>
+        <div class="overview-item">
+            <strong>Geography:</strong> <span class="geography-type">county</span>
+        </div>
+        <div class="overview-item">
+            <strong>Years:</strong> 1970–2018
+        </div>
+        <div class="overview-item">
+            <strong>Variables:</strong> 325
+        </div>
+    </div>
+    
+    <div class="description">
+        <p>Incarcerations by race</p>
+    </div>
+</div>
+
+</section>
+<section id="data-source" class="level2">
+<h2 class="anchored" data-anchor-id="data-source">Data Source</h2>
+<p class="no-source">Source information not yet available.</p>
+</section>
+<section id="variables" class="level2">
+<h2 class="anchored" data-anchor-id="variables">Variables</h2>
+<p>This dataset contains 325 variables covering 1970–2018.</p>
+<div class="variable-table-container">
+    
+<table class="variable-table caption-top table" data-quarto-postprocess="true">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Variable Name</th>
+<th data-quarto-table-cell-role="th">Type</th>
+<th data-quarto-table-cell-role="th">Years</th>
+<th data-quarto-table-cell-role="th">Missing %</th>
+<th data-quarto-table-cell-role="th">Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="var-name"><code>urbanicity</code></td>
+<td class="var-type">string</td>
+<td class="var-years">Not specified</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
+
+</div>
+<span class="missing-value">0.0%</span>
+</div></td>
+<td class="var-summary">4 unique | Length: 3–9</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1970</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1970</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.8%</span>
+</div></td>
+<td class="var-summary">2,526 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1970</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1970</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 95.3%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">95.3%</span>
+</div></td>
+<td class="var-summary">145 unique | Length: 3–6</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1971</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1971</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 8.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">8.3%</span>
+</div></td>
+<td class="var-summary">2,610 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1971</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1971</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 95.2%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">95.2%</span>
+</div></td>
+<td class="var-summary">150 unique | Length: 3–6</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1972</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1972</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 8.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">8.3%</span>
+</div></td>
+<td class="var-summary">2,601 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1972</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1972</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 95.2%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">95.2%</span>
+</div></td>
+<td class="var-summary">150 unique | Length: 3–6</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1973</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1973</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 8.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">8.3%</span>
+</div></td>
+<td class="var-summary">2,612 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1973</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1973</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 95.1%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">95.1%</span>
+</div></td>
+<td class="var-summary">153 unique | Length: 3–6</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1974</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1974</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 8.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">8.3%</span>
+</div></td>
+<td class="var-summary">2,604 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1974</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1974</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 95.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">95.0%</span>
+</div></td>
+<td class="var-summary">155 unique | Length: 3–6</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1975</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1975</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 8.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">8.3%</span>
+</div></td>
+<td class="var-summary">2,587 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1975</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1975</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 95.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">95.0%</span>
+</div></td>
+<td class="var-summary">156 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1976</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1976</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 8.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">8.3%</span>
+</div></td>
+<td class="var-summary">2,604 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1976</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1976</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 95.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">95.0%</span>
+</div></td>
+<td class="var-summary">157 unique | Length: 3–6</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1977</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1977</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 8.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">8.3%</span>
+</div></td>
+<td class="var-summary">2,611 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1977</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1977</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 95.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">95.0%</span>
+</div></td>
+<td class="var-summary">156 unique | Length: 3–6</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1978</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1978</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.0%</span>
+</div></td>
+<td class="var-summary">2,665 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1978</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1978</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 95.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">95.0%</span>
+</div></td>
+<td class="var-summary">157 unique | Length: 3–6</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1979</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1979</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.9%</span>
+</div></td>
+<td class="var-summary">2,658 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1979</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1979</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 95.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">95.0%</span>
+</div></td>
+<td class="var-summary">158 unique | Length: 3–6</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1980</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1980</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.8%</span>
+</div></td>
+<td class="var-summary">2,701 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1980</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1980</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 95.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">95.0%</span>
+</div></td>
+<td class="var-summary">155 unique | Length: 3–6</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1981</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1981</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.8%</span>
+</div></td>
+<td class="var-summary">2,690 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1981</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1981</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 95.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">95.0%</span>
+</div></td>
+<td class="var-summary">157 unique | Length: 3–6</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1982</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1982</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.8%</span>
+</div></td>
+<td class="var-summary">2,698 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1982</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1982</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 95.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">95.0%</span>
+</div></td>
+<td class="var-summary">155 unique | Length: 3–6</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1983</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1983</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.8%</span>
+</div></td>
+<td class="var-summary">2,751 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1983</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1983</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 42.6%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">42.6%</span>
+</div></td>
+<td class="var-summary">1,670 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1984</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1984</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.3%</span>
+</div></td>
+<td class="var-summary">2,762 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1984</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1984</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 35.6%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">35.6%</span>
+</div></td>
+<td class="var-summary">1,890 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1985</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1985</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.3%</span>
+</div></td>
+<td class="var-summary">2,755 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1985</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1985</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 32.6%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">32.6%</span>
+</div></td>
+<td class="var-summary">1,976 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1986</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1986</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.3%</span>
+</div></td>
+<td class="var-summary">2,787 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1986</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1986</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 32.0%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">32.0%</span>
+</div></td>
+<td class="var-summary">2,000 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1987</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1987</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.3%</span>
+</div></td>
+<td class="var-summary">2,781 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1987</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1987</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 29.2%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">29.2%</span>
+</div></td>
+<td class="var-summary">2,083 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1988</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1988</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.0%</span>
+</div></td>
+<td class="var-summary">2,806 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1988</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1988</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 25.0%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">25.0%</span>
+</div></td>
+<td class="var-summary">2,213 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1989</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1989</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,799 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1989</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1989</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 22.1%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">22.1%</span>
+</div></td>
+<td class="var-summary">2,311 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_1990</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1990</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 17.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">17.1%</span>
+</div></td>
+<td class="var-summary">1,947 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_1990</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1990</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 64.4%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">64.4%</span>
+</div></td>
+<td class="var-summary">830 unique | Length: 3–9</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_1990</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1990</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 17.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">17.1%</span>
+</div></td>
+<td class="var-summary">2,567 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_1990</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1990</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 65.5%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">65.5%</span>
+</div></td>
+<td class="var-summary">1,058 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_1990</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1990</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 17.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">17.9%</span>
+</div></td>
+<td class="var-summary">2,081 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_1990</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1990</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 66.3%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">66.3%</span>
+</div></td>
+<td class="var-summary">814 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1990</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1990</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,802 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1990</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1990</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 21.2%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">21.2%</span>
+</div></td>
+<td class="var-summary">2,330 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_1990</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1990</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 8.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">8.3%</span>
+</div></td>
+<td class="var-summary">2,680 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_1990</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1990</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 48.8%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">48.8%</span>
+</div></td>
+<td class="var-summary">1,518 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_1991</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1991</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.3%</span>
+</div></td>
+<td class="var-summary">1,956 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_1991</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1991</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 54.9%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">54.9%</span>
+</div></td>
+<td class="var-summary">1,124 unique | Length: 3–10</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_1991</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1991</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.3%</span>
+</div></td>
+<td class="var-summary">2,596 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_1991</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1991</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 56.4%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">56.4%</span>
+</div></td>
+<td class="var-summary">1,351 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_1991</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1991</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 17.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">17.0%</span>
+</div></td>
+<td class="var-summary">2,060 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_1991</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1991</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 57.1%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">57.1%</span>
+</div></td>
+<td class="var-summary">1,102 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1991</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1991</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,807 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1991</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1991</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 18.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">18.8%</span>
+</div></td>
+<td class="var-summary">2,406 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_1991</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1991</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 8.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">8.3%</span>
+</div></td>
+<td class="var-summary">2,679 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_1991</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1991</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 40.8%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">40.8%</span>
+</div></td>
+<td class="var-summary">1,755 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_1992</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1992</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.4%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.4%</span>
+</div></td>
+<td class="var-summary">1,964 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_1992</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1992</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 59.5%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">59.5%</span>
+</div></td>
+<td class="var-summary">1,016 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_1992</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1992</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.4%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.4%</span>
+</div></td>
+<td class="var-summary">2,601 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_1992</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1992</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 60.9%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">60.9%</span>
+</div></td>
+<td class="var-summary">1,209 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_1992</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1992</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 17.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">17.1%</span>
+</div></td>
+<td class="var-summary">2,100 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_1992</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1992</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 61.5%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">61.5%</span>
+</div></td>
+<td class="var-summary">990 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1992</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1992</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,831 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1992</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1992</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 18.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">18.6%</span>
+</div></td>
+<td class="var-summary">2,431 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_1992</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1992</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 8.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">8.3%</span>
+</div></td>
+<td class="var-summary">2,709 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_1992</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1992</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 44.1%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">44.1%</span>
+</div></td>
+<td class="var-summary">1,652 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_1993</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1993</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.3%</span>
+</div></td>
+<td class="var-summary">1,930 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_1993</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1993</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 57.3%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">57.3%</span>
+</div></td>
+<td class="var-summary">1,056 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_1993</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1993</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.3%</span>
+</div></td>
+<td class="var-summary">2,636 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_1993</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1993</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 58.5%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">58.5%</span>
+</div></td>
+<td class="var-summary">1,283 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_1993</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1993</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.0%</span>
+</div></td>
+<td class="var-summary">2,107 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_1993</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1993</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 59.2%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">59.2%</span>
+</div></td>
+<td class="var-summary">1,039 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1993</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1993</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.9%</span>
+</div></td>
+<td class="var-summary">2,837 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1993</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1993</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 18.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">18.1%</span>
+</div></td>
+<td class="var-summary">2,450 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_1993</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1993</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.0%</span>
+</div></td>
+<td class="var-summary">2,754 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_1993</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1993</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 41.1%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">41.1%</span>
+</div></td>
+<td class="var-summary">1,750 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_1994</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1994</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.2%</span>
+</div></td>
+<td class="var-summary">2,140 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_1994</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1994</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 57.8%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">57.8%</span>
+</div></td>
+<td class="var-summary">1,058 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_1994</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1994</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.2%</span>
+</div></td>
+<td class="var-summary">2,630 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_1994</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1994</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 58.9%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">58.9%</span>
+</div></td>
+<td class="var-summary">1,276 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_1994</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1994</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.1%</span>
+</div></td>
+<td class="var-summary">2,252 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_1994</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1994</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 59.4%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">59.4%</span>
+</div></td>
+<td class="var-summary">1,041 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1994</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1994</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,828 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1994</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1994</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 17.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">17.8%</span>
+</div></td>
+<td class="var-summary">2,463 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_1994</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1994</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.1%</span>
+</div></td>
+<td class="var-summary">2,744 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_1994</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1994</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 40.6%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">40.6%</span>
+</div></td>
+<td class="var-summary">1,765 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_1995</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1995</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.1%</span>
+</div></td>
+<td class="var-summary">2,174 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_1995</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1995</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 56.3%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">56.3%</span>
+</div></td>
+<td class="var-summary">1,146 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_1995</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1995</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.1%</span>
+</div></td>
+<td class="var-summary">2,636 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_1995</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1995</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 57.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">57.0%</span>
+</div></td>
+<td class="var-summary">1,337 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_1995</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1995</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.9%</span>
+</div></td>
+<td class="var-summary">2,283 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_1995</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1995</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 57.6%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">57.6%</span>
+</div></td>
+<td class="var-summary">1,136 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1995</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1995</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,821 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1995</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1995</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 17.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">17.8%</span>
+</div></td>
+<td class="var-summary">2,465 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_1995</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1995</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.1%</span>
+</div></td>
+<td class="var-summary">2,778 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_1995</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1995</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 40.1%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">40.1%</span>
+</div></td>
+<td class="var-summary">1,793 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_1996</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1996</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.1%</span>
+</div></td>
+<td class="var-summary">2,128 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_1996</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1996</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 61.9%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">61.9%</span>
+</div></td>
+<td class="var-summary">1,009 unique | Length: 3–9</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_1996</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1996</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.1%</span>
+</div></td>
+<td class="var-summary">2,636 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_1996</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1996</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 62.6%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">62.6%</span>
+</div></td>
+<td class="var-summary">1,158 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_1996</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1996</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.8%</span>
+</div></td>
+<td class="var-summary">2,291 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_1996</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1996</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 63.2%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">63.2%</span>
+</div></td>
+<td class="var-summary">994 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1996</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1996</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,825 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1996</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1996</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 17.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">17.6%</span>
+</div></td>
+<td class="var-summary">2,494 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_1996</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1996</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.1%</span>
+</div></td>
+<td class="var-summary">2,772 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_1996</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1996</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 47.7%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">47.7%</span>
+</div></td>
+<td class="var-summary">1,568 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_1997</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1997</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.3%</span>
+</div></td>
+<td class="var-summary">2,203 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_1997</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1997</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 64.6%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">64.6%</span>
+</div></td>
+<td class="var-summary">977 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_1997</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1997</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.3%</span>
+</div></td>
+<td class="var-summary">2,629 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_1997</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1997</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 65.2%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">65.2%</span>
+</div></td>
+<td class="var-summary">1,083 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_1997</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1997</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.0%</span>
+</div></td>
+<td class="var-summary">2,296 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_1997</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1997</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 65.7%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">65.7%</span>
+</div></td>
+<td class="var-summary">967 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1997</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1997</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,843 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1997</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1997</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 17.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">17.8%</span>
+</div></td>
+<td class="var-summary">2,477 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_1997</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1997</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.1%</span>
+</div></td>
+<td class="var-summary">2,772 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_1997</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1997</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 51.7%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">51.7%</span>
+</div></td>
+<td class="var-summary">1,445 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_1998</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1998</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.1%</span>
+</div></td>
+<td class="var-summary">2,218 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_1998</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1998</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 64.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">64.0%</span>
+</div></td>
+<td class="var-summary">995 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_1998</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1998</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.1%</span>
+</div></td>
+<td class="var-summary">2,639 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_1998</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1998</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 64.8%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">64.8%</span>
+</div></td>
+<td class="var-summary">1,097 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_1998</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1998</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.8%</span>
+</div></td>
+<td class="var-summary">2,298 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_1998</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1998</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 65.1%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">65.1%</span>
+</div></td>
+<td class="var-summary">978 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1998</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1998</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,836 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1998</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1998</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 18.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">18.2%</span>
+</div></td>
+<td class="var-summary">2,484 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_1998</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1998</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.1%</span>
+</div></td>
+<td class="var-summary">2,769 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_1998</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1998</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 52.8%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">52.8%</span>
+</div></td>
+<td class="var-summary">1,431 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_1999</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1999</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 14.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">14.3%</span>
+</div></td>
+<td class="var-summary">2,078 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_1999</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1999</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 60.6%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">60.6%</span>
+</div></td>
+<td class="var-summary">1,127 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_1999</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1999</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 14.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">14.3%</span>
+</div></td>
+<td class="var-summary">2,663 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_1999</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1999</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 61.2%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">61.2%</span>
+</div></td>
+<td class="var-summary">1,209 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_1999</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1999</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.1%</span>
+</div></td>
+<td class="var-summary">2,303 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_1999</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1999</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 61.5%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">61.5%</span>
+</div></td>
+<td class="var-summary">1,124 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_1999</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1999</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.5%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.5%</span>
+</div></td>
+<td class="var-summary">2,847 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_1999</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1999</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 18.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">18.3%</span>
+</div></td>
+<td class="var-summary">2,486 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_1999</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1999</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.9%</span>
+</div></td>
+<td class="var-summary">2,812 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_1999</code></td>
+<td class="var-type">string</td>
+<td class="var-years">1999</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 50.3%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">50.3%</span>
+</div></td>
+<td class="var-summary">1,509 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2000</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2000</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.7%</span>
+</div></td>
+<td class="var-summary">2,345 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2000</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2000</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 63.5%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">63.5%</span>
+</div></td>
+<td class="var-summary">1,014 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2000</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2000</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.7%</span>
+</div></td>
+<td class="var-summary">2,850 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2000</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2000</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 63.8%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">63.8%</span>
+</div></td>
+<td class="var-summary">1,119 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2000</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2000</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 9.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">9.0%</span>
+</div></td>
+<td class="var-summary">2,483 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2000</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2000</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 64.4%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">64.4%</span>
+</div></td>
+<td class="var-summary">1,028 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2000</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2000</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.9%</span>
+</div></td>
+<td class="var-summary">2,836 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2000</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2000</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 20.3%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">20.3%</span>
+</div></td>
+<td class="var-summary">2,434 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2000</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2000</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,809 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2000</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2000</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 54.9%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">54.9%</span>
+</div></td>
+<td class="var-summary">1,372 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2001</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2001</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.7%</span>
+</div></td>
+<td class="var-summary">2,415 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2001</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2001</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 62.4%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">62.4%</span>
+</div></td>
+<td class="var-summary">1,036 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2001</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2001</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.7%</span>
+</div></td>
+<td class="var-summary">2,869 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2001</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2001</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 62.7%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">62.7%</span>
+</div></td>
+<td class="var-summary">1,145 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2001</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2001</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 8.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">8.3%</span>
+</div></td>
+<td class="var-summary">2,522 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2001</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2001</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 63.5%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">63.5%</span>
+</div></td>
+<td class="var-summary">1,049 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2001</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2001</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.9%</span>
+</div></td>
+<td class="var-summary">2,846 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2001</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2001</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 20.2%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">20.2%</span>
+</div></td>
+<td class="var-summary">2,432 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2001</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2001</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,818 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2001</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2001</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 53.3%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">53.3%</span>
+</div></td>
+<td class="var-summary">1,406 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2002</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2002</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.6%</span>
+</div></td>
+<td class="var-summary">2,348 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2002</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2002</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 60.1%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">60.1%</span>
+</div></td>
+<td class="var-summary">1,130 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2002</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2002</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.6%</span>
+</div></td>
+<td class="var-summary">2,881 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2002</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2002</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 60.3%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">60.3%</span>
+</div></td>
+<td class="var-summary">1,225 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2002</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2002</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 8.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">8.0%</span>
+</div></td>
+<td class="var-summary">2,544 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2002</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2002</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 61.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">61.0%</span>
+</div></td>
+<td class="var-summary">1,143 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2002</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2002</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.9%</span>
+</div></td>
+<td class="var-summary">2,831 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2002</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2002</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 17.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">17.2%</span>
+</div></td>
+<td class="var-summary">2,527 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2002</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2002</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,835 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2002</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2002</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 50.2%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">50.2%</span>
+</div></td>
+<td class="var-summary">1,515 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2003</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2003</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.4%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.4%</span>
+</div></td>
+<td class="var-summary">2,446 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2003</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2003</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 59.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">59.0%</span>
+</div></td>
+<td class="var-summary">1,165 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2003</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2003</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.4%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.4%</span>
+</div></td>
+<td class="var-summary">2,886 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2003</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2003</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 59.2%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">59.2%</span>
+</div></td>
+<td class="var-summary">1,260 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2003</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2003</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.8%</span>
+</div></td>
+<td class="var-summary">2,551 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2003</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2003</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 59.9%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">59.9%</span>
+</div></td>
+<td class="var-summary">1,182 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2003</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2003</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.9%</span>
+</div></td>
+<td class="var-summary">2,861 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2003</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2003</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.9%</span>
+</div></td>
+<td class="var-summary">2,540 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2003</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2003</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,852 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2003</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2003</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 49.3%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">49.3%</span>
+</div></td>
+<td class="var-summary">1,545 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2004</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2004</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.4%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.4%</span>
+</div></td>
+<td class="var-summary">2,465 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2004</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2004</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 58.2%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">58.2%</span>
+</div></td>
+<td class="var-summary">1,166 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2004</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2004</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.4%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.4%</span>
+</div></td>
+<td class="var-summary">2,886 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2004</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2004</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 58.4%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">58.4%</span>
+</div></td>
+<td class="var-summary">1,282 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2004</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2004</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.8%</span>
+</div></td>
+<td class="var-summary">2,554 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2004</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2004</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 59.1%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">59.1%</span>
+</div></td>
+<td class="var-summary">1,189 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2004</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2004</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.9%</span>
+</div></td>
+<td class="var-summary">2,846 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2004</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2004</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.6%</span>
+</div></td>
+<td class="var-summary">2,544 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2004</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2004</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,850 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2004</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2004</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 48.1%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">48.1%</span>
+</div></td>
+<td class="var-summary">1,567 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2005</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2005</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.8%</span>
+</div></td>
+<td class="var-summary">2,264 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2005</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2005</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 51.2%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">51.2%</span>
+</div></td>
+<td class="var-summary">1,353 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2005</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2005</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.8%</span>
+</div></td>
+<td class="var-summary">2,895 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2005</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2005</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 51.5%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">51.5%</span>
+</div></td>
+<td class="var-summary">1,497 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2005</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2005</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.5%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.5%</span>
+</div></td>
+<td class="var-summary">2,536 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2005</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2005</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 52.2%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">52.2%</span>
+</div></td>
+<td class="var-summary">1,382 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2005</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2005</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.0%</span>
+</div></td>
+<td class="var-summary">2,834 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2005</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2005</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.2%</span>
+</div></td>
+<td class="var-summary">2,567 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2005</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2005</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,847 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2005</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2005</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 38.3%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">38.3%</span>
+</div></td>
+<td class="var-summary">1,882 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2006</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2006</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.8%</span>
+</div></td>
+<td class="var-summary">2,490 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2006</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2006</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 50.2%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">50.2%</span>
+</div></td>
+<td class="var-summary">1,381 unique | Length: 3–9</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2006</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2006</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.8%</span>
+</div></td>
+<td class="var-summary">2,906 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2006</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2006</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 50.4%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">50.4%</span>
+</div></td>
+<td class="var-summary">1,541 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2006</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2006</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 7.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">7.2%</span>
+</div></td>
+<td class="var-summary">2,630 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2006</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2006</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 50.9%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">50.9%</span>
+</div></td>
+<td class="var-summary">1,422 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2006</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2006</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.0%</span>
+</div></td>
+<td class="var-summary">2,858 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2006</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2006</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.3%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.3%</span>
+</div></td>
+<td class="var-summary">2,564 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2006</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2006</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,853 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2006</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2006</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 37.5%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">37.5%</span>
+</div></td>
+<td class="var-summary">1,901 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2007</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2007</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.7%</span>
+</div></td>
+<td class="var-summary">2,479 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2007</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2007</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 49.4%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">49.4%</span>
+</div></td>
+<td class="var-summary">1,404 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2007</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2007</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.7%</span>
+</div></td>
+<td class="var-summary">2,914 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2007</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2007</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 49.6%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">49.6%</span>
+</div></td>
+<td class="var-summary">1,559 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2007</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2007</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.9%</span>
+</div></td>
+<td class="var-summary">2,655 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2007</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2007</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 50.4%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">50.4%</span>
+</div></td>
+<td class="var-summary">1,451 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2007</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2007</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.9%</span>
+</div></td>
+<td class="var-summary">2,852 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2007</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2007</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.4%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.4%</span>
+</div></td>
+<td class="var-summary">2,558 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2007</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2007</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,855 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2007</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2007</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 36.1%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">36.1%</span>
+</div></td>
+<td class="var-summary">1,945 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2008</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2008</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.6%</span>
+</div></td>
+<td class="var-summary">2,525 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2008</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2008</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 50.0%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">50.0%</span>
+</div></td>
+<td class="var-summary">1,402 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2008</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2008</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.6%</span>
+</div></td>
+<td class="var-summary">2,912 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2008</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2008</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 50.1%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">50.1%</span>
+</div></td>
+<td class="var-summary">1,541 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2008</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2008</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.9%</span>
+</div></td>
+<td class="var-summary">2,660 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2008</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2008</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 50.8%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">50.8%</span>
+</div></td>
+<td class="var-summary">1,443 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2008</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2008</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.9%</span>
+</div></td>
+<td class="var-summary">2,850 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2008</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2008</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.2%</span>
+</div></td>
+<td class="var-summary">2,568 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2008</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2008</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,850 unique | Length: 3–7</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2008</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2008</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 37.1%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">37.1%</span>
+</div></td>
+<td class="var-summary">1,913 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2009</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2009</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.6%</span>
+</div></td>
+<td class="var-summary">2,460 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2009</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2009</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 50.4%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">50.4%</span>
+</div></td>
+<td class="var-summary">1,391 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2009</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2009</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.6%</span>
+</div></td>
+<td class="var-summary">2,912 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2009</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2009</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 50.6%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">50.6%</span>
+</div></td>
+<td class="var-summary">1,536 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2009</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2009</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.9%</span>
+</div></td>
+<td class="var-summary">2,662 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2009</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2009</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 51.1%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">51.1%</span>
+</div></td>
+<td class="var-summary">1,429 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2009</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2009</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.9%</span>
+</div></td>
+<td class="var-summary">2,865 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2009</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2009</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.1%</span>
+</div></td>
+<td class="var-summary">2,572 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2009</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2009</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,875 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2009</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2009</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 38.5%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">38.5%</span>
+</div></td>
+<td class="var-summary">1,885 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2010</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2010</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.5%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.5%</span>
+</div></td>
+<td class="var-summary">2,573 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2010</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2010</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 50.7%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">50.7%</span>
+</div></td>
+<td class="var-summary">1,390 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2010</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2010</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.5%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.5%</span>
+</div></td>
+<td class="var-summary">2,923 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2010</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2010</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 50.8%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">50.8%</span>
+</div></td>
+<td class="var-summary">1,525 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2010</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2010</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.7%</span>
+</div></td>
+<td class="var-summary">2,668 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2010</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2010</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 51.4%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">51.4%</span>
+</div></td>
+<td class="var-summary">1,423 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2010</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2010</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.9%</span>
+</div></td>
+<td class="var-summary">2,865 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2010</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2010</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.9%</span>
+</div></td>
+<td class="var-summary">2,581 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2010</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2010</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,861 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2010</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2010</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 38.7%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">38.7%</span>
+</div></td>
+<td class="var-summary">1,880 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2011</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2011</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,534 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2011</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2011</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 47.7%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">47.7%</span>
+</div></td>
+<td class="var-summary">1,498 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2011</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2011</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,933 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2011</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2011</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 47.9%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">47.9%</span>
+</div></td>
+<td class="var-summary">1,612 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2011</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2011</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.5%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.5%</span>
+</div></td>
+<td class="var-summary">2,675 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2011</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2011</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 48.6%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">48.6%</span>
+</div></td>
+<td class="var-summary">1,527 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2011</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2011</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.9%</span>
+</div></td>
+<td class="var-summary">2,862 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2011</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2011</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.8%</span>
+</div></td>
+<td class="var-summary">2,589 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2011</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2011</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,870 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2011</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2011</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 34.7%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">34.7%</span>
+</div></td>
+<td class="var-summary">2,004 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2012</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2012</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,561 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2012</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2012</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 48.5%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">48.5%</span>
+</div></td>
+<td class="var-summary">1,458 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2012</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2012</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,922 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2012</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2012</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 48.6%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">48.6%</span>
+</div></td>
+<td class="var-summary">1,589 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2012</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2012</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.7%</span>
+</div></td>
+<td class="var-summary">2,661 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2012</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2012</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 49.3%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">49.3%</span>
+</div></td>
+<td class="var-summary">1,500 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2012</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2012</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.9%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.9%</span>
+</div></td>
+<td class="var-summary">2,858 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2012</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2012</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 16.4%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">16.4%</span>
+</div></td>
+<td class="var-summary">2,558 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2012</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2012</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,872 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2012</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2012</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 35.5%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">35.5%</span>
+</div></td>
+<td class="var-summary">1,967 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2013</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2013</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.8%</span>
+</div></td>
+<td class="var-summary">2,398 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2013</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2013</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 43.3%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">43.3%</span>
+</div></td>
+<td class="var-summary">1,596 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2013</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2013</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.8%</span>
+</div></td>
+<td class="var-summary">2,940 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2013</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2013</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 43.4%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">43.4%</span>
+</div></td>
+<td class="var-summary">1,745 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2013</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2013</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.1%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.1%</span>
+</div></td>
+<td class="var-summary">2,682 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2013</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2013</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 44.4%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">44.4%</span>
+</div></td>
+<td class="var-summary">1,648 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2013</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2013</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,853 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2013</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2013</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 15.8%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">15.8%</span>
+</div></td>
+<td class="var-summary">2,578 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2013</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2013</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.6%</span>
+</div></td>
+<td class="var-summary">2,893 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2013</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2013</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 29.7%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">29.7%</span>
+</div></td>
+<td class="var-summary">2,146 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2014</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2014</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,444 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2014</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2014</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 47.5%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">47.5%</span>
+</div></td>
+<td class="var-summary">1,468 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2014</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2014</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,946 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2014</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2014</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 47.7%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">47.7%</span>
+</div></td>
+<td class="var-summary">1,616 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2014</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2014</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.0%</span>
+</div></td>
+<td class="var-summary">2,683 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2014</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2014</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 48.5%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">48.5%</span>
+</div></td>
+<td class="var-summary">1,514 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2014</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2014</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,864 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2014</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2014</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 19.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">19.7%</span>
+</div></td>
+<td class="var-summary">2,476 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2014</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2014</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.6%</span>
+</div></td>
+<td class="var-summary">2,883 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2014</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2014</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 33.3%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">33.3%</span>
+</div></td>
+<td class="var-summary">2,046 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2015</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2015</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,427 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2015</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2015</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 51.4%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">51.4%</span>
+</div></td>
+<td class="var-summary">1,392 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2015</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2015</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,939 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2015</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2015</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 51.6%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">51.6%</span>
+</div></td>
+<td class="var-summary">1,499 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2015</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2015</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.0%</span>
+</div></td>
+<td class="var-summary">2,682 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2015</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2015</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 52.3%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">52.3%</span>
+</div></td>
+<td class="var-summary">1,432 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2015</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2015</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,877 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2015</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2015</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 25.9%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">25.9%</span>
+</div></td>
+<td class="var-summary">2,277 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2015</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2015</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.6%</span>
+</div></td>
+<td class="var-summary">2,888 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2015</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2015</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 40.0%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">40.0%</span>
+</div></td>
+<td class="var-summary">1,846 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2016</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2016</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,444 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_prison_pop_rate_2016</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2016</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 51.5%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">51.5%</span>
+</div></td>
+<td class="var-summary">1,358 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2016</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2016</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,947 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_prison_black_white_2016</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2016</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 51.8%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">51.8%</span>
+</div></td>
+<td class="var-summary">1,489 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2016</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2016</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.0%</span>
+</div></td>
+<td class="var-summary">2,685 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_prison_black_white_2016</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2016</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 52.5%; background-color: #dc3545;">
+
+</div>
+<span class="missing-value">52.5%</span>
+</div></td>
+<td class="var-summary">1,413 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2016</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2016</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,859 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_prison_pop_rate_2016</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2016</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 27.0%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">27.0%</span>
+</div></td>
+<td class="var-summary">2,243 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2016</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2016</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.6%</span>
+</div></td>
+<td class="var-summary">2,887 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_prison_pop_rate_2016</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2016</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 40.5%; background-color: #fd7e14;">
+
+</div>
+<span class="missing-value">40.5%</span>
+</div></td>
+<td class="var-summary">1,824 unique | Length: 3–7</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>black_jail_pop_rate_2017</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2017</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,425 unique | Length: 3–9</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>diff_jail_black_white_2017</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2017</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,943 unique | Length: 3–19</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>ratio_jail_black_white_2017</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2017</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.0%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.0%</span>
+</div></td>
+<td class="var-summary">2,686 unique | Length: 3–18</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>total_jail_pop_rate_2017</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2017</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,874 unique | Length: 3–8</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>white_jail_pop_rate_2017</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2017</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.6%</span>
+</div></td>
+<td class="var-summary">2,889 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>black_jail_pop_rate_2018</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2018</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.6%</span>
+</div></td>
+<td class="var-summary">2,407 unique | Length: 3–9</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>diff_jail_black_white_2018</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2018</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.6%</span>
+</div></td>
+<td class="var-summary">2,943 unique | Length: 3–19</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>ratio_jail_black_white_2018</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2018</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 6.2%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">6.2%</span>
+</div></td>
+<td class="var-summary">2,659 unique | Length: 3–18</td>
+</tr>
+<tr class="even">
+<td class="var-name"><code>total_jail_pop_rate_2018</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2018</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.7%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.7%</span>
+</div></td>
+<td class="var-summary">2,871 unique | Length: 3–8</td>
+</tr>
+<tr class="odd">
+<td class="var-name"><code>white_jail_pop_rate_2018</code></td>
+<td class="var-type">string</td>
+<td class="var-years">2018</td>
+<td class="var-missing"><div class="missing-indicator">
+<div class="missing-bar" style="width: 5.6%; background-color: #ffc107;">
+
+</div>
+<span class="missing-value">5.6%</span>
+</div></td>
+<td class="var-summary">2,864 unique | Length: 3–8</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</section>
+<section id="data-quality-summary" class="level2">
+<h2 class="anchored" data-anchor-id="data-quality-summary">Data Quality &amp; Summary</h2>
+<div class="data-quality">
+<h3 class="anchored">Dataset Statistics</h3>
+<div class="stats-grid">
+
+        <div class="stat-item">
+            <div class="stat-label">Total Rows</div>
+            <div class="stat-value">3,139</div>
+        </div>
+
+        <div class="stat-item">
+            <div class="stat-label">File Size</div>
+            <div class="stat-value">7.27 MB</div>
+        </div>
+
+        <div class="stat-item">
+            <div class="stat-label">Total Variables</div>
+            <div class="stat-value">325</div>
+        </div>
+
+        <div class="stat-item">
+            <div class="stat-label">Non-Admin Variables</div>
+            <div class="stat-value">321</div>
+        </div>
+
+        <div class="stat-item">
+            <div class="stat-label">Overall Missing %</div>
+            <div class="stat-value">28.0%</div>
+        </div>
+
+        <div class="stat-item">
+            <div class="stat-label">SHA256 Hash</div>
+            <div class="stat-value"><code class="hash">04abb2a4e72c09c0...</code></div>
+        </div>
+</div>
+</div>
+
+</section>
+<section id="download" class="level2">
+<h2 class="anchored" data-anchor-id="download">Download</h2>
+<div class="download-section">
+    <a href="https://github.com/jh-sidr/jh-sidr-data/blob/main/data/incarcerations_by_race.csv" class="btn-download">
+        <i class="fas fa-download"></i> Download CSV
+    </a>
+    <a href="https://raw.githubusercontent.com/jh-sidr/jh-sidr-data/main/data/incarcerations_by_race.csv" class="btn-download secondary">
+        <i class="fas fa-link"></i> Direct Link
+    </a>
+</div>
+<hr>
+<div class="footer-nav">
+    <a href="../index.html" class="btn-nav">
+        <i class="fas fa-arrow-left"></i> Back to Dataset Index
+    </a>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,434 @@
+
+/* JH-SIDR Documentation Styles */
+
+:root {
+    --primary-color: #002D72;  /* JH Blue */
+    --secondary-color: #68ACE5;  /* JH Light Blue */
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-gray: #f8f9fa;
+    --border-color: #dee2e6;
+}
+
+/* Header Stats */
+.header-stats {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.header-stats .stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+/* Domain Badges */
+.domain-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.geography-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    background-color: var(--light-gray);
+    color: #495057;
+    font-size: 0.875rem;
+}
+
+/* Search Interface */
+.search-filters {
+    background-color: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.search-box {
+    margin-bottom: 1rem;
+}
+
+#search-input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+}
+
+.filter-controls {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+}
+
+.btn-reset {
+    padding: 0.5rem 1rem;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.btn-reset:hover {
+    background-color: #5a6268;
+}
+
+.results-summary {
+    margin-top: 1rem;
+    color: #6c757d;
+}
+
+/* Dataset Cards */
+.dataset-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.dataset-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dataset-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dataset-card h3 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.25rem;
+}
+
+.dataset-card h3 a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.dataset-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.card-meta {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-description {
+    color: #495057;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.card-stats {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* Dataset Overview */
+.dataset-overview {
+    background-color: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.overview-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.geography-type {
+    background-color: #e9ecef;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+/* Variable Table */
+.variable-table-container {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.variable-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.variable-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.variable-table th:hover {
+    background-color: #001a4d;
+}
+
+.variable-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.variable-table tr:hover {
+    background-color: var(--light-gray);
+}
+
+.var-name code {
+    background-color: #f1f3f4;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.var-description {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-top: 0.25rem;
+}
+
+.var-type {
+    font-weight: 500;
+    color: #495057;
+}
+
+/* Missing Percentage Indicator */
+.missing-indicator {
+    position: relative;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+    height: 20px;
+    width: 100%;
+    max-width: 150px;
+}
+
+.missing-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 0.25rem;
+    transition: width 0.3s ease;
+}
+
+.missing-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #333;
+    z-index: 1;
+}
+
+/* Data Quality Section */
+.data-quality {
+    margin-top: 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.stat-item {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.hash {
+    font-size: 0.875rem !important;
+}
+
+/* Download Section */
+.download-section {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s;
+}
+
+.btn-download:hover {
+    background-color: #001a4d;
+    color: white;
+}
+
+.btn-download.secondary {
+    background-color: #6c757d;
+}
+
+.btn-download.secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Footer Navigation */
+.footer-nav {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.btn-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.btn-nav:hover {
+    text-decoration: underline;
+}
+
+/* Sources */
+.sources {
+    background-color: var(--light-gray);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin: 1rem 0;
+}
+
+.source-item {
+    margin-bottom: 1rem;
+}
+
+.source-item:last-child {
+    margin-bottom: 0;
+}
+
+.source-title {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.source-url,
+.source-accessed,
+.source-citation {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin: 0.25rem 0;
+}
+
+.no-source {
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-stats {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .filter-controls {
+        flex-direction: column;
+    }
+    
+    .filter-group {
+        width: 100%;
+    }
+    
+    .dataset-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .search-filters,
+    .footer-nav,
+    .download-section {
+        display: none;
+    }
+    
+    .dataset-card {
+        page-break-inside: avoid;
+    }
+    
+    .variable-table {
+        font-size: 0.875rem;
+    }
+}
