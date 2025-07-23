@@ -255,19 +255,7 @@
     align-items: center;
     gap: 0.75rem;
     font-size: 0.875rem;
-    color: #6c757d;
     flex-wrap: wrap;
-}
-
-.meta-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-}
-
-.meta-divider {
-    color: #dee2e6;
-    font-size: 0.75rem;
 }
 
 /* View content visibility */
@@ -564,10 +552,6 @@
     
     .dataset-desc {
         font-size: 0.875rem;
-    }
-    
-    .meta-divider {
-        display: none;
     }
     
     .dataset-meta {
