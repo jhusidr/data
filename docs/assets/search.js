@@ -7,6 +7,35 @@ function initializeSearch(datasets) {
     const resetButton = document.getElementById('reset-filters');
     const resultsCount = document.getElementById('results-count');
     const cards = document.querySelectorAll('.dataset-card');
+    const rows = document.querySelectorAll('.dataset-row');
+    const listViewBtn = document.getElementById('list-view-btn');
+    const tileViewBtn = document.getElementById('tile-view-btn');
+    const listView = document.getElementById('list-view');
+    const tileView = document.getElementById('tile-view');
+    
+    // View toggle functionality
+    function setView(viewType) {
+        if (viewType === 'list') {
+            listView.style.display = 'block';
+            tileView.style.display = 'none';
+            listViewBtn.classList.add('active');
+            tileViewBtn.classList.remove('active');
+        } else {
+            listView.style.display = 'none';
+            tileView.style.display = 'block';
+            listViewBtn.classList.remove('active');
+            tileViewBtn.classList.add('active');
+        }
+        localStorage.setItem('preferredView', viewType);
+    }
+    
+    // Load preferred view from localStorage, default to list
+    const preferredView = localStorage.getItem('preferredView') || 'list';
+    setView(preferredView);
+    
+    // View toggle event listeners
+    listViewBtn.addEventListener('click', () => setView('list'));
+    tileViewBtn.addEventListener('click', () => setView('tile'));
     
     function filterDatasets() {
         const searchTerm = searchInput.value.toLowerCase();
@@ -15,8 +44,8 @@ function initializeSearch(datasets) {
         
         let visibleCount = 0;
         
-        cards.forEach((card, index) => {
-            const dataset = datasets[index];
+        // Filter both cards and rows
+        datasets.forEach((dataset, index) => {
             const matchesSearch = !searchTerm || 
                 dataset.name.toLowerCase().includes(searchTerm) ||
                 dataset.description.toLowerCase().includes(searchTerm) ||
@@ -25,12 +54,19 @@ function initializeSearch(datasets) {
             const matchesDomain = !selectedDomain || dataset.domain === selectedDomain;
             const matchesGeography = !selectedGeography || dataset.geography === selectedGeography;
             
-            if (matchesSearch && matchesDomain && matchesGeography) {
-                card.style.display = 'block';
-                visibleCount++;
-            } else {
-                card.style.display = 'none';
+            const isVisible = matchesSearch && matchesDomain && matchesGeography;
+            
+            // Update card visibility
+            if (cards[index]) {
+                cards[index].style.display = isVisible ? 'block' : 'none';
             }
+            
+            // Update row visibility
+            if (rows[index]) {
+                rows[index].style.display = isVisible ? 'table-row' : 'none';
+            }
+            
+            if (isVisible) visibleCount++;
         });
         
         // Update results count
