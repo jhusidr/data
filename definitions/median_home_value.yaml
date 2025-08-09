@@ -24,8 +24,11 @@ data_summary:
   years_covered:
   - 2009
 variables:
-- name: median_home_value_2009
+- var_name: median_home_value_2009
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2009

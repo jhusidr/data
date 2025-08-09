@@ -28,8 +28,11 @@ data_summary:
   - 2019
   - 2020
 variables:
-- name: annual_avg_8hr_o3_ppb_2016
+- var_name: annual_avg_8hr_o3_ppb_2016
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016
@@ -39,19 +42,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 15.2
-- name: annual_avg_stderr_o3_ppb_2016
+- var_name: annual_avg_8hr_o3_ppb_2017
   type: string
-  time_varying: true
-  years:
-  - 2016
-  summary:
-    missing_pct: 13.7
-    unique_count: 71621
-    max_length: 18
-    min_length: 3
-    avg_length: 15.2
-- name: annual_avg_8hr_o3_ppb_2017
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2017
@@ -61,19 +56,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 15.2
-- name: annual_avg_stderr_o3_ppb_2017
+- var_name: annual_avg_8hr_o3_ppb_2018
   type: string
-  time_varying: true
-  years:
-  - 2017
-  summary:
-    missing_pct: 13.7
-    unique_count: 71568
-    max_length: 18
-    min_length: 3
-    avg_length: 15.1
-- name: annual_avg_8hr_o3_ppb_2018
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2018
@@ -83,19 +70,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 15.2
-- name: annual_avg_stderr_o3_ppb_2018
+- var_name: annual_avg_8hr_o3_ppb_2019
   type: string
-  time_varying: true
-  years:
-  - 2018
-  summary:
-    missing_pct: 13.7
-    unique_count: 71539
-    max_length: 18
-    min_length: 3
-    avg_length: 15.2
-- name: annual_avg_8hr_o3_ppb_2019
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019
@@ -105,19 +84,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 15.2
-- name: annual_avg_stderr_o3_ppb_2019
-  type: string
-  time_varying: true
-  years:
-  - 2019
-  summary:
-    missing_pct: 13.7
-    unique_count: 71523
-    max_length: 18
-    min_length: 3
-    avg_length: 15.2
-- name: annual_avg_8hr_o3_ppb_2020
+- var_name: annual_avg_8hr_o3_ppb_2020
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -130,8 +101,67 @@ variables:
     sd: 4.255
     missing_pct: 0.0
     unique_count: 81772
-- name: annual_avg_stderr_o3_ppb_2020
+- var_name: annual_avg_stderr_o3_ppb_2016
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 13.7
+    unique_count: 71621
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- var_name: annual_avg_stderr_o3_ppb_2017
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 13.7
+    unique_count: 71568
+    max_length: 18
+    min_length: 3
+    avg_length: 15.1
+- var_name: annual_avg_stderr_o3_ppb_2018
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    missing_pct: 13.7
+    unique_count: 71539
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- var_name: annual_avg_stderr_o3_ppb_2019
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 13.7
+    unique_count: 71523
+    max_length: 18
+    min_length: 3
+    avg_length: 15.2
+- var_name: annual_avg_stderr_o3_ppb_2020
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020

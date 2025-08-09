@@ -32,9 +32,15 @@ data_summary:
   - 2020
   - 2021
   - 2022
+race_eth_coverage:
+- hl
+- white
 variables:
-- name: aian_wh_2013
+- var_name: aian_wh_2013
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2013
@@ -44,41 +50,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 4.1
-- name: anhpi_wh_2013
+- var_name: aian_wh_2014
   type: string
-  time_varying: true
-  years:
-  - 2013
-  summary:
-    missing_pct: 82.7
-    unique_count: 9
-    max_length: 19
-    min_length: 3
-    avg_length: 4.2
-- name: bl_wh_2013
-  type: string
-  time_varying: true
-  years:
-  - 2013
-  summary:
-    missing_pct: 26.9
-    unique_count: 34
-    max_length: 19
-    min_length: 3
-    avg_length: 7.8
-- name: hp_wh_2013
-  type: string
-  time_varying: true
-  years:
-  - 2013
-  summary:
-    missing_pct: 34.6
-    unique_count: 33
-    max_length: 19
-    min_length: 3
-    avg_length: 8.4
-- name: aian_wh_2014
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2014
@@ -88,41 +64,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 4.8
-- name: anhpi_wh_2014
+- var_name: aian_wh_2015
   type: string
-  time_varying: true
-  years:
-  - 2014
-  summary:
-    missing_pct: 86.5
-    unique_count: 7
-    max_length: 18
-    min_length: 3
-    avg_length: 3.8
-- name: bl_wh_2014
-  type: string
-  time_varying: true
-  years:
-  - 2014
-  summary:
-    missing_pct: 26.9
-    unique_count: 32
-    max_length: 19
-    min_length: 3
-    avg_length: 8.0
-- name: hp_wh_2014
-  type: string
-  time_varying: true
-  years:
-  - 2014
-  summary:
-    missing_pct: 38.5
-    unique_count: 28
-    max_length: 19
-    min_length: 3
-    avg_length: 7.1
-- name: aian_wh_2015
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2015
@@ -132,41 +78,11 @@ variables:
     max_length: 19
     min_length: 3
     avg_length: 4.7
-- name: anhpi_wh_2015
+- var_name: aian_wh_2016
   type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 86.5
-    unique_count: 7
-    max_length: 19
-    min_length: 3
-    avg_length: 4.3
-- name: bl_wh_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 28.8
-    unique_count: 36
-    max_length: 19
-    min_length: 3
-    avg_length: 8.0
-- name: hp_wh_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 42.3
-    unique_count: 27
-    max_length: 19
-    min_length: 3
-    avg_length: 6.7
-- name: aian_wh_2016
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016
@@ -176,41 +92,11 @@ variables:
     max_length: 19
     min_length: 3
     avg_length: 4.1
-- name: anhpi_wh_2016
+- var_name: aian_wh_2017
   type: string
-  time_varying: true
-  years:
-  - 2016
-  summary:
-    missing_pct: 94.2
-    unique_count: 3
-    max_length: 18
-    min_length: 3
-    avg_length: 3.5
-- name: bl_wh_2016
-  type: string
-  time_varying: true
-  years:
-  - 2016
-  summary:
-    missing_pct: 46.2
-    unique_count: 26
-    max_length: 18
-    min_length: 3
-    avg_length: 5.8
-- name: hp_wh_2016
-  type: string
-  time_varying: true
-  years:
-  - 2016
-  summary:
-    missing_pct: 71.2
-    unique_count: 15
-    max_length: 19
-    min_length: 3
-    avg_length: 5.0
-- name: aian_wh_2017
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2017
@@ -220,41 +106,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 3.5
-- name: anhpi_wh_2017
+- var_name: aian_wh_2018
   type: string
-  time_varying: true
-  years:
-  - 2017
-  summary:
-    missing_pct: 96.2
-    unique_count: 2
-    max_length: 8
-    min_length: 3
-    avg_length: 3.2
-- name: bl_wh_2017
-  type: string
-  time_varying: true
-  years:
-  - 2017
-  summary:
-    missing_pct: 46.2
-    unique_count: 28
-    max_length: 18
-    min_length: 3
-    avg_length: 6.6
-- name: hp_wh_2017
-  type: string
-  time_varying: true
-  years:
-  - 2017
-  summary:
-    missing_pct: 69.2
-    unique_count: 14
-    max_length: 19
-    min_length: 3
-    avg_length: 4.8
-- name: aian_wh_2018
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2018
@@ -264,41 +120,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 5.2
-- name: anhpi_wh_2018
+- var_name: aian_wh_2019
   type: string
-  time_varying: true
-  years:
-  - 2018
-  summary:
-    missing_pct: 86.5
-    unique_count: 7
-    max_length: 19
-    min_length: 3
-    avg_length: 3.9
-- name: bl_wh_2018
-  type: string
-  time_varying: true
-  years:
-  - 2018
-  summary:
-    missing_pct: 25.0
-    unique_count: 33
-    max_length: 19
-    min_length: 3
-    avg_length: 7.2
-- name: hp_wh_2018
-  type: string
-  time_varying: true
-  years:
-  - 2018
-  summary:
-    missing_pct: 30.8
-    unique_count: 29
-    max_length: 19
-    min_length: 3
-    avg_length: 7.1
-- name: aian_wh_2019
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019
@@ -308,41 +134,11 @@ variables:
     max_length: 19
     min_length: 3
     avg_length: 4.1
-- name: anhpi_wh_2019
+- var_name: aian_wh_2020
   type: string
-  time_varying: true
-  years:
-  - 2019
-  summary:
-    missing_pct: 84.6
-    unique_count: 7
-    max_length: 19
-    min_length: 3
-    avg_length: 4.2
-- name: bl_wh_2019
-  type: string
-  time_varying: true
-  years:
-  - 2019
-  summary:
-    missing_pct: 26.9
-    unique_count: 32
-    max_length: 18
-    min_length: 3
-    avg_length: 9.0
-- name: hp_wh_2019
-  type: string
-  time_varying: true
-  years:
-  - 2019
-  summary:
-    missing_pct: 25.0
-    unique_count: 33
-    max_length: 19
-    min_length: 3
-    avg_length: 7.5
-- name: aian_wh_2020
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -352,41 +148,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 5.5
-- name: anhpi_wh_2020
+- var_name: aian_wh_2021
   type: string
-  time_varying: true
-  years:
-  - 2020
-  summary:
-    missing_pct: 86.5
-    unique_count: 7
-    max_length: 19
-    min_length: 3
-    avg_length: 4.1
-- name: bl_wh_2020
-  type: string
-  time_varying: true
-  years:
-  - 2020
-  summary:
-    missing_pct: 26.9
-    unique_count: 32
-    max_length: 19
-    min_length: 3
-    avg_length: 8.2
-- name: hp_wh_2020
-  type: string
-  time_varying: true
-  years:
-  - 2020
-  summary:
-    missing_pct: 25.0
-    unique_count: 34
-    max_length: 19
-    min_length: 3
-    avg_length: 8.2
-- name: aian_wh_2021
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2021
@@ -396,41 +162,11 @@ variables:
     max_length: 19
     min_length: 3
     avg_length: 5.0
-- name: anhpi_wh_2021
+- var_name: aian_wh_2022
   type: string
-  time_varying: true
-  years:
-  - 2021
-  summary:
-    missing_pct: 71.2
-    unique_count: 14
-    max_length: 19
-    min_length: 3
-    avg_length: 5.3
-- name: bl_wh_2021
-  type: string
-  time_varying: true
-  years:
-  - 2021
-  summary:
-    missing_pct: 25.0
-    unique_count: 36
-    max_length: 19
-    min_length: 3
-    avg_length: 8.3
-- name: hp_wh_2021
-  type: string
-  time_varying: true
-  years:
-  - 2021
-  summary:
-    missing_pct: 11.5
-    unique_count: 41
-    max_length: 19
-    min_length: 3
-    avg_length: 10.2
-- name: aian_wh_2022
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2022
@@ -440,8 +176,137 @@ variables:
     max_length: 19
     min_length: 3
     avg_length: 6.2
-- name: anhpi_wh_2022
+- var_name: anhpi_wh_2013
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 82.7
+    unique_count: 9
+    max_length: 19
+    min_length: 3
+    avg_length: 4.2
+- var_name: anhpi_wh_2014
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 86.5
+    unique_count: 7
+    max_length: 18
+    min_length: 3
+    avg_length: 3.8
+- var_name: anhpi_wh_2015
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 86.5
+    unique_count: 7
+    max_length: 19
+    min_length: 3
+    avg_length: 4.3
+- var_name: anhpi_wh_2016
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 94.2
+    unique_count: 3
+    max_length: 18
+    min_length: 3
+    avg_length: 3.5
+- var_name: anhpi_wh_2017
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 96.2
+    unique_count: 2
+    max_length: 8
+    min_length: 3
+    avg_length: 3.2
+- var_name: anhpi_wh_2018
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    missing_pct: 86.5
+    unique_count: 7
+    max_length: 19
+    min_length: 3
+    avg_length: 3.9
+- var_name: anhpi_wh_2019
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 84.6
+    unique_count: 7
+    max_length: 19
+    min_length: 3
+    avg_length: 4.2
+- var_name: anhpi_wh_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 86.5
+    unique_count: 7
+    max_length: 19
+    min_length: 3
+    avg_length: 4.1
+- var_name: anhpi_wh_2021
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2021
+  summary:
+    missing_pct: 71.2
+    unique_count: 14
+    max_length: 19
+    min_length: 3
+    avg_length: 5.3
+- var_name: anhpi_wh_2022
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2022
@@ -451,8 +316,137 @@ variables:
     max_length: 19
     min_length: 3
     avg_length: 4.8
-- name: bl_wh_2022
+- var_name: bl_wh_2013
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 26.9
+    unique_count: 34
+    max_length: 19
+    min_length: 3
+    avg_length: 7.8
+- var_name: bl_wh_2014
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 26.9
+    unique_count: 32
+    max_length: 19
+    min_length: 3
+    avg_length: 8.0
+- var_name: bl_wh_2015
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 28.8
+    unique_count: 36
+    max_length: 19
+    min_length: 3
+    avg_length: 8.0
+- var_name: bl_wh_2016
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 46.2
+    unique_count: 26
+    max_length: 18
+    min_length: 3
+    avg_length: 5.8
+- var_name: bl_wh_2017
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 46.2
+    unique_count: 28
+    max_length: 18
+    min_length: 3
+    avg_length: 6.6
+- var_name: bl_wh_2018
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    missing_pct: 25.0
+    unique_count: 33
+    max_length: 19
+    min_length: 3
+    avg_length: 7.2
+- var_name: bl_wh_2019
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 26.9
+    unique_count: 32
+    max_length: 18
+    min_length: 3
+    avg_length: 9.0
+- var_name: bl_wh_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 26.9
+    unique_count: 32
+    max_length: 19
+    min_length: 3
+    avg_length: 8.2
+- var_name: bl_wh_2021
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2021
+  summary:
+    missing_pct: 25.0
+    unique_count: 36
+    max_length: 19
+    min_length: 3
+    avg_length: 8.3
+- var_name: bl_wh_2022
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2022
@@ -462,8 +456,137 @@ variables:
     max_length: 19
     min_length: 3
     avg_length: 8.2
-- name: hp_wh_2022
+- var_name: hp_wh_2013
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 34.6
+    unique_count: 33
+    max_length: 19
+    min_length: 3
+    avg_length: 8.4
+- var_name: hp_wh_2014
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 38.5
+    unique_count: 28
+    max_length: 19
+    min_length: 3
+    avg_length: 7.1
+- var_name: hp_wh_2015
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 42.3
+    unique_count: 27
+    max_length: 19
+    min_length: 3
+    avg_length: 6.7
+- var_name: hp_wh_2016
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    missing_pct: 71.2
+    unique_count: 15
+    max_length: 19
+    min_length: 3
+    avg_length: 5.0
+- var_name: hp_wh_2017
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    missing_pct: 69.2
+    unique_count: 14
+    max_length: 19
+    min_length: 3
+    avg_length: 4.8
+- var_name: hp_wh_2018
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    missing_pct: 30.8
+    unique_count: 29
+    max_length: 19
+    min_length: 3
+    avg_length: 7.1
+- var_name: hp_wh_2019
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 25.0
+    unique_count: 33
+    max_length: 19
+    min_length: 3
+    avg_length: 7.5
+- var_name: hp_wh_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2020
+  summary:
+    missing_pct: 25.0
+    unique_count: 34
+    max_length: 19
+    min_length: 3
+    avg_length: 8.2
+- var_name: hp_wh_2021
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2021
+  summary:
+    missing_pct: 11.5
+    unique_count: 41
+    max_length: 19
+    min_length: 3
+    avg_length: 10.2
+- var_name: hp_wh_2022
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2022

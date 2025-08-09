@@ -27,8 +27,11 @@ data_summary:
   - 2022
   - 2024
 variables:
-- name: hspa_cat_2022
+- var_name: hspa_cat_2022
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2022
@@ -38,8 +41,11 @@ variables:
     max_length: 31
     min_length: 29
     avg_length: 29.7
-- name: hspa_cat_2024
+- var_name: hspa_cat_2024
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2024

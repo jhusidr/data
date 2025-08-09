@@ -26,8 +26,11 @@ data_summary:
   years_covered:
   - 2021
 variables:
-- name: count
+- var_name: count
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   summary:
     min: 1.0
     max: 28.0
@@ -38,8 +41,11 @@ variables:
     missing_pct: 0.0
     unique_count: 26
   source_variable: countN
-- name: mail_state
+- var_name: mail_state
   type: string
+  description: ''
+  keep: false
+  source: unknown
   summary:
     missing_pct: 0.0
     unique_count: 55
@@ -47,8 +53,11 @@ variables:
     min_length: 2
     avg_length: 2.0
   source_variable: MAIL_STATE
-- name: mail_zipcode
+- var_name: mail_zipcode
   type: string
+  description: ''
+  keep: false
+  source: unknown
   summary:
     missing_pct: 0.0
     unique_count: 21448
@@ -56,8 +65,11 @@ variables:
     min_length: 5
     avg_length: 6.3
   source_variable: MAIL_ZIP_CODE
-- name: premise_state
+- var_name: premise_state
   type: string
+  description: ''
+  keep: false
+  source: unknown
   summary:
     missing_pct: 0.0
     unique_count: 55
@@ -65,8 +77,11 @@ variables:
     min_length: 2
     avg_length: 2.0
   source_variable: PREMISE_STATE
-- name: premise_zipcode
+- var_name: premise_zipcode
   type: string
+  description: ''
+  keep: false
+  source: unknown
   summary:
     missing_pct: 0.0
     unique_count: 23900

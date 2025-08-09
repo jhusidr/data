@@ -14,13 +14,13 @@ description: Police-involved deaths by race
 data_quality:
   limitations: ''
 data_summary:
-  sha256_hash: 78b02d6a1fbed47fda99425b66d7e9397aaa87272c8197ef056837113bcb753b
+  sha256_hash: fddf040b053803ea1750ff56a87ebc70968643f7fa4ec6c713e188b138fa834e
   rows: 6046
-  variable_count: 11
+  variable_count: 8
   admin_variable_count: 6
-  non_admin_variable_count: 5
-  non_admin_missing_pct: 2.98
-  data_size_mb: 0.68
+  non_admin_variable_count: 2
+  non_admin_missing_pct: 4.96
+  data_size_mb: 0.45
   years_covered:
   - 2013
   - 2014
@@ -33,53 +33,29 @@ data_summary:
   - 2021
   - 2022
   - 2023
+race_eth_coverage:
+- black
+- white
 variables:
-- name: pol_inv_death_count
-  type: numeric
-  summary:
-    min: 1.0
-    max: 57.0
-    mean: 2.08
-    p25: 1.0
-    p75: 2.0
-    sd: 3.079
-    missing_pct: 0.0
-    unique_count: 40
-  source_variable: plinvdeathN
-- name: death_bl_per_bl_resident
+- var_name: diff_death_bl_wh
   type: string
-  summary:
-    missing_pct: 5.0
-    unique_count: 5007
-    max_length: 18
-    min_length: 3
-    avg_length: 16.5
-  source_variable: death_black
-- name: death_wh_per_wh_resident
-  type: numeric
-  summary:
-    min: 0.08
-    max: 626.96
-    mean: 3.38
-    p25: 0.67
-    p75: 3.06
-    sd: 12.457
-    missing_pct: 0.0
-    unique_count: 5853
-  source_variable: death_white
-- name: ratio_death_bl_wh
-  type: string
-  summary:
-    missing_pct: 5.0
-    unique_count: 5466
-    max_length: 18
-    min_length: 3
-    avg_length: 16.6
-- name: diff_death_bl_wh
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   summary:
     missing_pct: 5.0
     unique_count: 5612
     max_length: 19
     min_length: 3
     avg_length: 16.7
+- var_name: ratio_death_bl_wh
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  summary:
+    missing_pct: 5.0
+    unique_count: 5466
+    max_length: 18
+    min_length: 3
+    avg_length: 16.6

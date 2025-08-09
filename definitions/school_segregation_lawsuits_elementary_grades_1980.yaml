@@ -24,8 +24,11 @@ data_summary:
   years_covered:
   - 1980
 variables:
-- name: white_asian_dist_disssim_1980
+- var_name: white_asian_dist_disssim_1980
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1980
@@ -35,8 +38,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 13.0
-- name: white_black_dist_disssim_1980
+- var_name: white_black_dist_disssim_1980
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1980
@@ -46,8 +52,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 13.5
-- name: white_hisp_dist_disssim_1980
+- var_name: white_hisp_dist_disssim_1980
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1980

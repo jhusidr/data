@@ -28,8 +28,11 @@ data_summary:
   - 2014
   - 2015
 variables:
-- name: annual_avg_24hr_pm25_ppb_2011
+- var_name: annual_avg_24hr_pm25_ppb_2011
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2011
@@ -42,22 +45,11 @@ variables:
     sd: 1.647
     missing_pct: 0.0
     unique_count: 71881
-- name: annual_avg_stderr_pm25_ppb_2011
+- var_name: annual_avg_24hr_pm25_ppb_2012
   type: numeric
-  time_varying: true
-  years:
-  - 2011
-  summary:
-    min: 1.74
-    max: 3.78
-    mean: 2.87
-    p25: 2.57
-    p75: 3.19
-    sd: 0.392
-    missing_pct: 0.0
-    unique_count: 71850
-- name: annual_avg_24hr_pm25_ppb_2012
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2012
@@ -70,22 +62,11 @@ variables:
     sd: 1.609
     missing_pct: 0.0
     unique_count: 71841
-- name: annual_avg_stderr_pm25_ppb_2012
+- var_name: annual_avg_24hr_pm25_ppb_2013
   type: numeric
-  time_varying: true
-  years:
-  - 2012
-  summary:
-    min: 1.82
-    max: 5.2
-    mean: 3.42
-    p25: 2.95
-    p75: 3.83
-    sd: 0.585
-    missing_pct: 0.0
-    unique_count: 71958
-- name: annual_avg_24hr_pm25_ppb_2013
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2013
@@ -98,22 +79,11 @@ variables:
     sd: 1.622
     missing_pct: 0.0
     unique_count: 71803
-- name: annual_avg_stderr_pm25_ppb_2013
+- var_name: annual_avg_24hr_pm25_ppb_2014
   type: numeric
-  time_varying: true
-  years:
-  - 2013
-  summary:
-    min: 1.76
-    max: 6.89
-    mean: 3.45
-    p25: 2.98
-    p75: 3.91
-    sd: 0.637
-    missing_pct: 0.0
-    unique_count: 71963
-- name: annual_avg_24hr_pm25_ppb_2014
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2014
@@ -126,22 +96,11 @@ variables:
     sd: 1.894
     missing_pct: 0.0
     unique_count: 71913
-- name: annual_avg_stderr_pm25_ppb_2014
+- var_name: annual_avg_24hr_pm25_ppb_2015
   type: numeric
-  time_varying: true
-  years:
-  - 2014
-  summary:
-    min: 1.23
-    max: 8.08
-    mean: 4.49
-    p25: 3.78
-    p75: 5.26
-    sd: 1.005
-    missing_pct: 0.0
-    unique_count: 72003
-- name: annual_avg_24hr_pm25_ppb_2015
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2015
@@ -154,8 +113,79 @@ variables:
     sd: 1.613
     missing_pct: 0.0
     unique_count: 71848
-- name: annual_avg_stderr_pm25_ppb_2015
+- var_name: annual_avg_stderr_pm25_ppb_2011
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2011
+  summary:
+    min: 1.74
+    max: 3.78
+    mean: 2.87
+    p25: 2.57
+    p75: 3.19
+    sd: 0.392
+    missing_pct: 0.0
+    unique_count: 71850
+- var_name: annual_avg_stderr_pm25_ppb_2012
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2012
+  summary:
+    min: 1.82
+    max: 5.2
+    mean: 3.42
+    p25: 2.95
+    p75: 3.83
+    sd: 0.585
+    missing_pct: 0.0
+    unique_count: 71958
+- var_name: annual_avg_stderr_pm25_ppb_2013
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    min: 1.76
+    max: 6.89
+    mean: 3.45
+    p25: 2.98
+    p75: 3.91
+    sd: 0.637
+    missing_pct: 0.0
+    unique_count: 71963
+- var_name: annual_avg_stderr_pm25_ppb_2014
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    min: 1.23
+    max: 8.08
+    mean: 4.49
+    p25: 3.78
+    p75: 5.26
+    sd: 1.005
+    missing_pct: 0.0
+    unique_count: 72003
+- var_name: annual_avg_stderr_pm25_ppb_2015
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2015

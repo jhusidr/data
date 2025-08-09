@@ -42,8 +42,11 @@ data_summary:
   - 2018
   - 2019
 variables:
-- name: pm25_mean_2001
+- var_name: pm25_mean_2001
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2001
@@ -53,8 +56,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 14.8
-- name: pm25_mean_2002
+- var_name: pm25_mean_2002
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2002
@@ -67,8 +73,11 @@ variables:
     sd: 3.067
     missing_pct: 0.0
     unique_count: 149
-- name: pm25_mean_2003
+- var_name: pm25_mean_2003
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2003
@@ -81,8 +90,11 @@ variables:
     sd: 2.844
     missing_pct: 0.0
     unique_count: 137
-- name: pm25_mean_2004
+- var_name: pm25_mean_2004
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2004
@@ -95,8 +107,11 @@ variables:
     sd: 2.7
     missing_pct: 0.0
     unique_count: 136
-- name: pm25_mean_2005
+- var_name: pm25_mean_2005
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2005
@@ -109,8 +124,11 @@ variables:
     sd: 3.125
     missing_pct: 0.0
     unique_count: 152
-- name: pm25_mean_2006
+- var_name: pm25_mean_2006
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2006
@@ -123,8 +141,11 @@ variables:
     sd: 2.748
     missing_pct: 0.0
     unique_count: 132
-- name: pm25_mean_2007
+- var_name: pm25_mean_2007
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2007
@@ -137,8 +158,11 @@ variables:
     sd: 3.073
     missing_pct: 0.0
     unique_count: 143
-- name: pm25_mean_2008
+- var_name: pm25_mean_2008
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2008
@@ -151,8 +175,11 @@ variables:
     sd: 2.416
     missing_pct: 0.0
     unique_count: 124
-- name: pm25_mean_2009
+- var_name: pm25_mean_2009
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2009
@@ -162,8 +189,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 14.4
-- name: pm25_mean_2010
+- var_name: pm25_mean_2010
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2010
@@ -173,8 +203,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 14.8
-- name: pm25_mean_2011
+- var_name: pm25_mean_2011
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2011
@@ -184,8 +217,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 14.5
-- name: pm25_mean_2012
+- var_name: pm25_mean_2012
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2012
@@ -195,8 +231,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 14.6
-- name: pm25_mean_2013
+- var_name: pm25_mean_2013
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2013
@@ -206,8 +245,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 14.4
-- name: pm25_mean_2014
+- var_name: pm25_mean_2014
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2014
@@ -217,8 +259,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 14.3
-- name: pm25_mean_2015
+- var_name: pm25_mean_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2015
@@ -228,8 +273,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 14.3
-- name: pm25_mean_2016
+- var_name: pm25_mean_2016
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016
@@ -239,8 +287,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 14.2
-- name: pm25_mean_2017
+- var_name: pm25_mean_2017
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2017
@@ -250,8 +301,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 14.1
-- name: pm25_mean_2018
+- var_name: pm25_mean_2018
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2018
@@ -261,8 +315,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 14.2
-- name: pm25_mean_2019
+- var_name: pm25_mean_2019
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019

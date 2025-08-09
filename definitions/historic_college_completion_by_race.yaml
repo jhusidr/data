@@ -14,19 +14,25 @@ description: 1970/1980 Black college completion (%) - White college completion (
 data_quality:
   limitations: ''
 data_summary:
-  sha256_hash: 895c5daa6400f4e6076e5c5f8b30fd8acee98349cbaeacada9f9c968d5de676d
+  sha256_hash: 52ffb9fac2182661496bbe011257277b1f3bac7c4178ef7d2d86e27f7c053261
   rows: 3143
-  variable_count: 5
+  variable_count: 9
   admin_variable_count: 3
-  non_admin_variable_count: 2
-  non_admin_missing_pct: 31.59
-  data_size_mb: 0.19
+  non_admin_variable_count: 6
+  non_admin_missing_pct: 21.39
+  data_size_mb: 0.38
   years_covered:
   - 1970
   - 1980
+race_eth_coverage:
+- black
+- white
 variables:
-- name: college_compl_diff_bl_wh_1970
+- var_name: college_compl_diff_bl_wh_1970
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1970
@@ -36,8 +42,11 @@ variables:
     max_length: 22
     min_length: 3
     avg_length: 14.2
-- name: college_compl_diff_bl_wh_1980
+- var_name: college_compl_diff_bl_wh_1980
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1980
@@ -47,3 +56,59 @@ variables:
     max_length: 21
     min_length: 3
     avg_length: 13.3
+- var_name: pct_college_bl_1970
+  type: string
+  description: ''
+  keep: true
+  source: computed_ingredient
+  time_varying: true
+  years:
+  - 1970
+  summary:
+    missing_pct: 29.0
+    unique_count: 1765
+    max_length: 18
+    min_length: 3
+    avg_length: 11.6
+- var_name: pct_college_bl_1980
+  type: string
+  description: ''
+  keep: true
+  source: computed_ingredient
+  time_varying: true
+  years:
+  - 1980
+  summary:
+    missing_pct: 33.6
+    unique_count: 1841
+    max_length: 18
+    min_length: 3
+    avg_length: 12.0
+- var_name: pct_college_wh_1970
+  type: string
+  description: ''
+  keep: true
+  source: computed_ingredient
+  time_varying: true
+  years:
+  - 1970
+  summary:
+    missing_pct: 0.4
+    unique_count: 3121
+    max_length: 18
+    min_length: 3
+    avg_length: 17.8
+- var_name: pct_college_wh_1980
+  type: string
+  description: ''
+  keep: true
+  source: computed_ingredient
+  time_varying: true
+  years:
+  - 1980
+  summary:
+    missing_pct: 2.1
+    unique_count: 3071
+    max_length: 18
+    min_length: 3
+    avg_length: 17.5

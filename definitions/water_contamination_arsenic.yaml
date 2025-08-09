@@ -25,8 +25,11 @@ data_summary:
   years_covered:
   - 2009
 variables:
-- name: arsenic_mean_csw_2009
+- var_name: arsenic_mean_csw_2009
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2009
@@ -36,8 +39,11 @@ variables:
     max_length: 5
     min_length: 3
     avg_length: 3.2
-- name: arsenic_mean_pop_2009
+- var_name: arsenic_mean_pop_2009
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2009
@@ -47,8 +53,11 @@ variables:
     max_length: 6
     min_length: 3
     avg_length: 3.2
-- name: pct_arsenic_mcl_greater10_2009
+- var_name: pct_arsenic_mcl_greater10_2009
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2009
@@ -58,8 +67,11 @@ variables:
     max_length: 5
     min_length: 3
     avg_length: 3.1
-- name: pct_arsenic_mcl_less10_2009
+- var_name: pct_arsenic_mcl_less10_2009
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2009
@@ -69,8 +81,11 @@ variables:
     max_length: 5
     min_length: 3
     avg_length: 3.7
-- name: pct_arsenic_mcl_notdetect_2009
+- var_name: pct_arsenic_mcl_notdetect_2009
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2009

@@ -25,8 +25,11 @@ data_summary:
   years_covered:
   - 2017
 variables:
-- name: cancer_risk_2017
+- var_name: cancer_risk_2017
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2017

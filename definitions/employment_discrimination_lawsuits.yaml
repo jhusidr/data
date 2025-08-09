@@ -33,9 +33,14 @@ data_summary:
   - 2019
   - 2020
   - 2021
+race_eth_coverage:
+- black
 variables:
-- name: eeoc_per_black_2012
+- var_name: eeoc_per_black_2012
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2012
@@ -48,8 +53,11 @@ variables:
     sd: 1127.862
     missing_pct: 0.0
     unique_count: 52
-- name: eeoc_per_black_2013
+- var_name: eeoc_per_black_2013
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2013
@@ -62,8 +70,11 @@ variables:
     sd: 985.221
     missing_pct: 0.0
     unique_count: 52
-- name: eeoc_per_black_2014
+- var_name: eeoc_per_black_2014
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2014
@@ -76,8 +87,11 @@ variables:
     sd: 900.889
     missing_pct: 0.0
     unique_count: 52
-- name: eeoc_per_black_2015
+- var_name: eeoc_per_black_2015
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2015
@@ -90,8 +104,11 @@ variables:
     sd: 806.153
     missing_pct: 0.0
     unique_count: 52
-- name: eeoc_per_black_2016
+- var_name: eeoc_per_black_2016
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016
@@ -104,8 +121,11 @@ variables:
     sd: 843.045
     missing_pct: 0.0
     unique_count: 52
-- name: eeoc_per_black_2017
+- var_name: eeoc_per_black_2017
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2017
@@ -118,8 +138,11 @@ variables:
     sd: 728.116
     missing_pct: 0.0
     unique_count: 52
-- name: eeoc_per_black_2018
+- var_name: eeoc_per_black_2018
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2018
@@ -132,8 +155,11 @@ variables:
     sd: 563.622
     missing_pct: 0.0
     unique_count: 52
-- name: eeoc_per_black_2019
+- var_name: eeoc_per_black_2019
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019
@@ -146,8 +172,11 @@ variables:
     sd: 536.579
     missing_pct: 0.0
     unique_count: 52
-- name: eeoc_per_black_2020
+- var_name: eeoc_per_black_2020
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -160,8 +189,11 @@ variables:
     sd: 575.79
     missing_pct: 0.0
     unique_count: 52
-- name: eeoc_per_black_2021
+- var_name: eeoc_per_black_2021
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2021

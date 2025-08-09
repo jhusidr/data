@@ -24,8 +24,11 @@ data_summary:
   years_covered:
   - 1970
 variables:
-- name: white_asian_sch_disssim_1970
+- var_name: white_asian_sch_disssim_1970
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1970
@@ -36,8 +39,11 @@ variables:
     min_length: 3
     avg_length: 5.5
   source_variable: SD03_687
-- name: white_black_sch_disssim_1970
+- var_name: white_black_sch_disssim_1970
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1970
@@ -48,8 +54,11 @@ variables:
     min_length: 3
     avg_length: 5.7
   source_variable: sd01_687
-- name: white_hisp_sch_disssim_1970
+- var_name: white_hisp_sch_disssim_1970
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1970
@@ -60,8 +69,11 @@ variables:
     min_length: 3
     avg_length: 5.4
   source_variable: SD02_687
-- name: white_minority_sch_disssim_1970
+- var_name: white_minority_sch_disssim_1970
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1970

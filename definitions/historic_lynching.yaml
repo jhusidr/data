@@ -24,9 +24,14 @@ data_summary:
   data_size_mb: 0.19
   years_covered:
   - 1940
+race_eth_coverage:
+- black
 variables:
-- name: black_population_1940
+- var_name: black_population_1940
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1940
@@ -37,8 +42,11 @@ variables:
     min_length: 3
     avg_length: 4.8
   source_variable: blackpop1940
-- name: lynchings_per_bl_resident_1940
+- var_name: lynchings_per_bl_resident_1940
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1940
@@ -49,8 +57,11 @@ variables:
     min_length: 3
     avg_length: 7.3
   source_variable: lynchingperblack
-- name: other_population_1940
+- var_name: other_population_1940
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1940
@@ -61,8 +72,11 @@ variables:
     min_length: 3
     avg_length: 3.5
   source_variable: otherpop1940
-- name: total_population_1940
+- var_name: total_population_1940
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1940
@@ -73,8 +87,11 @@ variables:
     min_length: 3
     avg_length: 6.8
   source_variable: totpop1940
-- name: white_population_1940
+- var_name: white_population_1940
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1940

@@ -24,8 +24,11 @@ data_summary:
   years_covered:
   - 2008
 variables:
-- name: chips_vendmach_tax_rate_2008
+- var_name: chips_vendmach_tax_rate_2008
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2008
@@ -39,8 +42,11 @@ variables:
     missing_pct: 0.0
     unique_count: 13
   source_variable: CHIPS_VENDMACH08
-- name: soda_vendmach_tax_rate_2008
+- var_name: soda_vendmach_tax_rate_2008
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2008

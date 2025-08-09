@@ -26,8 +26,11 @@ data_summary:
   years_covered:
   - 2015
 variables:
-- name: lila_tracts_1_and_10_2015
+- var_name: lila_tracts_1_and_10_2015
   type: boolean
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2015

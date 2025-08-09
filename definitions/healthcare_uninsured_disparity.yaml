@@ -14,13 +14,13 @@ description: 1970/1980 Black college completion (%) - White college completion (
 data_quality:
   limitations: ''
 data_summary:
-  sha256_hash: 332d734212b75d771561c250edf84a4d2c74687c49e857391a7d882271588481
+  sha256_hash: 33ea911f066ba4be213077534fc7a9534e4b91f18810c61ecbd2184130b0dc07
   rows: 816
-  variable_count: 7
+  variable_count: 5
   admin_variable_count: 3
-  non_admin_variable_count: 4
+  non_admin_variable_count: 2
   non_admin_missing_pct: 0.0
-  data_size_mb: 0.07
+  data_size_mb: 0.04
   years_covered:
   - 2006
   - 2007
@@ -38,42 +38,15 @@ data_summary:
   - 2019
   - 2020
   - 2021
+race_eth_coverage:
+- black
+- white
 variables:
-- name: bl_uninsured
+- var_name: diff_black_white_uninsured
   type: numeric
-  summary:
-    min: 3.6
-    max: 30.6
-    mean: 14.86
-    p25: 10.08
-    p75: 19.1
-    sd: 5.639
-    missing_pct: 0.0
-    unique_count: 222
-- name: wh_uninsured
-  type: numeric
-  summary:
-    min: 1.8
-    max: 19.8
-    mean: 10.14
-    p25: 7.1
-    p75: 12.9
-    sd: 4.045
-    missing_pct: 0.0
-    unique_count: 164
-- name: ratio_black_white_uninsured
-  type: numeric
-  summary:
-    min: 1.07
-    max: 2.22
-    mean: 1.49
-    p25: 1.33
-    p75: 1.64
-    sd: 0.201
-    missing_pct: 0.0
-    unique_count: 731
-- name: diff_black_white_uninsured
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   summary:
     min: 0.3
     max: 11.1
@@ -83,3 +56,17 @@ variables:
     sd: 2.248
     missing_pct: 0.0
     unique_count: 240
+- var_name: ratio_black_white_uninsured
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  summary:
+    min: 1.07
+    max: 2.22
+    mean: 1.49
+    p25: 1.33
+    p75: 1.64
+    sd: 0.201
+    missing_pct: 0.0
+    unique_count: 731

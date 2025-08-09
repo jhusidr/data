@@ -24,8 +24,11 @@ data_summary:
   years_covered:
   - 2009
 variables:
-- name: max_dist_alc_2009
+- var_name: max_dist_alc_2009
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2009
@@ -35,8 +38,11 @@ variables:
     max_length: 6
     min_length: 3
     avg_length: 4.8
-- name: mean_dist_alc_2009
+- var_name: mean_dist_alc_2009
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2009
@@ -46,8 +52,11 @@ variables:
     max_length: 6
     min_length: 3
     avg_length: 4.6
-- name: median_dist_alc_2009
+- var_name: median_dist_alc_2009
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2009
@@ -57,8 +66,11 @@ variables:
     max_length: 6
     min_length: 3
     avg_length: 4.6
-- name: min_dist_alc_2009
+- var_name: min_dist_alc_2009
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2009

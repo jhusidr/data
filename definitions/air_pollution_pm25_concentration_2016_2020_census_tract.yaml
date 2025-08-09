@@ -27,8 +27,11 @@ data_summary:
   - 2018
   - 2019
 variables:
-- name: annual_avg_24hr_pm25_ppb_2016
+- var_name: annual_avg_24hr_pm25_ppb_2016
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016
@@ -41,22 +44,11 @@ variables:
     sd: 1.541
     missing_pct: 0.0
     unique_count: 71841
-- name: annual_avg_stderr_pm25_ppb_2016
+- var_name: annual_avg_24hr_pm25_ppb_2017
   type: numeric
-  time_varying: true
-  years:
-  - 2016
-  summary:
-    min: 1.51
-    max: 7.18
-    mean: 4.07
-    p25: 3.5
-    p75: 4.69
-    sd: 0.786
-    missing_pct: 0.0
-    unique_count: 71951
-- name: annual_avg_24hr_pm25_ppb_2017
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2017
@@ -69,22 +61,11 @@ variables:
     sd: 1.492
     missing_pct: 0.0
     unique_count: 70724
-- name: annual_avg_stderr_pm25_ppb_2017
+- var_name: annual_avg_24hr_pm25_ppb_2018
   type: numeric
-  time_varying: true
-  years:
-  - 2017
-  summary:
-    min: 1.72
-    max: 7.23
-    mean: 3.88
-    p25: 3.39
-    p75: 4.36
-    sd: 0.728
-    missing_pct: 0.0
-    unique_count: 71922
-- name: annual_avg_24hr_pm25_ppb_2018
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2018
@@ -97,22 +78,11 @@ variables:
     sd: 1.746
     missing_pct: 0.0
     unique_count: 70914
-- name: annual_avg_stderr_pm25_ppb_2018
+- var_name: annual_avg_24hr_pm25_ppb_2019
   type: numeric
-  time_varying: true
-  years:
-  - 2018
-  summary:
-    min: 1.59
-    max: 7.45
-    mean: 3.6
-    p25: 3.08
-    p75: 4.08
-    sd: 0.72
-    missing_pct: 0.0
-    unique_count: 71966
-- name: annual_avg_24hr_pm25_ppb_2019
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019
@@ -125,8 +95,62 @@ variables:
     sd: 1.47
     missing_pct: 0.0
     unique_count: 70944
-- name: annual_avg_stderr_pm25_ppb_2019
+- var_name: annual_avg_stderr_pm25_ppb_2016
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    min: 1.51
+    max: 7.18
+    mean: 4.07
+    p25: 3.5
+    p75: 4.69
+    sd: 0.786
+    missing_pct: 0.0
+    unique_count: 71951
+- var_name: annual_avg_stderr_pm25_ppb_2017
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    min: 1.72
+    max: 7.23
+    mean: 3.88
+    p25: 3.39
+    p75: 4.36
+    sd: 0.728
+    missing_pct: 0.0
+    unique_count: 71922
+- var_name: annual_avg_stderr_pm25_ppb_2018
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    min: 1.59
+    max: 7.45
+    mean: 3.6
+    p25: 3.08
+    p75: 4.08
+    sd: 0.72
+    missing_pct: 0.0
+    unique_count: 71966
+- var_name: annual_avg_stderr_pm25_ppb_2019
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019

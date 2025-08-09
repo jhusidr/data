@@ -16,44 +16,32 @@ description: Proportion of Whites ages 16 to 21 who are not high school graduate
 data_quality:
   limitations: ''
 data_summary:
-  sha256_hash: 94f845ce3e369865b0b17264db4fb33fd7929f117f853b6ef321a18dc438bf07
+  sha256_hash: 539ca95c9d7b1fd72dff7f65dd7813ce401346141601ee4e5bc025273210a4c0
   rows: 3221
-  variable_count: 7
+  variable_count: 5
   admin_variable_count: 3
-  non_admin_variable_count: 4
-  non_admin_missing_pct: 28.96
-  data_size_mb: 0.31
+  non_admin_variable_count: 2
+  non_admin_missing_pct: 39.4
+  data_size_mb: 0.21
   years_covered:
   - 1970
 variables:
-- name: dropout_white
+- var_name: dropout_white_black_diff
   type: string
-  summary:
-    missing_pct: 2.9
-    unique_count: 3072
-    max_length: 18
-    min_length: 3
-    avg_length: 17.3
-  source_variable: whdrop
-- name: dropout_black
-  type: string
-  summary:
-    missing_pct: 34.2
-    unique_count: 1537
-    max_length: 18
-    min_length: 3
-    avg_length: 10.9
-  source_variable: bldrop
-- name: dropout_white_black_diff
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   summary:
     missing_pct: 34.2
     unique_count: 2116
     max_length: 21
     min_length: 3
     avg_length: 13.2
-- name: dropout_white_black_ratio
+- var_name: dropout_white_black_ratio
   type: string
+  description: ''
+  keep: false
+  source: unknown
   summary:
     missing_pct: 44.6
     unique_count: 1784

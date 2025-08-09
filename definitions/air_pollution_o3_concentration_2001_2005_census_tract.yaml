@@ -28,8 +28,11 @@ data_summary:
   - 2004
   - 2005
 variables:
-- name: annual_avg_8hr_o3_ppb_2001
+- var_name: annual_avg_8hr_o3_ppb_2001
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2001
@@ -42,22 +45,11 @@ variables:
     sd: 4.836
     missing_pct: 0.0
     unique_count: 71705
-- name: annual_avg_stderr_o3_ppb_2001
+- var_name: annual_avg_8hr_o3_ppb_2002
   type: numeric
-  time_varying: true
-  years:
-  - 2001
-  summary:
-    min: 3.86
-    max: 10.07
-    mean: 6.02
-    p25: 5.31
-    p75: 6.61
-    sd: 1.062
-    missing_pct: 0.0
-    unique_count: 71928
-- name: annual_avg_8hr_o3_ppb_2002
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2002
@@ -70,22 +62,11 @@ variables:
     sd: 4.696
     missing_pct: 0.0
     unique_count: 71587
-- name: annual_avg_stderr_o3_ppb_2002
+- var_name: annual_avg_8hr_o3_ppb_2003
   type: numeric
-  time_varying: true
-  years:
-  - 2002
-  summary:
-    min: 3.94
-    max: 9.45
-    mean: 5.75
-    p25: 5.12
-    p75: 6.28
-    sd: 0.887
-    missing_pct: 0.0
-    unique_count: 71857
-- name: annual_avg_8hr_o3_ppb_2003
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2003
@@ -98,22 +79,11 @@ variables:
     sd: 4.559
     missing_pct: 0.0
     unique_count: 71595
-- name: annual_avg_stderr_o3_ppb_2003
+- var_name: annual_avg_8hr_o3_ppb_2004
   type: numeric
-  time_varying: true
-  years:
-  - 2003
-  summary:
-    min: 3.64
-    max: 9.52
-    mean: 5.64
-    p25: 4.99
-    p75: 6.18
-    sd: 0.958
-    missing_pct: 0.0
-    unique_count: 71898
-- name: annual_avg_8hr_o3_ppb_2004
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2004
@@ -126,22 +96,11 @@ variables:
     sd: 4.501
     missing_pct: 0.0
     unique_count: 71563
-- name: annual_avg_stderr_o3_ppb_2004
+- var_name: annual_avg_8hr_o3_ppb_2005
   type: numeric
-  time_varying: true
-  years:
-  - 2004
-  summary:
-    min: 3.71
-    max: 8.84
-    mean: 5.52
-    p25: 4.97
-    p75: 5.99
-    sd: 0.822
-    missing_pct: 0.0
-    unique_count: 71797
-- name: annual_avg_8hr_o3_ppb_2005
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2005
@@ -154,8 +113,79 @@ variables:
     sd: 4.304
     missing_pct: 0.0
     unique_count: 71599
-- name: annual_avg_stderr_o3_ppb_2005
+- var_name: annual_avg_stderr_o3_ppb_2001
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2001
+  summary:
+    min: 3.86
+    max: 10.07
+    mean: 6.02
+    p25: 5.31
+    p75: 6.61
+    sd: 1.062
+    missing_pct: 0.0
+    unique_count: 71928
+- var_name: annual_avg_stderr_o3_ppb_2002
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2002
+  summary:
+    min: 3.94
+    max: 9.45
+    mean: 5.75
+    p25: 5.12
+    p75: 6.28
+    sd: 0.887
+    missing_pct: 0.0
+    unique_count: 71857
+- var_name: annual_avg_stderr_o3_ppb_2003
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2003
+  summary:
+    min: 3.64
+    max: 9.52
+    mean: 5.64
+    p25: 4.99
+    p75: 6.18
+    sd: 0.958
+    missing_pct: 0.0
+    unique_count: 71898
+- var_name: annual_avg_stderr_o3_ppb_2004
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2004
+  summary:
+    min: 3.71
+    max: 8.84
+    mean: 5.52
+    p25: 4.97
+    p75: 5.99
+    sd: 0.822
+    missing_pct: 0.0
+    unique_count: 71797
+- var_name: annual_avg_stderr_o3_ppb_2005
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2005

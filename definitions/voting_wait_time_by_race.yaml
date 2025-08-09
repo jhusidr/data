@@ -14,30 +14,23 @@ description: Estimates of the disparity in voting wait times
 data_quality:
   limitations: ''
 data_summary:
-  sha256_hash: 948352d0a58baa9cff4ee2092c7c6ebce724de1f4d9bebc74f49afb19b0a8db7
+  sha256_hash: 6465f46ef64bd2046a2878c2869c88c18534d684cb4902f1167885dd51d12e8e
   rows: 410
-  variable_count: 12
+  variable_count: 11
   admin_variable_count: 4
-  non_admin_variable_count: 8
+  non_admin_variable_count: 7
   non_admin_missing_pct: 0.0
   data_size_mb: 0.03
   years_covered:
   - 2016
+race_eth_coverage:
+- black
 variables:
-- name: fips_congdist
+- var_name: disparity_2016
   type: numeric
-  summary:
-    min: 101.0
-    max: 5601.0
-    mean: 2738.34
-    p25: 1223.25
-    p75: 4003.75
-    sd: 1577.232
-    missing_pct: 0.0
-    unique_count: 410
-  source_variable: geo_congrdistr
-- name: disparity_2016
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016
@@ -50,8 +43,11 @@ variables:
     sd: 26.562
     missing_pct: 0.0
     unique_count: 402
-- name: disparity_adj_2016
+- var_name: disparity_adj_2016
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016
@@ -64,8 +60,11 @@ variables:
     sd: 5.72
     missing_pct: 0.0
     unique_count: 361
-- name: mean_2016
+- var_name: mean_2016
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016
@@ -78,8 +77,11 @@ variables:
     sd: 4.399
     missing_pct: 0.0
     unique_count: 354
-- name: mean_adj_2016
+- var_name: mean_adj_2016
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016
@@ -92,8 +94,11 @@ variables:
     sd: 4.171
     missing_pct: 0.0
     unique_count: 359
-- name: n_2016
+- var_name: n_2016
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016
@@ -106,8 +111,11 @@ variables:
     sd: 225.401
     missing_pct: 0.0
     unique_count: 297
-- name: sd_2016
+- var_name: sd_2016
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016
@@ -120,8 +128,11 @@ variables:
     sd: 3.358
     missing_pct: 0.0
     unique_count: 356
-- name: se_2016
+- var_name: se_2016
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016

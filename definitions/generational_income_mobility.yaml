@@ -32,8 +32,11 @@ data_summary:
   - 1987
   - 1988
 variables:
-- name: perm_res_p25_kr24_1980
+- var_name: perm_res_p25_kr24_1980
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1980
@@ -43,41 +46,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 9.0
-- name: perm_res_p25_kr26_1980
+- var_name: perm_res_p25_kr24_1981
   type: string
-  time_varying: true
-  years:
-  - 1980
-  summary:
-    missing_pct: 57.4
-    unique_count: 1336
-    max_length: 18
-    min_length: 3
-    avg_length: 9.0
-- name: perm_res_p75_kr24_1980
-  type: string
-  time_varying: true
-  years:
-  - 1980
-  summary:
-    missing_pct: 57.4
-    unique_count: 1336
-    max_length: 18
-    min_length: 3
-    avg_length: 9.0
-- name: perm_res_p75_kr26_1980
-  type: string
-  time_varying: true
-  years:
-  - 1980
-  summary:
-    missing_pct: 57.4
-    unique_count: 1336
-    max_length: 18
-    min_length: 3
-    avg_length: 9.0
-- name: perm_res_p25_kr24_1981
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1981
@@ -87,41 +60,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 9.2
-- name: perm_res_p25_kr26_1981
+- var_name: perm_res_p25_kr24_1982
   type: string
-  time_varying: true
-  years:
-  - 1981
-  summary:
-    missing_pct: 56.2
-    unique_count: 1373
-    max_length: 18
-    min_length: 3
-    avg_length: 9.2
-- name: perm_res_p75_kr24_1981
-  type: string
-  time_varying: true
-  years:
-  - 1981
-  summary:
-    missing_pct: 56.2
-    unique_count: 1373
-    max_length: 18
-    min_length: 3
-    avg_length: 9.2
-- name: perm_res_p75_kr26_1981
-  type: string
-  time_varying: true
-  years:
-  - 1981
-  summary:
-    missing_pct: 56.2
-    unique_count: 1373
-    max_length: 18
-    min_length: 3
-    avg_length: 9.2
-- name: perm_res_p25_kr24_1982
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1982
@@ -131,41 +74,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 9.2
-- name: perm_res_p25_kr26_1982
+- var_name: perm_res_p25_kr24_1983
   type: string
-  time_varying: true
-  years:
-  - 1982
-  summary:
-    missing_pct: 55.8
-    unique_count: 1387
-    max_length: 18
-    min_length: 3
-    avg_length: 9.3
-- name: perm_res_p75_kr24_1982
-  type: string
-  time_varying: true
-  years:
-  - 1982
-  summary:
-    missing_pct: 55.8
-    unique_count: 1387
-    max_length: 18
-    min_length: 3
-    avg_length: 9.2
-- name: perm_res_p75_kr26_1982
-  type: string
-  time_varying: true
-  years:
-  - 1982
-  summary:
-    missing_pct: 55.8
-    unique_count: 1387
-    max_length: 18
-    min_length: 3
-    avg_length: 9.2
-- name: perm_res_p25_kr24_1983
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1983
@@ -175,41 +88,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 9.1
-- name: perm_res_p25_kr26_1983
+- var_name: perm_res_p25_kr24_1984
   type: string
-  time_varying: true
-  years:
-  - 1983
-  summary:
-    missing_pct: 56.6
-    unique_count: 1362
-    max_length: 18
-    min_length: 3
-    avg_length: 9.1
-- name: perm_res_p75_kr24_1983
-  type: string
-  time_varying: true
-  years:
-  - 1983
-  summary:
-    missing_pct: 56.6
-    unique_count: 1362
-    max_length: 18
-    min_length: 3
-    avg_length: 9.1
-- name: perm_res_p75_kr26_1983
-  type: string
-  time_varying: true
-  years:
-  - 1983
-  summary:
-    missing_pct: 56.6
-    unique_count: 1362
-    max_length: 18
-    min_length: 3
-    avg_length: 9.1
-- name: perm_res_p25_kr24_1984
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1984
@@ -219,41 +102,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 9.1
-- name: perm_res_p25_kr26_1984
+- var_name: perm_res_p25_kr24_1985
   type: string
-  time_varying: true
-  years:
-  - 1984
-  summary:
-    missing_pct: 56.5
-    unique_count: 1364
-    max_length: 18
-    min_length: 3
-    avg_length: 9.1
-- name: perm_res_p75_kr24_1984
-  type: string
-  time_varying: true
-  years:
-  - 1984
-  summary:
-    missing_pct: 56.5
-    unique_count: 1364
-    max_length: 18
-    min_length: 3
-    avg_length: 9.1
-- name: perm_res_p75_kr26_1984
-  type: string
-  time_varying: true
-  years:
-  - 1984
-  summary:
-    missing_pct: 56.5
-    unique_count: 1364
-    max_length: 18
-    min_length: 3
-    avg_length: 9.1
-- name: perm_res_p25_kr24_1985
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1985
@@ -263,41 +116,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 9.0
-- name: perm_res_p25_kr26_1985
+- var_name: perm_res_p25_kr24_1986
   type: string
-  time_varying: true
-  years:
-  - 1985
-  summary:
-    missing_pct: 57.2
-    unique_count: 1343
-    max_length: 18
-    min_length: 3
-    avg_length: 9.1
-- name: perm_res_p75_kr24_1985
-  type: string
-  time_varying: true
-  years:
-  - 1985
-  summary:
-    missing_pct: 57.2
-    unique_count: 1344
-    max_length: 18
-    min_length: 3
-    avg_length: 9.0
-- name: perm_res_p75_kr26_1985
-  type: string
-  time_varying: true
-  years:
-  - 1985
-  summary:
-    missing_pct: 57.2
-    unique_count: 1344
-    max_length: 18
-    min_length: 3
-    avg_length: 9.0
-- name: perm_res_p25_kr24_1986
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1986
@@ -307,41 +130,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 8.9
-- name: perm_res_p25_kr26_1986
+- var_name: perm_res_p25_kr24_1987
   type: string
-  time_varying: true
-  years:
-  - 1986
-  summary:
-    missing_pct: 58.1
-    unique_count: 1315
-    max_length: 18
-    min_length: 3
-    avg_length: 8.9
-- name: perm_res_p75_kr24_1986
-  type: string
-  time_varying: true
-  years:
-  - 1986
-  summary:
-    missing_pct: 58.1
-    unique_count: 1315
-    max_length: 18
-    min_length: 3
-    avg_length: 8.9
-- name: perm_res_p75_kr26_1986
-  type: string
-  time_varying: true
-  years:
-  - 1986
-  summary:
-    missing_pct: 58.1
-    unique_count: 1315
-    max_length: 18
-    min_length: 3
-    avg_length: 8.9
-- name: perm_res_p25_kr24_1987
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1987
@@ -351,8 +144,221 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 8.8
-- name: perm_res_p75_kr24_1987
+- var_name: perm_res_p25_kr24_1988
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1988
+  summary:
+    missing_pct: 58.9
+    unique_count: 1289
+    max_length: 18
+    min_length: 3
+    avg_length: 8.8
+- var_name: perm_res_p25_kr26_1980
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1980
+  summary:
+    missing_pct: 57.4
+    unique_count: 1336
+    max_length: 18
+    min_length: 3
+    avg_length: 9.0
+- var_name: perm_res_p25_kr26_1981
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1981
+  summary:
+    missing_pct: 56.2
+    unique_count: 1373
+    max_length: 18
+    min_length: 3
+    avg_length: 9.2
+- var_name: perm_res_p25_kr26_1982
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1982
+  summary:
+    missing_pct: 55.8
+    unique_count: 1387
+    max_length: 18
+    min_length: 3
+    avg_length: 9.3
+- var_name: perm_res_p25_kr26_1983
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1983
+  summary:
+    missing_pct: 56.6
+    unique_count: 1362
+    max_length: 18
+    min_length: 3
+    avg_length: 9.1
+- var_name: perm_res_p25_kr26_1984
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1984
+  summary:
+    missing_pct: 56.5
+    unique_count: 1364
+    max_length: 18
+    min_length: 3
+    avg_length: 9.1
+- var_name: perm_res_p25_kr26_1985
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1985
+  summary:
+    missing_pct: 57.2
+    unique_count: 1343
+    max_length: 18
+    min_length: 3
+    avg_length: 9.1
+- var_name: perm_res_p25_kr26_1986
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1986
+  summary:
+    missing_pct: 58.1
+    unique_count: 1315
+    max_length: 18
+    min_length: 3
+    avg_length: 8.9
+- var_name: perm_res_p75_kr24_1980
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1980
+  summary:
+    missing_pct: 57.4
+    unique_count: 1336
+    max_length: 18
+    min_length: 3
+    avg_length: 9.0
+- var_name: perm_res_p75_kr24_1981
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1981
+  summary:
+    missing_pct: 56.2
+    unique_count: 1373
+    max_length: 18
+    min_length: 3
+    avg_length: 9.2
+- var_name: perm_res_p75_kr24_1982
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1982
+  summary:
+    missing_pct: 55.8
+    unique_count: 1387
+    max_length: 18
+    min_length: 3
+    avg_length: 9.2
+- var_name: perm_res_p75_kr24_1983
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1983
+  summary:
+    missing_pct: 56.6
+    unique_count: 1362
+    max_length: 18
+    min_length: 3
+    avg_length: 9.1
+- var_name: perm_res_p75_kr24_1984
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1984
+  summary:
+    missing_pct: 56.5
+    unique_count: 1364
+    max_length: 18
+    min_length: 3
+    avg_length: 9.1
+- var_name: perm_res_p75_kr24_1985
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1985
+  summary:
+    missing_pct: 57.2
+    unique_count: 1344
+    max_length: 18
+    min_length: 3
+    avg_length: 9.0
+- var_name: perm_res_p75_kr24_1986
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1986
+  summary:
+    missing_pct: 58.1
+    unique_count: 1315
+    max_length: 18
+    min_length: 3
+    avg_length: 8.9
+- var_name: perm_res_p75_kr24_1987
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1987
@@ -362,8 +368,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 8.8
-- name: perm_res_p25_kr24_1988
+- var_name: perm_res_p75_kr24_1988
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 1988
@@ -373,14 +382,101 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 8.8
-- name: perm_res_p75_kr24_1988
+- var_name: perm_res_p75_kr26_1980
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
-  - 1988
+  - 1980
   summary:
-    missing_pct: 58.9
-    unique_count: 1289
+    missing_pct: 57.4
+    unique_count: 1336
     max_length: 18
     min_length: 3
-    avg_length: 8.8
+    avg_length: 9.0
+- var_name: perm_res_p75_kr26_1981
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1981
+  summary:
+    missing_pct: 56.2
+    unique_count: 1373
+    max_length: 18
+    min_length: 3
+    avg_length: 9.2
+- var_name: perm_res_p75_kr26_1982
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1982
+  summary:
+    missing_pct: 55.8
+    unique_count: 1387
+    max_length: 18
+    min_length: 3
+    avg_length: 9.2
+- var_name: perm_res_p75_kr26_1983
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1983
+  summary:
+    missing_pct: 56.6
+    unique_count: 1362
+    max_length: 18
+    min_length: 3
+    avg_length: 9.1
+- var_name: perm_res_p75_kr26_1984
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1984
+  summary:
+    missing_pct: 56.5
+    unique_count: 1364
+    max_length: 18
+    min_length: 3
+    avg_length: 9.1
+- var_name: perm_res_p75_kr26_1985
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1985
+  summary:
+    missing_pct: 57.2
+    unique_count: 1344
+    max_length: 18
+    min_length: 3
+    avg_length: 9.0
+- var_name: perm_res_p75_kr26_1986
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1986
+  summary:
+    missing_pct: 58.1
+    unique_count: 1315
+    max_length: 18
+    min_length: 3
+    avg_length: 8.9

@@ -14,58 +14,13 @@ description: Count and proportion of housing units in need of major repairs in 1
 data_quality:
   limitations: ''
 data_summary:
-  sha256_hash: f991549a483110d845af0f5a8ff8b4846ddd3b044010e0d9ee42ebc5b07ae9ab
+  sha256_hash: 8f74dcfd693d82e2875b1c7ad3b1fda771a025a2de5ce368a8cdc2f259bb45d6
   rows: 3108
-  variable_count: 9
+  variable_count: 4
   admin_variable_count: 4
-  non_admin_variable_count: 5
-  non_admin_missing_pct: 1.92
-  data_size_mb: 0.32
+  non_admin_variable_count: 0
+  non_admin_missing_pct: 0.0
+  data_size_mb: 0.09
   years_covered:
   - 1940
-variables:
-- name: county_state_name
-  type: string
-  summary:
-    missing_pct: 0.0
-    unique_count: 3108
-    max_length: 50
-    min_length: 16
-    avg_length: 24.2
-  source_variable: countystate_name
-- name: need_no_major_repair_count
-  type: string
-  summary:
-    missing_pct: 0.2
-    unique_count: 2615
-    max_length: 8
-    min_length: 3
-    avg_length: 6.1
-  source_variable: cnt_norepair
-- name: need_major_repair_count
-  type: string
-  summary:
-    missing_pct: 4.6
-    unique_count: 2036
-    max_length: 8
-    min_length: 3
-    avg_length: 5.5
-  source_variable: cnt_repair
-- name: not_need_repair_proportion
-  type: string
-  summary:
-    missing_pct: 0.2
-    unique_count: 3099
-    max_length: 18
-    min_length: 3
-    avg_length: 17.8
-  source_variable: prc_norepair
-- name: need_repair_proportion
-  type: string
-  summary:
-    missing_pct: 4.6
-    unique_count: 2958
-    max_length: 18
-    min_length: 3
-    avg_length: 17.2
-  source_variable: prc_repair
+variables: []

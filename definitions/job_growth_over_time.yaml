@@ -16,13 +16,13 @@ description: Average annualized job growth rate over the time period 2004 to 201
 data_quality:
   limitations: ''
 data_summary:
-  sha256_hash: a780e0833574c3e4f240b1ec73cfcdf25604474da79994ee8f469643d0a481bc
+  sha256_hash: a8971eec43383683fb42cda22900dacd683f92ec399b05266b4c4842ffb52443
   rows: 74044
-  variable_count: 41
+  variable_count: 39
   admin_variable_count: 9
-  non_admin_variable_count: 32
-  non_admin_missing_pct: 3.49
-  data_size_mb: 43.85
+  non_admin_variable_count: 30
+  non_admin_missing_pct: 2.57
+  data_size_mb: 41.38
   years_covered:
   - 1990
   - 2000
@@ -31,60 +31,11 @@ data_summary:
   - 2015
   - 2016
 variables:
-- name: ln_wage_growth_hs_grad
+- var_name: asian_share_2000
   type: string
-  summary:
-    missing_pct: 30.1
-    unique_count: 51769
-    max_length: 23
-    min_length: 3
-    avg_length: 13.7
-- name: ann_avg_job_growth_2004_2013
-  type: string
-  time_varying: true
-  years:
-  - 2013
-  summary:
-    missing_pct: 4.4
-    unique_count: 60946
-    max_length: 23
-    min_length: 3
-    avg_length: 17.6
-- name: med_hhinc_1990
-  type: string
-  time_varying: true
-  years:
-  - 1990
-  summary:
-    missing_pct: 2.2
-    unique_count: 43029
-    max_length: 18
-    min_length: 3
-    avg_length: 9.3
-- name: poor_share_1990
-  type: string
-  time_varying: true
-  years:
-  - 1990
-  summary:
-    missing_pct: 2.2
-    unique_count: 62768
-    max_length: 22
-    min_length: 3
-    avg_length: 17.5
-- name: single_parent_share_1990
-  type: string
-  time_varying: true
-  years:
-  - 1990
-  summary:
-    missing_pct: 2.4
-    unique_count: 45330
-    max_length: 21
-    min_length: 3
-    avg_length: 17.4
-- name: asian_share_2000
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2000
@@ -94,118 +45,11 @@ variables:
     max_length: 22
     min_length: 3
     avg_length: 17.2
-- name: black_share_2000
+- var_name: asian_share_2010
   type: string
-  time_varying: true
-  years:
-  - 2000
-  summary:
-    missing_pct: 2.1
-    unique_count: 65134
-    max_length: 22
-    min_length: 3
-    avg_length: 17.5
-- name: college_plus_share_2000
-  type: string
-  time_varying: true
-  years:
-  - 2000
-  summary:
-    missing_pct: 2.1
-    unique_count: 64843
-    max_length: 18
-    min_length: 3
-    avg_length: 17.5
-- name: commute_time_mean_2000
-  type: string
-  time_varying: true
-  years:
-  - 2000
-  summary:
-    missing_pct: 2.2
-    unique_count: 67697
-    max_length: 18
-    min_length: 3
-    avg_length: 17.1
-- name: emp_2000
-  type: string
-  time_varying: true
-  years:
-  - 2000
-  summary:
-    missing_pct: 2.1
-    unique_count: 65861
-    max_length: 18
-    min_length: 3
-    avg_length: 17.5
-- name: hispanic_share_2000
-  type: string
-  time_varying: true
-  years:
-  - 2000
-  summary:
-    missing_pct: 2.1
-    unique_count: 64844
-    max_length: 22
-    min_length: 3
-    avg_length: 17.6
-- name: household_income_mean_2000
-  type: string
-  time_varying: true
-  years:
-  - 2000
-  summary:
-    missing_pct: 2.2
-    unique_count: 64673
-    max_length: 16
-    min_length: 3
-    avg_length: 12.3
-- name: poor_share_2000
-  type: string
-  time_varying: true
-  years:
-  - 2000
-  summary:
-    missing_pct: 2.2
-    unique_count: 65129
-    max_length: 18
-    min_length: 3
-    avg_length: 17.5
-- name: population_density_2000
-  type: string
-  time_varying: true
-  years:
-  - 2000
-  summary:
-    missing_pct: 1.8
-    unique_count: 72456
-    max_length: 18
-    min_length: 3
-    avg_length: 16.4
-- name: single_parent_share_2000
-  type: string
-  time_varying: true
-  years:
-  - 2000
-  summary:
-    missing_pct: 2.3
-    unique_count: 44895
-    max_length: 18
-    min_length: 3
-    avg_length: 17.4
-- name: white_share_2000
-  type: string
-  time_varying: true
-  years:
-  - 2000
-  summary:
-    missing_pct: 2.1
-    unique_count: 67225
-    max_length: 18
-    min_length: 3
-    avg_length: 17.5
-- name: asian_share_2010
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2010
@@ -215,8 +59,25 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 17.4
-- name: black_share_2010
+- var_name: black_share_2000
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 2.1
+    unique_count: 65134
+    max_length: 22
+    min_length: 3
+    avg_length: 17.5
+- var_name: black_share_2010
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2010
@@ -226,8 +87,53 @@ variables:
     max_length: 21
     min_length: 3
     avg_length: 17.7
-- name: foreign_share_2010
+- var_name: college_plus_share_2000
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 2.1
+    unique_count: 64843
+    max_length: 18
+    min_length: 3
+    avg_length: 17.5
+- var_name: commute_time_mean_2000
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 2.2
+    unique_count: 67697
+    max_length: 18
+    min_length: 3
+    avg_length: 17.1
+- var_name: emp_2000
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 2.1
+    unique_count: 65861
+    max_length: 18
+    min_length: 3
+    avg_length: 17.5
+- var_name: foreign_share_2010
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2010
@@ -237,8 +143,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 17.0
-- name: frac_coll_plus_2010
+- var_name: frac_coll_plus_2010
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2010
@@ -248,74 +157,11 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 17.7
-- name: hispanic_share_2010
+- var_name: gsmn_math_g3_2013
   type: string
-  time_varying: true
-  years:
-  - 2010
-  summary:
-    missing_pct: 0.8
-    unique_count: 69921
-    max_length: 18
-    min_length: 3
-    avg_length: 17.7
-- name: poor_share_2010
-  type: string
-  time_varying: true
-  years:
-  - 2010
-  summary:
-    missing_pct: 1.2
-    unique_count: 70384
-    max_length: 18
-    min_length: 3
-    avg_length: 17.6
-- name: population_density_2010
-  type: string
-  time_varying: true
-  years:
-  - 2010
-  summary:
-    missing_pct: 0.5
-    unique_count: 72970
-    max_length: 18
-    min_length: 3
-    avg_length: 15.9
-- name: single_parent_share_2010
-  type: string
-  time_varying: true
-  years:
-  - 2010
-  summary:
-    missing_pct: 1.8
-    unique_count: 45000
-    max_length: 18
-    min_length: 3
-    avg_length: 17.2
-- name: travel_time_15_2010
-  type: string
-  time_varying: true
-  years:
-  - 2010
-  summary:
-    missing_pct: 1.2
-    unique_count: 66994
-    max_length: 18
-    min_length: 3
-    avg_length: 17.6
-- name: white_share_2010
-  type: string
-  time_varying: true
-  years:
-  - 2010
-  summary:
-    missing_pct: 0.8
-    unique_count: 72012
-    max_length: 18
-    min_length: 3
-    avg_length: 17.7
-- name: gsmn_math_g3_2013
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2013
@@ -325,52 +171,53 @@ variables:
     max_length: 19
     min_length: 3
     avg_length: 17.1
-- name: job_density_2013
+- var_name: hispanic_share_2000
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
-  - 2013
+  - 2000
   summary:
-    missing_pct: 1.8
-    unique_count: 70885
+    missing_pct: 2.1
+    unique_count: 64844
+    max_length: 22
+    min_length: 3
+    avg_length: 17.6
+- var_name: hispanic_share_2010
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 0.8
+    unique_count: 69921
     max_length: 18
     min_length: 3
-    avg_length: 16.4
-- name: jobs_high_pay_5mi_2015
+    avg_length: 17.7
+- var_name: household_income_mean_2000
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
-  - 2015
+  - 2000
   summary:
-    missing_pct: 1.8
-    unique_count: 42942
-    max_length: 9
+    missing_pct: 2.2
+    unique_count: 64673
+    max_length: 16
     min_length: 3
-    avg_length: 6.4
-- name: jobs_total_5mi_2015
+    avg_length: 12.3
+- var_name: household_income_median_2016
   type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 1.8
-    unique_count: 51166
-    max_length: 9
-    min_length: 3
-    avg_length: 6.8
-- name: rent_twobed_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 23.4
-    unique_count: 2417
-    max_length: 6
-    min_length: 3
-    avg_length: 4.8
-- name: household_income_median_2016
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016
@@ -380,3 +227,227 @@ variables:
     max_length: 8
     min_length: 3
     avg_length: 7.0
+- var_name: job_density_2013
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 1.8
+    unique_count: 70885
+    max_length: 18
+    min_length: 3
+    avg_length: 16.4
+- var_name: jobs_high_pay_5mi_2015
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 1.8
+    unique_count: 42942
+    max_length: 9
+    min_length: 3
+    avg_length: 6.4
+- var_name: jobs_total_5mi_2015
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 1.8
+    unique_count: 51166
+    max_length: 9
+    min_length: 3
+    avg_length: 6.8
+- var_name: med_hhinc_1990
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1990
+  summary:
+    missing_pct: 2.2
+    unique_count: 43029
+    max_length: 18
+    min_length: 3
+    avg_length: 9.3
+- var_name: poor_share_1990
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1990
+  summary:
+    missing_pct: 2.2
+    unique_count: 62768
+    max_length: 22
+    min_length: 3
+    avg_length: 17.5
+- var_name: poor_share_2000
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 2.2
+    unique_count: 65129
+    max_length: 18
+    min_length: 3
+    avg_length: 17.5
+- var_name: poor_share_2010
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 1.2
+    unique_count: 70384
+    max_length: 18
+    min_length: 3
+    avg_length: 17.6
+- var_name: population_density_2000
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 1.8
+    unique_count: 72456
+    max_length: 18
+    min_length: 3
+    avg_length: 16.4
+- var_name: population_density_2010
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 0.5
+    unique_count: 72970
+    max_length: 18
+    min_length: 3
+    avg_length: 15.9
+- var_name: rent_twobed_2015
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 23.4
+    unique_count: 2417
+    max_length: 6
+    min_length: 3
+    avg_length: 4.8
+- var_name: single_parent_share_1990
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 1990
+  summary:
+    missing_pct: 2.4
+    unique_count: 45330
+    max_length: 21
+    min_length: 3
+    avg_length: 17.4
+- var_name: single_parent_share_2000
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 2.3
+    unique_count: 44895
+    max_length: 18
+    min_length: 3
+    avg_length: 17.4
+- var_name: single_parent_share_2010
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 1.8
+    unique_count: 45000
+    max_length: 18
+    min_length: 3
+    avg_length: 17.2
+- var_name: travel_time_15_2010
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 1.2
+    unique_count: 66994
+    max_length: 18
+    min_length: 3
+    avg_length: 17.6
+- var_name: white_share_2000
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2000
+  summary:
+    missing_pct: 2.1
+    unique_count: 67225
+    max_length: 18
+    min_length: 3
+    avg_length: 17.5
+- var_name: white_share_2010
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2010
+  summary:
+    missing_pct: 0.8
+    unique_count: 72012
+    max_length: 18
+    min_length: 3
+    avg_length: 17.7

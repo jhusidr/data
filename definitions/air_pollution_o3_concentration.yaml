@@ -27,8 +27,11 @@ data_summary:
   - 2018
   - 2019
 variables:
-- name: o3_max_pred_2016
+- var_name: o3_max_pred_2016
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2016
@@ -41,50 +44,11 @@ variables:
     sd: 3.187
     missing_pct: 0.0
     unique_count: 3107
-- name: o3_mean_pred_2016
+- var_name: o3_max_pred_2017
   type: numeric
-  time_varying: true
-  years:
-  - 2016
-  summary:
-    min: 27.97
-    max: 52.72
-    mean: 38.37
-    p25: 36.76
-    p75: 39.77
-    sd: 2.998
-    missing_pct: 0.0
-    unique_count: 3102
-- name: o3_med_pred_2016
-  type: numeric
-  time_varying: true
-  years:
-  - 2016
-  summary:
-    min: 27.88
-    max: 53.08
-    mean: 38.36
-    p25: 36.76
-    p75: 39.78
-    sd: 3.006
-    missing_pct: 0.0
-    unique_count: 3105
-- name: o3_pop_pred_2016
-  type: numeric
-  time_varying: true
-  years:
-  - 2016
-  summary:
-    min: 27.96
-    max: 52.66
-    mean: 38.36
-    p25: 36.77
-    p75: 39.74
-    sd: 2.997
-    missing_pct: 0.0
-    unique_count: 3106
-- name: o3_max_pred_2017
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2017
@@ -97,50 +61,11 @@ variables:
     sd: 3.047
     missing_pct: 0.0
     unique_count: 3105
-- name: o3_mean_pred_2017
+- var_name: o3_max_pred_2018
   type: numeric
-  time_varying: true
-  years:
-  - 2017
-  summary:
-    min: 28.42
-    max: 54.14
-    mean: 38.42
-    p25: 36.71
-    p75: 39.32
-    sd: 2.827
-    missing_pct: 0.0
-    unique_count: 3106
-- name: o3_med_pred_2017
-  type: numeric
-  time_varying: true
-  years:
-  - 2017
-  summary:
-    min: 28.38
-    max: 54.54
-    mean: 38.41
-    p25: 36.71
-    p75: 39.33
-    sd: 2.837
-    missing_pct: 0.0
-    unique_count: 3104
-- name: o3_pop_pred_2017
-  type: numeric
-  time_varying: true
-  years:
-  - 2017
-  summary:
-    min: 28.44
-    max: 54.03
-    mean: 38.42
-    p25: 36.72
-    p75: 39.32
-    sd: 2.825
-    missing_pct: 0.0
-    unique_count: 3104
-- name: o3_max_pred_2018
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2018
@@ -153,50 +78,11 @@ variables:
     sd: 3.324
     missing_pct: 0.0
     unique_count: 3105
-- name: o3_mean_pred_2018
+- var_name: o3_max_pred_2019
   type: numeric
-  time_varying: true
-  years:
-  - 2018
-  summary:
-    min: 28.18
-    max: 53.21
-    mean: 37.83
-    p25: 36.19
-    p75: 38.27
-    sd: 3.132
-    missing_pct: 0.0
-    unique_count: 3105
-- name: o3_med_pred_2018
-  type: numeric
-  time_varying: true
-  years:
-  - 2018
-  summary:
-    min: 28.13
-    max: 53.65
-    mean: 37.82
-    p25: 36.17
-    p75: 38.27
-    sd: 3.138
-    missing_pct: 0.0
-    unique_count: 3103
-- name: o3_pop_pred_2018
-  type: numeric
-  time_varying: true
-  years:
-  - 2018
-  summary:
-    min: 28.18
-    max: 53.07
-    mean: 37.82
-    p25: 36.19
-    p75: 38.27
-    sd: 3.127
-    missing_pct: 0.0
-    unique_count: 3106
-- name: o3_max_pred_2019
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019
@@ -209,8 +95,62 @@ variables:
     sd: 2.941
     missing_pct: 0.0
     unique_count: 3106
-- name: o3_mean_pred_2019
+- var_name: o3_mean_pred_2016
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    min: 27.97
+    max: 52.72
+    mean: 38.37
+    p25: 36.76
+    p75: 39.77
+    sd: 2.998
+    missing_pct: 0.0
+    unique_count: 3102
+- var_name: o3_mean_pred_2017
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    min: 28.42
+    max: 54.14
+    mean: 38.42
+    p25: 36.71
+    p75: 39.32
+    sd: 2.827
+    missing_pct: 0.0
+    unique_count: 3106
+- var_name: o3_mean_pred_2018
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    min: 28.18
+    max: 53.21
+    mean: 37.83
+    p25: 36.19
+    p75: 38.27
+    sd: 3.132
+    missing_pct: 0.0
+    unique_count: 3105
+- var_name: o3_mean_pred_2019
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019
@@ -223,8 +163,62 @@ variables:
     sd: 2.807
     missing_pct: 0.0
     unique_count: 3104
-- name: o3_med_pred_2019
+- var_name: o3_med_pred_2016
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    min: 27.88
+    max: 53.08
+    mean: 38.36
+    p25: 36.76
+    p75: 39.78
+    sd: 3.006
+    missing_pct: 0.0
+    unique_count: 3105
+- var_name: o3_med_pred_2017
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    min: 28.38
+    max: 54.54
+    mean: 38.41
+    p25: 36.71
+    p75: 39.33
+    sd: 2.837
+    missing_pct: 0.0
+    unique_count: 3104
+- var_name: o3_med_pred_2018
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    min: 28.13
+    max: 53.65
+    mean: 37.82
+    p25: 36.17
+    p75: 38.27
+    sd: 3.138
+    missing_pct: 0.0
+    unique_count: 3103
+- var_name: o3_med_pred_2019
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019
@@ -237,8 +231,62 @@ variables:
     sd: 2.817
     missing_pct: 0.0
     unique_count: 3103
-- name: o3_pop_pred_2019
+- var_name: o3_pop_pred_2016
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2016
+  summary:
+    min: 27.96
+    max: 52.66
+    mean: 38.36
+    p25: 36.77
+    p75: 39.74
+    sd: 2.997
+    missing_pct: 0.0
+    unique_count: 3106
+- var_name: o3_pop_pred_2017
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2017
+  summary:
+    min: 28.44
+    max: 54.03
+    mean: 38.42
+    p25: 36.72
+    p75: 39.32
+    sd: 2.825
+    missing_pct: 0.0
+    unique_count: 3104
+- var_name: o3_pop_pred_2018
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2018
+  summary:
+    min: 28.18
+    max: 53.07
+    mean: 37.82
+    p25: 36.19
+    p75: 38.27
+    sd: 3.127
+    missing_pct: 0.0
+    unique_count: 3106
+- var_name: o3_pop_pred_2019
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019

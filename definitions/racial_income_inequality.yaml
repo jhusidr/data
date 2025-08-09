@@ -23,9 +23,15 @@ data_summary:
   data_size_mb: 4.13
   years_covered:
   - 2000
+race_eth_coverage:
+- black
+- white
 variables:
-- name: bw_diff_income_2000
+- var_name: bw_diff_income_2000
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2000
@@ -35,8 +41,11 @@ variables:
     max_length: 23
     min_length: 3
     avg_length: 14.5
-- name: bw_ratio_income_2000
+- var_name: bw_ratio_income_2000
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2000

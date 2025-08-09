@@ -28,8 +28,11 @@ data_summary:
   - 2009
   - 2010
 variables:
-- name: annual_avg_24hr_pm25_ppb_2006
+- var_name: annual_avg_24hr_pm25_ppb_2006
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2006
@@ -42,22 +45,11 @@ variables:
     sd: 2.276
     missing_pct: 0.0
     unique_count: 71967
-- name: annual_avg_stderr_pm25_ppb_2006
+- var_name: annual_avg_24hr_pm25_ppb_2007
   type: numeric
-  time_varying: true
-  years:
-  - 2006
-  summary:
-    min: 2.1
-    max: 4.15
-    mean: 3.21
-    p25: 2.96
-    p75: 3.48
-    sd: 0.348
-    missing_pct: 0.0
-    unique_count: 71789
-- name: annual_avg_24hr_pm25_ppb_2007
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2007
@@ -70,22 +62,11 @@ variables:
     sd: 2.579
     missing_pct: 0.0
     unique_count: 72010
-- name: annual_avg_stderr_pm25_ppb_2007
+- var_name: annual_avg_24hr_pm25_ppb_2008
   type: numeric
-  time_varying: true
-  years:
-  - 2007
-  summary:
-    min: 1.52
-    max: 6.8
-    mean: 4.08
-    p25: 3.55
-    p75: 4.7
-    sd: 0.776
-    missing_pct: 0.0
-    unique_count: 71923
-- name: annual_avg_24hr_pm25_ppb_2008
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2008
@@ -98,22 +79,11 @@ variables:
     sd: 2.083
     missing_pct: 0.0
     unique_count: 71916
-- name: annual_avg_stderr_pm25_ppb_2008
+- var_name: annual_avg_24hr_pm25_ppb_2009
   type: numeric
-  time_varying: true
-  years:
-  - 2008
-  summary:
-    min: 1.8
-    max: 6.63
-    mean: 3.79
-    p25: 3.43
-    p75: 4.23
-    sd: 0.623
-    missing_pct: 0.0
-    unique_count: 71762
-- name: annual_avg_24hr_pm25_ppb_2009
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2009
@@ -126,22 +96,11 @@ variables:
     sd: 1.777
     missing_pct: 0.0
     unique_count: 71868
-- name: annual_avg_stderr_pm25_ppb_2009
+- var_name: annual_avg_24hr_pm25_ppb_2010
   type: numeric
-  time_varying: true
-  years:
-  - 2009
-  summary:
-    min: 1.65
-    max: 3.61
-    mean: 2.69
-    p25: 2.36
-    p75: 3.04
-    sd: 0.411
-    missing_pct: 0.0
-    unique_count: 71884
-- name: annual_avg_24hr_pm25_ppb_2010
-  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2010
@@ -154,8 +113,79 @@ variables:
     sd: 1.878
     missing_pct: 0.0
     unique_count: 71925
-- name: annual_avg_stderr_pm25_ppb_2010
+- var_name: annual_avg_stderr_pm25_ppb_2006
   type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2006
+  summary:
+    min: 2.1
+    max: 4.15
+    mean: 3.21
+    p25: 2.96
+    p75: 3.48
+    sd: 0.348
+    missing_pct: 0.0
+    unique_count: 71789
+- var_name: annual_avg_stderr_pm25_ppb_2007
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2007
+  summary:
+    min: 1.52
+    max: 6.8
+    mean: 4.08
+    p25: 3.55
+    p75: 4.7
+    sd: 0.776
+    missing_pct: 0.0
+    unique_count: 71923
+- var_name: annual_avg_stderr_pm25_ppb_2008
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2008
+  summary:
+    min: 1.8
+    max: 6.63
+    mean: 3.79
+    p25: 3.43
+    p75: 4.23
+    sd: 0.623
+    missing_pct: 0.0
+    unique_count: 71762
+- var_name: annual_avg_stderr_pm25_ppb_2009
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2009
+  summary:
+    min: 1.65
+    max: 3.61
+    mean: 2.69
+    p25: 2.36
+    p75: 3.04
+    sd: 0.411
+    missing_pct: 0.0
+    unique_count: 71884
+- var_name: annual_avg_stderr_pm25_ppb_2010
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2010

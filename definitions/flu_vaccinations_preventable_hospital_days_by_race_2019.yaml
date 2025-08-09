@@ -14,18 +14,42 @@ description: Flu vaccination & preventable hospital says, by race (2019)
 data_quality:
   limitations: ''
 data_summary:
-  sha256_hash: 1a6e20cc580d3259c1228d1603bd1d4fcc8498cb91f3f98a045e500abe5f70b8
+  sha256_hash: 8b9130235df1a16833fc6c7556079da246e218f500e8d8e403f3a17c82656411
   rows: 3194
-  variable_count: 9
+  variable_count: 15
   admin_variable_count: 5
-  non_admin_variable_count: 4
-  non_admin_missing_pct: 51.55
-  data_size_mb: 0.22
+  non_admin_variable_count: 10
+  non_admin_missing_pct: 48.48
+  data_size_mb: 0.3
   years_covered:
   - 2019
+race_eth_coverage:
+- aian
+- asian
+- black
+- hl
+- nhpi
+- white
 variables:
-- name: fluvacc_black_white_2019
+- var_name: fluvacc_black_2019
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 42.0
+    unique_count: 61
+    max_length: 4
+    min_length: 3
+    avg_length: 3.5
+- var_name: fluvacc_black_white_2019
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019
@@ -35,8 +59,25 @@ variables:
     max_length: 19
     min_length: 3
     avg_length: 7.0
-- name: fluvacc_hispanic_white_2019
+- var_name: fluvacc_hispanic_2019
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 42.5
+    unique_count: 64
+    max_length: 4
+    min_length: 3
+    avg_length: 3.5
+- var_name: fluvacc_hispanic_white_2019
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019
@@ -46,8 +87,39 @@ variables:
     max_length: 19
     min_length: 3
     avg_length: 6.8
-- name: prevhosp_black_white_2019
+- var_name: fluvacc_white_2019
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 28.0
+    unique_count: 55
+    max_length: 4
+    min_length: 3
+    avg_length: 3.7
+- var_name: prevhosp_black_2019
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 53.6
+    unique_count: 1359
+    max_length: 7
+    min_length: 3
+    avg_length: 4.4
+- var_name: prevhosp_black_white_2019
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019
@@ -57,8 +129,25 @@ variables:
     max_length: 7
     min_length: 3
     avg_length: 4.4
-- name: prevhosp_hispanic_white_2019
+- var_name: prevhosp_hispanic_2019
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 68.1
+    unique_count: 922
+    max_length: 7
+    min_length: 3
+    avg_length: 4.0
+- var_name: prevhosp_hispanic_white_2019
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2019
@@ -68,3 +157,17 @@ variables:
     max_length: 7
     min_length: 3
     avg_length: 4.0
+- var_name: prevhosp_white_2019
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2019
+  summary:
+    missing_pct: 44.4
+    unique_count: 1499
+    max_length: 7
+    min_length: 3
+    avg_length: 4.7

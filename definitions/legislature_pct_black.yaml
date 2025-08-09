@@ -27,9 +27,17 @@ data_summary:
   years_covered:
   - 2015
   - 2020
+race_eth_coverage:
+- asian
+- black
+- hl
+- white
 variables:
-- name: aina_legislatures_2015
+- var_name: aina_legislatures_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2015
@@ -39,173 +47,11 @@ variables:
     max_length: 4
     min_length: 3
     avg_length: 3.2
-- name: aina_population_2015
+- var_name: aina_legislatures_2020
   type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 8.8
-    unique_count: 52
-    max_length: 18
-    min_length: 3
-    avg_length: 16.6
-- name: asian_legislatures_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 12.3
-    unique_count: 7
-    max_length: 4
-    min_length: 3
-    avg_length: 3.3
-- name: asian_population_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 8.8
-    unique_count: 52
-    max_length: 18
-    min_length: 3
-    avg_length: 16.5
-- name: black_leg_pop_ratio_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 12.3
-    unique_count: 47
-    max_length: 18
-    min_length: 3
-    avg_length: 15.0
-- name: black_legislatures_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 12.3
-    unique_count: 24
-    max_length: 4
-    min_length: 3
-    avg_length: 3.8
-- name: black_population_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 8.8
-    unique_count: 52
-    max_length: 18
-    min_length: 3
-    avg_length: 16.6
-- name: black_white_ratio_diff_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 12.3
-    unique_count: 50
-    max_length: 19
-    min_length: 3
-    avg_length: 16.8
-- name: hawaiian_population_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 8.8
-    unique_count: 52
-    max_length: 21
-    min_length: 3
-    avg_length: 16.7
-- name: hispanic_legislatures_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 12.3
-    unique_count: 13
-    max_length: 4
-    min_length: 3
-    avg_length: 3.6
-- name: multi_legislatures_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 12.3
-    unique_count: 12
-    max_length: 4
-    min_length: 3
-    avg_length: 3.7
-- name: multi_population_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 8.8
-    unique_count: 52
-    max_length: 18
-    min_length: 3
-    avg_length: 16.6
-- name: nodata_legislatures_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 12.3
-    unique_count: 4
-    max_length: 4
-    min_length: 3
-    avg_length: 3.1
-- name: white_leg_pop_ratio_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 12.3
-    unique_count: 50
-    max_length: 18
-    min_length: 3
-    avg_length: 15.8
-- name: white_legislatures_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 12.3
-    unique_count: 30
-    max_length: 4
-    min_length: 3
-    avg_length: 3.8
-- name: white_population_2015
-  type: string
-  time_varying: true
-  years:
-  - 2015
-  summary:
-    missing_pct: 8.8
-    unique_count: 52
-    max_length: 18
-    min_length: 3
-    avg_length: 16.5
-- name: aina_legislatures_2020
-  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -215,8 +61,25 @@ variables:
     max_length: 4
     min_length: 3
     avg_length: 3.3
-- name: aina_population_2020
+- var_name: aina_population_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.6
+- var_name: aina_population_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -226,8 +89,25 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 16.6
-- name: asian_legislatures_2020
+- var_name: asian_legislatures_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 7
+    max_length: 4
+    min_length: 3
+    avg_length: 3.3
+- var_name: asian_legislatures_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -237,8 +117,25 @@ variables:
     max_length: 4
     min_length: 3
     avg_length: 3.4
-- name: asian_population_2020
+- var_name: asian_population_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.5
+- var_name: asian_population_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -248,8 +145,25 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 16.6
-- name: black_leg_pop_ratio_2020
+- var_name: black_leg_pop_ratio_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 47
+    max_length: 18
+    min_length: 3
+    avg_length: 15.0
+- var_name: black_leg_pop_ratio_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -259,8 +173,25 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 15.0
-- name: black_legislatures_2020
+- var_name: black_legislatures_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 24
+    max_length: 4
+    min_length: 3
+    avg_length: 3.8
+- var_name: black_legislatures_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -270,8 +201,25 @@ variables:
     max_length: 4
     min_length: 3
     avg_length: 3.8
-- name: black_population_2020
+- var_name: black_population_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.6
+- var_name: black_population_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -281,8 +229,25 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 16.5
-- name: black_white_ratio_diff_2020
+- var_name: black_white_ratio_diff_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 50
+    max_length: 19
+    min_length: 3
+    avg_length: 16.8
+- var_name: black_white_ratio_diff_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -292,8 +257,25 @@ variables:
     max_length: 19
     min_length: 3
     avg_length: 16.6
-- name: hawaiian_population_2020
+- var_name: hawaiian_population_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 21
+    min_length: 3
+    avg_length: 16.7
+- var_name: hawaiian_population_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -303,8 +285,25 @@ variables:
     max_length: 21
     min_length: 3
     avg_length: 16.6
-- name: hispanic_legislatures_2020
+- var_name: hispanic_legislatures_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 13
+    max_length: 4
+    min_length: 3
+    avg_length: 3.6
+- var_name: hispanic_legislatures_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -314,8 +313,25 @@ variables:
     max_length: 4
     min_length: 3
     avg_length: 3.7
-- name: multi_legislatures_2020
+- var_name: multi_legislatures_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 12
+    max_length: 4
+    min_length: 3
+    avg_length: 3.7
+- var_name: multi_legislatures_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -325,8 +341,25 @@ variables:
     max_length: 4
     min_length: 3
     avg_length: 3.4
-- name: multi_population_2020
+- var_name: multi_population_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.6
+- var_name: multi_population_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -336,8 +369,25 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 16.6
-- name: nodata_legislatures_2020
+- var_name: nodata_legislatures_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 4
+    max_length: 4
+    min_length: 3
+    avg_length: 3.1
+- var_name: nodata_legislatures_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -347,8 +397,25 @@ variables:
     max_length: 4
     min_length: 3
     avg_length: 3.5
-- name: white_leg_pop_ratio_2020
+- var_name: white_leg_pop_ratio_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 50
+    max_length: 18
+    min_length: 3
+    avg_length: 15.8
+- var_name: white_leg_pop_ratio_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -358,8 +425,25 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 16.0
-- name: white_legislatures_2020
+- var_name: white_legislatures_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 12.3
+    unique_count: 30
+    max_length: 4
+    min_length: 3
+    avg_length: 3.8
+- var_name: white_legislatures_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020
@@ -369,8 +453,25 @@ variables:
     max_length: 4
     min_length: 3
     avg_length: 3.8
-- name: white_population_2020
+- var_name: white_population_2015
   type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2015
+  summary:
+    missing_pct: 8.8
+    unique_count: 52
+    max_length: 18
+    min_length: 3
+    avg_length: 16.5
+- var_name: white_population_2020
+  type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2020

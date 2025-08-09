@@ -27,8 +27,11 @@ data_summary:
   years_covered:
   - 2010
 variables:
-- name: mail_return_rate_2010
+- var_name: mail_return_rate_2010
   type: string
+  description: ''
+  keep: false
+  source: unknown
   time_varying: true
   years:
   - 2010
