@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Firearm dealers – JH-SIDR Data Documentation</title>
+<title>Firearm dealers – JHU-SIDR Data Repository</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">JH-SIDR Data Documentation</span>
+    <span class="navbar-title">JHU-SIDR Data Repository</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,6 +93,20 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://sidr.table1.org" target="_blank"> 
+<span class="menu-text">Dashboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.jhsph.edu" target="_blank"> 
+<span class="menu-text">JHSPH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/jh-sidr" target="_blank"> 
+<span class="menu-text">GitHub</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -150,16 +164,24 @@ ul.task-list li input[type="checkbox"] {
 <div class="dataset-overview">
     <div class="overview-grid">
         <div class="overview-item">
-            <strong>Domain:</strong> <span class="domain-badge" style="background-color: #666666">Media Marketing</span>
+            <div class="overview-label">Domain</div>
+            <div class="overview-value"><span class="domain-badge" style="background-color: #666666">Media Marketing</span></div>
         </div>
         <div class="overview-item">
-            <strong>Geography:</strong> <span class="geography-type">zipcode</span>
+            <div class="overview-label">Geography</div>
+            <div class="overview-value"><span class="geography-badge">Zipcode</span></div>
         </div>
         <div class="overview-item">
-            <strong>Years:</strong> 2021
+            <div class="overview-label">Years</div>
+            <div class="overview-value">2021</div>
         </div>
         <div class="overview-item">
-            <strong>Variables:</strong> 6
+            <div class="overview-label">Variables</div>
+            <div class="overview-value">6</div>
+        </div>
+        <div class="overview-item">
+            <div class="overview-label">Race/Ethnicity Coverage</div>
+            <div class="overview-value"><span class="race-eth-badge none">No race/ethnicity data</span></div>
         </div>
     </div>
     
@@ -176,89 +198,255 @@ ul.task-list li input[type="checkbox"] {
 <section id="variables" class="level2">
 <h2 class="anchored" data-anchor-id="variables">Variables</h2>
 <p>This dataset contains 6 variables covering 2021.</p>
-<div class="variable-table-container">
+<div class="variables-grid">
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Count </div>
+                <div class="var-code-name"><code>count</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">Not specified</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
     
-<table class="variable-table caption-top table" data-quarto-postprocess="true">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Variable Name</th>
-<th data-quarto-table-cell-role="th">Type</th>
-<th data-quarto-table-cell-role="th">Years</th>
-<th data-quarto-table-cell-role="th">Missing %</th>
-<th data-quarto-table-cell-role="th">Summary</th>
-</tr>
-</thead>
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
 <tbody>
 <tr class="odd">
-<td class="var-name"><code>count</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 2.22 | Range: [1.00, 28.00] | 26 unique</td>
+<td>Mean</td>
+<td>2.220</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>mail_state</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">55 unique | Length: 2–2</td>
+<td>Minimum</td>
+<td>1.000</td>
 </tr>
 <tr class="odd">
-<td class="var-name"><code>mail_zipcode</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">21,448 unique | Length: 5–9</td>
+<td>Maximum</td>
+<td>28.000</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>premise_state</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">55 unique | Length: 2–2</td>
+<td>25th Percentile</td>
+<td>1.000</td>
 </tr>
 <tr class="odd">
-<td class="var-name"><code>premise_zipcode</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">23,900 unique | Length: 5–9</td>
+<td>75th Percentile</td>
+<td>3.000</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>26</td>
 </tr>
 </tbody>
 </table>
 
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Mail State </div>
+                <div class="var-code-name"><code>mail_state</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">Not specified</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>55</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Mail Zipcode </div>
+                <div class="var-code-name"><code>mail_zipcode</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">Not specified</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>21,448</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>6.3</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Premise State </div>
+                <div class="var-code-name"><code>premise_state</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">Not specified</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>55</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>2.0</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Premise Zipcode </div>
+                <div class="var-code-name"><code>premise_zipcode</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">Not specified</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>23,900</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>6.3</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
 </div>
 </section>
 <section id="data-quality-summary" class="level2">

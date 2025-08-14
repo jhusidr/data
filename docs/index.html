@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>JH-SIDR Data Documentation</title>
+<title>JHU-SIDR Data Repository</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">JH-SIDR Data Documentation</span>
+    <span class="navbar-title">JHU-SIDR Data Repository</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,6 +93,20 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://sidr.table1.org" target="_blank"> 
+<span class="menu-text">Dashboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.jhsph.edu" target="_blank"> 
+<span class="menu-text">JHSPH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/jh-sidr" target="_blank"> 
+<span class="menu-text">GitHub</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -111,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">JH-SIDR Data Documentation</h1>
+<h1 class="title">JHU-SIDR Data Repository</h1>
 <p class="subtitle lead">Johns Hopkins Structural Inequity, Discrimination, and Racism Data Repository</p>
 </div>
 
@@ -181,6 +195,20 @@ ul.task-list li input[type="checkbox"] {
         </div>
         
         <div class="filter-group">
+            <label>Race/Ethnicity Coverage:</label>
+            <select id="race-eth-filter">
+                <option value="">All Coverage Types</option>
+                <option value="aian">American Indian/Alaska Native</option>
+                <option value="asian">Asian</option>
+                <option value="black">Black/African American</option>
+                <option value="hl">Hispanic/Latino</option>
+                <option value="nhpi">Native Hawaiian/Pacific Islander</option>
+                <option value="white">White</option>
+                <option value="none">No Race/Ethnicity Data</option>
+            </select>
+        </div>
+        
+        <div class="filter-group">
             <button id="reset-filters" class="btn-reset">Reset Filters</button>
         </div>
     </div>
@@ -190,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </div>
 
-<div class="dataset-list view-content" id="list-view">
+<div class="dataset-list" id="list-view" style="display: block;">
 
     <div class="dataset-list-item" data-domain="environment" data-geography="state">
         <div class="dataset-name">
@@ -1084,7 +1112,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
 </div>
 
-<div class="dataset-cards view-content" id="tile-view" style="display: none;">
+<div class="dataset-cards" id="tile-view" style="display: none;">
 
     <div class="dataset-card" data-domain="environment" data-geography="state">
         <h3 class="anchored"><a href="datasets/adult_asthma_by_race.html">Adult asthma by race</a></h3>
@@ -1277,7 +1305,7 @@ ul.task-list li input[type="checkbox"] {
         <p class="card-description">1970/1980 Black college completion (%) - White college completion (%)...</p>
         <div class="card-stats">
             <span>📅 2006–2021</span>
-            <span>📊 7 variables</span>
+            <span>📊 5 variables</span>
         </div>
     </div>
 
@@ -1302,8 +1330,8 @@ ul.task-list li input[type="checkbox"] {
         </div>
         <p class="card-description">Counts by race/ethnicity category. ...</p>
         <div class="card-stats">
-            <span>📅 1000, 1999, 2999, 3999, 4999, 5999, 6999, 7999, 8999, 9999</span>
-            <span>📊 73 variables</span>
+            <span>📅 1969</span>
+            <span>📊 5 variables</span>
         </div>
     </div>
 
@@ -1420,7 +1448,7 @@ ul.task-list li input[type="checkbox"] {
         <p class="card-description">Flu vaccination &amp; preventable hospital says, by race (2019)...</p>
         <div class="card-stats">
             <span>📅 2019</span>
-            <span>📊 9 variables</span>
+            <span>📊 15 variables</span>
         </div>
     </div>
 
@@ -1433,7 +1461,7 @@ ul.task-list li input[type="checkbox"] {
         <p class="card-description">Flu vaccination &amp; preventable hospital says, by race (2020)...</p>
         <div class="card-stats">
             <span>📅 2020</span>
-            <span>📊 9 variables</span>
+            <span>📊 15 variables</span>
         </div>
     </div>
 
@@ -1446,7 +1474,7 @@ ul.task-list li input[type="checkbox"] {
         <p class="card-description">Flu vaccination &amp; preventable hospital says, by race (2021)...</p>
         <div class="card-stats">
             <span>📅 2021</span>
-            <span>📊 8 variables</span>
+            <span>📊 14 variables</span>
         </div>
     </div>
 
@@ -1459,7 +1487,7 @@ ul.task-list li input[type="checkbox"] {
         <p class="card-description">Flu vaccination &amp; preventable hospital says, by race (2022)...</p>
         <div class="card-stats">
             <span>📅 2022</span>
-            <span>📊 8 variables</span>
+            <span>📊 14 variables</span>
         </div>
     </div>
 
@@ -1472,7 +1500,7 @@ ul.task-list li input[type="checkbox"] {
         <p class="card-description">Flu vaccination &amp; preventable hospital says, by race (2023)...</p>
         <div class="card-stats">
             <span>📅 2023</span>
-            <span>📊 8 variables</span>
+            <span>📊 14 variables</span>
         </div>
     </div>
 
@@ -1563,7 +1591,7 @@ ul.task-list li input[type="checkbox"] {
         <p class="card-description">1970/1980 Black college completion (%) - White college completion (%)...</p>
         <div class="card-stats">
             <span>📅 1970 and 1980</span>
-            <span>📊 5 variables</span>
+            <span>📊 9 variables</span>
         </div>
     </div>
 
@@ -1628,7 +1656,7 @@ ul.task-list li input[type="checkbox"] {
         <p class="card-description">Incarcerations by race...</p>
         <div class="card-stats">
             <span>📅 1970–2018</span>
-            <span>📊 325 variables</span>
+            <span>📊 324 variables</span>
         </div>
     </div>
 
@@ -1654,7 +1682,7 @@ ul.task-list li input[type="checkbox"] {
         <p class="card-description">Average annualized job growth rate over the time period 2004 to 2013. Constructed using LODES (LEHD Origin-Destination Employment Statistic) - WAC (Wo...</p>
         <div class="card-stats">
             <span>📅 1990, 2000, 2010, 2013, 2015, 2016</span>
-            <span>📊 41 variables</span>
+            <span>📊 39 variables</span>
         </div>
     </div>
 
@@ -1693,7 +1721,7 @@ ul.task-list li input[type="checkbox"] {
         <p class="card-description">Count and proportion of housing units in need of major repairs in 1940...</p>
         <div class="card-stats">
             <span>📅 1940</span>
-            <span>📊 9 variables</span>
+            <span>📊 4 variables</span>
         </div>
     </div>
 
@@ -1953,7 +1981,7 @@ ul.task-list li input[type="checkbox"] {
         <p class="card-description">Police-involved deaths by race...</p>
         <div class="card-stats">
             <span>📅 2013–2023</span>
-            <span>📊 11 variables</span>
+            <span>📊 8 variables</span>
         </div>
     </div>
 
@@ -2163,7 +2191,11 @@ const datasets = [
       2022
     ],
     "variables": 40,
-    "missing_pct": 55.0
+    "missing_pct": 55.0,
+    "race_eth_coverage": [
+      "hl",
+      "white"
+    ]
   },
   {
     "id": "air_pollution_pm25_concentration_2001_2005_census_tract",
@@ -2180,7 +2212,8 @@ const datasets = [
       2005
     ],
     "variables": 10,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "air_pollution_pm25_concentration_2006_2010_census_tract",
@@ -2197,7 +2230,8 @@ const datasets = [
       2010
     ],
     "variables": 10,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "air_pollution_pm25_concentration_2011_2015_census_tract",
@@ -2214,7 +2248,8 @@ const datasets = [
       2015
     ],
     "variables": 10,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "air_pollution_pm25_concentration_2016_2020_census_tract",
@@ -2230,7 +2265,8 @@ const datasets = [
       2019
     ],
     "variables": 8,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "air_pollution_o3_concentration",
@@ -2246,7 +2282,8 @@ const datasets = [
       2019
     ],
     "variables": 16,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "air_pollution_o3_concentration_2001_2005_census_tract",
@@ -2263,7 +2300,8 @@ const datasets = [
       2005
     ],
     "variables": 10,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "air_pollution_o3_concentration_2006_2010_census_tract",
@@ -2280,7 +2318,8 @@ const datasets = [
       2010
     ],
     "variables": 10,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "air_pollution_o3_concentration_2011_2015_census_tract",
@@ -2297,7 +2336,8 @@ const datasets = [
       2015
     ],
     "variables": 10,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "air_pollution_o3_concentration_2016_2020_census_tract",
@@ -2314,7 +2354,8 @@ const datasets = [
       2020
     ],
     "variables": 10,
-    "missing_pct": 10.97
+    "missing_pct": 10.97,
+    "race_eth_coverage": []
   },
   {
     "id": "air_pollution_pm25_concentration",
@@ -2345,7 +2386,8 @@ const datasets = [
       2019
     ],
     "variables": 19,
-    "missing_pct": 0.5
+    "missing_pct": 0.5,
+    "race_eth_coverage": []
   },
   {
     "id": "air_quality_related_cancer_risk_2017",
@@ -2358,7 +2400,8 @@ const datasets = [
       2017
     ],
     "variables": 1,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "air_quality_related_cancer_risk_2018",
@@ -2371,7 +2414,8 @@ const datasets = [
       2018
     ],
     "variables": 1,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "air_quality_related_cancer_risk_2019",
@@ -2384,7 +2428,8 @@ const datasets = [
       2019
     ],
     "variables": 1,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "healthcare_uninsured_disparity",
@@ -2411,8 +2456,12 @@ const datasets = [
       2020,
       2021
     ],
-    "variables": 4,
-    "missing_pct": 0.0
+    "variables": 2,
+    "missing_pct": 0.0,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
   },
   {
     "id": "census_return_rate",
@@ -2425,7 +2474,8 @@ const datasets = [
       2010
     ],
     "variables": 1,
-    "missing_pct": 1.69
+    "missing_pct": 1.69,
+    "race_eth_coverage": []
   },
   {
     "id": "home_loan_denials_category_counts",
@@ -2435,19 +2485,14 @@ const datasets = [
     "geography": "county",
     "description": "Counts by race/ethnicity category. ",
     "years": [
-      1000,
-      1999,
-      2999,
-      3999,
-      4999,
-      5999,
-      6999,
-      7999,
-      8999,
-      9999
+      1969
     ],
-    "variables": 68,
-    "missing_pct": 12.99
+    "variables": 0,
+    "missing_pct": 0.0,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
   },
   {
     "id": "distance_to_alcohol_drug_care",
@@ -2460,7 +2505,8 @@ const datasets = [
       2009
     ],
     "variables": 4,
-    "missing_pct": 0.56
+    "missing_pct": 0.56,
+    "race_eth_coverage": []
   },
   {
     "id": "distance_to_ed",
@@ -2473,7 +2519,8 @@ const datasets = [
       2009
     ],
     "variables": 4,
-    "missing_pct": 0.59
+    "missing_pct": 0.59,
+    "race_eth_coverage": []
   },
   {
     "id": "distance_to_health_clinic",
@@ -2486,7 +2533,8 @@ const datasets = [
       2009
     ],
     "variables": 4,
-    "missing_pct": 0.56
+    "missing_pct": 0.56,
+    "race_eth_coverage": []
   },
   {
     "id": "distance_to_medsurg_icu",
@@ -2499,7 +2547,8 @@ const datasets = [
       2009
     ],
     "variables": 4,
-    "missing_pct": 0.59
+    "missing_pct": 0.59,
+    "race_eth_coverage": []
   },
   {
     "id": "distance_to_obstetrics_care",
@@ -2512,7 +2561,8 @@ const datasets = [
       2009
     ],
     "variables": 4,
-    "missing_pct": 0.56
+    "missing_pct": 0.56,
+    "race_eth_coverage": []
   },
   {
     "id": "distance_to_pediatric_icu",
@@ -2525,7 +2575,8 @@ const datasets = [
       2009
     ],
     "variables": 4,
-    "missing_pct": 0.74
+    "missing_pct": 0.74,
+    "race_eth_coverage": []
   },
   {
     "id": "employment_discrimination_lawsuits",
@@ -2547,7 +2598,10 @@ const datasets = [
       2021
     ],
     "variables": 10,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": [
+      "black"
+    ]
   },
   {
     "id": "firearm_dealers",
@@ -2560,7 +2614,8 @@ const datasets = [
       2021
     ],
     "variables": 5,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "flu_vaccinations_preventable_hospital_days_by_race_2019",
@@ -2572,8 +2627,16 @@ const datasets = [
     "years": [
       2019
     ],
-    "variables": 4,
-    "missing_pct": 51.55
+    "variables": 10,
+    "missing_pct": 48.48,
+    "race_eth_coverage": [
+      "aian",
+      "asian",
+      "black",
+      "hl",
+      "nhpi",
+      "white"
+    ]
   },
   {
     "id": "flu_vaccinations_preventable_hospital_days_by_race_2020",
@@ -2585,8 +2648,16 @@ const datasets = [
     "years": [
       2020
     ],
-    "variables": 4,
-    "missing_pct": 51.27
+    "variables": 10,
+    "missing_pct": 41.56,
+    "race_eth_coverage": [
+      "aian",
+      "asian",
+      "black",
+      "hl",
+      "nhpi",
+      "white"
+    ]
   },
   {
     "id": "flu_vaccinations_preventable_hospital_days_by_race_2021",
@@ -2598,8 +2669,16 @@ const datasets = [
     "years": [
       2021
     ],
-    "variables": 4,
-    "missing_pct": 48.83
+    "variables": 10,
+    "missing_pct": 45.04,
+    "race_eth_coverage": [
+      "aian",
+      "asian",
+      "black",
+      "hl",
+      "nhpi",
+      "white"
+    ]
   },
   {
     "id": "flu_vaccinations_preventable_hospital_days_by_race_2022",
@@ -2611,8 +2690,16 @@ const datasets = [
     "years": [
       2022
     ],
-    "variables": 4,
-    "missing_pct": 49.48
+    "variables": 10,
+    "missing_pct": 45.7,
+    "race_eth_coverage": [
+      "aian",
+      "asian",
+      "black",
+      "hl",
+      "nhpi",
+      "white"
+    ]
   },
   {
     "id": "flu_vaccinations_preventable_hospital_days_by_race_2023",
@@ -2624,8 +2711,16 @@ const datasets = [
     "years": [
       2023
     ],
-    "variables": 4,
-    "missing_pct": 51.25
+    "variables": 10,
+    "missing_pct": 47.51,
+    "race_eth_coverage": [
+      "aian",
+      "asian",
+      "black",
+      "hl",
+      "nhpi",
+      "white"
+    ]
   },
   {
     "id": "food_access_2010",
@@ -2638,7 +2733,8 @@ const datasets = [
       2010
     ],
     "variables": 1,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "food_access_2015",
@@ -2651,7 +2747,8 @@ const datasets = [
       2015
     ],
     "variables": 1,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "food_access_2019",
@@ -2664,7 +2761,8 @@ const datasets = [
       2019
     ],
     "variables": 1,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "generational_income_mobility",
@@ -2685,7 +2783,8 @@ const datasets = [
       1988
     ],
     "variables": 32,
-    "missing_pct": 57.09
+    "missing_pct": 57.09,
+    "race_eth_coverage": []
   },
   {
     "id": "hpsa_score",
@@ -2699,7 +2798,8 @@ const datasets = [
       2024
     ],
     "variables": 2,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "historic_redlining",
@@ -2712,7 +2812,8 @@ const datasets = [
       1940
     ],
     "variables": 4,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "historic_college_completion_by_race",
@@ -2725,8 +2826,12 @@ const datasets = [
       1970,
       1980
     ],
-    "variables": 2,
-    "missing_pct": 31.59
+    "variables": 6,
+    "missing_pct": 21.39,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
   },
   {
     "id": "historic_lynching",
@@ -2739,7 +2844,10 @@ const datasets = [
       1940
     ],
     "variables": 5,
-    "missing_pct": 14.18
+    "missing_pct": 14.18,
+    "race_eth_coverage": [
+      "black"
+    ]
   },
   {
     "id": "historic_school_term_length",
@@ -2780,7 +2888,11 @@ const datasets = [
       1980
     ],
     "variables": 63,
-    "missing_pct": 39.91
+    "missing_pct": 39.91,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
   },
   {
     "id": "home_loan_denials_by_race",
@@ -2803,7 +2915,11 @@ const datasets = [
       2017
     ],
     "variables": 110,
-    "missing_pct": 10.13
+    "missing_pct": 10.13,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
   },
   {
     "id": "housing_units_no_vehicle",
@@ -2816,7 +2932,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.37
+    "missing_pct": 0.37,
+    "race_eth_coverage": []
   },
   {
     "id": "incarcerations_by_race",
@@ -2876,8 +2993,12 @@ const datasets = [
       2017,
       2018
     ],
-    "variables": 321,
-    "missing_pct": 28.01
+    "variables": 320,
+    "missing_pct": 28.09,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
   },
   {
     "id": "income_inequality",
@@ -2890,7 +3011,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.37
+    "missing_pct": 0.37,
+    "race_eth_coverage": []
   },
   {
     "id": "job_growth_over_time",
@@ -2907,8 +3029,9 @@ const datasets = [
       2015,
       2016
     ],
-    "variables": 32,
-    "missing_pct": 3.49
+    "variables": 30,
+    "missing_pct": 2.57,
+    "race_eth_coverage": []
   },
   {
     "id": "landfills",
@@ -2921,7 +3044,8 @@ const datasets = [
       2023
     ],
     "variables": 2,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "legislature_pct_black",
@@ -2935,7 +3059,13 @@ const datasets = [
       2020
     ],
     "variables": 32,
-    "missing_pct": 10.96
+    "missing_pct": 10.96,
+    "race_eth_coverage": [
+      "asian",
+      "black",
+      "hl",
+      "white"
+    ]
   },
   {
     "id": "major_housing_issues",
@@ -2947,8 +3077,9 @@ const datasets = [
     "years": [
       1940
     ],
-    "variables": 5,
-    "missing_pct": 1.92
+    "variables": 0,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "median_home_value",
@@ -2961,7 +3092,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.4
+    "missing_pct": 0.4,
+    "race_eth_coverage": []
   },
   {
     "id": "median_housing_rent",
@@ -2974,7 +3106,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.4
+    "missing_pct": 0.4,
+    "race_eth_coverage": []
   },
   {
     "id": "number_ambulatory_surgical_centers",
@@ -2987,7 +3120,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_of_fqhcs",
@@ -3000,7 +3134,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_home_health_agencies",
@@ -3013,7 +3148,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_hospices",
@@ -3026,7 +3162,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_hospitals_alcohol_drug_care",
@@ -3039,7 +3176,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_hospitals_ambulance_services",
@@ -3052,7 +3190,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_hospitals_burn_care",
@@ -3065,7 +3204,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_hospitals_chemotherapy",
@@ -3078,7 +3218,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_hospitals_with_eds",
@@ -3091,7 +3232,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_hospitals_medsurg_icu",
@@ -3104,7 +3246,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_hospitals_obstetric_care",
@@ -3117,7 +3260,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_hospitals_pediatric_icu",
@@ -3130,7 +3274,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_hospitals_psychiatric_care",
@@ -3143,7 +3288,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_mental_health_centers",
@@ -3156,7 +3302,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_nursing_facilities",
@@ -3169,7 +3316,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "number_skilled_nursing_facilities",
@@ -3182,7 +3330,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "nursing_facility_certified_beds",
@@ -3195,7 +3344,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "police_involved_deaths_by_race",
@@ -3217,8 +3367,12 @@ const datasets = [
       2022,
       2023
     ],
-    "variables": 5,
-    "missing_pct": 2.98
+    "variables": 2,
+    "missing_pct": 4.96,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
   },
   {
     "id": "racial_income_inequality",
@@ -3231,7 +3385,11 @@ const datasets = [
       2000
     ],
     "variables": 2,
-    "missing_pct": 7.77
+    "missing_pct": 7.77,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
   },
   {
     "id": "residential_segregation",
@@ -3251,7 +3409,11 @@ const datasets = [
       2023
     ],
     "variables": 8,
-    "missing_pct": 34.85
+    "missing_pct": 34.85,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
   },
   {
     "id": "school_dropouts",
@@ -3264,7 +3426,8 @@ const datasets = [
       1970
     ],
     "variables": 4,
-    "missing_pct": 28.96
+    "missing_pct": 28.96,
+    "race_eth_coverage": []
   },
   {
     "id": "school_segregation_lawsuits",
@@ -3277,7 +3440,8 @@ const datasets = [
       2000
     ],
     "variables": 29,
-    "missing_pct": 13.16
+    "missing_pct": 13.16,
+    "race_eth_coverage": []
   },
   {
     "id": "school_segregation_lawsuits_elementary_grades_1970",
@@ -3290,7 +3454,8 @@ const datasets = [
       1970
     ],
     "variables": 4,
-    "missing_pct": 18.83
+    "missing_pct": 18.83,
+    "race_eth_coverage": []
   },
   {
     "id": "school_segregation_lawsuits_elementary_grades_1980",
@@ -3303,7 +3468,8 @@ const datasets = [
       1980
     ],
     "variables": 3,
-    "missing_pct": 20.8
+    "missing_pct": 20.8,
+    "race_eth_coverage": []
   },
   {
     "id": "skilled_nursing_facilities_beds",
@@ -3316,7 +3482,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "taxes_on_chips_soda_2008",
@@ -3329,7 +3496,8 @@ const datasets = [
       2008
     ],
     "variables": 2,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "taxes_on_chips_soda_2011",
@@ -3342,7 +3510,8 @@ const datasets = [
       2011
     ],
     "variables": 2,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "taxes_on_chips_soda_2014",
@@ -3355,7 +3524,8 @@ const datasets = [
       2014
     ],
     "variables": 2,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
   },
   {
     "id": "total_obstetric_care_facilities",
@@ -3368,7 +3538,8 @@ const datasets = [
       2009
     ],
     "variables": 1,
-    "missing_pct": 0.06
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
   },
   {
     "id": "voting_wait_time_by_race",
@@ -3381,7 +3552,10 @@ const datasets = [
       2016
     ],
     "variables": 8,
-    "missing_pct": 0.0
+    "missing_pct": 0.0,
+    "race_eth_coverage": [
+      "black"
+    ]
   },
   {
     "id": "wage_growth_over_time",
@@ -3400,7 +3574,8 @@ const datasets = [
       2016
     ],
     "variables": 32,
-    "missing_pct": 3.49
+    "missing_pct": 3.49,
+    "race_eth_coverage": []
   },
   {
     "id": "water_contamination_arsenic",
@@ -3413,7 +3588,8 @@ const datasets = [
       2009
     ],
     "variables": 5,
-    "missing_pct": 72.32
+    "missing_pct": 72.32,
+    "race_eth_coverage": []
   }
 ];
 initializeSearch(datasets);

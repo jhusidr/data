@@ -18,18 +18,19 @@ description: Wages are constructed by dividing the average high school graduate 
 data_quality:
   limitations: ''
 data_summary:
-  sha256_hash: 83f8fa720a424f46a0728d7a5ba16d585bdee591fbb4fde7f1a5939375bbc09b
+  sha256_hash: e3d4fdc101979f77b69aab9497ed22c6d9c4611773b5347ee3a9dbd5d6a87c7a
   rows: 74044
-  variable_count: 39
+  variable_count: 41
   admin_variable_count: 9
-  non_admin_variable_count: 30
-  non_admin_missing_pct: 2.57
-  data_size_mb: 41.38
+  non_admin_variable_count: 32
+  non_admin_missing_pct: 3.49
+  data_size_mb: 43.85
   years_covered:
   - 1990
   - 2000
   - 2010
   - 2013
+  - 2014
   - 2015
   - 2016
 variables:
@@ -299,6 +300,21 @@ variables:
     max_length: 18
     min_length: 3
     avg_length: 16.4
+- var_name: job_growth_annual_2004_2013
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2013
+  summary:
+    missing_pct: 4.4
+    unique_count: 60946
+    max_length: 23
+    min_length: 3
+    avg_length: 17.6
+  source_variable: ann_avg_job_growth_2004_2013
 - var_name: jobs_highpay_within_5mi_2015
   type: string
   description: ''
@@ -327,6 +343,21 @@ variables:
     max_length: 9
     min_length: 3
     avg_length: 6.8
+- var_name: ln_wage_growth_hs_grad_2005_2014
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2014
+  summary:
+    missing_pct: 30.1
+    unique_count: 51769
+    max_length: 23
+    min_length: 3
+    avg_length: 13.7
+  source_variable: ln_wage_growth_hs_grad
 - var_name: popdensity_2010
   type: string
   description: ''

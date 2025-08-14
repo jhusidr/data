@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Count of White/Black/Other Race/Spanish Families by income category – JH-SIDR Data Documentation</title>
+<title>Count of White/Black/Other Race/Spanish Families by income category – JHU-SIDR Data Repository</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">JH-SIDR Data Documentation</span>
+    <span class="navbar-title">JHU-SIDR Data Repository</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,6 +93,20 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://sidr.table1.org" target="_blank"> 
+<span class="menu-text">Dashboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.jhsph.edu" target="_blank"> 
+<span class="menu-text">JHSPH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/jh-sidr" target="_blank"> 
+<span class="menu-text">GitHub</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -150,16 +164,24 @@ ul.task-list li input[type="checkbox"] {
 <div class="dataset-overview">
     <div class="overview-grid">
         <div class="overview-item">
-            <strong>Domain:</strong> <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
+            <div class="overview-label">Domain</div>
+            <div class="overview-value"><span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span></div>
         </div>
         <div class="overview-item">
-            <strong>Geography:</strong> <span class="geography-type">county</span>
+            <div class="overview-label">Geography</div>
+            <div class="overview-value"><span class="geography-badge">County</span></div>
         </div>
         <div class="overview-item">
-            <strong>Years:</strong> 1000, 1999, 2999, 3999, 4999, 5999, 6999, 7999, 8999, 9999
+            <div class="overview-label">Years</div>
+            <div class="overview-value">1969</div>
         </div>
         <div class="overview-item">
-            <strong>Variables:</strong> 73
+            <div class="overview-label">Variables</div>
+            <div class="overview-value">5</div>
+        </div>
+        <div class="overview-item">
+            <div class="overview-label">Race/Ethnicity Coverage</div>
+            <div class="overview-value"><span class="race-eth-badge">Black/African American</span> <span class="race-eth-badge">White</span></div>
         </div>
     </div>
     
@@ -175,847 +197,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="variables" class="level2">
 <h2 class="anchored" data-anchor-id="variables">Variables</h2>
-<p>This dataset contains 73 variables covering 1000, 1999, 2999, 3999, 4999, 5999, 6999, 7999, 8999, 9999.</p>
-<div class="variable-table-container">
-    
-<table class="variable-table caption-top table" data-quarto-postprocess="true">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Variable Name</th>
-<th data-quarto-table-cell-role="th">Type</th>
-<th data-quarto-table-cell-role="th">Years</th>
-<th data-quarto-table-cell-role="th">Missing %</th>
-<th data-quarto-table-cell-role="th">Summary</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td class="var-name"><code>name_of_area</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">1,955 unique | Length: 10–33</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>qualifying_name</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">3,221 unique | Length: 16–42</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>nation</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 0.00 | Range: [0.00, 0.00] | 1 unique</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>median_family_income_1969_dlrs</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">2,487 unique | Length: 3–7</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_white_fam</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">2,794 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_white_fam_under_1000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">780 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_white_fam_1000_1999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">1,019 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_white_fam_2000_2999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">1,146 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_white_fam_3000_3999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">3999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">1,191 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_white_fam_4000_4999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">4999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">1,230 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_white_fam_5000_5999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">5999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">1,314 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_white_fam_6000_6999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">6999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">1,360 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_white_fam_7000_7999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">7999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">1,414 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_white_fam_8000_8999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">8999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">1,406 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_white_fam_9000_9999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">9999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">1,342 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_white_fam_10000_11999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">1,678 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_white_fam_12000_14999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">4999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">1,593 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_white_fam_15000_24999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">4999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">1,517 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_white_fam_25000_49999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">9999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">822 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_white_fam_50000_plus</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">438 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_black_fam</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">1,220 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_black_fam_under_1000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">474 unique | Length: 3–17</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_black_fam_1000_1999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">559 unique | Length: 3–17</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_black_fam_2000_2999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">567 unique | Length: 3–17</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_black_fam_3000_3999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">3999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">541 unique | Length: 3–17</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_black_fam_4000_4999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">4999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">518 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_black_fam_5000_5999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">5999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">482 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_black_fam_6000_6999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">6999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">461 unique | Length: 3–17</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_black_fam_7000_7999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">7999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">438 unique | Length: 3–17</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_black_fam_8000_8999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">8999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">400 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_black_fam_9000_9999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">9999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">365 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_black_fam_10000_11999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">411 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_black_fam_12000_14999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">4999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">390 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_black_fam_15000_24999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">4999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">349 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_black_fam_25000_49999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">9999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">138 unique | Length: 3–11</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_black_fam_50000_plus</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 26.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">26.1%</span>
-</div></td>
-<td class="var-summary">79 unique | Length: 3–10</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>other_race_fam</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">472 unique | Length: 3–21</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>other_race_fam_under_1000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">147 unique | Length: 3–23</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>other_race_fam_1000_1999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">150 unique | Length: 3–23</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>other_race_fam_2000_2999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">163 unique | Length: 3–22</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>other_race_fam_3000_3999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">3999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">178 unique | Length: 3–20</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>other_race_fam_4000_4999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">4999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">172 unique | Length: 3–23</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>other_race_fam_5000_5999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">5999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">169 unique | Length: 3–23</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>other_race_fam_6000_6999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">6999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">167 unique | Length: 3–23</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>other_race_fam_7000_7999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">7999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">163 unique | Length: 3–23</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>other_race_fam_8000_8999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">8999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">156 unique | Length: 3–22</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>other_race_fam_9000_9999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">9999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">156 unique | Length: 3–23</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>other_race_fam_10000_11999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">188 unique | Length: 3–23</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>other_race_fam_12000_14999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">4999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">193 unique | Length: 3–23</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>other_race_fam_15000_24999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">4999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">196 unique | Length: 3–21</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>other_race_fam_25000_49999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">9999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">105 unique | Length: 3–23</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>other_race_fam_50000_plus</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.8%</span>
-</div></td>
-<td class="var-summary">49 unique | Length: 3–23</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_spanish_fam</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">672 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_spanish_fam_under_1000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">198 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_spanish_fam_1000_1999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">219 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_spanish_fam_2000_2999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">245 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_spanish_fam_3000_3999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">3999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">263 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_spanish_fam_4000_4999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">4999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">264 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_spanish_fam_5000_5999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">5999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">263 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_spanish_fam_6000_6999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">6999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">272 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_spanish_fam_7000_7999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">7999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">263 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_spanish_fam_8000_8999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">8999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">256 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_spanish_fam_9000_9999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">9999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">243 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_spanish_fam_10000_11999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">291 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_spanish_fam_12000_14999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">4999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">276 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_spanish_fam_15000_24999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">4999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">265 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>count_spanish_fam_25000_49999</code></td>
-<td class="var-type">string</td>
-<td class="var-years">9999</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">143 unique | Length: 3–16</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>count_spanish_fam_50000_plus</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.3%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.3%</span>
-</div></td>
-<td class="var-summary">78 unique | Length: 3–18</td>
-</tr>
-</tbody>
-</table>
-
-</div>
+<p>This dataset contains 5 variables covering 1969.</p>
+<p>No variables documented.</p>
 </section>
 <section id="data-quality-summary" class="level2">
 <h2 class="anchored" data-anchor-id="data-quality-summary">Data Quality &amp; Summary</h2>
@@ -1030,27 +213,27 @@ ul.task-list li input[type="checkbox"] {
 
         <div class="stat-item">
             <div class="stat-label">File Size</div>
-            <div class="stat-value">1.19 MB</div>
+            <div class="stat-value">0.09 MB</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">Total Variables</div>
-            <div class="stat-value">73</div>
+            <div class="stat-value">5</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">Non-Admin Variables</div>
-            <div class="stat-value">68</div>
+            <div class="stat-value">0</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">Overall Missing %</div>
-            <div class="stat-value">13.0%</div>
+            <div class="stat-value">0.0%</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">SHA256 Hash</div>
-            <div class="stat-value"><code class="hash">3d64c9507f02be59...</code></div>
+            <div class="stat-value"><code class="hash">880c031f9400afa3...</code></div>
         </div>
 </div>
 </div>

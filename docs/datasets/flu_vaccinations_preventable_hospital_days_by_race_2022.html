@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Flu vaccinations &amp; preventable hospital days by race: 2022 – JH-SIDR Data Documentation</title>
+<title>Flu vaccinations &amp; preventable hospital days by race: 2022 – JHU-SIDR Data Repository</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">JH-SIDR Data Documentation</span>
+    <span class="navbar-title">JHU-SIDR Data Repository</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,6 +93,20 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://sidr.table1.org" target="_blank"> 
+<span class="menu-text">Dashboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.jhsph.edu" target="_blank"> 
+<span class="menu-text">JHSPH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/jh-sidr" target="_blank"> 
+<span class="menu-text">GitHub</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -150,16 +164,24 @@ ul.task-list li input[type="checkbox"] {
 <div class="dataset-overview">
     <div class="overview-grid">
         <div class="overview-item">
-            <strong>Domain:</strong> <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
+            <div class="overview-label">Domain</div>
+            <div class="overview-value"><span class="domain-badge" style="background-color: #2E86AB">Healthcare</span></div>
         </div>
         <div class="overview-item">
-            <strong>Geography:</strong> <span class="geography-type">county</span>
+            <div class="overview-label">Geography</div>
+            <div class="overview-value"><span class="geography-badge">County</span></div>
         </div>
         <div class="overview-item">
-            <strong>Years:</strong> 2022
+            <div class="overview-label">Years</div>
+            <div class="overview-value">2022</div>
         </div>
         <div class="overview-item">
-            <strong>Variables:</strong> 8
+            <div class="overview-label">Variables</div>
+            <div class="overview-value">14</div>
+        </div>
+        <div class="overview-item">
+            <div class="overview-label">Race/Ethnicity Coverage</div>
+            <div class="overview-value"><span class="race-eth-badge">American Indian/Alaska Native</span> <span class="race-eth-badge">Asian</span> <span class="race-eth-badge">Black/African American</span> <span class="race-eth-badge">Hispanic/Latino</span> <span class="race-eth-badge">Native Hawaiian/Pacific Islander</span> <span class="race-eth-badge">White</span></div>
         </div>
     </div>
     
@@ -175,78 +197,488 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="variables" class="level2">
 <h2 class="anchored" data-anchor-id="variables">Variables</h2>
-<p>This dataset contains 8 variables covering 2022.</p>
-<div class="variable-table-container">
+<p>This dataset contains 14 variables covering 2022.</p>
+<div class="variables-grid">
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Fluvacc Black 2022 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>fluvacc_black_2022</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2022</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #fd7e14; color: white;">40.6%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
     
-<table class="variable-table caption-top table" data-quarto-postprocess="true">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Variable Name</th>
-<th data-quarto-table-cell-role="th">Type</th>
-<th data-quarto-table-cell-role="th">Years</th>
-<th data-quarto-table-cell-role="th">Missing %</th>
-<th data-quarto-table-cell-role="th">Summary</th>
-</tr>
-</thead>
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
 <tbody>
 <tr class="odd">
-<td class="var-name"><code>fluvacc_black_white_2022</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2022</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 40.6%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">40.6%</span>
-</div></td>
-<td class="var-summary">63 unique | Length: 3–5</td>
+<td>Unique Values</td>
+<td>60</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>fluvacc_hispanic_white_2022</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2022</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 38.8%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">38.8%</span>
-</div></td>
-<td class="var-summary">66 unique | Length: 3–5</td>
+<td>Min Length</td>
+<td>3</td>
 </tr>
 <tr class="odd">
-<td class="var-name"><code>prevhosp_black_white_2022</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2022</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 52.9%; background-color: #dc3545;">
-
-</div>
-<span class="missing-value">52.9%</span>
-</div></td>
-<td class="var-summary">1,327 unique | Length: 3–7</td>
+<td>Max Length</td>
+<td>4</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>prevhosp_hispanic_white_2022</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2022</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 65.6%; background-color: #dc3545;">
-
-</div>
-<span class="missing-value">65.6%</span>
-</div></td>
-<td class="var-summary">995 unique | Length: 3–7</td>
+<td>Avg Length</td>
+<td>3.6</td>
 </tr>
 </tbody>
 </table>
 
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Fluvacc Black White 2022 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>fluvacc_black_white_2022</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2022</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #fd7e14; color: white;">40.6%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>63</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Fluvacc Hispanic 2022 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>fluvacc_hispanic_2022</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2022</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #fd7e14; color: white;">38.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>70</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>3.6</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Fluvacc Hispanic White 2022 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>fluvacc_hispanic_white_2022</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2022</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #fd7e14; color: white;">38.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>66</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>3.9</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Fluvacc White 2022 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>fluvacc_white_2022</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2022</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #fd7e14; color: white;">21.5%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>60</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>3.8</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Prevhosp Black 2022 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>prevhosp_black_2022</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2022</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #dc3545; color: white;">52.9%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>1,357</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>4.4</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Prevhosp Black White 2022 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>prevhosp_black_white_2022</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2022</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #dc3545; color: white;">52.9%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>1,327</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>4.4</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Prevhosp Hispanic 2022 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>prevhosp_hispanic_2022</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2022</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #dc3545; color: white;">65.6%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>969</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Prevhosp Hispanic White 2022 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>prevhosp_hispanic_white_2022</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2022</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #dc3545; color: white;">65.6%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>995</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>4.0</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Prevhosp White 2022 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>prevhosp_white_2022</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2022</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #fd7e14; color: white;">39.6%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>1,570</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>4.8</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
 </div>
 </section>
 <section id="data-quality-summary" class="level2">
@@ -262,27 +694,27 @@ ul.task-list li input[type="checkbox"] {
 
         <div class="stat-item">
             <div class="stat-label">File Size</div>
-            <div class="stat-value">0.16 MB</div>
+            <div class="stat-value">0.25 MB</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">Total Variables</div>
-            <div class="stat-value">8</div>
+            <div class="stat-value">14</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">Non-Admin Variables</div>
-            <div class="stat-value">4</div>
+            <div class="stat-value">10</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">Overall Missing %</div>
-            <div class="stat-value">49.5%</div>
+            <div class="stat-value">45.7%</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">SHA256 Hash</div>
-            <div class="stat-value"><code class="hash">1956dcdb596938b6...</code></div>
+            <div class="stat-value"><code class="hash">385b6a473593dde1...</code></div>
         </div>
 </div>
 </div>

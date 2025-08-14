@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Black-White disparity in health insurance – JH-SIDR Data Documentation</title>
+<title>Black-White disparity in health insurance – JHU-SIDR Data Repository</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">JH-SIDR Data Documentation</span>
+    <span class="navbar-title">JHU-SIDR Data Repository</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,6 +93,20 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://sidr.table1.org" target="_blank"> 
+<span class="menu-text">Dashboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.jhsph.edu" target="_blank"> 
+<span class="menu-text">JHSPH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/jh-sidr" target="_blank"> 
+<span class="menu-text">GitHub</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -150,16 +164,24 @@ ul.task-list li input[type="checkbox"] {
 <div class="dataset-overview">
     <div class="overview-grid">
         <div class="overview-item">
-            <strong>Domain:</strong> <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
+            <div class="overview-label">Domain</div>
+            <div class="overview-value"><span class="domain-badge" style="background-color: #2E86AB">Healthcare</span></div>
         </div>
         <div class="overview-item">
-            <strong>Geography:</strong> <span class="geography-type">state</span>
+            <div class="overview-label">Geography</div>
+            <div class="overview-value"><span class="geography-badge">State</span></div>
         </div>
         <div class="overview-item">
-            <strong>Years:</strong> 2006–2021
+            <div class="overview-label">Years</div>
+            <div class="overview-value">2006–2021</div>
         </div>
         <div class="overview-item">
-            <strong>Variables:</strong> 7
+            <div class="overview-label">Variables</div>
+            <div class="overview-value">5</div>
+        </div>
+        <div class="overview-item">
+            <div class="overview-label">Race/Ethnicity Coverage</div>
+            <div class="overview-value"><span class="race-eth-badge">Black/African American</span> <span class="race-eth-badge">White</span></div>
         </div>
     </div>
     
@@ -175,78 +197,120 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="variables" class="level2">
 <h2 class="anchored" data-anchor-id="variables">Variables</h2>
-<p>This dataset contains 7 variables covering 2006–2021.</p>
-<div class="variable-table-container">
+<p>This dataset contains 5 variables covering 2006–2021.</p>
+<div class="variables-grid">
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Diff Black White Uninsured </div>
+                <div class="var-code-name"><code>diff_black_white_uninsured</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">Not specified</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
     
-<table class="variable-table caption-top table" data-quarto-postprocess="true">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Variable Name</th>
-<th data-quarto-table-cell-role="th">Type</th>
-<th data-quarto-table-cell-role="th">Years</th>
-<th data-quarto-table-cell-role="th">Missing %</th>
-<th data-quarto-table-cell-role="th">Summary</th>
-</tr>
-</thead>
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
 <tbody>
 <tr class="odd">
-<td class="var-name"><code>bl_uninsured</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 14.86 | Range: [3.60, 30.60] | 222 unique</td>
+<td>Mean</td>
+<td>4.720</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>wh_uninsured</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 10.14 | Range: [1.80, 19.80] | 164 unique</td>
+<td>Minimum</td>
+<td>0.300</td>
 </tr>
 <tr class="odd">
-<td class="var-name"><code>ratio_black_white_uninsured</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 1.49 | Range: [1.07, 2.22] | 731 unique</td>
+<td>Maximum</td>
+<td>11.100</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>diff_black_white_uninsured</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 4.72 | Range: [0.30, 11.10] | 240 unique</td>
+<td>25th Percentile</td>
+<td>2.900</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>6.300</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>240</td>
 </tr>
 </tbody>
 </table>
 
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Ratio Black White Uninsured </div>
+                <div class="var-code-name"><code>ratio_black_white_uninsured</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">Not specified</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>1.490</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>1.070</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>2.220</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>1.330</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>1.640</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>731</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
 </div>
 </section>
 <section id="data-quality-summary" class="level2">
@@ -262,17 +326,17 @@ ul.task-list li input[type="checkbox"] {
 
         <div class="stat-item">
             <div class="stat-label">File Size</div>
-            <div class="stat-value">0.07 MB</div>
+            <div class="stat-value">0.04 MB</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">Total Variables</div>
-            <div class="stat-value">7</div>
+            <div class="stat-value">5</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">Non-Admin Variables</div>
-            <div class="stat-value">4</div>
+            <div class="stat-value">2</div>
         </div>
 
         <div class="stat-item">
@@ -282,7 +346,7 @@ ul.task-list li input[type="checkbox"] {
 
         <div class="stat-item">
             <div class="stat-label">SHA256 Hash</div>
-            <div class="stat-value"><code class="hash">332d734212b75d77...</code></div>
+            <div class="stat-value"><code class="hash">33ea911f066ba4be...</code></div>
         </div>
 </div>
 </div>

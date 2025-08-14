@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>School segregation of students in elementary grades, 1980 – JH-SIDR Data Documentation</title>
+<title>School segregation of students in elementary grades, 1980 – JHU-SIDR Data Repository</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">JH-SIDR Data Documentation</span>
+    <span class="navbar-title">JHU-SIDR Data Repository</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,6 +93,20 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://sidr.table1.org" target="_blank"> 
+<span class="menu-text">Dashboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.jhsph.edu" target="_blank"> 
+<span class="menu-text">JHSPH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/jh-sidr" target="_blank"> 
+<span class="menu-text">GitHub</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -150,16 +164,24 @@ ul.task-list li input[type="checkbox"] {
 <div class="dataset-overview">
     <div class="overview-grid">
         <div class="overview-item">
-            <strong>Domain:</strong> <span class="domain-badge" style="background-color: #A23B72">Education</span>
+            <div class="overview-label">Domain</div>
+            <div class="overview-value"><span class="domain-badge" style="background-color: #A23B72">Education</span></div>
         </div>
         <div class="overview-item">
-            <strong>Geography:</strong> <span class="geography-type">school_district</span>
+            <div class="overview-label">Geography</div>
+            <div class="overview-value"><span class="geography-badge">School District</span></div>
         </div>
         <div class="overview-item">
-            <strong>Years:</strong> 1980
+            <div class="overview-label">Years</div>
+            <div class="overview-value">1980</div>
         </div>
         <div class="overview-item">
-            <strong>Variables:</strong> 8
+            <div class="overview-label">Variables</div>
+            <div class="overview-value">8</div>
+        </div>
+        <div class="overview-item">
+            <div class="overview-label">Race/Ethnicity Coverage</div>
+            <div class="overview-value"><span class="race-eth-badge none">No race/ethnicity data</span></div>
         </div>
     </div>
     
@@ -176,65 +198,151 @@ ul.task-list li input[type="checkbox"] {
 <section id="variables" class="level2">
 <h2 class="anchored" data-anchor-id="variables">Variables</h2>
 <p>This dataset contains 8 variables covering 1980.</p>
-<div class="variable-table-container">
+<div class="variables-grid">
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">White Asian Dist Disssim 1980 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>white_asian_dist_disssim_1980</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">1980</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #fd7e14; color: white;">22.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
     
-<table class="variable-table caption-top table" data-quarto-postprocess="true">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Variable Name</th>
-<th data-quarto-table-cell-role="th">Type</th>
-<th data-quarto-table-cell-role="th">Years</th>
-<th data-quarto-table-cell-role="th">Missing %</th>
-<th data-quarto-table-cell-role="th">Summary</th>
-</tr>
-</thead>
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
 <tbody>
 <tr class="odd">
-<td class="var-name"><code>white_asian_dist_disssim_1980</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1980</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 22.0%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">22.0%</span>
-</div></td>
-<td class="var-summary">5,787 unique | Length: 3–18</td>
+<td>Unique Values</td>
+<td>5,787</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>white_black_dist_disssim_1980</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1980</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 16.6%; background-color: #ffc107;">
-
-</div>
-<span class="missing-value">16.6%</span>
-</div></td>
-<td class="var-summary">6,079 unique | Length: 3–18</td>
+<td>Min Length</td>
+<td>3</td>
 </tr>
 <tr class="odd">
-<td class="var-name"><code>white_hisp_dist_disssim_1980</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1980</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.8%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.8%</span>
-</div></td>
-<td class="var-summary">5,499 unique | Length: 3–18</td>
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>13.0</td>
 </tr>
 </tbody>
 </table>
 
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">White Black Dist Disssim 1980 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>white_black_dist_disssim_1980</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">1980</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #ffc107; color: black;">16.6%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>6,079</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>13.5</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">White Hisp Dist Disssim 1980 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>white_hisp_dist_disssim_1980</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">1980</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #fd7e14; color: white;">23.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>5,499</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>12.5</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
 </div>
 </section>
 <section id="data-quality-summary" class="level2">

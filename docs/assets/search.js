@@ -4,6 +4,7 @@ function initializeSearch(datasets) {
     const searchInput = document.getElementById('search-input');
     const domainFilter = document.getElementById('domain-filter');
     const geographyFilter = document.getElementById('geography-filter');
+    const raceEthFilter = document.getElementById('race-eth-filter');
     const resetButton = document.getElementById('reset-filters');
     const resultsCount = document.getElementById('results-count');
     const cards = document.querySelectorAll('.dataset-card');
@@ -41,6 +42,7 @@ function initializeSearch(datasets) {
         const searchTerm = searchInput.value.toLowerCase();
         const selectedDomain = domainFilter.value;
         const selectedGeography = geographyFilter.value;
+        const selectedRaceEth = raceEthFilter.value;
         
         let visibleCount = 0;
         
@@ -53,8 +55,11 @@ function initializeSearch(datasets) {
             
             const matchesDomain = !selectedDomain || dataset.domain === selectedDomain;
             const matchesGeography = !selectedGeography || dataset.geography === selectedGeography;
+            const matchesRaceEth = !selectedRaceEth || 
+                (selectedRaceEth === 'none' && (!dataset.race_eth_coverage || dataset.race_eth_coverage.length === 0)) ||
+                (selectedRaceEth !== 'none' && dataset.race_eth_coverage && dataset.race_eth_coverage.includes(selectedRaceEth));
             
-            const isVisible = matchesSearch && matchesDomain && matchesGeography;
+            const isVisible = matchesSearch && matchesDomain && matchesGeography && matchesRaceEth;
             
             // Update card visibility
             if (cards[index]) {
@@ -81,11 +86,13 @@ function initializeSearch(datasets) {
     searchInput.addEventListener('input', filterDatasets);
     domainFilter.addEventListener('change', filterDatasets);
     geographyFilter.addEventListener('change', filterDatasets);
+    raceEthFilter.addEventListener('change', filterDatasets);
     
     resetButton.addEventListener('click', () => {
         searchInput.value = '';
         domainFilter.value = '';
         geographyFilter.value = '';
+        raceEthFilter.value = '';
         filterDatasets();
     });
     

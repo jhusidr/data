@@ -14,7 +14,7 @@ description: Police-involved deaths by race
 data_quality:
   limitations: ''
 data_summary:
-  sha256_hash: fddf040b053803ea1750ff56a87ebc70968643f7fa4ec6c713e188b138fa834e
+  sha256_hash: 3886b8d3a8eb697a5c428b5a41535cdcb0e67f3a07b79457f8c21fd22537fcd8
   rows: 6046
   variable_count: 8
   admin_variable_count: 6

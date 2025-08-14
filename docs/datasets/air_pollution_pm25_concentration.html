@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Air pollution: pm2.5 concentration – JH-SIDR Data Documentation</title>
+<title>Air pollution: pm2.5 concentration – JHU-SIDR Data Repository</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">JH-SIDR Data Documentation</span>
+    <span class="navbar-title">JHU-SIDR Data Repository</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,6 +93,20 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://sidr.table1.org" target="_blank"> 
+<span class="menu-text">Dashboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.jhsph.edu" target="_blank"> 
+<span class="menu-text">JHSPH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/jh-sidr" target="_blank"> 
+<span class="menu-text">GitHub</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -150,16 +164,24 @@ ul.task-list li input[type="checkbox"] {
 <div class="dataset-overview">
     <div class="overview-grid">
         <div class="overview-item">
-            <strong>Domain:</strong> <span class="domain-badge" style="background-color: #228B22">Environment</span>
+            <div class="overview-label">Domain</div>
+            <div class="overview-value"><span class="domain-badge" style="background-color: #228B22">Environment</span></div>
         </div>
         <div class="overview-item">
-            <strong>Geography:</strong> <span class="geography-type">county</span>
+            <div class="overview-label">Geography</div>
+            <div class="overview-value"><span class="geography-badge">County</span></div>
         </div>
         <div class="overview-item">
-            <strong>Years:</strong> 2001–2019
+            <div class="overview-label">Years</div>
+            <div class="overview-value">2001–2019</div>
         </div>
         <div class="overview-item">
-            <strong>Variables:</strong> 24
+            <div class="overview-label">Variables</div>
+            <div class="overview-value">24</div>
+        </div>
+        <div class="overview-item">
+            <div class="overview-label">Race/Ethnicity Coverage</div>
+            <div class="overview-value"><span class="race-eth-badge none">No race/ethnicity data</span></div>
         </div>
     </div>
     
@@ -176,257 +198,975 @@ ul.task-list li input[type="checkbox"] {
 <section id="variables" class="level2">
 <h2 class="anchored" data-anchor-id="variables">Variables</h2>
 <p>This dataset contains 24 variables covering 2001–2019.</p>
-<div class="variable-table-container">
+<div class="variables-grid">
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2001 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2001</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2001</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.5%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
     
-<table class="variable-table caption-top table" data-quarto-postprocess="true">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Variable Name</th>
-<th data-quarto-table-cell-role="th">Type</th>
-<th data-quarto-table-cell-role="th">Years</th>
-<th data-quarto-table-cell-role="th">Missing %</th>
-<th data-quarto-table-cell-role="th">Summary</th>
-</tr>
-</thead>
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
 <tbody>
 <tr class="odd">
-<td class="var-name"><code>pm25_mean_2001</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2001</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.5%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.5%</span>
-</div></td>
-<td class="var-summary">152 unique | Length: 3–18</td>
+<td>Unique Values</td>
+<td>152</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>pm25_mean_2002</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2002</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 10.91 | Range: [0.00, 27.50] | 149 unique</td>
+<td>Min Length</td>
+<td>3</td>
 </tr>
 <tr class="odd">
-<td class="var-name"><code>pm25_mean_2003</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2003</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 10.89 | Range: [0.00, 24.90] | 137 unique</td>
+<td>Max Length</td>
+<td>18</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>pm25_mean_2004</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2004</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 10.66 | Range: [0.00, 22.00] | 136 unique</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>pm25_mean_2005</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2005</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 11.43 | Range: [0.00, 21.70] | 152 unique</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>pm25_mean_2006</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2006</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 10.65 | Range: [0.00, 22.40] | 132 unique</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>pm25_mean_2007</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2007</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 11.04 | Range: [0.00, 22.60] | 143 unique</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>pm25_mean_2008</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2008</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 10.08 | Range: [0.00, 23.20] | 124 unique</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>pm25_mean_2009</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2009</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.8%</span>
-</div></td>
-<td class="var-summary">107 unique | Length: 3–18</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>pm25_mean_2010</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2010</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 1.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">1.0%</span>
-</div></td>
-<td class="var-summary">111 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>pm25_mean_2011</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2011</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.9%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.9%</span>
-</div></td>
-<td class="var-summary">107 unique | Length: 3–18</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>pm25_mean_2012</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2012</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.9%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.9%</span>
-</div></td>
-<td class="var-summary">99 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>pm25_mean_2013</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2013</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.8%</span>
-</div></td>
-<td class="var-summary">104 unique | Length: 3–18</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>pm25_mean_2014</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2014</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 1.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">1.0%</span>
-</div></td>
-<td class="var-summary">109 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>pm25_mean_2015</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2015</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.7%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.7%</span>
-</div></td>
-<td class="var-summary">112 unique | Length: 3–18</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>pm25_mean_2016</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2016</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.6%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.6%</span>
-</div></td>
-<td class="var-summary">111 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>pm25_mean_2017</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2017</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.9%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.9%</span>
-</div></td>
-<td class="var-summary">113 unique | Length: 3–18</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>pm25_mean_2018</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2018</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.8%</span>
-</div></td>
-<td class="var-summary">120 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>pm25_mean_2019</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2019</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.7%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.7%</span>
-</div></td>
-<td class="var-summary">104 unique | Length: 3–18</td>
+<td>Avg Length</td>
+<td>14.8</td>
 </tr>
 </tbody>
 </table>
 
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2002 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2002</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2002</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>10.910</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>0.000</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>27.500</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>8.800</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>13.000</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>149</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2003 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2003</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2003</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>10.890</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>0.000</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>24.900</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>8.900</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>12.900</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>137</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2004 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2004</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2004</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>10.660</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>0.000</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>22.000</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>8.950</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>12.500</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>136</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2005 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2005</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2005</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>11.430</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>0.000</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>21.700</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>9.300</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>13.700</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>152</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2006 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2006</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2006</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>10.650</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>0.000</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>22.400</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>8.700</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>12.700</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>132</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2007 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2007</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2007</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>11.040</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>0.000</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>22.600</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>8.800</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>13.400</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>143</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2008 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2008</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2008</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>10.080</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>0.000</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>23.200</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>8.500</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>11.800</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>124</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2009 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2009</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2009</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>107</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>14.4</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2010 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2010</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2010</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">1.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>111</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>14.8</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2011 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2011</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2011</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.9%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>107</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>14.5</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2012 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2012</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2012</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.9%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>99</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>14.6</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2013 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2013</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2013</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>104</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>14.4</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2014 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2014</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2014</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">1.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>109</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>14.3</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2015 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2015</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2015</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.7%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>112</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>14.3</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2016 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2016</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2016</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.6%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>111</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>14.2</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2017 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2017</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2017</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.9%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>113</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>14.1</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2018 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2018</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2018</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>120</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>14.2</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Pm25 Mean 2019 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>pm25_mean_2019</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2019</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.7%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>104</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>14.2</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
 </div>
 </section>
 <section id="data-quality-summary" class="level2">

@@ -14,16 +14,41 @@ description: Census tract-level data on historic redlining practices from 1940.
 data_quality:
   limitations: ''
 data_summary:
-  sha256_hash: 55d7ad94de4a97d74dd22aeb4b5c3ab7983ea5318eb54e291c7a63d7ab222690
+  sha256_hash: 1acca923891af3550b3f7fbc832b1863de2bc883eab75abd2f468fe4639107ac
   rows: 12888
-  variable_count: 4
+  variable_count: 6
   admin_variable_count: 2
-  non_admin_variable_count: 2
+  non_admin_variable_count: 4
   non_admin_missing_pct: 0.0
-  data_size_mb: 0.34
+  data_size_mb: 0.76
   years_covered:
   - 1940
 variables:
+- var_name: CBSA
+  type: numeric
+  description: ''
+  keep: false
+  source: unknown
+  summary:
+    min: 10420.0
+    max: 49660.0
+    mean: 30101.55
+    p25: 19780.0
+    p75: 35620.0
+    sd: 10029.957
+    missing_pct: 0.0
+    unique_count: 143
+- var_name: METRO_NAME
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  summary:
+    missing_pct: 0.0
+    unique_count: 143
+    max_length: 30
+    min_length: 1
+    avg_length: 25.4
 - var_name: cat_redlining_1940
   type: numeric
   description: ''

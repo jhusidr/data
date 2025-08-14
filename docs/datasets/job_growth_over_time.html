@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Job growth over time – JH-SIDR Data Documentation</title>
+<title>Job growth over time – JHU-SIDR Data Repository</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">JH-SIDR Data Documentation</span>
+    <span class="navbar-title">JHU-SIDR Data Repository</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,6 +93,20 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://sidr.table1.org" target="_blank"> 
+<span class="menu-text">Dashboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.jhsph.edu" target="_blank"> 
+<span class="menu-text">JHSPH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/jh-sidr" target="_blank"> 
+<span class="menu-text">GitHub</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -150,16 +164,24 @@ ul.task-list li input[type="checkbox"] {
 <div class="dataset-overview">
     <div class="overview-grid">
         <div class="overview-item">
-            <strong>Domain:</strong> <span class="domain-badge" style="background-color: #FF6B6B">Employment</span>
+            <div class="overview-label">Domain</div>
+            <div class="overview-value"><span class="domain-badge" style="background-color: #FF6B6B">Employment</span></div>
         </div>
         <div class="overview-item">
-            <strong>Geography:</strong> <span class="geography-type">census_tract</span>
+            <div class="overview-label">Geography</div>
+            <div class="overview-value"><span class="geography-badge">Census Tract</span></div>
         </div>
         <div class="overview-item">
-            <strong>Years:</strong> 1990, 2000, 2010, 2013, 2015, 2016
+            <div class="overview-label">Years</div>
+            <div class="overview-value">1990, 2000, 2010, 2013, 2015, 2016</div>
         </div>
         <div class="overview-item">
-            <strong>Variables:</strong> 41
+            <div class="overview-label">Variables</div>
+            <div class="overview-value">39</div>
+        </div>
+        <div class="overview-item">
+            <div class="overview-label">Race/Ethnicity Coverage</div>
+            <div class="overview-value"><span class="race-eth-badge none">No race/ethnicity data</span></div>
         </div>
     </div>
     
@@ -175,414 +197,1448 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="variables" class="level2">
 <h2 class="anchored" data-anchor-id="variables">Variables</h2>
-<p>This dataset contains 41 variables covering 1990, 2000, 2010, 2013, 2015, 2016.</p>
-<div class="variable-table-container">
+<p>This dataset contains 39 variables covering 1990, 2000, 2010, 2013, 2015, 2016.</p>
+<div class="variables-grid">
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Asian Share 2000 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>asian_share_2000</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2000</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">3.9%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
     
-<table class="variable-table caption-top table" data-quarto-postprocess="true">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Variable Name</th>
-<th data-quarto-table-cell-role="th">Type</th>
-<th data-quarto-table-cell-role="th">Years</th>
-<th data-quarto-table-cell-role="th">Missing %</th>
-<th data-quarto-table-cell-role="th">Summary</th>
-</tr>
-</thead>
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
 <tbody>
 <tr class="odd">
-<td class="var-name"><code>ln_wage_growth_hs_grad</code></td>
-<td class="var-type">string</td>
-<td class="var-years">Not specified</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 30.1%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">30.1%</span>
-</div></td>
-<td class="var-summary">51,769 unique | Length: 3–23</td>
+<td>Unique Values</td>
+<td>62,660</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>ann_avg_job_growth_2004_2013</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2013</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 4.4%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">4.4%</span>
-</div></td>
-<td class="var-summary">60,946 unique | Length: 3–23</td>
+<td>Min Length</td>
+<td>3</td>
 </tr>
 <tr class="odd">
-<td class="var-name"><code>med_hhinc_1990</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1990</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.2%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.2%</span>
-</div></td>
-<td class="var-summary">43,029 unique | Length: 3–18</td>
+<td>Max Length</td>
+<td>22</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>poor_share_1990</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1990</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.2%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.2%</span>
-</div></td>
-<td class="var-summary">62,768 unique | Length: 3–22</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>single_parent_share_1990</code></td>
-<td class="var-type">string</td>
-<td class="var-years">1990</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.4%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.4%</span>
-</div></td>
-<td class="var-summary">45,330 unique | Length: 3–21</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>asian_share_2000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 3.9%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">3.9%</span>
-</div></td>
-<td class="var-summary">62,660 unique | Length: 3–22</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>black_share_2000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.1%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.1%</span>
-</div></td>
-<td class="var-summary">65,134 unique | Length: 3–22</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>college_plus_share_2000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.1%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.1%</span>
-</div></td>
-<td class="var-summary">64,843 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>commute_time_mean_2000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.2%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.2%</span>
-</div></td>
-<td class="var-summary">67,697 unique | Length: 3–18</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>emp_2000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.1%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.1%</span>
-</div></td>
-<td class="var-summary">65,861 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>hispanic_share_2000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.1%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.1%</span>
-</div></td>
-<td class="var-summary">64,844 unique | Length: 3–22</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>household_income_mean_2000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.2%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.2%</span>
-</div></td>
-<td class="var-summary">64,673 unique | Length: 3–16</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>poor_share_2000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.2%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.2%</span>
-</div></td>
-<td class="var-summary">65,129 unique | Length: 3–18</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>population_density_2000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 1.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">1.8%</span>
-</div></td>
-<td class="var-summary">72,456 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>single_parent_share_2000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.3%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.3%</span>
-</div></td>
-<td class="var-summary">44,895 unique | Length: 3–18</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>white_share_2000</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2000</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.1%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.1%</span>
-</div></td>
-<td class="var-summary">67,225 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>asian_share_2010</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2010</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.5%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.5%</span>
-</div></td>
-<td class="var-summary">66,639 unique | Length: 3–18</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>black_share_2010</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2010</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.8%</span>
-</div></td>
-<td class="var-summary">69,136 unique | Length: 3–21</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>foreign_share_2010</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2010</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 2.3%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">2.3%</span>
-</div></td>
-<td class="var-summary">67,142 unique | Length: 3–18</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>frac_coll_plus_2010</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2010</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 1.1%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">1.1%</span>
-</div></td>
-<td class="var-summary">70,023 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>hispanic_share_2010</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2010</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.8%</span>
-</div></td>
-<td class="var-summary">69,921 unique | Length: 3–18</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>poor_share_2010</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2010</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 1.2%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">1.2%</span>
-</div></td>
-<td class="var-summary">70,384 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>population_density_2010</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2010</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.5%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.5%</span>
-</div></td>
-<td class="var-summary">72,970 unique | Length: 3–18</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>single_parent_share_2010</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2010</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 1.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">1.8%</span>
-</div></td>
-<td class="var-summary">45,000 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>travel_time_15_2010</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2010</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 1.2%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">1.2%</span>
-</div></td>
-<td class="var-summary">66,994 unique | Length: 3–18</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>white_share_2010</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2010</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.8%</span>
-</div></td>
-<td class="var-summary">72,012 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>gsmn_math_g3_2013</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2013</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 1.9%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">1.9%</span>
-</div></td>
-<td class="var-summary">18,155 unique | Length: 3–19</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>job_density_2013</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2013</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 1.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">1.8%</span>
-</div></td>
-<td class="var-summary">70,885 unique | Length: 3–18</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>jobs_high_pay_5mi_2015</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2015</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 1.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">1.8%</span>
-</div></td>
-<td class="var-summary">42,942 unique | Length: 3–9</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>jobs_total_5mi_2015</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2015</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 1.8%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">1.8%</span>
-</div></td>
-<td class="var-summary">51,166 unique | Length: 3–9</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>rent_twobed_2015</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2015</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 23.4%; background-color: #fd7e14;">
-
-</div>
-<span class="missing-value">23.4%</span>
-</div></td>
-<td class="var-summary">2,417 unique | Length: 3–6</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>household_income_median_2016</code></td>
-<td class="var-type">string</td>
-<td class="var-years">2016</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 1.5%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">1.5%</span>
-</div></td>
-<td class="var-summary">41,410 unique | Length: 3–8</td>
+<td>Avg Length</td>
+<td>17.2</td>
 </tr>
 </tbody>
 </table>
 
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Asian Share 2010 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>asian_share_2010</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2010</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.5%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>66,639</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.4</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Black Share 2000 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>black_share_2000</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2000</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.1%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>65,134</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>22</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.5</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Black Share 2010 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>black_share_2010</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2010</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>69,136</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>21</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.7</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">College Plus Share 2000 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>college_plus_share_2000</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2000</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.1%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>64,843</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.5</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Commute Time Mean 2000 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>commute_time_mean_2000</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2000</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.2%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>67,697</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.1</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Emp 2000 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>emp_2000</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2000</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.1%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>65,861</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.5</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Foreign Share 2010 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>foreign_share_2010</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2010</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.3%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>67,142</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.0</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Frac Coll Plus 2010 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>frac_coll_plus_2010</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2010</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">1.1%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>70,023</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.7</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Gsmn Math G3 2013 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>gsmn_math_g3_2013</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2013</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">1.9%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>18,155</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>19</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.1</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Hispanic Share 2000 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>hispanic_share_2000</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2000</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.1%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>64,844</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>22</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.6</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Hispanic Share 2010 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>hispanic_share_2010</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2010</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>69,921</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.7</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Household Income Mean 2000 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>household_income_mean_2000</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2000</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.2%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>64,673</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>16</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>12.3</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Household Income Median 2016 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>household_income_median_2016</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2016</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">1.5%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>41,410</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>7.0</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Job Density 2013 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>job_density_2013</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2013</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">1.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>70,885</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>16.4</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Jobs High Pay 5mi 2015 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>jobs_high_pay_5mi_2015</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2015</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">1.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>42,942</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>6.4</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Jobs Total 5mi 2015 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>jobs_total_5mi_2015</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2015</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">1.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>51,166</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>6.8</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Med Hhinc 1990 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>med_hhinc_1990</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">1990</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.2%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>43,029</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>9.3</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Poor Share 1990 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>poor_share_1990</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">1990</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.2%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>62,768</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>22</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.5</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Poor Share 2000 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>poor_share_2000</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2000</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.2%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>65,129</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.5</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Poor Share 2010 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>poor_share_2010</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2010</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">1.2%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>70,384</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.6</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Population Density 2000 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>population_density_2000</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2000</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">1.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>72,456</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>16.4</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Population Density 2010 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>population_density_2010</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2010</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.5%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>72,970</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>15.9</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Rent Twobed 2015 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>rent_twobed_2015</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2015</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #fd7e14; color: white;">23.4%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>2,417</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>4.8</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Single Parent Share 1990 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>single_parent_share_1990</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">1990</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.4%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>45,330</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>21</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.4</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Single Parent Share 2000 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>single_parent_share_2000</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2000</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.3%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>44,895</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.4</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Single Parent Share 2010 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>single_parent_share_2010</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2010</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">1.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>45,000</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.2</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Travel Time 15 2010 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>travel_time_15_2010</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2010</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">1.2%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>66,994</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.6</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">White Share 2000 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>white_share_2000</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2000</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">2.1%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>67,225</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.5</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">White Share 2010 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>white_share_2010</code></div>
+            </div>
+            <div class="var-type-badge">String</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2010</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.8%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>72,012</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>18</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>17.7</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
 </div>
 </section>
 <section id="data-quality-summary" class="level2">
@@ -598,27 +1654,27 @@ ul.task-list li input[type="checkbox"] {
 
         <div class="stat-item">
             <div class="stat-label">File Size</div>
-            <div class="stat-value">43.85 MB</div>
+            <div class="stat-value">41.38 MB</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">Total Variables</div>
-            <div class="stat-value">41</div>
+            <div class="stat-value">39</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">Non-Admin Variables</div>
-            <div class="stat-value">32</div>
+            <div class="stat-value">30</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">Overall Missing %</div>
-            <div class="stat-value">3.5%</div>
+            <div class="stat-value">2.6%</div>
         </div>
 
         <div class="stat-item">
             <div class="stat-label">SHA256 Hash</div>
-            <div class="stat-value"><code class="hash">a780e0833574c3e4...</code></div>
+            <div class="stat-value"><code class="hash">a8971eec43383683...</code></div>
         </div>
 </div>
 </div>

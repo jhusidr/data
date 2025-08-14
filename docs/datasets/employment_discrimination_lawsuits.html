@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Employment discrimination lawsuits – JH-SIDR Data Documentation</title>
+<title>Employment discrimination lawsuits – JHU-SIDR Data Repository</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">JH-SIDR Data Documentation</span>
+    <span class="navbar-title">JHU-SIDR Data Repository</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,6 +93,20 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://sidr.table1.org" target="_blank"> 
+<span class="menu-text">Dashboard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.jhsph.edu" target="_blank"> 
+<span class="menu-text">JHSPH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/jh-sidr" target="_blank"> 
+<span class="menu-text">GitHub</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -150,16 +164,24 @@ ul.task-list li input[type="checkbox"] {
 <div class="dataset-overview">
     <div class="overview-grid">
         <div class="overview-item">
-            <strong>Domain:</strong> <span class="domain-badge" style="background-color: #FF6B6B">Employment</span>
+            <div class="overview-label">Domain</div>
+            <div class="overview-value"><span class="domain-badge" style="background-color: #FF6B6B">Employment</span></div>
         </div>
         <div class="overview-item">
-            <strong>Geography:</strong> <span class="geography-type">state</span>
+            <div class="overview-label">Geography</div>
+            <div class="overview-value"><span class="geography-badge">State</span></div>
         </div>
         <div class="overview-item">
-            <strong>Years:</strong> 2012–2021
+            <div class="overview-label">Years</div>
+            <div class="overview-value">2012–2021</div>
         </div>
         <div class="overview-item">
-            <strong>Variables:</strong> 14
+            <div class="overview-label">Variables</div>
+            <div class="overview-value">14</div>
+        </div>
+        <div class="overview-item">
+            <div class="overview-label">Race/Ethnicity Coverage</div>
+            <div class="overview-value"><span class="race-eth-badge">Black/African American</span></div>
         </div>
     </div>
     
@@ -176,149 +198,567 @@ ul.task-list li input[type="checkbox"] {
 <section id="variables" class="level2">
 <h2 class="anchored" data-anchor-id="variables">Variables</h2>
 <p>This dataset contains 14 variables covering 2012–2021.</p>
-<div class="variable-table-container">
+<div class="variables-grid">
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Eeoc Per Black 2012 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>eeoc_per_black_2012</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2012</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
     
-<table class="variable-table caption-top table" data-quarto-postprocess="true">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Variable Name</th>
-<th data-quarto-table-cell-role="th">Type</th>
-<th data-quarto-table-cell-role="th">Years</th>
-<th data-quarto-table-cell-role="th">Missing %</th>
-<th data-quarto-table-cell-role="th">Summary</th>
-</tr>
-</thead>
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
 <tbody>
 <tr class="odd">
-<td class="var-name"><code>eeoc_per_black_2012</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2012</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 962.32 | Range: [149.90, 6420.23] | 52 unique</td>
+<td>Mean</td>
+<td>962.320</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>eeoc_per_black_2013</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2013</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 893.93 | Range: [161.47, 5879.70] | 52 unique</td>
+<td>Minimum</td>
+<td>149.900</td>
 </tr>
 <tr class="odd">
-<td class="var-name"><code>eeoc_per_black_2014</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2014</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 877.90 | Range: [137.69, 5021.76] | 52 unique</td>
+<td>Maximum</td>
+<td>6420.230</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>eeoc_per_black_2015</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2015</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 829.25 | Range: [134.14, 4600.12] | 52 unique</td>
+<td>25th Percentile</td>
+<td>364.350</td>
 </tr>
 <tr class="odd">
-<td class="var-name"><code>eeoc_per_black_2016</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2016</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 841.96 | Range: [147.04, 4812.07] | 52 unique</td>
+<td>75th Percentile</td>
+<td>1105.800</td>
 </tr>
 <tr class="even">
-<td class="var-name"><code>eeoc_per_black_2017</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2017</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 743.81 | Range: [96.57, 4491.91] | 52 unique</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>eeoc_per_black_2018</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2018</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 640.54 | Range: [120.82, 3141.42] | 52 unique</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>eeoc_per_black_2019</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2019</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 634.55 | Range: [143.27, 3093.18] | 52 unique</td>
-</tr>
-<tr class="odd">
-<td class="var-name"><code>eeoc_per_black_2020</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2020</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 662.29 | Range: [97.85, 2908.26] | 52 unique</td>
-</tr>
-<tr class="even">
-<td class="var-name"><code>eeoc_per_black_2021</code></td>
-<td class="var-type">numeric</td>
-<td class="var-years">2021</td>
-<td class="var-missing"><div class="missing-indicator">
-<div class="missing-bar" style="width: 0.0%; background-color: #28a745;">
-
-</div>
-<span class="missing-value">0.0%</span>
-</div></td>
-<td class="var-summary">Mean: 586.61 | Range: [99.20, 1925.95] | 52 unique</td>
+<td>Unique Values</td>
+<td>52</td>
 </tr>
 </tbody>
 </table>
 
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Eeoc Per Black 2013 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>eeoc_per_black_2013</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2013</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>893.930</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>161.470</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>5879.700</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>332.980</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>1069.420</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>52</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Eeoc Per Black 2014 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>eeoc_per_black_2014</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2014</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>877.900</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>137.690</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>5021.760</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>340.380</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>1034.040</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>52</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Eeoc Per Black 2015 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>eeoc_per_black_2015</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2015</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>829.250</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>134.140</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>4600.120</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>340.320</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>1028.790</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>52</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Eeoc Per Black 2016 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>eeoc_per_black_2016</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2016</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>841.960</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>147.040</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>4812.070</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>354.440</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>934.220</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>52</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Eeoc Per Black 2017 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>eeoc_per_black_2017</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2017</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>743.810</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>96.570</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>4491.910</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>330.360</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>957.890</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>52</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Eeoc Per Black 2018 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>eeoc_per_black_2018</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2018</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>640.540</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>120.820</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>3141.420</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>301.100</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>754.900</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>52</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Eeoc Per Black 2019 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>eeoc_per_black_2019</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2019</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>634.550</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>143.270</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>3093.180</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>302.740</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>718.490</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>52</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Eeoc Per Black 2020 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>eeoc_per_black_2020</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2020</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>662.290</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>97.850</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>2908.260</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>278.260</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>783.910</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>52</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
+
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Eeoc Per Black 2021 <span class="time-varying-badge">Time-Varying</span></div>
+                <div class="var-code-name"><code>eeoc_per_black_2021</code></div>
+            </div>
+            <div class="var-type-badge">Numeric</div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years:</span>
+                <span class="var-detail-value">2021</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing:</span>
+                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.0%</span></span>
+            </div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Mean</td>
+<td>586.610</td>
+</tr>
+<tr class="even">
+<td>Minimum</td>
+<td>99.200</td>
+</tr>
+<tr class="odd">
+<td>Maximum</td>
+<td>1925.950</td>
+</tr>
+<tr class="even">
+<td>25th Percentile</td>
+<td>264.480</td>
+</tr>
+<tr class="odd">
+<td>75th Percentile</td>
+<td>733.260</td>
+</tr>
+<tr class="even">
+<td>Unique Values</td>
+<td>52</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+        
+        
+    </div>
 </div>
 </section>
 <section id="data-quality-summary" class="level2">
