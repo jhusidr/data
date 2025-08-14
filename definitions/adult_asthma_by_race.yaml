@@ -35,12 +35,15 @@ data_summary:
 race_eth_coverage:
 - hl
 - white
+- black
+- aian
+- nhpi
 variables:
 - var_name: aian_wh_2013
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% AIAN with asthma - % White with asthma by state in 2013'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2013
@@ -52,9 +55,9 @@ variables:
     avg_length: 4.1
 - var_name: aian_wh_2014
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% AIAN with asthma - % White with asthma by state in 2014'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2014
@@ -66,9 +69,9 @@ variables:
     avg_length: 4.8
 - var_name: aian_wh_2015
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% AIAN with asthma - % White with asthma by state in 2015'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2015
@@ -80,9 +83,9 @@ variables:
     avg_length: 4.7
 - var_name: aian_wh_2016
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% AIAN with asthma - % White with asthma by state in 2016'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2016
@@ -94,9 +97,9 @@ variables:
     avg_length: 4.1
 - var_name: aian_wh_2017
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% AIAN with asthma - % White with asthma by state in 2017'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2017
@@ -108,9 +111,9 @@ variables:
     avg_length: 3.5
 - var_name: aian_wh_2018
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% AIAN with asthma - % White with asthma by state in 2018'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2018
@@ -122,9 +125,9 @@ variables:
     avg_length: 5.2
 - var_name: aian_wh_2019
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% AIAN with asthma - % White with asthma by state in 2019'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2019
@@ -136,9 +139,9 @@ variables:
     avg_length: 4.1
 - var_name: aian_wh_2020
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% AIAN with asthma - % White with asthma by state in 2020'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2020
@@ -150,9 +153,9 @@ variables:
     avg_length: 5.5
 - var_name: aian_wh_2021
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% AIAN with asthma - % White with asthma by state in 2021'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2021
@@ -164,9 +167,9 @@ variables:
     avg_length: 5.0
 - var_name: aian_wh_2022
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% AIAN with asthma - % White with asthma by state in 2022'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2022
@@ -178,9 +181,9 @@ variables:
     avg_length: 6.2
 - var_name: anhpi_wh_2013
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% ANHPI with asthma - % White with asthma by state in 2013'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2013
@@ -192,9 +195,9 @@ variables:
     avg_length: 4.2
 - var_name: anhpi_wh_2014
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% ANHPI with asthma - % White with asthma by state in 2014'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2014
@@ -206,9 +209,9 @@ variables:
     avg_length: 3.8
 - var_name: anhpi_wh_2015
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% ANHPI with asthma - % White with asthma by state in 2015'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2015
@@ -220,9 +223,9 @@ variables:
     avg_length: 4.3
 - var_name: anhpi_wh_2016
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% ANHPI with asthma - % White with asthma by state in 2016'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2016
@@ -234,9 +237,9 @@ variables:
     avg_length: 3.5
 - var_name: anhpi_wh_2017
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% ANHPI with asthma - % White with asthma by state in 2017'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2017
@@ -248,9 +251,9 @@ variables:
     avg_length: 3.2
 - var_name: anhpi_wh_2018
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% ANHPI with asthma - % White with asthma by state in 2018'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2018
@@ -262,9 +265,9 @@ variables:
     avg_length: 3.9
 - var_name: anhpi_wh_2019
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% ANHPI with asthma - % White with asthma by state in 2019'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2019
@@ -276,9 +279,9 @@ variables:
     avg_length: 4.2
 - var_name: anhpi_wh_2020
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% ANHPI with asthma - % White with asthma by state in 2020'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2020
@@ -290,9 +293,9 @@ variables:
     avg_length: 4.1
 - var_name: anhpi_wh_2021
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% ANHPI with asthma - % White with asthma by state in 2021'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2021
@@ -304,9 +307,9 @@ variables:
     avg_length: 5.3
 - var_name: anhpi_wh_2022
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% ANHPI with asthma - % White with asthma by state in 2022'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2022
@@ -318,9 +321,9 @@ variables:
     avg_length: 4.8
 - var_name: bl_wh_2013
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Black with asthma - % White with asthma by state in 2013'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2013
@@ -332,9 +335,9 @@ variables:
     avg_length: 7.8
 - var_name: bl_wh_2014
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Black with asthma - % White with asthma by state in 2014'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2014
@@ -346,9 +349,9 @@ variables:
     avg_length: 8.0
 - var_name: bl_wh_2015
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Black with asthma - % White with asthma by state in 2015'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2015
@@ -360,9 +363,9 @@ variables:
     avg_length: 8.0
 - var_name: bl_wh_2016
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Black with asthma - % White with asthma by state in 2016'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2016
@@ -374,9 +377,9 @@ variables:
     avg_length: 5.8
 - var_name: bl_wh_2017
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Black with asthma - % White with asthma by state in 2017'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2017
@@ -388,9 +391,9 @@ variables:
     avg_length: 6.6
 - var_name: bl_wh_2018
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Black with asthma - % White with asthma by state in 2018'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2018
@@ -402,9 +405,9 @@ variables:
     avg_length: 7.2
 - var_name: bl_wh_2019
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Black with asthma - % White with asthma by state in 2019'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2019
@@ -416,9 +419,9 @@ variables:
     avg_length: 9.0
 - var_name: bl_wh_2020
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Black with asthma - % White with asthma by state in 2020'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2020
@@ -430,9 +433,9 @@ variables:
     avg_length: 8.2
 - var_name: bl_wh_2021
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Black with asthma - % White with asthma by state in 2021'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2021
@@ -444,9 +447,9 @@ variables:
     avg_length: 8.3
 - var_name: bl_wh_2022
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Black with asthma - % White with asthma by state in 2022'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2022
@@ -458,9 +461,9 @@ variables:
     avg_length: 8.2
 - var_name: hp_wh_2013
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Hispanic with asthma - % White with asthma by state in 2013'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2013
@@ -472,9 +475,9 @@ variables:
     avg_length: 8.4
 - var_name: hp_wh_2014
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Hispanic with asthma - % White with asthma by state in 2014'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2014
@@ -486,9 +489,9 @@ variables:
     avg_length: 7.1
 - var_name: hp_wh_2015
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Hispanic with asthma - % White with asthma by state in 2015'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2015
@@ -500,9 +503,9 @@ variables:
     avg_length: 6.7
 - var_name: hp_wh_2016
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Hispanic with asthma - % White with asthma by state in 2016'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2016
@@ -514,9 +517,9 @@ variables:
     avg_length: 5.0
 - var_name: hp_wh_2017
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Hispanic with asthma - % White with asthma by state in 2017'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2017
@@ -528,9 +531,9 @@ variables:
     avg_length: 4.8
 - var_name: hp_wh_2018
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Hispanic with asthma - % White with asthma by state in 2018'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2018
@@ -542,9 +545,9 @@ variables:
     avg_length: 7.1
 - var_name: hp_wh_2019
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Hispanic with asthma - % White with asthma by state in 2019'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2019
@@ -556,9 +559,9 @@ variables:
     avg_length: 7.5
 - var_name: hp_wh_2020
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Hispanic with asthma - % White with asthma by state in 2020'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2020
@@ -570,9 +573,9 @@ variables:
     avg_length: 8.2
 - var_name: hp_wh_2021
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Hispanic with asthma - % White with asthma by state in 2021'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2021
@@ -584,9 +587,9 @@ variables:
     avg_length: 10.2
 - var_name: hp_wh_2022
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: '% Hispanic with asthma - % White with asthma by state in 2022'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2022

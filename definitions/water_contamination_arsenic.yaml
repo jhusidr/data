@@ -27,9 +27,10 @@ data_summary:
 variables:
 - var_name: arsenic_mean_csw_2009
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Mean concentration of arsenic in community water systems (micrograms
+    per liter), by year
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009
@@ -41,9 +42,10 @@ variables:
     avg_length: 3.2
 - var_name: arsenic_mean_pop_2009
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Mean concentration of arsenic at the population level (micrograms per
+    liter), by year
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009
@@ -55,9 +57,10 @@ variables:
     avg_length: 3.2
 - var_name: pct_arsenic_mcl_greater10_2009
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Percentage of population in the county served by community water systems
+    with yearly distribution of mean arsenic concentration >10
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009
@@ -69,9 +72,10 @@ variables:
     avg_length: 3.1
 - var_name: pct_arsenic_mcl_less10_2009
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Percentage of population in the county served by community water systems
+    with yearly distribution of mean arsenic concentration <10
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009
@@ -83,9 +87,10 @@ variables:
     avg_length: 3.7
 - var_name: pct_arsenic_mcl_notdetect_2009
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Percentage of population in the county served by community water systems
+    with yearly distribution of mean arsenic concentration not detected
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009

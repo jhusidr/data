@@ -29,8 +29,8 @@ variables:
 - var_name: lila_tracts_1_and_10_2010
   type: boolean
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2010

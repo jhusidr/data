@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 
-<body class="floating nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -114,20 +114,33 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datasets/median_home_value.html">Median Home Value</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+    </ul>
+    </div>
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#download" id="toc-download" class="nav-link" data-scroll-target="#download">Download</a></li>
   <li><a href="#data-source" id="toc-data-source" class="nav-link" data-scroll-target="#data-source">Data Source</a></li>
   <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables">Variables</a></li>
-  <li><a href="#data-quality-summary" id="toc-data-quality-summary" class="nav-link" data-scroll-target="#data-quality-summary">Data Quality &amp; Summary</a></li>
-  <li><a href="#download" id="toc-download" class="nav-link" data-scroll-target="#download">Download</a></li>
   </ul>
 </nav>
 </nav>
@@ -138,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datasets/median_home_value.html">Median Home Value</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Median Home Value</h1>
 <p class="subtitle lead">median_home_value</p>
@@ -191,68 +204,22 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 </section>
+<section id="download" class="level2">
+<h2 class="anchored" data-anchor-id="download">Download</h2>
+<div class="download-section">
+    <a href="https://github.com/jh-sidr/jh-sidr-data/blob/main/data/median_home_value.csv" class="btn-download">
+        <i class="fas fa-download"></i> Download CSV
+    </a>
+    <a href="https://raw.githubusercontent.com/jh-sidr/jh-sidr-data/main/data/median_home_value.csv" class="btn-download secondary">
+        <i class="fas fa-link"></i> Direct Link
+    </a>
+</div>
+</section>
 <section id="data-source" class="level2">
 <h2 class="anchored" data-anchor-id="data-source">Data Source</h2>
 <p class="no-source">Source information not yet available.</p>
-</section>
-<section id="variables" class="level2">
-<h2 class="anchored" data-anchor-id="variables">Variables</h2>
-<p>This dataset contains 4 variables covering 2009.</p>
-<div class="variables-grid">
-
-    <div class="variable-card">
-        <div class="var-header">
-            <div class="var-names">
-                <div class="var-display-name">Median Home Value 2009 <span class="time-varying-badge">Time-Varying</span></div>
-                <div class="var-code-name"><code>median_home_value_2009</code></div>
-            </div>
-            <div class="var-type-badge">String</div>
-        </div>
-        
-        <div class="var-details">
-            <div class="var-detail-row">
-                <span class="var-detail-label">Years:</span>
-                <span class="var-detail-value">2009</span>
-            </div>
-            <div class="var-detail-row">
-                <span class="var-detail-label">Missing:</span>
-                <span class="var-detail-value"><span class="missing-badge" style="background-color: #28a745; color: white;">0.4%</span></span>
-            </div>
-        </div>
-        
-        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics:</div>
-    
-<table class="summary-table caption-top table" data-quarto-postprocess="true">
-<tbody>
-<tr class="odd">
-<td>Unique Values</td>
-<td>1,572</td>
-</tr>
-<tr class="even">
-<td>Min Length</td>
-<td>3</td>
-</tr>
-<tr class="odd">
-<td>Max Length</td>
-<td>9</td>
-</tr>
-<tr class="even">
-<td>Avg Length</td>
-<td>7.5</td>
-</tr>
-</tbody>
-</table>
-
-    </div>
-        
-        
-    </div>
-</div>
-</section>
-<section id="data-quality-summary" class="level2">
-<h2 class="anchored" data-anchor-id="data-quality-summary">Data Quality &amp; Summary</h2>
 <div class="data-quality">
-<h3 class="anchored">Dataset Statistics</h3>
+<h2 class="anchored">Dataset Statistics</h2>
 <div class="stats-grid">
 
         <div class="stat-item">
@@ -282,23 +249,1665 @@ ul.task-list li input[type="checkbox"] {
 
         <div class="stat-item">
             <div class="stat-label">SHA256 Hash</div>
-            <div class="stat-value"><code class="hash">c75b2b007eaa1cbc...</code></div>
+            <div class="stat-value"><code class="hash" title="c75b2b007eaa1cbca419c49d5ae17b4f7a7b5cb389c548b267b42f4995f91319">c75b2b007eaa1cbc...</code></div>
         </div>
 </div>
 </div>
 
 </section>
-<section id="download" class="level2">
-<h2 class="anchored" data-anchor-id="download">Download</h2>
-<div class="download-section">
-    <a href="https://github.com/jh-sidr/jh-sidr-data/blob/main/data/median_home_value.csv" class="btn-download">
-        <i class="fas fa-download"></i> Download CSV
-    </a>
-    <a href="https://raw.githubusercontent.com/jh-sidr/jh-sidr-data/main/data/median_home_value.csv" class="btn-download secondary">
-        <i class="fas fa-link"></i> Direct Link
-    </a>
-</div>
+<section id="variables" class="level2">
+<h2 class="anchored" data-anchor-id="variables">Variables</h2>
+<p>This dataset contains 4 variables covering 2009.</p>
+<div class="variable-filter-section">
+        <div class="variable-filter">
+            <input type="text" id="variable-filter" placeholder="Filter variables...">
+            <i class="fas fa-search"></i>
+        </div>
+        <div id="variable-count" class="variable-count">Showing all variables</div>
+    </div>
+    <div class="variables-grid" id="variables-grid">
+    
+    <div class="variable-card">
+        <div class="var-header">
+            <div class="var-names">
+                <div class="var-display-name">Median Home Value 2009</div>
+            </div>
+        </div>
+        
+        <div class="var-details">
+            <div class="var-detail-row">
+                <span class="var-detail-label">Variable Name</span>
+                <span class="var-detail-value var-code"><code>median_home_value_2009</code></span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Type</span>
+                <span class="var-detail-value">String</span>
+            </div>
+            <div class="var-detail-row"><span class="var-detail-label">Description</span><span class="var-detail-value">Median home value of owner-occupied housing units (dollars)</span></div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Years</span>
+                <span class="var-detail-value var-numeric">2009</span>
+            </div>
+            <div class="var-detail-row">
+                <span class="var-detail-label">Missing</span>
+                <span class="var-detail-value var-numeric">0.4%</span>
+            </div>
+            <div class="var-detail-row"><span class="var-detail-label">Time-Varying</span><span class="var-detail-value">Yes</span></div>
+        </div>
+        
+        <div class="var-summary-section"><div class="var-summary-header">Summary Statistics</div>
+    
+<table class="summary-table caption-top table" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td>Unique Values</td>
+<td>1,572</td>
+</tr>
+<tr class="even">
+<td>Min Length</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>Max Length</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td>Avg Length</td>
+<td>7.5</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+    </div>
+
+                    </div>
+                </section></main></div>
+            
+        
+    
 <hr>
+<!-- Data Files Drawer -->
+<div id="datafiles-drawer" class="drawer-overlay hidden">
+    <div class="drawer-backdrop"></div>
+    <div class="drawer-panel">
+        <div class="drawer-content">
+            <div class="drawer-header">
+                <h3>All Data Files</h3>
+                <button id="close-datafiles-drawer" class="drawer-close" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="drawer-filter">
+                <div class="variable-filter">
+                    <input type="text" id="datafiles-filter" placeholder="Search datasets...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div id="datafiles-count" class="variable-count">Showing all datasets</div>
+            </div>
+            <div class="drawer-body" id="datafiles-list">
+                <!-- Data files will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/search.js"></script>
+<script>
+// Datasets data for the drawer
+const allDatasets = [
+  {
+    "id": "adult_asthma_by_race",
+    "name": "Adult asthma by race",
+    "domain": "environment",
+    "indicator": "adult_asthma_by_race",
+    "geography": "state",
+    "description": "% (GROUP) with asthma - % White with asthma by state in XXXX year ",
+    "years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "variables": 40,
+    "missing_pct": 55.0,
+    "race_eth_coverage": [
+      "hl",
+      "white",
+      "black",
+      "aian",
+      "nhpi"
+    ]
+  },
+  {
+    "id": "air_pollution_pm25_concentration_2001_2005_census_tract",
+    "name": "Air pollution: PM2.5 concentration 2001-2005 (census tract)",
+    "domain": "environment",
+    "indicator": "air_pollution_pm25_concentration_2001_2005_census_tract",
+    "geography": "census_tract",
+    "description": "PM2.5 concentration at the Census tract level",
+    "years": [
+      2001,
+      2002,
+      2003,
+      2004,
+      2005
+    ],
+    "variables": 10,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "air_pollution_pm25_concentration_2006_2010_census_tract",
+    "name": "Air pollution: PM2.5 concentration 2006-2010 (census tract)",
+    "domain": "environment",
+    "indicator": "air_pollution_pm25_concentration_2006_2010_census_tract",
+    "geography": "census_tract",
+    "description": "PM2.5 concentration at the Census tract level",
+    "years": [
+      2006,
+      2007,
+      2008,
+      2009,
+      2010
+    ],
+    "variables": 10,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "air_pollution_pm25_concentration_2011_2015_census_tract",
+    "name": "Air pollution: PM2.5 concentration 2011-2015 (census tract)",
+    "domain": "environment",
+    "indicator": "air_pollution_pm25_concentration_2011_2015_census_tract",
+    "geography": "census_tract",
+    "description": "PM2.5 concentration at the Census tract level",
+    "years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "variables": 10,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "air_pollution_pm25_concentration_2016_2020_census_tract",
+    "name": "Air pollution: PM2.5 concentration 2016-2020 (census tract)",
+    "domain": "environment",
+    "indicator": "air_pollution_pm25_concentration_2016_2020_census_tract",
+    "geography": "census_tract",
+    "description": "PM2.5 concentration at the Census tract level",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "variables": 8,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "air_pollution_o3_concentration",
+    "name": "Air pollution: o3 concentration",
+    "domain": "environment",
+    "indicator": "air_pollution_o3_concentration",
+    "geography": "county",
+    "description": "O3 concentration at the Census tract level",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "variables": 16,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "air_pollution_o3_concentration_2001_2005_census_tract",
+    "name": "Air pollution: o3 concentration 2001-2005 (census tract)",
+    "domain": "environment",
+    "indicator": "air_pollution_o3_concentration_2001_2005_census_tract",
+    "geography": "census_tract",
+    "description": "O3 concentration at the Census tract level",
+    "years": [
+      2001,
+      2002,
+      2003,
+      2004,
+      2005
+    ],
+    "variables": 10,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "air_pollution_o3_concentration_2006_2010_census_tract",
+    "name": "Air pollution: o3 concentration 2006-2010 (census tract)",
+    "domain": "environment",
+    "indicator": "air_pollution_o3_concentration_2006_2010_census_tract",
+    "geography": "census_tract",
+    "description": "O3 concentration at the Census tract level",
+    "years": [
+      2006,
+      2007,
+      2008,
+      2009,
+      2010
+    ],
+    "variables": 10,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "air_pollution_o3_concentration_2011_2015_census_tract",
+    "name": "Air pollution: o3 concentration 2011-2015 (census tract)",
+    "domain": "environment",
+    "indicator": "air_pollution_o3_concentration_2011_2015_census_tract",
+    "geography": "census_tract",
+    "description": "O3 concentration at the Census tract level",
+    "years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "variables": 10,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "air_pollution_o3_concentration_2016_2020_census_tract",
+    "name": "Air pollution: o3 concentration 2016-2020 (census tract)",
+    "domain": "environment",
+    "indicator": "air_pollution_o3_concentration_2016_2020_census_tract",
+    "geography": "census_tract",
+    "description": "O3 concentration at the Census tract level",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020
+    ],
+    "variables": 10,
+    "missing_pct": 10.97,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "air_pollution_pm25_concentration",
+    "name": "Air pollution: pm2.5 concentration",
+    "domain": "environment",
+    "indicator": "air_pollution_pm25_concentration",
+    "geography": "county",
+    "description": "Annual average PM2.5 concentration (\u03bcg/m3) (monitor + modeled data)",
+    "years": [
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "variables": 19,
+    "missing_pct": 0.5,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "air_quality_related_cancer_risk_2017",
+    "name": "Air quality related cancer risk: 2017",
+    "domain": "environment",
+    "indicator": "air_quality_related_cancer_risk_2017",
+    "geography": "census_tract",
+    "description": "Probability of contracting cancer over the course of a lifetime, assuming continuous exposure (assumed in NATA to be 70 years)",
+    "years": [
+      2017
+    ],
+    "variables": 1,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "air_quality_related_cancer_risk_2018",
+    "name": "Air quality related cancer risk: 2018",
+    "domain": "environment",
+    "indicator": "air_quality_related_cancer_risk_2018",
+    "geography": "census_tract",
+    "description": "Probability of contracting cancer over the course of a lifetime, assuming continuous exposure (assumed in NATA to be 70 years)",
+    "years": [
+      2018
+    ],
+    "variables": 1,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "air_quality_related_cancer_risk_2019",
+    "name": "Air quality related cancer risk: 2019",
+    "domain": "environment",
+    "indicator": "air_quality_related_cancer_risk_2019",
+    "geography": "census_tract",
+    "description": "Probability of contracting cancer over the course of a lifetime, assuming continuous exposure (assumed in NATA to be 70 years)",
+    "years": [
+      2019
+    ],
+    "variables": 1,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "healthcare_uninsured_disparity",
+    "name": "Black-White disparity in health insurance",
+    "domain": "healthcare",
+    "indicator": "healthcare_uninsured_disparity",
+    "geography": "state",
+    "description": "1970/1980 Black college completion (%) - White college completion (%)",
+    "years": [
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "variables": 2,
+    "missing_pct": 0.0,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
+  },
+  {
+    "id": "census_return_rate",
+    "name": "Census return rate",
+    "domain": "civics",
+    "indicator": "census_return_rate",
+    "geography": "census_tract",
+    "description": "The 2010 Census return rate, measured as the number of 2010 Census mail forms completed and returned over the number of valid occupied housing units where a Census form was expected to be delivered for mail return to Census. Taken from the Census planning database.",
+    "years": [
+      2010
+    ],
+    "variables": 1,
+    "missing_pct": 1.69,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "home_loan_denials_category_counts",
+    "name": "Count of White/Black/Other Race/Spanish Families by income category",
+    "domain": "income_credit_wealth",
+    "indicator": "home_loan_denials_category_counts",
+    "geography": "county",
+    "description": "Counts by race/ethnicity category. ",
+    "years": [
+      1969
+    ],
+    "variables": 0,
+    "missing_pct": 0.0,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
+  },
+  {
+    "id": "distance_to_alcohol_drug_care",
+    "name": "Distance to Alcohol and Drug Inpatient Care",
+    "domain": "healthcare",
+    "indicator": "distance_to_alcohol_drug_care",
+    "geography": "county",
+    "description": "County-level distances to nearest alcohol and drug inpatient care facilities.",
+    "years": [
+      2009
+    ],
+    "variables": 4,
+    "missing_pct": 0.56,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "distance_to_ed",
+    "name": "Distance to Emergency Department",
+    "domain": "healthcare",
+    "indicator": "distance_to_ed",
+    "geography": "county",
+    "description": "County-level data on distance to nearest emergency department.",
+    "years": [
+      2009
+    ],
+    "variables": 4,
+    "missing_pct": 0.59,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "distance_to_health_clinic",
+    "name": "Distance to Health Clinic",
+    "domain": "healthcare",
+    "indicator": "distance_to_health_clinic",
+    "geography": "county",
+    "description": "County-level distances to nearest health clinic.",
+    "years": [
+      2009
+    ],
+    "variables": 4,
+    "missing_pct": 0.56,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "distance_to_medsurg_icu",
+    "name": "Distance to Medical-Surgical ICU",
+    "domain": "healthcare",
+    "indicator": "distance_to_medsurg_icu",
+    "geography": "county",
+    "description": "County-level distances to nearest medical-surgical intensive care unit.",
+    "years": [
+      2009
+    ],
+    "variables": 4,
+    "missing_pct": 0.59,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "distance_to_obstetrics_care",
+    "name": "Distance to Obstetrics Care",
+    "domain": "healthcare",
+    "indicator": "distance_to_obstetrics_care",
+    "geography": "county",
+    "description": "County-level distances to nearest obstetrics care facility.",
+    "years": [
+      2009
+    ],
+    "variables": 4,
+    "missing_pct": 0.56,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "distance_to_pediatric_icu",
+    "name": "Distance to Pediatric ICU",
+    "domain": "healthcare",
+    "indicator": "distance_to_pediatric_icu",
+    "geography": "county",
+    "description": "County-level distances to nearest pediatric intensive care unit.",
+    "years": [
+      2009
+    ],
+    "variables": 4,
+    "missing_pct": 0.74,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "employment_discrimination_lawsuits",
+    "name": "Employment discrimination lawsuits",
+    "domain": "employment",
+    "indicator": "employment_discrimination_lawsuits",
+    "geography": "state",
+    "description": "# of federal charges for employment discrimination based on race per 100,000 Black residents in XXXX year",
+    "years": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+    ],
+    "variables": 10,
+    "missing_pct": 0.0,
+    "race_eth_coverage": [
+      "black"
+    ]
+  },
+  {
+    "id": "firearm_dealers",
+    "name": "Firearm dealers",
+    "domain": "media_marketing",
+    "indicator": "firearm_dealers",
+    "geography": "zipcode",
+    "description": "Number of firearm dealers (Federal Firearms License (FFL) type 01 - Dealer in firearms other than destructive devices including Gunsmiths & FFL type 09 - Dealer in destructive devices were counted by Zipcode)",
+    "years": [
+      2021
+    ],
+    "variables": 5,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "flu_vaccinations_preventable_hospital_days_by_race_2019",
+    "name": "Flu vaccinations & preventable hospital days by race: 2019",
+    "domain": "healthcare",
+    "indicator": "flu_vaccinations_preventable_hospital_days_by_race_2019",
+    "geography": "county",
+    "description": "Flu vaccination & preventable hospital says, by race (2019)",
+    "years": [
+      2019
+    ],
+    "variables": 10,
+    "missing_pct": 48.48,
+    "race_eth_coverage": [
+      "aian",
+      "asian",
+      "black",
+      "hl",
+      "nhpi",
+      "white"
+    ]
+  },
+  {
+    "id": "flu_vaccinations_preventable_hospital_days_by_race_2020",
+    "name": "Flu vaccinations & preventable hospital days by race: 2020",
+    "domain": "healthcare",
+    "indicator": "flu_vaccinations_preventable_hospital_days_by_race_2020",
+    "geography": "county",
+    "description": "Flu vaccination & preventable hospital says, by race (2020)",
+    "years": [
+      2020
+    ],
+    "variables": 10,
+    "missing_pct": 41.56,
+    "race_eth_coverage": [
+      "aian",
+      "asian",
+      "black",
+      "hl",
+      "nhpi",
+      "white"
+    ]
+  },
+  {
+    "id": "flu_vaccinations_preventable_hospital_days_by_race_2021",
+    "name": "Flu vaccinations & preventable hospital days by race: 2021",
+    "domain": "healthcare",
+    "indicator": "flu_vaccinations_preventable_hospital_days_by_race_2021",
+    "geography": "county",
+    "description": "Flu vaccination & preventable hospital says, by race (2021)",
+    "years": [
+      2021
+    ],
+    "variables": 10,
+    "missing_pct": 45.04,
+    "race_eth_coverage": [
+      "aian",
+      "asian",
+      "black",
+      "hl",
+      "nhpi",
+      "white"
+    ]
+  },
+  {
+    "id": "flu_vaccinations_preventable_hospital_days_by_race_2022",
+    "name": "Flu vaccinations & preventable hospital days by race: 2022",
+    "domain": "healthcare",
+    "indicator": "flu_vaccinations_preventable_hospital_days_by_race_2022",
+    "geography": "county",
+    "description": "Flu vaccination & preventable hospital says, by race (2022)",
+    "years": [
+      2022
+    ],
+    "variables": 10,
+    "missing_pct": 45.7,
+    "race_eth_coverage": [
+      "aian",
+      "asian",
+      "black",
+      "hl",
+      "nhpi",
+      "white"
+    ]
+  },
+  {
+    "id": "flu_vaccinations_preventable_hospital_days_by_race_2023",
+    "name": "Flu vaccinations & preventable hospital days by race: 2023",
+    "domain": "healthcare",
+    "indicator": "flu_vaccinations_preventable_hospital_days_by_race_2023",
+    "geography": "county",
+    "description": "Flu vaccination & preventable hospital says, by race (2023)",
+    "years": [
+      2023
+    ],
+    "variables": 10,
+    "missing_pct": 47.51,
+    "race_eth_coverage": [
+      "aian",
+      "asian",
+      "black",
+      "hl",
+      "nhpi",
+      "white"
+    ]
+  },
+  {
+    "id": "food_access_2010",
+    "name": "Food access: 2010",
+    "domain": "neighborhood",
+    "indicator": "food_access_2010",
+    "geography": "census_tract",
+    "description": "A low-income tract with at least 500 people, or 33 percent of the population, living more than one mile (urban areas) or more than 10 miles (rural areas) from the nearest supermarket, supercenter, or large grocery store.",
+    "years": [
+      2010
+    ],
+    "variables": 1,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "food_access_2015",
+    "name": "Food access: 2015",
+    "domain": "neighborhood",
+    "indicator": "food_access_2015",
+    "geography": "census_tract",
+    "description": "A low-income tract with at least 500 people, or 33 percent of the population, living more than one mile (urban areas) or more than 10 miles (rural areas) from the nearest supermarket, supercenter, or large grocery store.",
+    "years": [
+      2015
+    ],
+    "variables": 1,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "food_access_2019",
+    "name": "Food access: 2019",
+    "domain": "neighborhood",
+    "indicator": "food_access_2019",
+    "geography": "census_tract",
+    "description": "A low-income tract with at least 500 people, or 33 percent of the population, living more than one mile (urban areas) or more than 10 miles (rural areas) from the nearest supermarket, supercenter, or large grocery store.",
+    "years": [
+      2019
+    ],
+    "variables": 1,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "generational_income_mobility",
+    "name": "Generational income mobility",
+    "domain": "income_credit_wealth",
+    "indicator": "generational_income_mobility",
+    "geography": "county",
+    "description": "",
+    "years": [
+      1980,
+      1981,
+      1982,
+      1983,
+      1984,
+      1985,
+      1986,
+      1987,
+      1988
+    ],
+    "variables": 32,
+    "missing_pct": 57.09,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "hpsa_score",
+    "name": "HPSA Score",
+    "domain": "healthcare",
+    "indicator": "hpsa_score",
+    "geography": "county",
+    "description": "Categorized health professional shortage area (HPSA) sore (None of the county is shortage area; Part of county is shortage area; Whole county is shortage area)",
+    "years": [
+      2022,
+      2024
+    ],
+    "variables": 2,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "historic_redlining",
+    "name": "Historic Redlining",
+    "domain": "policing",
+    "indicator": "historic_redlining",
+    "geography": "census_tract",
+    "description": "Census tract-level data on historic redlining practices from 1940.",
+    "years": [
+      1940
+    ],
+    "variables": 2,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "historic_college_completion_by_race",
+    "name": "Historic college completion by race",
+    "domain": "education",
+    "indicator": "historic_college_completion_by_race",
+    "geography": "county",
+    "description": "1970/1980 Black college completion (%) - White college completion (%)",
+    "years": [
+      1970,
+      1980
+    ],
+    "variables": 6,
+    "missing_pct": 21.39,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
+  },
+  {
+    "id": "historic_lynching",
+    "name": "Historic lynching",
+    "domain": "policing",
+    "indicator": "historic_lynching",
+    "geography": "county",
+    "description": "# of lynchings of Black residents between 1877-1950/Black residents in 1940 * 100,000",
+    "years": [
+      1940
+    ],
+    "variables": 5,
+    "missing_pct": 14.18,
+    "race_eth_coverage": [
+      "black"
+    ]
+  },
+  {
+    "id": "historic_school_term_length",
+    "name": "Historic school term length",
+    "domain": "education",
+    "indicator": "historic_school_term_length",
+    "geography": "state",
+    "description": "School term length (days) in all schools for each year, by racial group.",
+    "years": [
+      1920,
+      1922,
+      1926,
+      1928,
+      1930,
+      1932,
+      1934,
+      1936,
+      1938,
+      1940,
+      1942,
+      1944,
+      1946,
+      1948,
+      1950,
+      1952,
+      1954,
+      1956,
+      1958,
+      1960,
+      1962,
+      1964,
+      1966,
+      1968,
+      1970,
+      1972,
+      1974,
+      1976,
+      1980
+    ],
+    "variables": 63,
+    "missing_pct": 39.91,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
+  },
+  {
+    "id": "home_loan_denials_by_race",
+    "name": "Home loan denials by race",
+    "domain": "income_credit_wealth",
+    "indicator": "home_loan_denials_by_race",
+    "geography": "county",
+    "description": "Loan denial % for Black borrowers compared to white borrowers",
+    "years": [
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "variables": 110,
+    "missing_pct": 10.13,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
+  },
+  {
+    "id": "housing_units_no_vehicle",
+    "name": "Housing Units Without Vehicle",
+    "domain": "income_credit_wealth",
+    "indicator": "housing_units_no_vehicle",
+    "geography": "county",
+    "description": "County-level percentage of housing units without access to a vehicle.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.37,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "incarcerations_by_race",
+    "name": "Incarcerations by race",
+    "domain": "policing",
+    "indicator": "incarcerations_by_race",
+    "geography": "county",
+    "description": "Incarcerations by race",
+    "years": [
+      1970,
+      1971,
+      1972,
+      1973,
+      1974,
+      1975,
+      1976,
+      1977,
+      1978,
+      1979,
+      1980,
+      1981,
+      1982,
+      1983,
+      1984,
+      1985,
+      1986,
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018
+    ],
+    "variables": 320,
+    "missing_pct": 28.09,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
+  },
+  {
+    "id": "income_inequality",
+    "name": "Income Inequality",
+    "domain": "income_credit_wealth",
+    "indicator": "income_inequality",
+    "geography": "county",
+    "description": "County-level income inequality measured by the Gini Index.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.37,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "job_growth_over_time",
+    "name": "Job growth over time",
+    "domain": "employment",
+    "indicator": "job_growth_over_time",
+    "geography": "census_tract",
+    "description": "Average annualized job growth rate over the time period 2004 to 2013. Constructed using LODES (LEHD Origin-Destination Employment Statistic) - WAC (Workplace Area Characteristics) data files provided by the Census Bureau.",
+    "years": [
+      1990,
+      2000,
+      2010,
+      2013,
+      2015,
+      2016
+    ],
+    "variables": 30,
+    "missing_pct": 2.57,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "landfills",
+    "name": "Landfills",
+    "domain": "environment",
+    "indicator": "landfills",
+    "geography": "zipcode",
+    "description": "Count of open/closed landfill sites by ZipCode as of July 2023",
+    "years": [
+      2023
+    ],
+    "variables": 0,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "legislature_pct_black",
+    "name": "Legislature % Black",
+    "domain": "civics",
+    "indicator": "legislature_pct_black",
+    "geography": "state",
+    "description": "(Black legislatures in XXXX year in a state / Black population in XXXX year in a state) - (White legislatures in XXXX year in a state / White population in XXXX year in a state). Black and White population data were from ACS 5-year estimates (2011-2015, 2016-2020)",
+    "years": [
+      2015,
+      2020
+    ],
+    "variables": 32,
+    "missing_pct": 10.96,
+    "race_eth_coverage": [
+      "asian",
+      "black",
+      "hl",
+      "white"
+    ]
+  },
+  {
+    "id": "major_housing_issues",
+    "name": "Major housing issues",
+    "domain": "neighborhood",
+    "indicator": "major_housing_issues",
+    "geography": "county",
+    "description": "Count and proportion of housing units in need of major repairs in 1940",
+    "years": [
+      1940
+    ],
+    "variables": 0,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "median_home_value",
+    "name": "Median Home Value",
+    "domain": "income_credit_wealth",
+    "indicator": "median_home_value",
+    "geography": "county",
+    "description": "County-level median home values from the American Community Survey.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.4,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "median_housing_rent",
+    "name": "Median Housing Rent",
+    "domain": "income_credit_wealth",
+    "indicator": "median_housing_rent",
+    "geography": "county",
+    "description": "County-level median housing rent from the American Community Survey.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.4,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_ambulatory_surgical_centers",
+    "name": "Number of Ambulatory Surgical Centers",
+    "domain": "healthcare",
+    "indicator": "number_ambulatory_surgical_centers",
+    "geography": "county",
+    "description": "County-level rate of ambulatory surgical centers.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_of_fqhcs",
+    "name": "Number of Federally Qualified Health Centers (FQHCs)",
+    "domain": "healthcare",
+    "indicator": "number_of_fqhcs",
+    "geography": "county",
+    "description": "County-level data on the rate of Federally Qualified Health Centers (FQHCs) per population.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_home_health_agencies",
+    "name": "Number of Home Health Agencies",
+    "domain": "healthcare",
+    "indicator": "number_home_health_agencies",
+    "geography": "county",
+    "description": "County-level rate of home health agencies.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_hospices",
+    "name": "Number of Hospices",
+    "domain": "healthcare",
+    "indicator": "number_hospices",
+    "geography": "county",
+    "description": "County-level rate of hospice facilities.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_hospitals_alcohol_drug_care",
+    "name": "Number of Hospitals with Alcohol/Drug Inpatient Care",
+    "domain": "healthcare",
+    "indicator": "number_hospitals_alcohol_drug_care",
+    "geography": "county",
+    "description": "County-level rate of hospitals with alcohol and drug inpatient care services.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_hospitals_ambulance_services",
+    "name": "Number of Hospitals with Ambulance Services",
+    "domain": "healthcare",
+    "indicator": "number_hospitals_ambulance_services",
+    "geography": "county",
+    "description": "County-level rate of hospitals with ambulance services.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_hospitals_burn_care",
+    "name": "Number of Hospitals with Burn Care",
+    "domain": "healthcare",
+    "indicator": "number_hospitals_burn_care",
+    "geography": "county",
+    "description": "County-level rate of hospitals with burn care units.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_hospitals_chemotherapy",
+    "name": "Number of Hospitals with Chemotherapy",
+    "domain": "healthcare",
+    "indicator": "number_hospitals_chemotherapy",
+    "geography": "county",
+    "description": "County-level rate of hospitals with chemotherapy services.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_hospitals_with_eds",
+    "name": "Number of Hospitals with Emergency Departments",
+    "domain": "healthcare",
+    "indicator": "number_hospitals_with_eds",
+    "geography": "county",
+    "description": "County-level rate of hospitals with emergency departments.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_hospitals_medsurg_icu",
+    "name": "Number of Hospitals with Medical-Surgical ICU",
+    "domain": "healthcare",
+    "indicator": "number_hospitals_medsurg_icu",
+    "geography": "county",
+    "description": "County-level rate of hospitals with medical-surgical intensive care units.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_hospitals_obstetric_care",
+    "name": "Number of Hospitals with Obstetric Care",
+    "domain": "healthcare",
+    "indicator": "number_hospitals_obstetric_care",
+    "geography": "county",
+    "description": "County-level rate of hospitals with obstetric care services.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_hospitals_pediatric_icu",
+    "name": "Number of Hospitals with Pediatric ICU",
+    "domain": "healthcare",
+    "indicator": "number_hospitals_pediatric_icu",
+    "geography": "county",
+    "description": "County-level rate of hospitals with pediatric intensive care units.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_hospitals_psychiatric_care",
+    "name": "Number of Hospitals with Psychiatric Care",
+    "domain": "healthcare",
+    "indicator": "number_hospitals_psychiatric_care",
+    "geography": "county",
+    "description": "County-level rate of hospitals with psychiatric care services.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_mental_health_centers",
+    "name": "Number of Mental Health Centers",
+    "domain": "healthcare",
+    "indicator": "number_mental_health_centers",
+    "geography": "county",
+    "description": "County-level rate of community mental health centers.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_nursing_facilities",
+    "name": "Number of Nursing Facilities",
+    "domain": "healthcare",
+    "indicator": "number_nursing_facilities",
+    "geography": "county",
+    "description": "County-level rate of nursing facilities.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "number_skilled_nursing_facilities",
+    "name": "Number of Skilled Nursing Facilities",
+    "domain": "healthcare",
+    "indicator": "number_skilled_nursing_facilities",
+    "geography": "county",
+    "description": "County-level rate of skilled nursing facilities.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "nursing_facility_certified_beds",
+    "name": "Nursing Facility Certified Beds",
+    "domain": "healthcare",
+    "indicator": "nursing_facility_certified_beds",
+    "geography": "county",
+    "description": "County-level rate of certified nursing facility beds.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "police_involved_deaths_by_race",
+    "name": "Police-involved deaths by race",
+    "domain": "policing",
+    "indicator": "police_involved_deaths_by_race",
+    "geography": "county",
+    "description": "Police-involved deaths by race",
+    "years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "variables": 2,
+    "missing_pct": 4.96,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
+  },
+  {
+    "id": "racial_income_inequality",
+    "name": "Racial income inequality",
+    "domain": "income_credit_wealth",
+    "indicator": "racial_income_inequality",
+    "geography": "census_tract",
+    "description": "Ratio of median white to median black income",
+    "years": [
+      2000
+    ],
+    "variables": 2,
+    "missing_pct": 7.77,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
+  },
+  {
+    "id": "residential_segregation",
+    "name": "Residential segregation",
+    "domain": "neighborhood",
+    "indicator": "residential_segregation",
+    "geography": "county",
+    "description": "Index of dissimilarity of Black and White residential segregation",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "variables": 8,
+    "missing_pct": 34.85,
+    "race_eth_coverage": [
+      "black",
+      "white"
+    ]
+  },
+  {
+    "id": "school_dropouts",
+    "name": "School Dropouts",
+    "domain": "education",
+    "indicator": "school_dropouts",
+    "geography": "county",
+    "description": "Proportion of Whites ages 16 to 21 who are not high school graduate or not enrolled (dropped out) Proportion of Blacks ages 16 to 21 who are not high school graduate or not enrolled (dropped out)whdrop - bldrop whdrop / bldrop",
+    "years": [
+      1970
+    ],
+    "variables": 2,
+    "missing_pct": 39.4,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "school_segregation_lawsuits",
+    "name": "School segregation lawsuits",
+    "domain": "education",
+    "indicator": "school_segregation_lawsuits",
+    "geography": "county",
+    "description": "School segregation lawsuits by year and county.",
+    "years": [
+      1952,
+      1953,
+      1954,
+      1955,
+      1956,
+      1957,
+      1958,
+      1959,
+      1960,
+      1961,
+      1962,
+      1963,
+      1964,
+      1965,
+      1966,
+      1967,
+      1968,
+      1969,
+      1970,
+      1971,
+      1972,
+      1973,
+      1974,
+      1975,
+      1976,
+      1977,
+      1978,
+      1979,
+      1980,
+      1981,
+      1982,
+      1983,
+      1984,
+      1985,
+      1986,
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002
+    ],
+    "variables": 0,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "school_segregation_lawsuits_elementary_grades_1970",
+    "name": "School segregation of students in elementary grades, 1970",
+    "domain": "education",
+    "indicator": "school_segregation_lawsuits_elementary_grades_1970",
+    "geography": "school_district",
+    "description": "School segregation lawsuits by year and county.",
+    "years": [
+      1970
+    ],
+    "variables": 4,
+    "missing_pct": 18.83,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "school_segregation_lawsuits_elementary_grades_1980",
+    "name": "School segregation of students in elementary grades, 1980",
+    "domain": "education",
+    "indicator": "school_segregation_lawsuits_elementary_grades_1980",
+    "geography": "school_district",
+    "description": "School segregation lawsuits by year and county.",
+    "years": [
+      1980
+    ],
+    "variables": 3,
+    "missing_pct": 20.8,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "skilled_nursing_facilities_beds",
+    "name": "Skilled Nursing Facilities Beds",
+    "domain": "healthcare",
+    "indicator": "skilled_nursing_facilities_beds",
+    "geography": "county",
+    "description": "County-level rate of skilled nursing facility beds.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "taxes_on_chips_soda_2008",
+    "name": "Taxes on chips and soda: 2008",
+    "domain": "media_marketing",
+    "indicator": "taxes_on_chips_soda_2008",
+    "geography": "county",
+    "description": "Tax rate on chips in vending machines in 2008",
+    "years": [
+      2008
+    ],
+    "variables": 2,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "taxes_on_chips_soda_2011",
+    "name": "Taxes on chips and soda: 2011",
+    "domain": "media_marketing",
+    "indicator": "taxes_on_chips_soda_2011",
+    "geography": "county",
+    "description": "Tax rate on chips in vending machines in 2011",
+    "years": [
+      2011
+    ],
+    "variables": 2,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "taxes_on_chips_soda_2014",
+    "name": "Taxes on chips and soda: 2014",
+    "domain": "media_marketing",
+    "indicator": "taxes_on_chips_soda_2014",
+    "geography": "county",
+    "description": "Tax rate on chips in vending machines in 2014",
+    "years": [
+      2014
+    ],
+    "variables": 2,
+    "missing_pct": 0.0,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "total_obstetric_care_facilities",
+    "name": "Total Number of Obstetric Care Facilities",
+    "domain": "healthcare",
+    "indicator": "total_obstetric_care_facilities",
+    "geography": "county",
+    "description": "County-level total count of hospitals with obstetric care.",
+    "years": [
+      2009
+    ],
+    "variables": 1,
+    "missing_pct": 0.06,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "voting_wait_time_by_race",
+    "name": "Voting wait time by race",
+    "domain": "civics",
+    "indicator": "voting_wait_time_by_race",
+    "geography": "congressional_district",
+    "description": "Estimates of the disparity in voting wait times",
+    "years": [
+      2016
+    ],
+    "variables": 7,
+    "missing_pct": 0.0,
+    "race_eth_coverage": [
+      "black"
+    ]
+  },
+  {
+    "id": "wage_growth_over_time",
+    "name": "Wage growth over time",
+    "domain": "employment",
+    "indicator": "wage_growth_over_time",
+    "geography": "census_tract",
+    "description": "Wages are constructed by dividing the average high school graduate annual earnings by the product of overall average weekly hours worked and 52. The difference in logarithms between high school graduate wages in 2010-2014 and school graduate wages in 2005-2009. Wages are measured in the 2005-2009 and 2010-2014 American Community Surveys.",
+    "years": [
+      1990,
+      2000,
+      2010,
+      2013,
+      2015,
+      2016
+    ],
+    "variables": 30,
+    "missing_pct": 2.57,
+    "race_eth_coverage": []
+  },
+  {
+    "id": "water_contamination_arsenic",
+    "name": "Water Contamination - Arsenic Levels",
+    "domain": "environment",
+    "indicator": "water_contamination_arsenic",
+    "geography": "county",
+    "description": "County-level water contamination data focusing on arsenic levels in community water systems.",
+    "years": [
+      2009
+    ],
+    "variables": 5,
+    "missing_pct": 72.32,
+    "race_eth_coverage": []
+  }
+];
+
+// Initialize variable filtering and data files drawer when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    initializeVariableFilter();
+    initializeDataFilesDrawer(allDatasets);
+    
+    // Add Data Files button to sidebar and navbar
+    setTimeout(() => {
+        const sidebar = document.querySelector('.sidebar-navigation');
+        if (sidebar && !document.getElementById('open-datafiles-drawer')) {
+            // Create a button at the top of the sidebar
+            const dataFilesButton = document.createElement('div');
+            dataFilesButton.className = 'sidebar-datafiles-button';
+            dataFilesButton.innerHTML = `
+                <button id="open-datafiles-drawer" class="btn w-100 text-start">
+                    <i class="fas fa-list"></i> All Data Files
+                </button>
+            `;
+            
+            // Insert at the top of the sidebar, before the title
+            const sidebarTitle = sidebar.querySelector('.sidebar-title');
+            if (sidebarTitle) {
+                sidebar.insertBefore(dataFilesButton, sidebarTitle);
+            } else {
+                sidebar.insertBefore(dataFilesButton, sidebar.firstChild);
+            }
+        }
+        
+        // Add navbar button for data files on the left side
+        const navbarLeft = document.querySelector('.navbar-nav.navbar-nav-scroll');
+        if (navbarLeft && !document.getElementById('navbar-datafiles-btn')) {
+            const navDataFilesButton = document.createElement('li');
+            navDataFilesButton.className = 'nav-item';
+            navDataFilesButton.innerHTML = `
+                <a class="nav-link navbar-datafiles-btn" href="#" title="All Data Files">
+                    <i class="fas fa-list"></i>
+                    <span> Data Files</span>
+                </a>
+            `;
+            // Insert after Home link (which is the first child)
+            if (navbarLeft.children.length > 0) {
+                navbarLeft.insertBefore(navDataFilesButton, navbarLeft.children[1]);
+            } else {
+                navbarLeft.appendChild(navDataFilesButton);
+            }
+            
+            // Handle navbar button click
+            navDataFilesButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                const drawer = document.getElementById('datafiles-drawer');
+                if (drawer) {
+                    drawer.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        }
+        
+        // Add floating menu button if not exists
+        if (!document.getElementById('floating-menu-btn')) {
+            const floatingBtn = document.createElement('div');
+            floatingBtn.className = 'floating-menu-button';
+            floatingBtn.innerHTML = `
+                <button id="floating-menu-btn" class="btn-floating-menu" title="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            `;
+            document.body.appendChild(floatingBtn);
+            
+            // Handle floating menu button click
+            floatingBtn.addEventListener('click', () => {
+                const sidebar = document.querySelector('.sidebar');
+                if (sidebar) {
+                    sidebar.classList.toggle('sidebar-pinned');
+                }
+            });
+        }
+    }, 100);
+});
+</script>
 <div class="footer-nav">
     <a href="../index.html" class="btn-nav">
         <i class="fas fa-arrow-left"></i> Back to Dataset Index
@@ -306,9 +1915,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
-</section>
 
-</main> <!-- /main -->
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -708,7 +2317,7 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-</div> <!-- /content -->
+ <!-- /content -->
 
 
 

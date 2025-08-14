@@ -26,9 +26,9 @@ data_summary:
 variables:
 - var_name: median_rent_2009
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Median gross rent (dollars)
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009

@@ -57,9 +57,9 @@ race_eth_coverage:
 variables:
 - var_name: all_1920
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1920
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1920
@@ -71,9 +71,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1922
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1922
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1922
@@ -85,9 +85,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1926
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1926
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1926
@@ -102,9 +102,9 @@ variables:
     unique_count: 53
 - var_name: all_1928
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1928
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1928
@@ -119,9 +119,9 @@ variables:
     unique_count: 53
 - var_name: all_1930
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1930
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1930
@@ -136,9 +136,9 @@ variables:
     unique_count: 53
 - var_name: all_1932
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1932
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1932
@@ -153,9 +153,9 @@ variables:
     unique_count: 56
 - var_name: all_1934
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1934
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1934
@@ -170,9 +170,9 @@ variables:
     unique_count: 56
 - var_name: all_1936
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1936
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1936
@@ -187,9 +187,9 @@ variables:
     unique_count: 53
 - var_name: all_1938
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1938
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1938
@@ -204,9 +204,9 @@ variables:
     unique_count: 54
 - var_name: all_1940
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1940
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1940
@@ -218,9 +218,9 @@ variables:
     avg_length: 4.7
 - var_name: all_1942
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1942
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1942
@@ -232,9 +232,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1944
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1944
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1944
@@ -246,9 +246,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1946
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1946
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1946
@@ -260,9 +260,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1948
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1948
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1948
@@ -274,9 +274,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1950
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1950
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1950
@@ -288,9 +288,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1952
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1952
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1952
@@ -302,9 +302,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1954
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1954
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1954
@@ -316,9 +316,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1956
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1956
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1956
@@ -330,9 +330,9 @@ variables:
     avg_length: 5.0
 - var_name: all_1958
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1958
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1958
@@ -344,9 +344,9 @@ variables:
     avg_length: 5.0
 - var_name: all_1960
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1960
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1960
@@ -358,9 +358,9 @@ variables:
     avg_length: 5.0
 - var_name: all_1962
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1962
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1962
@@ -372,9 +372,9 @@ variables:
     avg_length: 5.0
 - var_name: all_1964
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1964
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1964
@@ -386,9 +386,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1966
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1966
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1966
@@ -400,9 +400,9 @@ variables:
     avg_length: 5.0
 - var_name: all_1968
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1968
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1968
@@ -414,9 +414,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1970
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1970
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1970
@@ -428,9 +428,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1972
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1972
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1972
@@ -442,9 +442,9 @@ variables:
     avg_length: 5.0
 - var_name: all_1974
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1974
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1974
@@ -456,9 +456,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1976
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1976
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1976
@@ -470,9 +470,9 @@ variables:
     avg_length: 4.9
 - var_name: all_1980
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in all schools in 1980
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1980
@@ -484,9 +484,9 @@ variables:
     avg_length: 4.8
 - var_name: black_1920
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1920
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1920
@@ -498,9 +498,9 @@ variables:
     avg_length: 3.4
 - var_name: black_1922
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1922
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1922
@@ -512,9 +512,9 @@ variables:
     avg_length: 3.4
 - var_name: black_1926
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1926
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1926
@@ -526,9 +526,9 @@ variables:
     avg_length: 3.5
 - var_name: black_1928
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1928
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1928
@@ -540,9 +540,9 @@ variables:
     avg_length: 3.5
 - var_name: black_1930
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1930
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1930
@@ -554,9 +554,9 @@ variables:
     avg_length: 3.6
 - var_name: black_1932
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1932
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1932
@@ -568,9 +568,9 @@ variables:
     avg_length: 3.5
 - var_name: black_1934
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1934
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1934
@@ -582,9 +582,9 @@ variables:
     avg_length: 3.6
 - var_name: black_1936
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1936
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1936
@@ -596,9 +596,9 @@ variables:
     avg_length: 3.6
 - var_name: black_1938
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1938
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1938
@@ -610,9 +610,9 @@ variables:
     avg_length: 3.6
 - var_name: black_1940
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1940
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1940
@@ -624,9 +624,9 @@ variables:
     avg_length: 3.6
 - var_name: black_1942
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1942
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1942
@@ -638,9 +638,9 @@ variables:
     avg_length: 3.6
 - var_name: black_1944
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1944
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1944
@@ -652,9 +652,9 @@ variables:
     avg_length: 3.6
 - var_name: black_1946
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1946
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1946
@@ -666,9 +666,9 @@ variables:
     avg_length: 3.6
 - var_name: black_1948
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1948
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1948
@@ -680,9 +680,9 @@ variables:
     avg_length: 3.6
 - var_name: black_1950
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1950
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1950
@@ -694,9 +694,9 @@ variables:
     avg_length: 3.6
 - var_name: black_1952
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1952
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1952
@@ -708,9 +708,9 @@ variables:
     avg_length: 3.6
 - var_name: black_1954
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in Black schools in 1954
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1954
@@ -722,9 +722,9 @@ variables:
     avg_length: 3.6
 - var_name: white_1920
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1920
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1920
@@ -736,9 +736,9 @@ variables:
     avg_length: 3.4
 - var_name: white_1922
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1922
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1922
@@ -750,9 +750,9 @@ variables:
     avg_length: 3.4
 - var_name: white_1926
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1926
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1926
@@ -764,9 +764,9 @@ variables:
     avg_length: 3.5
 - var_name: white_1928
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1928
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1928
@@ -778,9 +778,9 @@ variables:
     avg_length: 3.5
 - var_name: white_1930
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1930
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1930
@@ -792,9 +792,9 @@ variables:
     avg_length: 3.6
 - var_name: white_1932
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1932
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1932
@@ -806,9 +806,9 @@ variables:
     avg_length: 3.5
 - var_name: white_1934
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1934
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1934
@@ -820,9 +820,9 @@ variables:
     avg_length: 3.6
 - var_name: white_1936
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1936
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1936
@@ -834,9 +834,9 @@ variables:
     avg_length: 3.6
 - var_name: white_1938
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1938
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1938
@@ -848,9 +848,9 @@ variables:
     avg_length: 3.6
 - var_name: white_1940
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1940
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1940
@@ -862,9 +862,9 @@ variables:
     avg_length: 3.6
 - var_name: white_1942
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1942
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1942
@@ -876,9 +876,9 @@ variables:
     avg_length: 3.6
 - var_name: white_1944
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1944
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1944
@@ -890,9 +890,9 @@ variables:
     avg_length: 3.6
 - var_name: white_1946
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1946
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1946
@@ -904,9 +904,9 @@ variables:
     avg_length: 3.6
 - var_name: white_1948
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1948
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1948
@@ -918,9 +918,9 @@ variables:
     avg_length: 3.6
 - var_name: white_1950
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1950
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1950
@@ -932,9 +932,9 @@ variables:
     avg_length: 3.6
 - var_name: white_1952
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1952
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1952
@@ -946,9 +946,9 @@ variables:
     avg_length: 3.6
 - var_name: white_1954
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: School term length in White schools in 1954
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1954

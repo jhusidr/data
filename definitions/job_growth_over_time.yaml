@@ -33,9 +33,9 @@ data_summary:
 variables:
 - var_name: asian_share_2000
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Share of non-Hispanic Asians in the 2000 Census
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2000
@@ -47,9 +47,9 @@ variables:
     avg_length: 17.2
 - var_name: asian_share_2010
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Share of non-Hispanic Asians in the 2010 Census
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2010
@@ -61,9 +61,9 @@ variables:
     avg_length: 17.4
 - var_name: black_share_2000
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Share of non-Hispanic Blacks in 2000 Census
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2000
@@ -75,9 +75,9 @@ variables:
     avg_length: 17.5
 - var_name: black_share_2010
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Share of non-Hispanic Blacks in the 2010 Census
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2010
@@ -89,9 +89,11 @@ variables:
     avg_length: 17.7
 - var_name: college_plus_share_2000
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Number of people aged 25 or older who have a bachelor's degree, master's
+    degree, professional school degree, or doctorate degree, divided by the total
+    number of people aged 25 or older in a tract.
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2000
@@ -103,9 +105,10 @@ variables:
     avg_length: 17.5
 - var_name: commute_time_mean_2000
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Mean commute time for workers over 16 years old in the tract, as measured
+    in the 2000 Decennial Census.
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2000
@@ -117,9 +120,11 @@ variables:
     avg_length: 17.1
 - var_name: emp_2000
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: The rate of employment computed as total employed population (the sum
+    of employed females and employed males) divided by the total population 16 years
+    and over.
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2000
@@ -131,9 +136,10 @@ variables:
     avg_length: 17.5
 - var_name: foreign_share_2010
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Number of foreign born residents in the 2010 Census divided by the
+    sum of native and foreign born residents. Obtained from the ACS 2006-2010
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2010
@@ -145,9 +151,11 @@ variables:
     avg_length: 17.0
 - var_name: frac_coll_plus_2010
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Number of people aged 25 or older who have a bachelor's degree, master's
+    degree, professional school degree, or doctorate degree, divided by the total
+    number of people aged 25 or older in a tract.
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2010
@@ -159,9 +167,9 @@ variables:
     avg_length: 17.7
 - var_name: gsmn_math_g3_2013
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Mean 3rd grade math test scores in 2013.
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2013
@@ -173,9 +181,9 @@ variables:
     avg_length: 17.1
 - var_name: hispanic_share_2000
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Share of Hispanics in the 2000 Census
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2000
@@ -187,9 +195,9 @@ variables:
     avg_length: 17.6
 - var_name: hispanic_share_2010
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Share of Hispanics in the 2010 Census
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2010
@@ -201,9 +209,9 @@ variables:
     avg_length: 17.7
 - var_name: household_income_mean_2000
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Mean household income. Obtained from 2000 Decennial Census.
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2000
@@ -215,9 +223,9 @@ variables:
     avg_length: 12.3
 - var_name: household_income_median_2016
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Median household income in 2016
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2016
@@ -229,9 +237,10 @@ variables:
     avg_length: 7.0
 - var_name: job_density_2013
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Number of jobs per square mile in each tract. Constructed using LODES
+    - WAC data files provided by the Census Bureau.
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2013
@@ -243,9 +252,11 @@ variables:
     avg_length: 16.4
 - var_name: jobs_high_pay_5mi_2015
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Number of jobs with earnings greater than $3,333 per month in own and
+    neighboring tracts whose centroids fall within a radius of 5 miles from own tract
+    centroid. Constructed using LODES - WAC data files provided by the Census Bureau
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2015
@@ -257,9 +268,12 @@ variables:
     avg_length: 6.4
 - var_name: jobs_total_5mi_2015
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Total number of jobs in own and neighboring tracts whose centroids
+    fall within a radius of 5 miles from own tract centroid. Constructed using information
+    from the Workplace Area Characteristics (WAC) data files in the LEHD Origin-Destination
+    Employment Statistics (LODES) provided by the Census Bureau.
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2015
@@ -271,9 +285,9 @@ variables:
     avg_length: 6.8
 - var_name: med_hhinc_1990
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Median household income in 1990
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1990
@@ -285,9 +299,11 @@ variables:
     avg_length: 9.3
 - var_name: poor_share_1990
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Share of individuals in the tract below the federal poverty line, measured
+    in the decennial Census of the relevant year for the 1990 and 2000 estimates,
+    and measured in the 2006-2010 ACS for the 2010 estimate.
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1990
@@ -299,9 +315,11 @@ variables:
     avg_length: 17.5
 - var_name: poor_share_2000
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Share of individuals in the tract below the federal poverty line, measured
+    in the decennial Census of the relevant year for the 1990 and 2000 estimates,
+    and measured in the 2006-2010 ACS for the 2010 estimate.
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2000
@@ -313,9 +331,11 @@ variables:
     avg_length: 17.5
 - var_name: poor_share_2010
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Share of individuals in the tract below the federal poverty line, measured
+    in the decennial Census of the relevant year for the 1990 and 2000 estimates,
+    and measured in the 2006-2010 ACS for the 2010 estimate.
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2010
@@ -327,9 +347,11 @@ variables:
     avg_length: 17.6
 - var_name: population_density_2000
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Number of residents per square mile, calculated by dividing the total
+    tract level population in the Decennial Census from 2000 and 2010 with tract land
+    area given in square miles from the 2010 Census Gazetteer Files
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2000
@@ -341,9 +363,11 @@ variables:
     avg_length: 16.4
 - var_name: population_density_2010
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Number of residents per square mile, calculated by dividing the total
+    tract level population in the Decennial Census from 2000 and 2010 with tract land
+    area given in square miles from the 2010 Census Gazetteer Files
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2010
@@ -355,9 +379,10 @@ variables:
     avg_length: 15.9
 - var_name: rent_twobed_2015
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: The median gross rent for renter-occupied housing units with two bedrooms
+    that pay cash rent (from the 2011-2015 ACS)
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2015
@@ -369,9 +394,11 @@ variables:
     avg_length: 4.8
 - var_name: single_parent_share_1990
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: The number of households with females heads (and no husband present)
+    or male heads (and no wife present) with own children under 18 years old present
+    divided by the total number of households with own children present
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1990
@@ -383,9 +410,11 @@ variables:
     avg_length: 17.4
 - var_name: single_parent_share_2000
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: The number of households with females heads (and no husband present)
+    or male heads (and no wife present) with own children under 18 years old present
+    divided by the total number of households with own children present
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2000
@@ -397,9 +426,11 @@ variables:
     avg_length: 17.4
 - var_name: single_parent_share_2010
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: The number of households with females heads (and no husband present)
+    or male heads (and no wife present) with own children under 18 years old present
+    divided by the total number of households with own children present
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2010
@@ -411,9 +442,10 @@ variables:
     avg_length: 17.2
 - var_name: travel_time_15_2010
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Share of workers 16 years and over who do not work at home whose commute
+    is shorter than 15 minutes.
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2010
@@ -425,9 +457,9 @@ variables:
     avg_length: 17.6
 - var_name: white_share_2000
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Share of non-Hispanic Whites in 2000 Census
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2000
@@ -439,9 +471,9 @@ variables:
     avg_length: 17.5
 - var_name: white_share_2010
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Share of non-Hispanic Whites in the 2010 Census
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2010

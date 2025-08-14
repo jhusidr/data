@@ -30,9 +30,9 @@ race_eth_coverage:
 variables:
 - var_name: college_compl_diff_bl_wh_1970
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: 1970 Black college education (%) - White college education (%)
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1970
@@ -44,9 +44,9 @@ variables:
     avg_length: 14.2
 - var_name: college_compl_diff_bl_wh_1980
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: 1980 Black college education (%) - White college education (%)
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1980
@@ -58,7 +58,8 @@ variables:
     avg_length: 13.3
 - var_name: pct_college_bl_1970
   type: string
-  description: ''
+  description: 1970 Black Persons 25 Years Old and over with College education / White
+    Persons 25 Years Old and over
   keep: true
   source: computed_ingredient
   time_varying: true
@@ -72,7 +73,8 @@ variables:
     avg_length: 11.6
 - var_name: pct_college_bl_1980
   type: string
-  description: ''
+  description: 1980 Black Persons 25 Years Old and over with College education / White
+    Persons 25 Years Old and over
   keep: true
   source: computed_ingredient
   time_varying: true
@@ -86,7 +88,8 @@ variables:
     avg_length: 12.0
 - var_name: pct_college_wh_1970
   type: string
-  description: ''
+  description: 1970 White Persons 25 Years Old and over with College education / White
+    Persons 25 Years Old and over
   keep: true
   source: computed_ingredient
   time_varying: true
@@ -100,7 +103,8 @@ variables:
     avg_length: 17.8
 - var_name: pct_college_wh_1980
   type: string
-  description: ''
+  description: 1980 White Persons 25 Years Old and over with College education / White
+    Persons 25 Years Old and over
   keep: true
   source: computed_ingredient
   time_varying: true

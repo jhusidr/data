@@ -38,9 +38,10 @@ race_eth_coverage:
 variables:
 - var_name: eeoc_per_black_2012
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: '# of federal charges for employment discrimination based on race per
+    100,000 Black residents in 2012'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2012
@@ -55,9 +56,10 @@ variables:
     unique_count: 52
 - var_name: eeoc_per_black_2013
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: '# of federal charges for employment discrimination based on race per
+    100,000 Black residents in 2013'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2013
@@ -72,9 +74,10 @@ variables:
     unique_count: 52
 - var_name: eeoc_per_black_2014
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: '# of federal charges for employment discrimination based on race per
+    100,000 Black residents in 2014'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2014
@@ -89,9 +92,10 @@ variables:
     unique_count: 52
 - var_name: eeoc_per_black_2015
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: '# of federal charges for employment discrimination based on race per
+    100,000 Black residents in 2015'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2015
@@ -106,9 +110,10 @@ variables:
     unique_count: 52
 - var_name: eeoc_per_black_2016
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: '# of federal charges for employment discrimination based on race per
+    100,000 Black residents in 2016'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2016
@@ -123,9 +128,10 @@ variables:
     unique_count: 52
 - var_name: eeoc_per_black_2017
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: '# of federal charges for employment discrimination based on race per
+    100,000 Black residents in 2017'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2017
@@ -140,9 +146,10 @@ variables:
     unique_count: 52
 - var_name: eeoc_per_black_2018
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: '# of federal charges for employment discrimination based on race per
+    100,000 Black residents in 2018'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2018
@@ -157,9 +164,10 @@ variables:
     unique_count: 52
 - var_name: eeoc_per_black_2019
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: '# of federal charges for employment discrimination based on race per
+    100,000 Black residents in 2019'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2019
@@ -174,9 +182,10 @@ variables:
     unique_count: 52
 - var_name: eeoc_per_black_2020
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: '# of federal charges for employment discrimination based on race per
+    100,000 Black residents in 2020'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2020
@@ -191,9 +200,10 @@ variables:
     unique_count: 52
 - var_name: eeoc_per_black_2021
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: '# of federal charges for employment discrimination based on race per
+    100,000 Black residents in 2021'
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2021

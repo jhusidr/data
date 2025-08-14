@@ -26,9 +26,9 @@ data_summary:
 variables:
 - var_name: chips_vendmach_tax_rate_2014
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: Tax rate on chips in vending machines in 2014
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2014
@@ -44,9 +44,9 @@ variables:
   source_variable: CHIPSTAX_VENDM14
 - var_name: soda_vendmach_tax_rate_2014
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: Tax rate on soda in vending machines in 2014
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2014

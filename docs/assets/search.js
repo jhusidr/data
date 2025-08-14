@@ -100,8 +100,231 @@ function initializeSearch(datasets) {
     filterDatasets();
 }
 
+// Data Files drawer functionality
+function initializeDataFilesDrawer(datasets) {
+    const drawer = document.getElementById('datafiles-drawer');
+    const closeButton = document.getElementById('close-datafiles-drawer');
+    const backdrop = drawer?.querySelector('.drawer-backdrop');
+    const filterInput = document.getElementById('datafiles-filter');
+    const datafilesList = document.getElementById('datafiles-list');
+    const datafilesCount = document.getElementById('datafiles-count');
+    
+    if (!drawer) return;
+    
+    // Function to open drawer
+    const openDrawer = () => {
+        drawer.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    };
+    
+    // Function to close drawer
+    const closeDrawer = () => {
+        drawer.classList.add('hidden');
+        document.body.style.overflow = '';
+    };
+    
+    // Open drawer from sidebar button or toggle sidebar
+    document.addEventListener('click', (e) => {
+        // Check if clicked element or its parent is the open button
+        const openButton = e.target.closest('#open-datafiles-drawer');
+        if (openButton) {
+            e.preventDefault();
+            openDrawer();
+        }
+        
+        // Also check for sidebar toggle button
+        const toggleSidebarBtn = e.target.closest('#toggle-sidebar-btn');
+        if (toggleSidebarBtn) {
+            e.preventDefault();
+            const sidebar = document.querySelector('.sidebar');
+            const body = document.querySelector('body');
+            if (sidebar && body) {
+                sidebar.classList.toggle('sidebar-collapsed');
+                body.classList.toggle('sidebar-collapsed');
+            }
+        }
+    });
+    
+    // Close drawer
+    if (closeButton) {
+        closeButton.addEventListener('click', closeDrawer);
+    }
+    
+    // Close on backdrop click
+    if (backdrop) {
+        backdrop.addEventListener('click', closeDrawer);
+    }
+    
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !drawer.classList.contains('hidden')) {
+            closeDrawer();
+        }
+    });
+    
+    // Group datasets by domain
+    const domainGroups = {};
+    datasets.forEach(dataset => {
+        const domain = dataset.domain || 'unknown';
+        if (!domainGroups[domain]) {
+            domainGroups[domain] = [];
+        }
+        domainGroups[domain].push(dataset);
+    });
+    
+    // Sort domains and datasets
+    const sortedDomains = Object.keys(domainGroups).sort();
+    sortedDomains.forEach(domain => {
+        domainGroups[domain].sort((a, b) => a.name.localeCompare(b.name));
+    });
+    
+    // Domain labels
+    const domainLabels = {
+        'healthcare': 'Healthcare',
+        'environment': 'Environment', 
+        'income_credit_wealth': 'Income, Credit & Wealth',
+        'education': 'Education',
+        'policing_justice': 'Policing & Justice',
+        'housing': 'Housing',
+        'political': 'Political',
+        'employment': 'Employment'
+    };
+    
+    // Render datasets list
+    function renderDatasets() {
+        let html = '';
+        sortedDomains.forEach(domain => {
+            const domainLabel = domainLabels[domain] || domain.replace('_', ' ').charAt(0).toUpperCase() + domain.slice(1);
+            html += `<div class="domain-group">`;
+            html += `<h4 class="domain-group-title">${domainLabel}</h4>`;
+            html += `<div class="domain-datasets">`;
+            
+            domainGroups[domain].forEach(dataset => {
+                html += `
+                    <a href="../datasets/${dataset.id}.html" class="dataset-link" data-domain="${domain}" data-name="${dataset.name.toLowerCase()}">
+                        <div class="dataset-link-name">${dataset.name}</div>
+                        <div class="dataset-link-meta">
+                            <span class="dataset-variables">${dataset.variables} vars</span>
+                            <span class="dataset-years">${Array.isArray(dataset.years) ? 
+                                (dataset.years.length === 1 ? dataset.years[0] : 
+                                 dataset.years.length === 2 ? `${dataset.years[0]}-${dataset.years[1]}` :
+                                 `${Math.min(...dataset.years)}-${Math.max(...dataset.years)}`) : 'N/A'}</span>
+                        </div>
+                    </a>
+                `;
+            });
+            
+            html += `</div></div>`;
+        });
+        
+        datafilesList.innerHTML = html;
+    }
+    
+    // Filter datasets
+    function filterDatasets() {
+        const searchTerm = filterInput.value.toLowerCase().trim();
+        const allLinks = datafilesList.querySelectorAll('.dataset-link');
+        const domainGroups = datafilesList.querySelectorAll('.domain-group');
+        
+        let visibleCount = 0;
+        let totalCount = allLinks.length;
+        
+        domainGroups.forEach(group => {
+            const links = group.querySelectorAll('.dataset-link');
+            let groupVisible = false;
+            
+            links.forEach(link => {
+                const name = link.dataset.name || '';
+                const matches = !searchTerm || name.includes(searchTerm);
+                
+                if (matches) {
+                    link.style.display = 'block';
+                    visibleCount++;
+                    groupVisible = true;
+                } else {
+                    link.style.display = 'none';
+                }
+            });
+            
+            // Hide domain group if no datasets match
+            group.style.display = groupVisible ? 'block' : 'none';
+        });
+        
+        // Update count
+        if (visibleCount === totalCount) {
+            datafilesCount.textContent = `Showing all ${totalCount} datasets`;
+        } else {
+            datafilesCount.textContent = `Showing ${visibleCount} of ${totalCount} datasets`;
+        }
+    }
+    
+    // Initialize
+    renderDatasets();
+    datafilesCount.textContent = `Showing all ${datasets.length} datasets`;
+    
+    // Add filter event listener
+    if (filterInput) {
+        filterInput.addEventListener('input', filterDatasets);
+    }
+}
+
+// Variable filtering functionality
+function initializeVariableFilter() {
+    const filterInput = document.getElementById('variable-filter');
+    const variableGrid = document.getElementById('variables-grid');
+    const variableCount = document.getElementById('variable-count');
+    
+    if (!filterInput || !variableGrid || !variableCount) {
+        return; // Not on a page with variable filtering
+    }
+    
+    const allVariables = variableGrid.querySelectorAll('.variable-card');
+    const totalCount = allVariables.length;
+    
+    function filterVariables() {
+        const searchTerm = filterInput.value.toLowerCase().trim();
+        let visibleCount = 0;
+        
+        allVariables.forEach(card => {
+            const varName = card.querySelector('.var-detail-value.var-code code')?.textContent.toLowerCase() || '';
+            const displayName = card.querySelector('.var-display-name')?.textContent.toLowerCase() || '';
+            
+            // Get all detail values and search through them
+            const detailValues = Array.from(card.querySelectorAll('.var-detail-value')).map(el => el.textContent.toLowerCase()).join(' ');
+            
+            const matches = !searchTerm || 
+                varName.includes(searchTerm) ||
+                displayName.includes(searchTerm) ||
+                detailValues.includes(searchTerm);
+            
+            if (matches) {
+                card.style.display = 'block';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+        
+        // Update count display
+        if (visibleCount === totalCount) {
+            variableCount.textContent = `Showing all ${totalCount} variables`;
+        } else {
+            variableCount.textContent = `Showing ${visibleCount} of ${totalCount} variables`;
+        }
+    }
+    
+    // Add event listener for real-time filtering
+    filterInput.addEventListener('input', filterVariables);
+    
+    // Initialize count
+    variableCount.textContent = `Showing all ${totalCount} variables`;
+}
+
 // Make tables sortable (optional enhancement)
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize variable filtering
+    initializeVariableFilter();
+    
     const tables = document.querySelectorAll('.variable-table');
     tables.forEach(table => {
         const headers = table.querySelectorAll('th');

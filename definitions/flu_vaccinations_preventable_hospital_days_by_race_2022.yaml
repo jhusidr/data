@@ -47,9 +47,10 @@ variables:
     avg_length: 3.6
 - var_name: fluvacc_black_white_2022
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Flu vaccinations (%) in Black - flu vaccinations (%) in White by county
+    in 2022
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2022
@@ -75,9 +76,10 @@ variables:
     avg_length: 3.6
 - var_name: fluvacc_hispanic_white_2022
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Flu vaccinations (%) in Hispanic - flu vaccinations (%) in White by
+    county in 2022
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2022
@@ -118,8 +120,8 @@ variables:
 - var_name: prevhosp_black_white_2022
   type: string
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2022
@@ -146,8 +148,8 @@ variables:
 - var_name: prevhosp_hispanic_white_2022
   type: string
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2022

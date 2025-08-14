@@ -29,8 +29,8 @@ variables:
 - var_name: count
   type: numeric
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: ntv_vars
   summary:
     min: 1.0
     max: 28.0
@@ -44,8 +44,8 @@ variables:
 - var_name: mail_state
   type: string
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: ntv_vars
   summary:
     missing_pct: 0.0
     unique_count: 55
@@ -56,8 +56,8 @@ variables:
 - var_name: mail_zipcode
   type: string
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: ntv_vars
   summary:
     missing_pct: 0.0
     unique_count: 21448
@@ -68,8 +68,8 @@ variables:
 - var_name: premise_state
   type: string
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: ntv_vars
   summary:
     missing_pct: 0.0
     unique_count: 55
@@ -80,8 +80,8 @@ variables:
 - var_name: premise_zipcode
   type: string
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: ntv_vars
   summary:
     missing_pct: 0.0
     unique_count: 23900

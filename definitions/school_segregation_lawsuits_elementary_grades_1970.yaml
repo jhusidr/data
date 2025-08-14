@@ -26,9 +26,9 @@ data_summary:
 variables:
 - var_name: white_asian_sch_disssim_1970
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: 1968/70 Elem  Dissimilarity, White vs. Asian
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1970
@@ -41,9 +41,9 @@ variables:
   source_variable: SD03_687
 - var_name: white_black_sch_disssim_1970
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: 1968/70 Elem  Dissimilarity, White vs. Black
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1970
@@ -56,9 +56,9 @@ variables:
   source_variable: sd01_687
 - var_name: white_hisp_sch_disssim_1970
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: 1968/70 Elem  Dissimilarity, White vs. Hispanic
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1970
@@ -71,9 +71,9 @@ variables:
   source_variable: SD02_687
 - var_name: white_minority_sch_disssim_1970
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: 1968/70 Elem  Dissimilarity, White vs. Minority
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1970

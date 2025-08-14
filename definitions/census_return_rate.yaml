@@ -29,9 +29,11 @@ data_summary:
 variables:
 - var_name: mail_return_rate_2010
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: The 2010 Census return rate, measured as the number of 2010 Census
+    mail forms completed and returned over the number of valid occupied housing units
+    where a Census form was expected to be delivered for mail return to Census.
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2010

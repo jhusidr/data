@@ -27,9 +27,10 @@ data_summary:
 variables:
 - var_name: cancer_risk_2018
   type: numeric
-  description: ''
-  keep: false
-  source: unknown
+  description: Probability of contracting cancer over the course of a lifetime, assuming
+    continuous exposure (assumed in NATA to be 70 years)
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2018

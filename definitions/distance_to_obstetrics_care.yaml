@@ -26,9 +26,10 @@ data_summary:
 variables:
 - var_name: max_dist_obstetrics_2009
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Maximum distance in miles to the nearest obstetrics department, calculated
+    using population weighted tract centroids in the county
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009
@@ -40,9 +41,10 @@ variables:
     avg_length: 4.7
 - var_name: mean_dist_obstetrics_2009
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Mean distance in miles to the nearest obstetrics department, calculated
+    using population weighted tract centroids in the county
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009
@@ -54,9 +56,10 @@ variables:
     avg_length: 4.3
 - var_name: median_dist_obstetrics_2009
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Median distance in miles to the nearest obstetrics department, calculated
+    using population weighted tract centroids in the county
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009
@@ -68,9 +71,10 @@ variables:
     avg_length: 4.3
 - var_name: min_dist_obstetrics_2009
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Minimum distance in miles to the nearest obstetrics department, calculated
+    using population weighted tract centroids in the county
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009

@@ -26,9 +26,9 @@ data_summary:
 variables:
 - var_name: hospice_rate_2009
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Total number of hospices per 1,000 population
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009

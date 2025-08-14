@@ -26,9 +26,9 @@ data_summary:
 variables:
 - var_name: median_home_value_2009
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Median home value of owner-occupied housing units (dollars)
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009

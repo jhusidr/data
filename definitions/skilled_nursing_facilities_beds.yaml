@@ -27,8 +27,8 @@ variables:
 - var_name: snf_beds_rate_2009
   type: string
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009

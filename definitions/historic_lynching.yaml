@@ -30,8 +30,8 @@ variables:
 - var_name: black_population_1940
   type: string
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1940
@@ -45,8 +45,8 @@ variables:
 - var_name: lynchings_per_bl_resident_1940
   type: string
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1940
@@ -60,8 +60,8 @@ variables:
 - var_name: other_population_1940
   type: string
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1940
@@ -75,8 +75,8 @@ variables:
 - var_name: total_population_1940
   type: string
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1940
@@ -90,8 +90,8 @@ variables:
 - var_name: white_population_1940
   type: string
   description: ''
-  keep: false
-  source: unknown
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1940

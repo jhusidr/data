@@ -26,9 +26,9 @@ data_summary:
 variables:
 - var_name: white_asian_dist_disssim_1980
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: 1980 District dissimilarity White vs. Asian
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1980
@@ -40,9 +40,9 @@ variables:
     avg_length: 13.0
 - var_name: white_black_dist_disssim_1980
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: 1980 District dissimilarity White vs. Black
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1980
@@ -54,9 +54,9 @@ variables:
     avg_length: 13.5
 - var_name: white_hisp_dist_disssim_1980
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: 1980 District dissimilarity White vs. Hispanic
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 1980

@@ -27,9 +27,10 @@ data_summary:
 variables:
 - var_name: fqhc_rate_2009
   type: string
-  description: ''
-  keep: false
-  source: unknown
+  description: Total number of Federally Qualified Health Centers (FQHCs) per 1,000
+    population
+  keep: true
+  source: tv_vars
   time_varying: true
   years:
   - 2009

@@ -14,40 +14,13 @@ description: Count of open/closed landfill sites by ZipCode as of July 2023
 data_quality:
   limitations: ''
 data_summary:
-  sha256_hash: 8e0cfc2067787d93f6620af0979d21b3d858a6d0d6b04dff3e1bc5a20bf83bcf
+  sha256_hash: d9400b72f7e22efa9e8f704e736676293096eccaa4c241691ad54a74f0ece401
   rows: 2122
-  variable_count: 6
+  variable_count: 4
   admin_variable_count: 4
-  non_admin_variable_count: 2
+  non_admin_variable_count: 0
   non_admin_missing_pct: 0.0
-  data_size_mb: 0.09
+  data_size_mb: 0.06
   years_covered:
   - 2023
-variables:
-- var_name: city
-  type: string
-  description: ''
-  keep: false
-  source: unknown
-  summary:
-    missing_pct: 0.0
-    unique_count: 1761
-    max_length: 25
-    min_length: 3
-    avg_length: 8.6
-  source_variable: City
-- var_name: landfill_count
-  type: numeric
-  description: ''
-  keep: false
-  source: unknown
-  summary:
-    min: 1.0
-    max: 4.0
-    mean: 1.07
-    p25: 1.0
-    p75: 1.0
-    sd: 0.294
-    missing_pct: 0.0
-    unique_count: 4
-  source_variable: count_landfill_zip
+variables: []
