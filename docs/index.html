@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
   vertical-align: middle;
 }
 </style>
@@ -91,23 +91,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link active" href="./index.html" aria-current="page">
 <span class="menu-text">Home</span></a>
-  </li>  
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="./year_coverage.html" aria-current="page">
+<span class="menu-text">Year Coverage</span></a>
+  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://sidr.table1.org" target="_blank"> 
+    <a class="nav-link" href="https://sidr.table1.org" target="_blank">
 <span class="menu-text">Dashboard</span></a>
-  </li>  
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="https://www.jhsph.edu" target="_blank"> 
+    <a class="nav-link" href="https://www.jhsph.edu" target="_blank">
 <span class="menu-text">JHSPH</span></a>
-  </li>  
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/jh-sidr" target="_blank"> 
+    <a class="nav-link" href="https://github.com/jh-sidr" target="_blank">
 <span class="menu-text">GitHub</span></a>
-  </li>  
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -119,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 
@@ -133,11 +137,11 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-title-meta column-page">
 
-    
-  
-    
+
+
+
   </div>
-  
+
 
 
 </header>
@@ -155,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
         <div class="search-box">
             <input type="text" id="search-input" placeholder="Search datasets by name, description, or indicator...">
         </div>
-        
+
         <div class="view-toggle">
             <button id="list-view-btn" class="view-btn active" title="List View">
                 <i class="fas fa-list"></i>
@@ -165,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
             </button>
         </div>
     </div>
-    
+
     <div class="filter-controls">
         <div class="filter-group">
             <label>Domain:</label>
@@ -181,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
                 <option value="employment">Employment</option>
             </select>
         </div>
-        
+
         <div class="filter-group">
             <label>Geography:</label>
             <select id="geography-filter">
@@ -193,7 +197,7 @@ ul.task-list li input[type="checkbox"] {
                 <option value="school_district">School District</option>
             </select>
         </div>
-        
+
         <div class="filter-group">
             <label>Race/Ethnicity Coverage:</label>
             <select id="race-eth-filter">
@@ -207,12 +211,12 @@ ul.task-list li input[type="checkbox"] {
                 <option value="none">No Race/Ethnicity Data</option>
             </select>
         </div>
-        
+
         <div class="filter-group">
             <button id="reset-filters" class="btn-reset">Reset Filters</button>
         </div>
     </div>
-    
+
     <div class="results-summary">
         <span id="results-count">Showing all datasets</span>
     </div>
@@ -3662,7 +3666,7 @@ initializeSearch(datasets);
     anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
+        if (clz.startsWith('code-annotation-')) {
           return true;
         }
       }
@@ -3682,11 +3686,11 @@ initializeSearch(datasets);
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
         button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
+        tooltip = new bootstrap.Tooltip(button,
+          { trigger: "manual",
             customClass: "code-copy-button-tooltip",
             offset: [0, -8]});
-        tooltip.show();    
+        tooltip.show();
       }
       setTimeout(function() {
         if (tooltip) {
@@ -3762,7 +3766,7 @@ initializeSearch(datasets);
       if (onUntriggerFn) {
         config.onUntrigger = onUntriggerFn;
       }
-      window.tippy(el, config); 
+      window.tippy(el, config);
     }
     const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
     for (var i=0; i<noterefs.length; i++) {
@@ -3837,7 +3841,7 @@ initializeSearch(datasets);
       tippyHover(xref, undefined, function(instance) {
         instance.disable();
         let url = xref.getAttribute('href');
-        let hash = undefined; 
+        let hash = undefined;
         if (url.startsWith('#')) {
           hash = url;
         } else {
@@ -3865,7 +3869,7 @@ initializeSearch(datasets);
               if (note !== null) {
                 const html = processXRef(id, note);
                 instance.setContent(html);
-              } 
+              }
             }).finally(() => {
               instance.enable();
               instance.show();
@@ -3889,7 +3893,7 @@ initializeSearch(datasets);
               }
               const html = processXRef(null, note);
               instance.setContent(html);
-            } 
+            }
           }).finally(() => {
             instance.enable();
             instance.show();
@@ -3929,7 +3933,7 @@ initializeSearch(datasets);
               height = bottom - top;
             }
             if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
+              // cook up a div (if necessary) and position it
               let div = window.document.getElementById("code-annotation-line-highlight");
               if (div === null) {
                 div = window.document.createElement("div");
