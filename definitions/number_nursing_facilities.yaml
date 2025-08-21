@@ -4,12 +4,14 @@ indicator: number_nursing_facilities
 indicator_file: number_nursing_facilities.csv
 geography: county
 sources:
-- title: ''
+- title: Agency for Healthcare Research and Quality
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 4/24/2024
   citation: ''
+  license: ''
+  comments: ''
 description: County-level rate of nursing facilities.
 data_quality:
   limitations: ''

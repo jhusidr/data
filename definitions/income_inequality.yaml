@@ -4,12 +4,14 @@ indicator: income_inequality
 indicator_file: income_inequality.csv
 geography: county
 sources:
-- title: ''
+- title: Agency for Healthcare Research and Quality
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 4/24/2024
   citation: ''
+  license: ''
+  comments: ''
 description: County-level income inequality measured by the Gini Index.
 data_quality:
   limitations: ''

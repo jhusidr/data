@@ -10,6 +10,8 @@ sources:
   url: ''
   accessed: ''
   citation: ''
+  license: ''
+  comments: ''
 description: Police-involved deaths by race
 data_quality:
   limitations: ''

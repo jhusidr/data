@@ -48,7 +48,7 @@
     "href": "datasets/hpsa_score.html#data-source",
     "title": "HPSA Score",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,143\n        \n\n        \n            File Size\n            0.35 MB\n        \n\n        \n            Total Variables\n            8\n        \n\n        \n            Non-Admin Variables\n            2\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            bd7a882c0365fddf...",
+    "text": "Data Source\n\n\nHealth Resources and Services Administration\nAccessed: 1/26/2023\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,143\n        \n\n        \n            File Size\n            0.35 MB\n        \n\n        \n            Total Variables\n            8\n        \n\n        \n            Non-Admin Variables\n            2\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            bd7a882c0365fddf...",
     "crumbs": [
       "HPSA Score"
     ]
@@ -198,7 +198,7 @@
     "href": "datasets/air_pollution_o3_concentration.html#data-source",
     "title": "Air pollution: o3 concentration",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,107\n        \n\n        \n            File Size\n            0.91 MB\n        \n\n        \n            Total Variables\n            18\n        \n\n        \n            Non-Admin Variables\n            16\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            338b72cc40c0cd13...",
+    "text": "Data Source\n\n\nCDC National Environmental Public Health Tracking Network\nAccessed: 4/16/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,107\n        \n\n        \n            File Size\n            0.91 MB\n        \n\n        \n            Total Variables\n            18\n        \n\n        \n            Non-Admin Variables\n            16\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            338b72cc40c0cd13...",
     "crumbs": [
       "Air pollution: o3 concentration"
     ]
@@ -348,7 +348,7 @@
     "href": "datasets/flu_vaccinations_preventable_hospital_days_by_race_2019.html#data-source",
     "title": "Flu vaccinations & preventable hospital days by race: 2019",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,194\n        \n\n        \n            File Size\n            0.30 MB\n        \n\n        \n            Total Variables\n            15\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            48.5%\n        \n\n        \n            SHA256 Hash\n            8b9130235df1a168...",
+    "text": "Data Source\n\n\nCenters for Medicare and Medicaid Services\nAccessed: 1/25/2023\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,194\n        \n\n        \n            File Size\n            0.30 MB\n        \n\n        \n            Total Variables\n            15\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            48.5%\n        \n\n        \n            SHA256 Hash\n            8b9130235df1a168...",
     "crumbs": [
       "Flu vaccinations & preventable hospital days by race: 2019"
     ]
@@ -398,7 +398,7 @@
     "href": "datasets/number_skilled_nursing_facilities.html#data-source",
     "title": "Number of Skilled Nursing Facilities",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            d2623df1f6644f6a...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            d2623df1f6644f6a...",
     "crumbs": [
       "Number of Skilled Nursing Facilities"
     ]
@@ -448,7 +448,7 @@
     "href": "datasets/nursing_facility_certified_beds.html#data-source",
     "title": "Nursing Facility Certified Beds",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            869f951b2c0ddcba...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            869f951b2c0ddcba...",
     "crumbs": [
       "Nursing Facility Certified Beds"
     ]
@@ -548,7 +548,7 @@
     "href": "datasets/distance_to_pediatric_icu.html#data-source",
     "title": "Distance to Pediatric ICU",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.17 MB\n        \n\n        \n            Total Variables\n            7\n        \n\n        \n            Non-Admin Variables\n            4\n        \n\n        \n            Overall Missing %\n            0.7%\n        \n\n        \n            SHA256 Hash\n            0f1d920f731af1e2...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.17 MB\n        \n\n        \n            Total Variables\n            7\n        \n\n        \n            Non-Admin Variables\n            4\n        \n\n        \n            Overall Missing %\n            0.7%\n        \n\n        \n            SHA256 Hash\n            0f1d920f731af1e2...",
     "crumbs": [
       "Distance to Pediatric ICU"
     ]
@@ -598,7 +598,7 @@
     "href": "datasets/number_mental_health_centers.html#data-source",
     "title": "Number of Mental Health Centers",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            d93ebbbeb5f63f52...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            d93ebbbeb5f63f52...",
     "crumbs": [
       "Number of Mental Health Centers"
     ]
@@ -648,7 +648,7 @@
     "href": "datasets/taxes_on_chips_soda_2014.html#data-source",
     "title": "Taxes on chips and soda: 2014",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,143\n        \n\n        \n            File Size\n            0.12 MB\n        \n\n        \n            Total Variables\n            6\n        \n\n        \n            Non-Admin Variables\n            2\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            9076730175470bc0...",
+    "text": "Data Source\n\n\nEconomic Research Service of the U.S. Department of Agriculture\nAccessed: 1/26/2023\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,143\n        \n\n        \n            File Size\n            0.12 MB\n        \n\n        \n            Total Variables\n            6\n        \n\n        \n            Non-Admin Variables\n            2\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            9076730175470bc0...",
     "crumbs": [
       "Taxes on chips and soda: 2014"
     ]
@@ -698,7 +698,7 @@
     "href": "datasets/air_quality_related_cancer_risk_2019.html#data-source",
     "title": "Air quality related cancer risk: 2019",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            76,726\n        \n\n        \n            File Size\n            3.51 MB\n        \n\n        \n            Total Variables\n            6\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            03d5c3ce55b03bc0...",
+    "text": "Data Source\n\n\nUnited States Environmental Protection Agency\nAccessed: 3/17/2023\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            76,726\n        \n\n        \n            File Size\n            3.51 MB\n        \n\n        \n            Total Variables\n            6\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            03d5c3ce55b03bc0...",
     "crumbs": [
       "Air quality related cancer risk: 2019"
     ]
@@ -798,7 +798,7 @@
     "href": "datasets/number_ambulatory_surgical_centers.html#data-source",
     "title": "Number of Ambulatory Surgical Centers",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            94f888c703d07721...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            94f888c703d07721...",
     "crumbs": [
       "Number of Ambulatory Surgical Centers"
     ]
@@ -848,7 +848,7 @@
     "href": "datasets/total_obstetric_care_facilities.html#data-source",
     "title": "Total Number of Obstetric Care Facilities",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            9533c73fbce00ad6...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            9533c73fbce00ad6...",
     "crumbs": [
       "Total Number of Obstetric Care Facilities"
     ]
@@ -948,7 +948,7 @@
     "href": "datasets/distance_to_alcohol_drug_care.html#data-source",
     "title": "Distance to Alcohol and Drug Inpatient Care",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.17 MB\n        \n\n        \n            Total Variables\n            7\n        \n\n        \n            Non-Admin Variables\n            4\n        \n\n        \n            Overall Missing %\n            0.6%\n        \n\n        \n            SHA256 Hash\n            7aa70952568b48d1...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.17 MB\n        \n\n        \n            Total Variables\n            7\n        \n\n        \n            Non-Admin Variables\n            4\n        \n\n        \n            Overall Missing %\n            0.6%\n        \n\n        \n            SHA256 Hash\n            7aa70952568b48d1...",
     "crumbs": [
       "Distance to Alcohol and Drug Inpatient Care"
     ]
@@ -998,7 +998,7 @@
     "href": "datasets/air_quality_related_cancer_risk_2017.html#data-source",
     "title": "Air quality related cancer risk: 2017",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            76,726\n        \n\n        \n            File Size\n            3.51 MB\n        \n\n        \n            Total Variables\n            6\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            1202b9789c780997...",
+    "text": "Data Source\n\n\nUnited States Environmental Protection Agency\nAccessed: 3/17/2023\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            76,726\n        \n\n        \n            File Size\n            3.51 MB\n        \n\n        \n            Total Variables\n            6\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            1202b9789c780997...",
     "crumbs": [
       "Air quality related cancer risk: 2017"
     ]
@@ -1048,7 +1048,7 @@
     "href": "datasets/taxes_on_chips_soda_2008.html#data-source",
     "title": "Taxes on chips and soda: 2008",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,141\n        \n\n        \n            File Size\n            0.13 MB\n        \n\n        \n            Total Variables\n            6\n        \n\n        \n            Non-Admin Variables\n            2\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            afa10282db49e1a7...",
+    "text": "Data Source\n\n\nEconomic Research Service of the U.S. Department of Agriculture\nAccessed: 1/26/2023\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,141\n        \n\n        \n            File Size\n            0.13 MB\n        \n\n        \n            Total Variables\n            6\n        \n\n        \n            Non-Admin Variables\n            2\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            afa10282db49e1a7...",
     "crumbs": [
       "Taxes on chips and soda: 2008"
     ]
@@ -1098,7 +1098,7 @@
     "href": "datasets/distance_to_ed.html#data-source",
     "title": "Distance to Emergency Department",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.17 MB\n        \n\n        \n            Total Variables\n            7\n        \n\n        \n            Non-Admin Variables\n            4\n        \n\n        \n            Overall Missing %\n            0.6%\n        \n\n        \n            SHA256 Hash\n            abc08b48ed626014...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.17 MB\n        \n\n        \n            Total Variables\n            7\n        \n\n        \n            Non-Admin Variables\n            4\n        \n\n        \n            Overall Missing %\n            0.6%\n        \n\n        \n            SHA256 Hash\n            abc08b48ed626014...",
     "crumbs": [
       "Distance to Emergency Department"
     ]
@@ -1198,7 +1198,7 @@
     "href": "datasets/number_hospitals_alcohol_drug_care.html#data-source",
     "title": "Number of Hospitals with Alcohol/Drug Inpatient Care",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            3ba7e1aaecd397dd...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            3ba7e1aaecd397dd...",
     "crumbs": [
       "Number of Hospitals with Alcohol/Drug Inpatient Care"
     ]
@@ -1248,7 +1248,7 @@
     "href": "datasets/distance_to_health_clinic.html#data-source",
     "title": "Distance to Health Clinic",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.16 MB\n        \n\n        \n            Total Variables\n            7\n        \n\n        \n            Non-Admin Variables\n            4\n        \n\n        \n            Overall Missing %\n            0.6%\n        \n\n        \n            SHA256 Hash\n            3e08fcd2f9363d94...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.16 MB\n        \n\n        \n            Total Variables\n            7\n        \n\n        \n            Non-Admin Variables\n            4\n        \n\n        \n            Overall Missing %\n            0.6%\n        \n\n        \n            SHA256 Hash\n            3e08fcd2f9363d94...",
     "crumbs": [
       "Distance to Health Clinic"
     ]
@@ -1398,7 +1398,7 @@
     "href": "datasets/air_pollution_o3_concentration_2016_2020_census_tract.html#data-source",
     "title": "Air pollution: o3 concentration 2016-2020 (census tract)",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            83,776\n        \n\n        \n            File Size\n            14.98 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            11.0%\n        \n\n        \n            SHA256 Hash\n            bc8773d65d917b49...",
+    "text": "Data Source\n\n\nCDC National Environmental Public Health Tracking Network\nAccessed: 4/16/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            83,776\n        \n\n        \n            File Size\n            14.98 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            11.0%\n        \n\n        \n            SHA256 Hash\n            bc8773d65d917b49...",
     "crumbs": [
       "Air pollution: o3 concentration 2016-2020 (census tract)"
     ]
@@ -1448,7 +1448,7 @@
     "href": "datasets/number_nursing_facilities.html#data-source",
     "title": "Number of Nursing Facilities",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            5794808f8e6a17d3...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            5794808f8e6a17d3...",
     "crumbs": [
       "Number of Nursing Facilities"
     ]
@@ -1498,7 +1498,7 @@
     "href": "datasets/historic_redlining.html#data-source",
     "title": "Historic Redlining",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            12,888\n        \n\n        \n            File Size\n            0.34 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            2\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            55d7ad94de4a97d7...",
+    "text": "Data Source\n\n\nMeier, Helen C.S., and Mitchell, Bruce C. . Historic Redlining Indicator for 2000, 2010, and 2020 US Census Tracts. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2023-09-25. https://doi.org/10.3886/E141121V3\nAccessed: 9/16/2022\nMeier, Helen C.S., and Mitchell, Bruce C. . Historic Redlining Indicator for 2000, 2010, and 2020 US Census Tracts. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2023-09-25. https://doi.org/10.3886/E141121V3\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            12,888\n        \n\n        \n            File Size\n            0.34 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            2\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            55d7ad94de4a97d7...",
     "crumbs": [
       "Historic Redlining"
     ]
@@ -1548,7 +1548,7 @@
     "href": "datasets/air_pollution_pm25_concentration.html#data-source",
     "title": "Air pollution: pm2.5 concentration",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,143\n        \n\n        \n            File Size\n            1.01 MB\n        \n\n        \n            Total Variables\n            24\n        \n\n        \n            Non-Admin Variables\n            19\n        \n\n        \n            Overall Missing %\n            0.5%\n        \n\n        \n            SHA256 Hash\n            88ec536c83a2dc49...",
+    "text": "Data Source\n\n\nCDC National Environmental Public Health Tracking Network\nAccessed: 4/16/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,143\n        \n\n        \n            File Size\n            1.01 MB\n        \n\n        \n            Total Variables\n            24\n        \n\n        \n            Non-Admin Variables\n            19\n        \n\n        \n            Overall Missing %\n            0.5%\n        \n\n        \n            SHA256 Hash\n            88ec536c83a2dc49...",
     "crumbs": [
       "Air pollution: pm2.5 concentration"
     ]
@@ -1598,7 +1598,7 @@
     "href": "datasets/healthcare_uninsured_disparity.html#data-source",
     "title": "Black-White disparity in health insurance",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            816\n        \n\n        \n            File Size\n            0.04 MB\n        \n\n        \n            Total Variables\n            5\n        \n\n        \n            Non-Admin Variables\n            2\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            33ea911f066ba4be...",
+    "text": "Data Source\n\n\nU.S. Census Bureau\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            816\n        \n\n        \n            File Size\n            0.04 MB\n        \n\n        \n            Total Variables\n            5\n        \n\n        \n            Non-Admin Variables\n            2\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            33ea911f066ba4be...",
     "crumbs": [
       "Black-White disparity in health insurance"
     ]
@@ -1648,7 +1648,7 @@
     "href": "datasets/historic_college_completion_by_race.html#data-source",
     "title": "Historic college completion by race",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,143\n        \n\n        \n            File Size\n            0.38 MB\n        \n\n        \n            Total Variables\n            9\n        \n\n        \n            Non-Admin Variables\n            6\n        \n\n        \n            Overall Missing %\n            21.4%\n        \n\n        \n            SHA256 Hash\n            52ffb9fac2182661...",
+    "text": "Data Source\n\n\nDecennial Census from Social Explorer\nAccessed: 3/17/2023\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,143\n        \n\n        \n            File Size\n            0.38 MB\n        \n\n        \n            Total Variables\n            9\n        \n\n        \n            Non-Admin Variables\n            6\n        \n\n        \n            Overall Missing %\n            21.4%\n        \n\n        \n            SHA256 Hash\n            52ffb9fac2182661...",
     "crumbs": [
       "Historic college completion by race"
     ]
@@ -1698,7 +1698,7 @@
     "href": "datasets/landfills.html#data-source",
     "title": "Landfills",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            2,122\n        \n\n        \n            File Size\n            0.06 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            0\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            d9400b72f7e22efa...",
+    "text": "Data Source\n\n\nUnited States Environmental Protection Agency\nAccessed: 1/25/2023\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            2,122\n        \n\n        \n            File Size\n            0.06 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            0\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            d9400b72f7e22efa...",
     "crumbs": [
       "Landfills"
     ]
@@ -1748,7 +1748,7 @@
     "href": "datasets/number_hospices.html#data-source",
     "title": "Number of Hospices",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            0867bc0bf22de24d...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            0867bc0bf22de24d...",
     "crumbs": [
       "Number of Hospices"
     ]
@@ -1798,7 +1798,7 @@
     "href": "datasets/number_hospitals_chemotherapy.html#data-source",
     "title": "Number of Hospitals with Chemotherapy",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            728f43431a042096...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            728f43431a042096...",
     "crumbs": [
       "Number of Hospitals with Chemotherapy"
     ]
@@ -1848,7 +1848,7 @@
     "href": "datasets/number_hospitals_pediatric_icu.html#data-source",
     "title": "Number of Hospitals with Pediatric ICU",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            c4b58c77e8c08e0e...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            c4b58c77e8c08e0e...",
     "crumbs": [
       "Number of Hospitals with Pediatric ICU"
     ]
@@ -1898,7 +1898,7 @@
     "href": "datasets/number_hospitals_with_eds.html#data-source",
     "title": "Number of Hospitals with Emergency Departments",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            67fadbd06e36cb41...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            67fadbd06e36cb41...",
     "crumbs": [
       "Number of Hospitals with Emergency Departments"
     ]
@@ -1948,7 +1948,7 @@
     "href": "datasets/number_hospitals_obstetric_care.html#data-source",
     "title": "Number of Hospitals with Obstetric Care",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            00ba4ec7f9d4c2a0...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            00ba4ec7f9d4c2a0...",
     "crumbs": [
       "Number of Hospitals with Obstetric Care"
     ]
@@ -2048,7 +2048,7 @@
     "href": "datasets/water_contamination_arsenic.html#data-source",
     "title": "Water Contamination - Arsenic Levels",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.15 MB\n        \n\n        \n            Total Variables\n            8\n        \n\n        \n            Non-Admin Variables\n            5\n        \n\n        \n            Overall Missing %\n            72.3%\n        \n\n        \n            SHA256 Hash\n            49d2879ba5f93ca7...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.15 MB\n        \n\n        \n            Total Variables\n            8\n        \n\n        \n            Non-Admin Variables\n            5\n        \n\n        \n            Overall Missing %\n            72.3%\n        \n\n        \n            SHA256 Hash\n            49d2879ba5f93ca7...",
     "crumbs": [
       "Water Contamination - Arsenic Levels"
     ]
@@ -2098,7 +2098,7 @@
     "href": "datasets/food_access_2015.html#data-source",
     "title": "Food access: 2015",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,864\n        \n\n        \n            File Size\n            3.16 MB\n        \n\n        \n            Total Variables\n            5\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            c80f49e75524969b...",
+    "text": "Data Source\n\n\nEconomic Research Service (ERS), U.S. Department of Agriculture\nAccessed: 3/24/2024\nEconomic Research Service (ERS), U.S. Department of Agriculture (USDA). Food Access Research Atlas, https://www.ers.usda.gov/data-products/food-access-research-atlas/\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,864\n        \n\n        \n            File Size\n            3.16 MB\n        \n\n        \n            Total Variables\n            5\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            c80f49e75524969b...",
     "crumbs": [
       "Food access: 2015"
     ]
@@ -2148,7 +2148,7 @@
     "href": "datasets/skilled_nursing_facilities_beds.html#data-source",
     "title": "Skilled Nursing Facilities Beds",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            f1caa384f1558a1b...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            f1caa384f1558a1b...",
     "crumbs": [
       "Skilled Nursing Facilities Beds"
     ]
@@ -2198,7 +2198,7 @@
     "href": "datasets/median_home_value.html#data-source",
     "title": "Median Home Value",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.12 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.4%\n        \n\n        \n            SHA256 Hash\n            c75b2b007eaa1cbc...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.12 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.4%\n        \n\n        \n            SHA256 Hash\n            c75b2b007eaa1cbc...",
     "crumbs": [
       "Median Home Value"
     ]
@@ -2348,7 +2348,7 @@
     "href": "datasets/number_hospitals_burn_care.html#data-source",
     "title": "Number of Hospitals with Burn Care",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            86c1ea8611e4ea35...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            86c1ea8611e4ea35...",
     "crumbs": [
       "Number of Hospitals with Burn Care"
     ]
@@ -2398,7 +2398,7 @@
     "href": "datasets/air_pollution_pm25_concentration_2016_2020_census_tract.html#data-source",
     "title": "Air pollution: PM2.5 concentration 2016-2020 (census tract)",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            11.56 MB\n        \n\n        \n            Total Variables\n            10\n        \n\n        \n            Non-Admin Variables\n            8\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            13f1b16ff7dbdebc...",
+    "text": "Data Source\n\n\nCDC National Environmental Public Health Tracking Network\nAccessed: 4/16/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            11.56 MB\n        \n\n        \n            Total Variables\n            10\n        \n\n        \n            Non-Admin Variables\n            8\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            13f1b16ff7dbdebc...",
     "crumbs": [
       "Air pollution: PM2.5 concentration 2016-2020 (census tract)"
     ]
@@ -2448,7 +2448,7 @@
     "href": "datasets/air_pollution_pm25_concentration_2006_2010_census_tract.html#data-source",
     "title": "Air pollution: PM2.5 concentration 2006-2010 (census tract)",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            14.27 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            7a90421b21656b1c...",
+    "text": "Data Source\n\n\nCDC National Environmental Public Health Tracking Network\nAccessed: 4/16/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            14.27 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            7a90421b21656b1c...",
     "crumbs": [
       "Air pollution: PM2.5 concentration 2006-2010 (census tract)"
     ]
@@ -2498,7 +2498,7 @@
     "href": "datasets/food_access_2010.html#data-source",
     "title": "Food access: 2010",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,864\n        \n\n        \n            File Size\n            2.72 MB\n        \n\n        \n            Total Variables\n            5\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            57d5840dab32b1e5...",
+    "text": "Data Source\n\n\nEconomic Research Service (ERS), U.S. Department of Agriculture\nAccessed: 3/24/2024\nEconomic Research Service (ERS), U.S. Department of Agriculture (USDA). Food Access Research Atlas, https://www.ers.usda.gov/data-products/food-access-research-atlas/\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,864\n        \n\n        \n            File Size\n            2.72 MB\n        \n\n        \n            Total Variables\n            5\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            57d5840dab32b1e5...",
     "crumbs": [
       "Food access: 2010"
     ]
@@ -2548,7 +2548,7 @@
     "href": "datasets/number_hospitals_medsurg_icu.html#data-source",
     "title": "Number of Hospitals with Medical-Surgical ICU",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            a36b0e3addb74b52...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            a36b0e3addb74b52...",
     "crumbs": [
       "Number of Hospitals with Medical-Surgical ICU"
     ]
@@ -2598,7 +2598,7 @@
     "href": "datasets/median_housing_rent.html#data-source",
     "title": "Median Housing Rent",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.12 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.4%\n        \n\n        \n            SHA256 Hash\n            7a8b0801bd8e1d5b...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.12 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.4%\n        \n\n        \n            SHA256 Hash\n            7a8b0801bd8e1d5b...",
     "crumbs": [
       "Median Housing Rent"
     ]
@@ -2648,7 +2648,7 @@
     "href": "datasets/wage_growth_over_time.html#data-source",
     "title": "Wage growth over time",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            74,044\n        \n\n        \n            File Size\n            41.38 MB\n        \n\n        \n            Total Variables\n            39\n        \n\n        \n            Non-Admin Variables\n            30\n        \n\n        \n            Overall Missing %\n            2.6%\n        \n\n        \n            SHA256 Hash\n            83f8fa720a424f46...",
+    "text": "Data Source\n\n\nOpportunity Insights\nAccessed: 1/25/2023\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            74,044\n        \n\n        \n            File Size\n            41.38 MB\n        \n\n        \n            Total Variables\n            39\n        \n\n        \n            Non-Admin Variables\n            30\n        \n\n        \n            Overall Missing %\n            2.6%\n        \n\n        \n            SHA256 Hash\n            83f8fa720a424f46...",
     "crumbs": [
       "Wage growth over time"
     ]
@@ -2698,7 +2698,7 @@
     "href": "datasets/number_hospitals_psychiatric_care.html#data-source",
     "title": "Number of Hospitals with Psychiatric Care",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            e28397d9c3cd5742...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            e28397d9c3cd5742...",
     "crumbs": [
       "Number of Hospitals with Psychiatric Care"
     ]
@@ -2748,7 +2748,7 @@
     "href": "datasets/number_home_health_agencies.html#data-source",
     "title": "Number of Home Health Agencies",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            669c4f72883df52b...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            669c4f72883df52b...",
     "crumbs": [
       "Number of Home Health Agencies"
     ]
@@ -2848,7 +2848,7 @@
     "href": "datasets/number_of_fqhcs.html#data-source",
     "title": "Number of Federally Qualified Health Centers (FQHCs)",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            9744b53b94a1d218...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            9744b53b94a1d218...",
     "crumbs": [
       "Number of Federally Qualified Health Centers (FQHCs)"
     ]
@@ -2898,7 +2898,7 @@
     "href": "datasets/air_pollution_o3_concentration_2006_2010_census_tract.html#data-source",
     "title": "Air pollution: o3 concentration 2006-2010 (census tract)",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            14.05 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            49f22aeb27a16d78...",
+    "text": "Data Source\n\n\nCDC National Environmental Public Health Tracking Network\nAccessed: 4/16/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            14.05 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            49f22aeb27a16d78...",
     "crumbs": [
       "Air pollution: o3 concentration 2006-2010 (census tract)"
     ]
@@ -2948,7 +2948,7 @@
     "href": "datasets/distance_to_medsurg_icu.html#data-source",
     "title": "Distance to Medical-Surgical ICU",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.16 MB\n        \n\n        \n            Total Variables\n            7\n        \n\n        \n            Non-Admin Variables\n            4\n        \n\n        \n            Overall Missing %\n            0.6%\n        \n\n        \n            SHA256 Hash\n            6a4ea0608b0da1d7...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.16 MB\n        \n\n        \n            Total Variables\n            7\n        \n\n        \n            Non-Admin Variables\n            4\n        \n\n        \n            Overall Missing %\n            0.6%\n        \n\n        \n            SHA256 Hash\n            6a4ea0608b0da1d7...",
     "crumbs": [
       "Distance to Medical-Surgical ICU"
     ]
@@ -2998,7 +2998,7 @@
     "href": "datasets/distance_to_obstetrics_care.html#data-source",
     "title": "Distance to Obstetrics Care",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.16 MB\n        \n\n        \n            Total Variables\n            7\n        \n\n        \n            Non-Admin Variables\n            4\n        \n\n        \n            Overall Missing %\n            0.6%\n        \n\n        \n            SHA256 Hash\n            87bcc25edd85ec39...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.16 MB\n        \n\n        \n            Total Variables\n            7\n        \n\n        \n            Non-Admin Variables\n            4\n        \n\n        \n            Overall Missing %\n            0.6%\n        \n\n        \n            SHA256 Hash\n            87bcc25edd85ec39...",
     "crumbs": [
       "Distance to Obstetrics Care"
     ]
@@ -3098,7 +3098,7 @@
     "href": "datasets/number_hospitals_ambulance_services.html#data-source",
     "title": "Number of Hospitals with Ambulance Services",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            ae2d8a829b509184...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.1%\n        \n\n        \n            SHA256 Hash\n            ae2d8a829b509184...",
     "crumbs": [
       "Number of Hospitals with Ambulance Services"
     ]
@@ -3148,7 +3148,7 @@
     "href": "datasets/income_inequality.html#data-source",
     "title": "Income Inequality",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.4%\n        \n\n        \n            SHA256 Hash\n            89f7337dd2e11f4e...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.4%\n        \n\n        \n            SHA256 Hash\n            89f7337dd2e11f4e...",
     "crumbs": [
       "Income Inequality"
     ]
@@ -3198,7 +3198,7 @@
     "href": "datasets/air_pollution_pm25_concentration_2001_2005_census_tract.html#data-source",
     "title": "Air pollution: PM2.5 concentration 2001-2005 (census tract)",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            14.33 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            ac8e6e135ffd7d5c...",
+    "text": "Data Source\n\n\nCDC National Environmental Public Health Tracking Network\nAccessed: 4/16/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            14.33 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            ac8e6e135ffd7d5c...",
     "crumbs": [
       "Air pollution: PM2.5 concentration 2001-2005 (census tract)"
     ]
@@ -3248,7 +3248,7 @@
     "href": "datasets/air_quality_related_cancer_risk_2018.html#data-source",
     "title": "Air quality related cancer risk: 2018",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            76,726\n        \n\n        \n            File Size\n            3.51 MB\n        \n\n        \n            Total Variables\n            6\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            0ce360edd8764121...",
+    "text": "Data Source\n\n\nUnited States Environmental Protection Agency\nAccessed: 3/17/2023\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            76,726\n        \n\n        \n            File Size\n            3.51 MB\n        \n\n        \n            Total Variables\n            6\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            0ce360edd8764121...",
     "crumbs": [
       "Air quality related cancer risk: 2018"
     ]
@@ -3298,7 +3298,7 @@
     "href": "datasets/taxes_on_chips_soda_2011.html#data-source",
     "title": "Taxes on chips and soda: 2011",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,144\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            6\n        \n\n        \n            Non-Admin Variables\n            2\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            cf6455db17fccf87...",
+    "text": "Data Source\n\n\nEconomic Research Service of the U.S. Department of Agriculture\nAccessed: 1/26/2023\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,144\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            6\n        \n\n        \n            Non-Admin Variables\n            2\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            cf6455db17fccf87...",
     "crumbs": [
       "Taxes on chips and soda: 2011"
     ]
@@ -3448,7 +3448,7 @@
     "href": "datasets/historic_school_term_length.html#data-source",
     "title": "Historic school term length",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            57\n        \n\n        \n            File Size\n            0.02 MB\n        \n\n        \n            Total Variables\n            65\n        \n\n        \n            Non-Admin Variables\n            63\n        \n\n        \n            Overall Missing %\n            39.9%\n        \n\n        \n            SHA256 Hash\n            a1d71eeb389a076f...",
+    "text": "Data Source\n\n\nNational Center for Education Statistics\nAccessed: 9/16/2022\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            57\n        \n\n        \n            File Size\n            0.02 MB\n        \n\n        \n            Total Variables\n            65\n        \n\n        \n            Non-Admin Variables\n            63\n        \n\n        \n            Overall Missing %\n            39.9%\n        \n\n        \n            SHA256 Hash\n            a1d71eeb389a076f...",
     "crumbs": [
       "Historic school term length"
     ]
@@ -3498,7 +3498,7 @@
     "href": "datasets/job_growth_over_time.html#data-source",
     "title": "Job growth over time",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            74,044\n        \n\n        \n            File Size\n            41.38 MB\n        \n\n        \n            Total Variables\n            39\n        \n\n        \n            Non-Admin Variables\n            30\n        \n\n        \n            Overall Missing %\n            2.6%\n        \n\n        \n            SHA256 Hash\n            a8971eec43383683...",
+    "text": "Data Source\n\n\nOpportunity Insights\nAccessed: 1/25/2023\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            74,044\n        \n\n        \n            File Size\n            41.38 MB\n        \n\n        \n            Total Variables\n            39\n        \n\n        \n            Non-Admin Variables\n            30\n        \n\n        \n            Overall Missing %\n            2.6%\n        \n\n        \n            SHA256 Hash\n            a8971eec43383683...",
     "crumbs": [
       "Job growth over time"
     ]
@@ -3548,7 +3548,7 @@
     "href": "datasets/adult_asthma_by_race.html#data-source",
     "title": "Adult asthma by race",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            52\n        \n\n        \n            File Size\n            0.02 MB\n        \n\n        \n            Total Variables\n            43\n        \n\n        \n            Non-Admin Variables\n            40\n        \n\n        \n            Overall Missing %\n            55.0%\n        \n\n        \n            SHA256 Hash\n            6b401b0e7c89104e...",
+    "text": "Data Source\n\n\nKaiser Family Foundation\nAccessed: 1/25/2023\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            52\n        \n\n        \n            File Size\n            0.02 MB\n        \n\n        \n            Total Variables\n            43\n        \n\n        \n            Non-Admin Variables\n            40\n        \n\n        \n            Overall Missing %\n            55.0%\n        \n\n        \n            SHA256 Hash\n            6b401b0e7c89104e...",
     "crumbs": [
       "Adult asthma by race"
     ]
@@ -3598,7 +3598,7 @@
     "href": "datasets/air_pollution_o3_concentration_2011_2015_census_tract.html#data-source",
     "title": "Air pollution: o3 concentration 2011-2015 (census tract)",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            14.07 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            b6d6d2ec7fec1d31...",
+    "text": "Data Source\n\n\nCDC National Environmental Public Health Tracking Network\nAccessed: 4/16/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            14.07 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            b6d6d2ec7fec1d31...",
     "crumbs": [
       "Air pollution: o3 concentration 2011-2015 (census tract)"
     ]
@@ -3698,7 +3698,7 @@
     "href": "datasets/air_pollution_pm25_concentration_2011_2015_census_tract.html#data-source",
     "title": "Air pollution: PM2.5 concentration 2011-2015 (census tract)",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            14.16 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            9501b673edaf917d...",
+    "text": "Data Source\n\n\nCDC National Environmental Public Health Tracking Network\nAccessed: 4/16/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            14.16 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            9501b673edaf917d...",
     "crumbs": [
       "Air pollution: PM2.5 concentration 2011-2015 (census tract)"
     ]
@@ -3798,7 +3798,7 @@
     "href": "datasets/air_pollution_o3_concentration_2001_2005_census_tract.html#data-source",
     "title": "Air pollution: o3 concentration 2001-2005 (census tract)",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            14.05 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            74525a264211e167...",
+    "text": "Data Source\n\n\nCDC National Environmental Public Health Tracking Network\nAccessed: 4/16/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,283\n        \n\n        \n            File Size\n            14.05 MB\n        \n\n        \n            Total Variables\n            12\n        \n\n        \n            Non-Admin Variables\n            10\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            74525a264211e167...",
     "crumbs": [
       "Air pollution: o3 concentration 2001-2005 (census tract)"
     ]
@@ -3898,7 +3898,7 @@
     "href": "datasets/housing_units_no_vehicle.html#data-source",
     "title": "Housing Units Without Vehicle",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.4%\n        \n\n        \n            SHA256 Hash\n            76e53d06216b11ee...",
+    "text": "Data Source\n\n\nAgency for Healthcare Research and Quality\nAccessed: 4/24/2024\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,233\n        \n\n        \n            File Size\n            0.11 MB\n        \n\n        \n            Total Variables\n            4\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.4%\n        \n\n        \n            SHA256 Hash\n            76e53d06216b11ee...",
     "crumbs": [
       "Housing Units Without Vehicle"
     ]
@@ -3998,7 +3998,7 @@
     "href": "datasets/food_access_2019.html#data-source",
     "title": "Food access: 2019",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,531\n        \n\n        \n            File Size\n            3.63 MB\n        \n\n        \n            Total Variables\n            5\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            aecd7ed549c0f4d4...",
+    "text": "Data Source\n\n\nEconomic Research Service (ERS), U.S. Department of Agriculture\nAccessed: 3/24/2024\nEconomic Research Service (ERS), U.S. Department of Agriculture (USDA). Food Access Research Atlas, https://www.ers.usda.gov/data-products/food-access-research-atlas/\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            72,531\n        \n\n        \n            File Size\n            3.63 MB\n        \n\n        \n            Total Variables\n            5\n        \n\n        \n            Non-Admin Variables\n            1\n        \n\n        \n            Overall Missing %\n            0.0%\n        \n\n        \n            SHA256 Hash\n            aecd7ed549c0f4d4...",
     "crumbs": [
       "Food access: 2019"
     ]

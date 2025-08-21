@@ -10,6 +10,8 @@ sources:
   url: ''
   accessed: ''
   citation: ''
+  license: ''
+  comments: ''
 description: School segregation lawsuits by year and county.
 data_quality:
   limitations: ''

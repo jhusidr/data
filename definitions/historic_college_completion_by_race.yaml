@@ -4,12 +4,14 @@ indicator: historic_college_completion_by_race
 indicator_file: historic_college_completion_by_race.csv
 geography: county
 sources:
-- title: ''
+- title: Decennial Census from Social Explorer
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 3/17/2023
   citation: ''
+  license: ''
+  comments: ''
 description: 1970/1980 Black college completion (%) - White college completion (%)
 data_quality:
   limitations: ''

@@ -4,12 +4,14 @@ indicator: flu_vaccinations_preventable_hospital_days_by_race_2019
 indicator_file: flu_vaccinations_preventable_hospital_days_by_race_2019.csv
 geography: county
 sources:
-- title: ''
+- title: Centers for Medicare and Medicaid Services
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 1/25/2023
   citation: ''
+  license: ''
+  comments: ''
 description: Flu vaccination & preventable hospital says, by race (2019)
 data_quality:
   limitations: ''

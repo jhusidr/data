@@ -4,12 +4,14 @@ indicator: number_hospitals_pediatric_icu
 indicator_file: number_hospitals_pediatric_icu.csv
 geography: county
 sources:
-- title: ''
+- title: Agency for Healthcare Research and Quality
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 4/24/2024
   citation: ''
+  license: ''
+  comments: ''
 description: County-level rate of hospitals with pediatric intensive care units.
 data_quality:
   limitations: ''

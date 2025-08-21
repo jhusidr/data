@@ -10,6 +10,8 @@ sources:
   url: ''
   accessed: ''
   citation: ''
+  license: ''
+  comments: ''
 description: Incarcerations by race
 data_quality:
   limitations: ''

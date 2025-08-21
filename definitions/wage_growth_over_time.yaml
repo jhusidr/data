@@ -4,12 +4,14 @@ indicator: wage_growth_over_time
 indicator_file: wage_growth_over_time.csv
 geography: census_tract
 sources:
-- title: ''
+- title: Opportunity Insights
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 1/25/2023
   citation: ''
+  license: ''
+  comments: ''
 description: Wages are constructed by dividing the average high school graduate annual
   earnings by the product of overall average weekly hours worked and 52. The difference
   in logarithms between high school graduate wages in 2010-2014 and school graduate

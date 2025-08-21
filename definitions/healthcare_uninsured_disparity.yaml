@@ -4,12 +4,14 @@ indicator: healthcare_uninsured_disparity
 indicator_file: healthcare_uninsured_disparity.csv
 geography: state
 sources:
-- title: ''
+- title: U.S. Census Bureau
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 4/24/2024
   citation: ''
+  license: ''
+  comments: ''
 description: 1970/1980 Black college completion (%) - White college completion (%)
 data_quality:
   limitations: ''

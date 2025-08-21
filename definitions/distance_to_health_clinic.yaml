@@ -4,12 +4,14 @@ indicator: distance_to_health_clinic
 indicator_file: distance_to_health_clinic.csv
 geography: county
 sources:
-- title: ''
+- title: Agency for Healthcare Research and Quality
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 4/24/2024
   citation: ''
+  license: ''
+  comments: ''
 description: County-level distances to nearest health clinic.
 data_quality:
   limitations: ''

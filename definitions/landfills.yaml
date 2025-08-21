@@ -4,12 +4,14 @@ indicator: landfills
 indicator_file: landfills.csv
 geography: zipcode
 sources:
-- title: ''
+- title: United States Environmental Protection Agency
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 1/25/2023
   citation: ''
+  license: ''
+  comments: ''
 description: Count of open/closed landfill sites by ZipCode as of July 2023
 data_quality:
   limitations: ''

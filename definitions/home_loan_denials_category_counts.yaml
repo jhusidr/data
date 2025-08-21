@@ -10,6 +10,8 @@ sources:
   url: ''
   accessed: ''
   citation: ''
+  license: ''
+  comments: ''
 description: 'Counts by race/ethnicity category. '
 data_quality:
   limitations: ''

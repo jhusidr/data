@@ -10,6 +10,8 @@ sources:
   url: ''
   accessed: ''
   citation: ''
+  license: ''
+  comments: ''
 description: Count and proportion of housing units in need of major repairs in 1940
 data_quality:
   limitations: ''

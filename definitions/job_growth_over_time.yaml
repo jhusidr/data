@@ -4,12 +4,14 @@ indicator: job_growth_over_time
 indicator_file: job_growth_over_time.csv
 geography: census_tract
 sources:
-- title: ''
+- title: Opportunity Insights
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 1/25/2023
   citation: ''
+  license: ''
+  comments: ''
 description: Average annualized job growth rate over the time period 2004 to 2013.
   Constructed using LODES (LEHD Origin-Destination Employment Statistic) - WAC (Workplace
   Area Characteristics) data files provided by the Census Bureau.

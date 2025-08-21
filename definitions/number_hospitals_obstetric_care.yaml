@@ -4,12 +4,14 @@ indicator: number_hospitals_obstetric_care
 indicator_file: number_hospitals_obstetric_care.csv
 geography: county
 sources:
-- title: ''
+- title: Agency for Healthcare Research and Quality
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 4/24/2024
   citation: ''
+  license: ''
+  comments: ''
 description: County-level rate of hospitals with obstetric care services.
 data_quality:
   limitations: ''

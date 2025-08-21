@@ -4,12 +4,14 @@ indicator: number_ambulatory_surgical_centers
 indicator_file: number_ambulatory_surgical_centers.csv
 geography: county
 sources:
-- title: ''
+- title: Agency for Healthcare Research and Quality
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 4/24/2024
   citation: ''
+  license: ''
+  comments: ''
 description: County-level rate of ambulatory surgical centers.
 data_quality:
   limitations: ''

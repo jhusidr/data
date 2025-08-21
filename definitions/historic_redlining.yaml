@@ -4,12 +4,18 @@ indicator: historic_redlining
 indicator_file: historic_redlining.csv
 geography: census_tract
 sources:
-- title: ''
+- title: 'Meier, Helen C.S., and Mitchell, Bruce C. . Historic Redlining Indicator
+    for 2000, 2010, and 2020 US Census Tracts. Ann Arbor, MI: Inter-university Consortium
+    for Political and Social Research [distributor], 2023-09-25. https://doi.org/10.3886/E141121V3'
   authors: ''
   year: ''
   url: ''
-  accessed: ''
-  citation: ''
+  accessed: 9/16/2022
+  citation: 'Meier, Helen C.S., and Mitchell, Bruce C. . Historic Redlining Indicator
+    for 2000, 2010, and 2020 US Census Tracts. Ann Arbor, MI: Inter-university Consortium
+    for Political and Social Research [distributor], 2023-09-25. https://doi.org/10.3886/E141121V3'
+  license: ''
+  comments: ''
 description: Census tract-level data on historic redlining practices from 1940.
 data_quality:
   limitations: ''

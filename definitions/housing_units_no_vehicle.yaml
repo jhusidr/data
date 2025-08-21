@@ -4,12 +4,14 @@ indicator: housing_units_no_vehicle
 indicator_file: housing_units_no_vehicle.csv
 geography: county
 sources:
-- title: ''
+- title: Agency for Healthcare Research and Quality
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 4/24/2024
   citation: ''
+  license: ''
+  comments: ''
 description: County-level percentage of housing units without access to a vehicle.
 data_quality:
   limitations: ''

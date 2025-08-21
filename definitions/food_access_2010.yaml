@@ -4,12 +4,15 @@ indicator: food_access_2010
 indicator_file: food_access_2010.csv
 geography: census_tract
 sources:
-- title: ''
+- title: Economic Research Service (ERS), U.S. Department of Agriculture
   authors: ''
   year: ''
   url: ''
-  accessed: ''
-  citation: ''
+  accessed: 3/24/2024
+  citation: Economic Research Service (ERS), U.S. Department of Agriculture (USDA).
+    Food Access Research Atlas, https://www.ers.usda.gov/data-products/food-access-research-atlas/
+  license: ''
+  comments: ''
 description: Tracts with at least 500 people, or 33 percent of the population, living
   more than one mile (urban areas) or more than 10 miles (rural areas) from the nearest
   supermarket, supercenter, or large grocery store.

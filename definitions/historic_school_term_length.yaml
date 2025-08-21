@@ -4,12 +4,14 @@ indicator: historic_school_term_length
 indicator_file: historic_school_term_length.csv
 geography: state
 sources:
-- title: ''
+- title: National Center for Education Statistics
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 9/16/2022
   citation: ''
+  license: ''
+  comments: ''
 description: School term length (days) in all schools for each year, by racial group.
 data_quality:
   limitations: ''

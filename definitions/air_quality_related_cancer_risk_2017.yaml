@@ -4,12 +4,14 @@ indicator: air_quality_related_cancer_risk_2017
 indicator_file: air_quality_related_cancer_risk_2017.csv
 geography: census_tract
 sources:
-- title: ''
+- title: United States Environmental Protection Agency
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 3/17/2023
   citation: ''
+  license: ''
+  comments: ''
 description: Probability of contracting cancer over the course of a lifetime, assuming
   continuous exposure (assumed in NATA to be 70 years)
 data_quality:

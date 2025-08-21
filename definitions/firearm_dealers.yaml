@@ -10,6 +10,8 @@ sources:
   url: ''
   accessed: ''
   citation: ''
+  license: ''
+  comments: ''
 description: Number of firearm dealers (Federal Firearms License (FFL) type 01 - Dealer
   in firearms other than destructive devices including Gunsmiths & FFL type 09 - Dealer
   in destructive devices were counted by Zipcode)

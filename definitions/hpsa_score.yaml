@@ -4,12 +4,14 @@ indicator: hpsa_score
 indicator_file: hpsa_score.csv
 geography: county
 sources:
-- title: ''
+- title: Health Resources and Services Administration
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 1/26/2023
   citation: ''
+  license: ''
+  comments: ''
 description: Categorized health professional shortage area (HPSA) sore (None of the
   county is shortage area; Part of county is shortage area; Whole county is shortage
   area)

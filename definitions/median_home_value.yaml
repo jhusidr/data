@@ -4,12 +4,14 @@ indicator: median_home_value
 indicator_file: median_home_value.csv
 geography: county
 sources:
-- title: ''
+- title: Agency for Healthcare Research and Quality
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 4/24/2024
   citation: ''
+  license: ''
+  comments: ''
 description: County-level median home values from the American Community Survey.
 data_quality:
   limitations: ''

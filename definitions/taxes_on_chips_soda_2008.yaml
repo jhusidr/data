@@ -4,12 +4,14 @@ indicator: taxes_on_chips_soda_2008
 indicator_file: taxes_on_chips_soda_2008.csv
 geography: county
 sources:
-- title: ''
+- title: Economic Research Service of the U.S. Department of Agriculture
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 1/26/2023
   citation: ''
+  license: ''
+  comments: ''
 description: Tax rate on chips in vending machines in 2008
 data_quality:
   limitations: ''

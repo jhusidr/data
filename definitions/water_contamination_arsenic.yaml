@@ -4,12 +4,14 @@ indicator: water_contamination_arsenic
 indicator_file: water_contamination_arsenic.csv
 geography: county
 sources:
-- title: ''
+- title: Agency for Healthcare Research and Quality
   authors: ''
   year: ''
   url: ''
-  accessed: ''
+  accessed: 4/24/2024
   citation: ''
+  license: ''
+  comments: ''
 description: County-level water contamination data focusing on arsenic levels in community
   water systems.
 data_quality:

@@ -10,6 +10,8 @@ sources:
   url: ''
   accessed: ''
   citation: ''
+  license: ''
+  comments: ''
 description: Flu vaccination & preventable hospital says, by race (2021)
 data_quality:
   limitations: ''
