@@ -209,6 +209,15 @@ ul.task-list li input[type="checkbox"] {
         </div>
         
         <div class="filter-group">
+            <label>Availability:</label>
+            <select id="availability-filter">
+                <option value="">All Availability</option>
+                <option value="public">Public</option>
+                <option value="restricted">Restricted</option>
+            </select>
+        </div>
+        
+        <div class="filter-group">
             <button id="reset-filters" class="btn-reset">Reset Filters</button>
         </div>
     </div>
@@ -220,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="dataset-list" id="list-view" style="display: block;">
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="state">
+    <div class="dataset-list-item" data-domain="environment" data-geography="state" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/adult_asthma_by_race.html">Adult asthma by race</a>
         </div>
@@ -228,10 +237,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">State</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/air_pollution_pm25_concentration_2001_2005_census_tract.html">Air pollution: PM2.5 concentration 2001-2005 (census tract)</a>
         </div>
@@ -239,10 +249,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/air_pollution_pm25_concentration_2006_2010_census_tract.html">Air pollution: PM2.5 concentration 2006-2010 (census tract)</a>
         </div>
@@ -250,10 +261,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/air_pollution_pm25_concentration_2011_2015_census_tract.html">Air pollution: PM2.5 concentration 2011-2015 (census tract)</a>
         </div>
@@ -261,10 +273,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/air_pollution_pm25_concentration_2016_2020_census_tract.html">Air pollution: PM2.5 concentration 2016-2020 (census tract)</a>
         </div>
@@ -272,10 +285,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="county">
+    <div class="dataset-list-item" data-domain="environment" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/air_pollution_o3_concentration.html">Air pollution: o3 concentration</a>
         </div>
@@ -283,10 +297,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/air_pollution_o3_concentration_2001_2005_census_tract.html">Air pollution: o3 concentration 2001-2005 (census tract)</a>
         </div>
@@ -294,10 +309,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/air_pollution_o3_concentration_2006_2010_census_tract.html">Air pollution: o3 concentration 2006-2010 (census tract)</a>
         </div>
@@ -305,10 +321,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/air_pollution_o3_concentration_2011_2015_census_tract.html">Air pollution: o3 concentration 2011-2015 (census tract)</a>
         </div>
@@ -316,10 +333,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/air_pollution_o3_concentration_2016_2020_census_tract.html">Air pollution: o3 concentration 2016-2020 (census tract)</a>
         </div>
@@ -327,10 +345,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="county">
+    <div class="dataset-list-item" data-domain="environment" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/air_pollution_pm25_concentration.html">Air pollution: pm2.5 concentration</a>
         </div>
@@ -338,10 +357,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/air_quality_related_cancer_risk_2017.html">Air quality related cancer risk: 2017</a>
         </div>
@@ -349,10 +369,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/air_quality_related_cancer_risk_2018.html">Air quality related cancer risk: 2018</a>
         </div>
@@ -360,10 +381,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="environment" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/air_quality_related_cancer_risk_2019.html">Air quality related cancer risk: 2019</a>
         </div>
@@ -371,10 +393,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="state">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="state" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/healthcare_uninsured_disparity.html">Black-White disparity in health insurance</a>
         </div>
@@ -382,10 +405,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">State</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="civics" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="civics" data-geography="census_tract" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/census_return_rate.html">Census return rate</a>
         </div>
@@ -393,10 +417,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Civics</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/home_loan_denials_category_counts.html">Count of White/Black/Other Race/Spanish Families by income category</a>
         </div>
@@ -404,10 +429,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/distance_to_alcohol_drug_care.html">Distance to Alcohol and Drug Inpatient Care</a>
         </div>
@@ -415,10 +441,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/distance_to_ed.html">Distance to Emergency Department</a>
         </div>
@@ -426,10 +453,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/distance_to_health_clinic.html">Distance to Health Clinic</a>
         </div>
@@ -437,10 +465,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/distance_to_medsurg_icu.html">Distance to Medical-Surgical ICU</a>
         </div>
@@ -448,10 +477,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/distance_to_obstetrics_care.html">Distance to Obstetrics Care</a>
         </div>
@@ -459,10 +489,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/distance_to_pediatric_icu.html">Distance to Pediatric ICU</a>
         </div>
@@ -470,10 +501,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="employment" data-geography="state">
+    <div class="dataset-list-item" data-domain="employment" data-geography="state" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/employment_discrimination_lawsuits.html">Employment discrimination lawsuits</a>
         </div>
@@ -481,10 +513,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #FF6B6B">Employment</span>
             <span class="geography-badge">State</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="media_marketing" data-geography="zipcode">
+    <div class="dataset-list-item" data-domain="media_marketing" data-geography="zipcode" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/firearm_dealers.html">Firearm dealers</a>
         </div>
@@ -492,10 +525,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Media Marketing</span>
             <span class="geography-badge">Zipcode</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/flu_vaccinations_preventable_hospital_days_by_race_2019.html">Flu vaccinations &amp; preventable hospital days by race: 2019</a>
         </div>
@@ -503,10 +537,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/flu_vaccinations_preventable_hospital_days_by_race_2020.html">Flu vaccinations &amp; preventable hospital days by race: 2020</a>
         </div>
@@ -514,10 +549,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/flu_vaccinations_preventable_hospital_days_by_race_2021.html">Flu vaccinations &amp; preventable hospital days by race: 2021</a>
         </div>
@@ -525,10 +561,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/flu_vaccinations_preventable_hospital_days_by_race_2022.html">Flu vaccinations &amp; preventable hospital days by race: 2022</a>
         </div>
@@ -536,10 +573,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/flu_vaccinations_preventable_hospital_days_by_race_2023.html">Flu vaccinations &amp; preventable hospital days by race: 2023</a>
         </div>
@@ -547,10 +585,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="neighborhood" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="neighborhood" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/food_access_2010.html">Food access: 2010</a>
         </div>
@@ -558,10 +597,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Neighborhood</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="neighborhood" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="neighborhood" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/food_access_2015.html">Food access: 2015</a>
         </div>
@@ -569,10 +609,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Neighborhood</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="neighborhood" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="neighborhood" data-geography="census_tract" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/food_access_2019.html">Food access: 2019</a>
         </div>
@@ -580,10 +621,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Neighborhood</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/generational_income_mobility.html">Generational income mobility</a>
         </div>
@@ -591,10 +633,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/hpsa_score.html">HPSA Score</a>
         </div>
@@ -602,10 +645,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="policing" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="policing" data-geography="census_tract" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/historic_redlining.html">Historic Redlining</a>
         </div>
@@ -613,10 +657,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Policing</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="education" data-geography="county">
+    <div class="dataset-list-item" data-domain="education" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/historic_college_completion_by_race.html">Historic college completion by race</a>
         </div>
@@ -624,10 +669,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #A23B72">Education</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="policing" data-geography="county">
+    <div class="dataset-list-item" data-domain="policing" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/historic_lynching.html">Historic lynching</a>
         </div>
@@ -635,10 +681,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Policing</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="education" data-geography="state">
+    <div class="dataset-list-item" data-domain="education" data-geography="state" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/historic_school_term_length.html">Historic school term length</a>
         </div>
@@ -646,10 +693,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #A23B72">Education</span>
             <span class="geography-badge">State</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/home_loan_denials_by_race.html">Home loan denials by race</a>
         </div>
@@ -657,10 +705,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/housing_units_no_vehicle.html">Housing Units Without Vehicle</a>
         </div>
@@ -668,10 +717,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="policing" data-geography="county">
+    <div class="dataset-list-item" data-domain="policing" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/incarcerations_by_race.html">Incarcerations by race</a>
         </div>
@@ -679,10 +729,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Policing</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/income_inequality.html">Income Inequality</a>
         </div>
@@ -690,10 +741,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="employment" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="employment" data-geography="census_tract" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/job_growth_over_time.html">Job growth over time</a>
         </div>
@@ -701,10 +753,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #FF6B6B">Employment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="zipcode">
+    <div class="dataset-list-item" data-domain="environment" data-geography="zipcode" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/landfills.html">Landfills</a>
         </div>
@@ -712,10 +765,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Zipcode</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="civics" data-geography="state">
+    <div class="dataset-list-item" data-domain="civics" data-geography="state" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/legislature_pct_black.html">Legislature % Black</a>
         </div>
@@ -723,10 +777,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Civics</span>
             <span class="geography-badge">State</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="neighborhood" data-geography="county">
+    <div class="dataset-list-item" data-domain="neighborhood" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/major_housing_issues.html">Major housing issues</a>
         </div>
@@ -734,10 +789,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Neighborhood</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/median_home_value.html">Median Home Value</a>
         </div>
@@ -745,10 +801,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/median_housing_rent.html">Median Housing Rent</a>
         </div>
@@ -756,10 +813,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/number_ambulatory_surgical_centers.html">Number of Ambulatory Surgical Centers</a>
         </div>
@@ -767,10 +825,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/number_of_fqhcs.html">Number of Federally Qualified Health Centers (FQHCs)</a>
         </div>
@@ -778,10 +837,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/number_home_health_agencies.html">Number of Home Health Agencies</a>
         </div>
@@ -789,10 +849,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/number_hospices.html">Number of Hospices</a>
         </div>
@@ -800,10 +861,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/number_hospitals_alcohol_drug_care.html">Number of Hospitals with Alcohol/Drug Inpatient Care</a>
         </div>
@@ -811,10 +873,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/number_hospitals_ambulance_services.html">Number of Hospitals with Ambulance Services</a>
         </div>
@@ -822,10 +885,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/number_hospitals_burn_care.html">Number of Hospitals with Burn Care</a>
         </div>
@@ -833,10 +897,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/number_hospitals_chemotherapy.html">Number of Hospitals with Chemotherapy</a>
         </div>
@@ -844,10 +909,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/number_hospitals_with_eds.html">Number of Hospitals with Emergency Departments</a>
         </div>
@@ -855,10 +921,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/number_hospitals_medsurg_icu.html">Number of Hospitals with Medical-Surgical ICU</a>
         </div>
@@ -866,10 +933,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/number_hospitals_obstetric_care.html">Number of Hospitals with Obstetric Care</a>
         </div>
@@ -877,10 +945,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/number_hospitals_pediatric_icu.html">Number of Hospitals with Pediatric ICU</a>
         </div>
@@ -888,10 +957,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/number_hospitals_psychiatric_care.html">Number of Hospitals with Psychiatric Care</a>
         </div>
@@ -899,10 +969,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/number_mental_health_centers.html">Number of Mental Health Centers</a>
         </div>
@@ -910,10 +981,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/number_nursing_facilities.html">Number of Nursing Facilities</a>
         </div>
@@ -921,10 +993,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/number_skilled_nursing_facilities.html">Number of Skilled Nursing Facilities</a>
         </div>
@@ -932,10 +1005,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/nursing_facility_certified_beds.html">Nursing Facility Certified Beds</a>
         </div>
@@ -943,10 +1017,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="policing" data-geography="county">
+    <div class="dataset-list-item" data-domain="policing" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/police_involved_deaths_by_race.html">Police-involved deaths by race</a>
         </div>
@@ -954,10 +1029,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Policing</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="income_credit_wealth" data-geography="census_tract" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/racial_income_inequality.html">Racial income inequality</a>
         </div>
@@ -965,10 +1041,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="neighborhood" data-geography="county">
+    <div class="dataset-list-item" data-domain="neighborhood" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/residential_segregation.html">Residential segregation</a>
         </div>
@@ -976,10 +1053,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Neighborhood</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="education" data-geography="county">
+    <div class="dataset-list-item" data-domain="education" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/school_dropouts.html">School Dropouts</a>
         </div>
@@ -987,10 +1065,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #A23B72">Education</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="education" data-geography="county">
+    <div class="dataset-list-item" data-domain="education" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/school_segregation_lawsuits.html">School segregation lawsuits</a>
         </div>
@@ -998,10 +1077,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #A23B72">Education</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="education" data-geography="school_district">
+    <div class="dataset-list-item" data-domain="education" data-geography="school_district" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/school_segregation_lawsuits_elementary_grades_1970.html">School segregation of students in elementary grades, 1970</a>
         </div>
@@ -1009,10 +1089,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #A23B72">Education</span>
             <span class="geography-badge">School District</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="education" data-geography="school_district">
+    <div class="dataset-list-item" data-domain="education" data-geography="school_district" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/school_segregation_lawsuits_elementary_grades_1980.html">School segregation of students in elementary grades, 1980</a>
         </div>
@@ -1020,10 +1101,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #A23B72">Education</span>
             <span class="geography-badge">School District</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/skilled_nursing_facilities_beds.html">Skilled Nursing Facilities Beds</a>
         </div>
@@ -1031,10 +1113,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="media_marketing" data-geography="county">
+    <div class="dataset-list-item" data-domain="media_marketing" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/taxes_on_chips_soda_2008.html">Taxes on chips and soda: 2008</a>
         </div>
@@ -1042,10 +1125,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Media Marketing</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="media_marketing" data-geography="county">
+    <div class="dataset-list-item" data-domain="media_marketing" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/taxes_on_chips_soda_2011.html">Taxes on chips and soda: 2011</a>
         </div>
@@ -1053,10 +1137,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Media Marketing</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="media_marketing" data-geography="county">
+    <div class="dataset-list-item" data-domain="media_marketing" data-geography="county" data-availability="public">
         <div class="dataset-name">
             <a href="datasets/taxes_on_chips_soda_2014.html">Taxes on chips and soda: 2014</a>
         </div>
@@ -1064,10 +1149,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Media Marketing</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="healthcare" data-geography="county">
+    <div class="dataset-list-item" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/total_obstetric_care_facilities.html">Total Number of Obstetric Care Facilities</a>
         </div>
@@ -1075,10 +1161,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="civics" data-geography="congressional_district">
+    <div class="dataset-list-item" data-domain="civics" data-geography="congressional_district" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/voting_wait_time_by_race.html">Voting wait time by race</a>
         </div>
@@ -1086,10 +1173,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #666666">Civics</span>
             <span class="geography-badge">Congressional District</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="employment" data-geography="census_tract">
+    <div class="dataset-list-item" data-domain="employment" data-geography="census_tract" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/wage_growth_over_time.html">Wage growth over time</a>
         </div>
@@ -1097,10 +1185,11 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #FF6B6B">Employment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 
-    <div class="dataset-list-item" data-domain="environment" data-geography="county">
+    <div class="dataset-list-item" data-domain="environment" data-geography="county" data-availability="restricted">
         <div class="dataset-name">
             <a href="datasets/water_contamination_arsenic.html">Water Contamination - Arsenic Levels</a>
         </div>
@@ -1108,17 +1197,19 @@ ul.task-list li input[type="checkbox"] {
         <div class="dataset-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
     </div>
 </div>
 
 <div class="dataset-cards" id="tile-view" style="display: none;">
 
-    <div class="dataset-card" data-domain="environment" data-geography="state">
+    <div class="dataset-card" data-domain="environment" data-geography="state" data-availability="public">
         <h3 class="anchored"><a href="datasets/adult_asthma_by_race.html">Adult asthma by race</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">State</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">% (GROUP) with asthma - % White with asthma by state in XXXX year ...</p>
         <div class="card-stats">
@@ -1127,11 +1218,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-card" data-domain="environment" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/air_pollution_pm25_concentration_2001_2005_census_tract.html">Air pollution: PM2.5 concentration 2001-2005 (census tract)</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">PM2.5 concentration at the Census tract level...</p>
         <div class="card-stats">
@@ -1140,11 +1232,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-card" data-domain="environment" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/air_pollution_pm25_concentration_2006_2010_census_tract.html">Air pollution: PM2.5 concentration 2006-2010 (census tract)</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">PM2.5 concentration at the Census tract level...</p>
         <div class="card-stats">
@@ -1153,11 +1246,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-card" data-domain="environment" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/air_pollution_pm25_concentration_2011_2015_census_tract.html">Air pollution: PM2.5 concentration 2011-2015 (census tract)</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">PM2.5 concentration at the Census tract level...</p>
         <div class="card-stats">
@@ -1166,11 +1260,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-card" data-domain="environment" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/air_pollution_pm25_concentration_2016_2020_census_tract.html">Air pollution: PM2.5 concentration 2016-2020 (census tract)</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">PM2.5 concentration at the Census tract level...</p>
         <div class="card-stats">
@@ -1179,11 +1274,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="county">
+    <div class="dataset-card" data-domain="environment" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/air_pollution_o3_concentration.html">Air pollution: o3 concentration</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">O3 concentration at the Census tract level...</p>
         <div class="card-stats">
@@ -1192,11 +1288,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-card" data-domain="environment" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/air_pollution_o3_concentration_2001_2005_census_tract.html">Air pollution: o3 concentration 2001-2005 (census tract)</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">O3 concentration at the Census tract level...</p>
         <div class="card-stats">
@@ -1205,11 +1302,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-card" data-domain="environment" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/air_pollution_o3_concentration_2006_2010_census_tract.html">Air pollution: o3 concentration 2006-2010 (census tract)</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">O3 concentration at the Census tract level...</p>
         <div class="card-stats">
@@ -1218,11 +1316,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-card" data-domain="environment" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/air_pollution_o3_concentration_2011_2015_census_tract.html">Air pollution: o3 concentration 2011-2015 (census tract)</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">O3 concentration at the Census tract level...</p>
         <div class="card-stats">
@@ -1231,11 +1330,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-card" data-domain="environment" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/air_pollution_o3_concentration_2016_2020_census_tract.html">Air pollution: o3 concentration 2016-2020 (census tract)</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">O3 concentration at the Census tract level...</p>
         <div class="card-stats">
@@ -1244,11 +1344,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="county">
+    <div class="dataset-card" data-domain="environment" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/air_pollution_pm25_concentration.html">Air pollution: pm2.5 concentration</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Annual average PM2.5 concentration (μg/m3) (monitor + modeled data)...</p>
         <div class="card-stats">
@@ -1257,11 +1358,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-card" data-domain="environment" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/air_quality_related_cancer_risk_2017.html">Air quality related cancer risk: 2017</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Probability of contracting cancer over the course of a lifetime, assuming continuous exposure (assumed in NATA to be 70 years)...</p>
         <div class="card-stats">
@@ -1270,11 +1372,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-card" data-domain="environment" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/air_quality_related_cancer_risk_2018.html">Air quality related cancer risk: 2018</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Probability of contracting cancer over the course of a lifetime, assuming continuous exposure (assumed in NATA to be 70 years)...</p>
         <div class="card-stats">
@@ -1283,11 +1386,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="census_tract">
+    <div class="dataset-card" data-domain="environment" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/air_quality_related_cancer_risk_2019.html">Air quality related cancer risk: 2019</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Probability of contracting cancer over the course of a lifetime, assuming continuous exposure (assumed in NATA to be 70 years)...</p>
         <div class="card-stats">
@@ -1296,11 +1400,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="state">
+    <div class="dataset-card" data-domain="healthcare" data-geography="state" data-availability="public">
         <h3 class="anchored"><a href="datasets/healthcare_uninsured_disparity.html">Black-White disparity in health insurance</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">State</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">1970/1980 Black college completion (%) - White college completion (%)...</p>
         <div class="card-stats">
@@ -1309,11 +1414,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="civics" data-geography="census_tract">
+    <div class="dataset-card" data-domain="civics" data-geography="census_tract" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/census_return_rate.html">Census return rate</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Civics</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">The 2010 Census return rate, measured as the number of 2010 Census mail forms completed and returned over the number of valid occupied housing units w...</p>
         <div class="card-stats">
@@ -1322,11 +1428,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/home_loan_denials_category_counts.html">Count of White/Black/Other Race/Spanish Families by income category</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">Counts by race/ethnicity category. ...</p>
         <div class="card-stats">
@@ -1335,11 +1442,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/distance_to_alcohol_drug_care.html">Distance to Alcohol and Drug Inpatient Care</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level distances to nearest alcohol and drug inpatient care facilities....</p>
         <div class="card-stats">
@@ -1348,11 +1456,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/distance_to_ed.html">Distance to Emergency Department</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level data on distance to nearest emergency department....</p>
         <div class="card-stats">
@@ -1361,11 +1470,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/distance_to_health_clinic.html">Distance to Health Clinic</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level distances to nearest health clinic....</p>
         <div class="card-stats">
@@ -1374,11 +1484,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/distance_to_medsurg_icu.html">Distance to Medical-Surgical ICU</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level distances to nearest medical-surgical intensive care unit....</p>
         <div class="card-stats">
@@ -1387,11 +1498,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/distance_to_obstetrics_care.html">Distance to Obstetrics Care</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level distances to nearest obstetrics care facility....</p>
         <div class="card-stats">
@@ -1400,11 +1512,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/distance_to_pediatric_icu.html">Distance to Pediatric ICU</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level distances to nearest pediatric intensive care unit....</p>
         <div class="card-stats">
@@ -1413,11 +1526,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="employment" data-geography="state">
+    <div class="dataset-card" data-domain="employment" data-geography="state" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/employment_discrimination_lawsuits.html">Employment discrimination lawsuits</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #FF6B6B">Employment</span>
             <span class="geography-badge">State</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description"># of federal charges for employment discrimination based on race per 100,000 Black residents in XXXX year...</p>
         <div class="card-stats">
@@ -1426,11 +1540,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="media_marketing" data-geography="zipcode">
+    <div class="dataset-card" data-domain="media_marketing" data-geography="zipcode" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/firearm_dealers.html">Firearm dealers</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Media Marketing</span>
             <span class="geography-badge">Zipcode</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">Number of firearm dealers (Federal Firearms License (FFL) type 01 - Dealer in firearms other than destructive devices including Gunsmiths &amp; FFL type 0...</p>
         <div class="card-stats">
@@ -1439,11 +1554,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/flu_vaccinations_preventable_hospital_days_by_race_2019.html">Flu vaccinations &amp; preventable hospital days by race: 2019</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Flu vaccination &amp; preventable hospital says, by race (2019)...</p>
         <div class="card-stats">
@@ -1452,11 +1568,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/flu_vaccinations_preventable_hospital_days_by_race_2020.html">Flu vaccinations &amp; preventable hospital days by race: 2020</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Flu vaccination &amp; preventable hospital says, by race (2020)...</p>
         <div class="card-stats">
@@ -1465,11 +1582,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/flu_vaccinations_preventable_hospital_days_by_race_2021.html">Flu vaccinations &amp; preventable hospital days by race: 2021</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Flu vaccination &amp; preventable hospital says, by race (2021)...</p>
         <div class="card-stats">
@@ -1478,11 +1596,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/flu_vaccinations_preventable_hospital_days_by_race_2022.html">Flu vaccinations &amp; preventable hospital days by race: 2022</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Flu vaccination &amp; preventable hospital says, by race (2022)...</p>
         <div class="card-stats">
@@ -1491,11 +1610,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/flu_vaccinations_preventable_hospital_days_by_race_2023.html">Flu vaccinations &amp; preventable hospital days by race: 2023</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Flu vaccination &amp; preventable hospital says, by race (2023)...</p>
         <div class="card-stats">
@@ -1504,11 +1624,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="neighborhood" data-geography="census_tract">
+    <div class="dataset-card" data-domain="neighborhood" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/food_access_2010.html">Food access: 2010</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Neighborhood</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Tracts with at least 500 people, or 33 percent of the population, living more than one mile (urban areas) or more than 10 miles (rural areas) from the...</p>
         <div class="card-stats">
@@ -1517,11 +1638,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="neighborhood" data-geography="census_tract">
+    <div class="dataset-card" data-domain="neighborhood" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/food_access_2015.html">Food access: 2015</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Neighborhood</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">A low-income tract with at least 500 people, or 33 percent of the population, living more than one mile (urban areas) or more than 10 miles (rural are...</p>
         <div class="card-stats">
@@ -1530,11 +1652,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="neighborhood" data-geography="census_tract">
+    <div class="dataset-card" data-domain="neighborhood" data-geography="census_tract" data-availability="public">
         <h3 class="anchored"><a href="datasets/food_access_2019.html">Food access: 2019</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Neighborhood</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">A low-income tract with at least 500 people, or 33 percent of the population, living more than one mile (urban areas) or more than 10 miles (rural are...</p>
         <div class="card-stats">
@@ -1543,11 +1666,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/generational_income_mobility.html">Generational income mobility</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">...</p>
         <div class="card-stats">
@@ -1556,11 +1680,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/hpsa_score.html">HPSA Score</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Categorized health professional shortage area (HPSA) sore (None of the county is shortage area; Part of county is shortage area; Whole county is short...</p>
         <div class="card-stats">
@@ -1569,11 +1694,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="policing" data-geography="census_tract">
+    <div class="dataset-card" data-domain="policing" data-geography="census_tract" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/historic_redlining.html">Historic Redlining</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Policing</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">Census tract-level data on historic redlining practices from 1940....</p>
         <div class="card-stats">
@@ -1582,11 +1708,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="education" data-geography="county">
+    <div class="dataset-card" data-domain="education" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/historic_college_completion_by_race.html">Historic college completion by race</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #A23B72">Education</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">1970/1980 Black college completion (%) - White college completion (%)...</p>
         <div class="card-stats">
@@ -1595,11 +1722,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="policing" data-geography="county">
+    <div class="dataset-card" data-domain="policing" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/historic_lynching.html">Historic lynching</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Policing</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description"># of lynchings of Black residents between 1877-1950/Black residents in 1940 * 100,000...</p>
         <div class="card-stats">
@@ -1608,11 +1736,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="education" data-geography="state">
+    <div class="dataset-card" data-domain="education" data-geography="state" data-availability="public">
         <h3 class="anchored"><a href="datasets/historic_school_term_length.html">Historic school term length</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #A23B72">Education</span>
             <span class="geography-badge">State</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">School term length (days) in all schools for each year, by racial group....</p>
         <div class="card-stats">
@@ -1621,11 +1750,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/home_loan_denials_by_race.html">Home loan denials by race</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">Loan denial % for Black borrowers compared to white borrowers...</p>
         <div class="card-stats">
@@ -1634,11 +1764,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/housing_units_no_vehicle.html">Housing Units Without Vehicle</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">County-level percentage of housing units without access to a vehicle....</p>
         <div class="card-stats">
@@ -1647,11 +1778,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="policing" data-geography="county">
+    <div class="dataset-card" data-domain="policing" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/incarcerations_by_race.html">Incarcerations by race</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Policing</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">Incarcerations by race...</p>
         <div class="card-stats">
@@ -1660,11 +1792,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/income_inequality.html">Income Inequality</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">County-level income inequality measured by the Gini Index....</p>
         <div class="card-stats">
@@ -1673,11 +1806,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="employment" data-geography="census_tract">
+    <div class="dataset-card" data-domain="employment" data-geography="census_tract" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/job_growth_over_time.html">Job growth over time</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #FF6B6B">Employment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">Average annualized job growth rate over the time period 2004 to 2013. Constructed using LODES (LEHD Origin-Destination Employment Statistic) - WAC (Wo...</p>
         <div class="card-stats">
@@ -1686,11 +1820,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="zipcode">
+    <div class="dataset-card" data-domain="environment" data-geography="zipcode" data-availability="public">
         <h3 class="anchored"><a href="datasets/landfills.html">Landfills</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">Zipcode</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Count of open/closed landfill sites by ZipCode as of July 2023...</p>
         <div class="card-stats">
@@ -1699,11 +1834,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="civics" data-geography="state">
+    <div class="dataset-card" data-domain="civics" data-geography="state" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/legislature_pct_black.html">Legislature % Black</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Civics</span>
             <span class="geography-badge">State</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">(Black legislatures in XXXX year in a state / Black population in XXXX year in a state) - (White legislatures in XXXX year in a state / White populati...</p>
         <div class="card-stats">
@@ -1712,11 +1848,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="neighborhood" data-geography="county">
+    <div class="dataset-card" data-domain="neighborhood" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/major_housing_issues.html">Major housing issues</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Neighborhood</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">Count and proportion of housing units in need of major repairs in 1940...</p>
         <div class="card-stats">
@@ -1725,11 +1862,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/median_home_value.html">Median Home Value</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">County-level median home values from the American Community Survey....</p>
         <div class="card-stats">
@@ -1738,11 +1876,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county">
+    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/median_housing_rent.html">Median Housing Rent</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">County-level median housing rent from the American Community Survey....</p>
         <div class="card-stats">
@@ -1751,11 +1890,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/number_ambulatory_surgical_centers.html">Number of Ambulatory Surgical Centers</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level rate of ambulatory surgical centers....</p>
         <div class="card-stats">
@@ -1764,11 +1904,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/number_of_fqhcs.html">Number of Federally Qualified Health Centers (FQHCs)</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level data on the rate of Federally Qualified Health Centers (FQHCs) per population....</p>
         <div class="card-stats">
@@ -1777,11 +1918,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/number_home_health_agencies.html">Number of Home Health Agencies</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level rate of home health agencies....</p>
         <div class="card-stats">
@@ -1790,11 +1932,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/number_hospices.html">Number of Hospices</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level rate of hospice facilities....</p>
         <div class="card-stats">
@@ -1803,11 +1946,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/number_hospitals_alcohol_drug_care.html">Number of Hospitals with Alcohol/Drug Inpatient Care</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level rate of hospitals with alcohol and drug inpatient care services....</p>
         <div class="card-stats">
@@ -1816,11 +1960,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/number_hospitals_ambulance_services.html">Number of Hospitals with Ambulance Services</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level rate of hospitals with ambulance services....</p>
         <div class="card-stats">
@@ -1829,11 +1974,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/number_hospitals_burn_care.html">Number of Hospitals with Burn Care</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level rate of hospitals with burn care units....</p>
         <div class="card-stats">
@@ -1842,11 +1988,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/number_hospitals_chemotherapy.html">Number of Hospitals with Chemotherapy</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level rate of hospitals with chemotherapy services....</p>
         <div class="card-stats">
@@ -1855,11 +2002,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/number_hospitals_with_eds.html">Number of Hospitals with Emergency Departments</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level rate of hospitals with emergency departments....</p>
         <div class="card-stats">
@@ -1868,11 +2016,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/number_hospitals_medsurg_icu.html">Number of Hospitals with Medical-Surgical ICU</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level rate of hospitals with medical-surgical intensive care units....</p>
         <div class="card-stats">
@@ -1881,11 +2030,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/number_hospitals_obstetric_care.html">Number of Hospitals with Obstetric Care</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">County-level rate of hospitals with obstetric care services....</p>
         <div class="card-stats">
@@ -1894,11 +2044,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/number_hospitals_pediatric_icu.html">Number of Hospitals with Pediatric ICU</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">County-level rate of hospitals with pediatric intensive care units....</p>
         <div class="card-stats">
@@ -1907,11 +2058,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/number_hospitals_psychiatric_care.html">Number of Hospitals with Psychiatric Care</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">County-level rate of hospitals with psychiatric care services....</p>
         <div class="card-stats">
@@ -1920,11 +2072,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/number_mental_health_centers.html">Number of Mental Health Centers</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">County-level rate of community mental health centers....</p>
         <div class="card-stats">
@@ -1933,11 +2086,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/number_nursing_facilities.html">Number of Nursing Facilities</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">County-level rate of nursing facilities....</p>
         <div class="card-stats">
@@ -1946,11 +2100,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/number_skilled_nursing_facilities.html">Number of Skilled Nursing Facilities</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">County-level rate of skilled nursing facilities....</p>
         <div class="card-stats">
@@ -1959,11 +2114,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/nursing_facility_certified_beds.html">Nursing Facility Certified Beds</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">County-level rate of certified nursing facility beds....</p>
         <div class="card-stats">
@@ -1972,11 +2128,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="policing" data-geography="county">
+    <div class="dataset-card" data-domain="policing" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/police_involved_deaths_by_race.html">Police-involved deaths by race</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Policing</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">Police-involved deaths by race...</p>
         <div class="card-stats">
@@ -1985,11 +2142,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="census_tract">
+    <div class="dataset-card" data-domain="income_credit_wealth" data-geography="census_tract" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/racial_income_inequality.html">Racial income inequality</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #FFB700">Income Credit Wealth</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">Ratio of median white to median black income...</p>
         <div class="card-stats">
@@ -1998,11 +2156,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="neighborhood" data-geography="county">
+    <div class="dataset-card" data-domain="neighborhood" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/residential_segregation.html">Residential segregation</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Neighborhood</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">Index of dissimilarity of Black and White residential segregation...</p>
         <div class="card-stats">
@@ -2011,11 +2170,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="education" data-geography="county">
+    <div class="dataset-card" data-domain="education" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/school_dropouts.html">School Dropouts</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #A23B72">Education</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">Proportion of Whites ages 16 to 21 who are not high school graduate or not enrolled (dropped out) Proportion of Blacks ages 16 to 21 who are not high ...</p>
         <div class="card-stats">
@@ -2024,11 +2184,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="education" data-geography="county">
+    <div class="dataset-card" data-domain="education" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/school_segregation_lawsuits.html">School segregation lawsuits</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #A23B72">Education</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">School segregation lawsuits by year and county....</p>
         <div class="card-stats">
@@ -2037,11 +2198,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="education" data-geography="school_district">
+    <div class="dataset-card" data-domain="education" data-geography="school_district" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/school_segregation_lawsuits_elementary_grades_1970.html">School segregation of students in elementary grades, 1970</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #A23B72">Education</span>
             <span class="geography-badge">School District</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">School segregation lawsuits by year and county....</p>
         <div class="card-stats">
@@ -2050,11 +2212,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="education" data-geography="school_district">
+    <div class="dataset-card" data-domain="education" data-geography="school_district" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/school_segregation_lawsuits_elementary_grades_1980.html">School segregation of students in elementary grades, 1980</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #A23B72">Education</span>
             <span class="geography-badge">School District</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">School segregation lawsuits by year and county....</p>
         <div class="card-stats">
@@ -2063,11 +2226,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/skilled_nursing_facilities_beds.html">Skilled Nursing Facilities Beds</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">County-level rate of skilled nursing facility beds....</p>
         <div class="card-stats">
@@ -2076,11 +2240,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="media_marketing" data-geography="county">
+    <div class="dataset-card" data-domain="media_marketing" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/taxes_on_chips_soda_2008.html">Taxes on chips and soda: 2008</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Media Marketing</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Tax rate on chips in vending machines in 2008...</p>
         <div class="card-stats">
@@ -2089,11 +2254,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="media_marketing" data-geography="county">
+    <div class="dataset-card" data-domain="media_marketing" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/taxes_on_chips_soda_2011.html">Taxes on chips and soda: 2011</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Media Marketing</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Tax rate on chips in vending machines in 2011...</p>
         <div class="card-stats">
@@ -2102,11 +2268,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="media_marketing" data-geography="county">
+    <div class="dataset-card" data-domain="media_marketing" data-geography="county" data-availability="public">
         <h3 class="anchored"><a href="datasets/taxes_on_chips_soda_2014.html">Taxes on chips and soda: 2014</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Media Marketing</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span>
         </div>
         <p class="card-description">Tax rate on chips in vending machines in 2014...</p>
         <div class="card-stats">
@@ -2115,11 +2282,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="healthcare" data-geography="county">
+    <div class="dataset-card" data-domain="healthcare" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/total_obstetric_care_facilities.html">Total Number of Obstetric Care Facilities</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #2E86AB">Healthcare</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">County-level total count of hospitals with obstetric care....</p>
         <div class="card-stats">
@@ -2128,11 +2296,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="civics" data-geography="congressional_district">
+    <div class="dataset-card" data-domain="civics" data-geography="congressional_district" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/voting_wait_time_by_race.html">Voting wait time by race</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #666666">Civics</span>
             <span class="geography-badge">Congressional District</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">Estimates of the disparity in voting wait times...</p>
         <div class="card-stats">
@@ -2141,11 +2310,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="employment" data-geography="census_tract">
+    <div class="dataset-card" data-domain="employment" data-geography="census_tract" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/wage_growth_over_time.html">Wage growth over time</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #FF6B6B">Employment</span>
             <span class="geography-badge">Census Tract</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">Wages are constructed by dividing the average high school graduate annual earnings by the product of overall average weekly hours worked and 52. The d...</p>
         <div class="card-stats">
@@ -2154,11 +2324,12 @@ ul.task-list li input[type="checkbox"] {
         </div>
     </div>
 
-    <div class="dataset-card" data-domain="environment" data-geography="county">
+    <div class="dataset-card" data-domain="environment" data-geography="county" data-availability="restricted">
         <h3 class="anchored"><a href="datasets/water_contamination_arsenic.html">Water Contamination - Arsenic Levels</a></h3>
         <div class="card-meta">
             <span class="domain-badge" style="background-color: #228B22">Environment</span>
             <span class="geography-badge">County</span>
+            <span class="availability-badge restricted"><i class="fas fa-lock"></i> Restricted</span>
         </div>
         <p class="card-description">County-level water contamination data focusing on arsenic levels in community water systems....</p>
         <div class="card-stats">

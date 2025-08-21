@@ -5,6 +5,7 @@ function initializeSearch(datasets) {
     const domainFilter = document.getElementById('domain-filter');
     const geographyFilter = document.getElementById('geography-filter');
     const raceEthFilter = document.getElementById('race-eth-filter');
+    const availabilityFilter = document.getElementById('availability-filter');
     const resetButton = document.getElementById('reset-filters');
     const resultsCount = document.getElementById('results-count');
     const cards = document.querySelectorAll('.dataset-card');
@@ -43,6 +44,7 @@ function initializeSearch(datasets) {
         const selectedDomain = domainFilter.value;
         const selectedGeography = geographyFilter.value;
         const selectedRaceEth = raceEthFilter.value;
+        const selectedAvailability = availabilityFilter.value;
         
         let visibleCount = 0;
         
@@ -58,8 +60,9 @@ function initializeSearch(datasets) {
             const matchesRaceEth = !selectedRaceEth || 
                 (selectedRaceEth === 'none' && (!dataset.race_eth_coverage || dataset.race_eth_coverage.length === 0)) ||
                 (selectedRaceEth !== 'none' && dataset.race_eth_coverage && dataset.race_eth_coverage.includes(selectedRaceEth));
+            const matchesAvailability = !selectedAvailability || dataset.availability === selectedAvailability;
             
-            const isVisible = matchesSearch && matchesDomain && matchesGeography && matchesRaceEth;
+            const isVisible = matchesSearch && matchesDomain && matchesGeography && matchesRaceEth && matchesAvailability;
             
             // Update card visibility
             if (cards[index]) {
@@ -87,12 +90,14 @@ function initializeSearch(datasets) {
     domainFilter.addEventListener('change', filterDatasets);
     geographyFilter.addEventListener('change', filterDatasets);
     raceEthFilter.addEventListener('change', filterDatasets);
+    availabilityFilter.addEventListener('change', filterDatasets);
     
     resetButton.addEventListener('click', () => {
         searchInput.value = '';
         domainFilter.value = '';
         geographyFilter.value = '';
         raceEthFilter.value = '';
+        availabilityFilter.value = '';
         filterDatasets();
     });
     
