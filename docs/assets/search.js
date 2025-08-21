@@ -374,3 +374,69 @@ function sortTable(table, column) {
     // Re-append rows
     sorted.forEach(row => tbody.appendChild(row));
 }
+
+// Sidebar filtering functionality
+function initializeSidebarFilter() {
+    // Create sidebar filter UI
+    const sidebar = document.querySelector('.sidebar');
+    if (!sidebar) return;
+    
+    // Create filter container
+    const filterContainer = document.createElement('div');
+    filterContainer.className = 'sidebar-filter';
+    filterContainer.innerHTML = `
+        <div class="sidebar-filter-header">
+            <label for="sidebar-availability-filter">Filter by Availability:</label>
+        </div>
+        <select id="sidebar-availability-filter" class="sidebar-filter-select">
+            <option value="">All Files</option>
+            <option value="public">Public Only</option>
+            <option value="restricted">Restricted Only</option>
+        </select>
+    `;
+    
+    // Insert filter at the top of the sidebar content
+    const sidebarContent = sidebar.querySelector('.sidebar-content') || sidebar;
+    if (sidebarContent) {
+        sidebarContent.insertBefore(filterContainer, sidebarContent.firstChild);
+    }
+    
+    // Add event listener for filtering
+    const filterSelect = document.getElementById('sidebar-availability-filter');
+    if (filterSelect) {
+        filterSelect.addEventListener('change', function() {
+            const selectedAvailability = this.value;
+            filterSidebarItems(selectedAvailability);
+        });
+    }
+}
+
+function filterSidebarItems(selectedAvailability) {
+    // Find all sidebar links with data-availability attributes
+    const sidebarLinks = document.querySelectorAll('.sidebar a[href*="datasets/"]');
+    
+    sidebarLinks.forEach(link => {
+        const span = link.querySelector('[data-availability]');
+        if (!span) return;
+        
+        const availability = span.getAttribute('data-availability');
+        const matches = !selectedAvailability || availability === selectedAvailability;
+        
+        // Show/hide the entire link
+        link.style.display = matches ? 'block' : 'none';
+    });
+    
+    // Also handle section visibility - hide sections with no visible items
+    const sidebarSections = document.querySelectorAll('.sidebar .sidebar-section');
+    sidebarSections.forEach(section => {
+        const visibleLinks = section.querySelectorAll('a[style*="display: block"], a:not([style*="display: none"])');
+        const hasVisibleLinks = Array.from(visibleLinks).some(link => {
+            return link.href.includes('datasets/') && (!link.style.display || link.style.display !== 'none');
+        });
+        
+        // Show/hide section based on whether it has visible items
+        if (section.querySelector('.sidebar-section-title')) {
+            section.style.display = hasVisibleLinks ? 'block' : 'none';
+        }
+    });
+}

@@ -1048,3 +1048,44 @@
         font-size: 0.875rem;
     }
 }
+
+/* Sidebar Filter */
+.sidebar-filter {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    background-color: #f8f9fa;
+}
+
+.sidebar-filter-header {
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-filter-header label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #495057;
+    display: block;
+}
+
+.sidebar-filter-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.sidebar-filter-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 45, 114, 0.1);
+}
+
+/* Improve sidebar badge visibility */
+.sidebar .availability-badge {
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+}
