@@ -205,9 +205,16 @@ function initializeDataFilesDrawer(datasets) {
             html += `<div class="domain-datasets">`;
             
             domainGroups[domain].forEach(dataset => {
+                const availabilityBadge = dataset.availability === 'public' 
+                    ? '<span class="drawer-availability-badge public">🔓 Public</span>'
+                    : '<span class="drawer-availability-badge restricted">🔒 Restricted</span>';
+                
                 html += `
-                    <a href="../datasets/${dataset.id}.html" class="dataset-link" data-domain="${domain}" data-name="${dataset.name.toLowerCase()}">
-                        <div class="dataset-link-name">${dataset.name}</div>
+                    <a href="../datasets/${dataset.id}.html" class="dataset-link" data-domain="${domain}" data-name="${dataset.name.toLowerCase()}" data-availability="${dataset.availability || 'restricted'}">
+                        <div class="dataset-link-name">
+                            ${dataset.name}
+                            ${availabilityBadge}
+                        </div>
                         <div class="dataset-link-meta">
                             <span class="dataset-variables">${dataset.variables} vars</span>
                             <span class="dataset-years">${Array.isArray(dataset.years) ? 
@@ -228,6 +235,8 @@ function initializeDataFilesDrawer(datasets) {
     // Filter datasets
     function filterDatasets() {
         const searchTerm = filterInput.value.toLowerCase().trim();
+        const availabilityFilter = document.getElementById('drawer-availability-filter');
+        const selectedAvailability = availabilityFilter ? availabilityFilter.value : '';
         const allLinks = datafilesList.querySelectorAll('.dataset-link');
         const domainGroups = datafilesList.querySelectorAll('.domain-group');
         
@@ -240,7 +249,11 @@ function initializeDataFilesDrawer(datasets) {
             
             links.forEach(link => {
                 const name = link.dataset.name || '';
-                const matches = !searchTerm || name.includes(searchTerm);
+                const availability = link.dataset.availability || 'restricted';
+                
+                const matchesSearch = !searchTerm || name.includes(searchTerm);
+                const matchesAvailability = !selectedAvailability || availability === selectedAvailability;
+                const matches = matchesSearch && matchesAvailability;
                 
                 if (matches) {
                     link.style.display = 'block';
@@ -267,9 +280,14 @@ function initializeDataFilesDrawer(datasets) {
     renderDatasets();
     datafilesCount.textContent = `Showing all ${datasets.length} datasets`;
     
-    // Add filter event listener
+    // Add filter event listeners
     if (filterInput) {
         filterInput.addEventListener('input', filterDatasets);
+    }
+    
+    const availabilityFilter = document.getElementById('drawer-availability-filter');
+    if (availabilityFilter) {
+        availabilityFilter.addEventListener('change', filterDatasets);
     }
 }
 
@@ -412,14 +430,20 @@ function initializeSidebarFilter() {
 }
 
 function filterSidebarItems(selectedAvailability) {
-    // Find all sidebar links with data-availability attributes
+    // Find all sidebar links with dataset references
     const sidebarLinks = document.querySelectorAll('.sidebar a[href*="datasets/"]');
     
     sidebarLinks.forEach(link => {
-        const span = link.querySelector('[data-availability]');
-        if (!span) return;
+        const text = link.textContent || '';
+        let availability = 'unknown';
         
-        const availability = span.getAttribute('data-availability');
+        // Detect availability from emoji markers
+        if (text.includes('🔓')) {
+            availability = 'public';
+        } else if (text.includes('🔒')) {
+            availability = 'restricted';
+        }
+        
         const matches = !selectedAvailability || availability === selectedAvailability;
         
         // Show/hide the entire link
@@ -427,16 +451,23 @@ function filterSidebarItems(selectedAvailability) {
     });
     
     // Also handle section visibility - hide sections with no visible items
-    const sidebarSections = document.querySelectorAll('.sidebar .sidebar-section');
+    const sidebarSections = document.querySelectorAll('.sidebar .sidebar-section, .sidebar .sidebar-item');
     sidebarSections.forEach(section => {
-        const visibleLinks = section.querySelectorAll('a[style*="display: block"], a:not([style*="display: none"])');
-        const hasVisibleLinks = Array.from(visibleLinks).some(link => {
-            return link.href.includes('datasets/') && (!link.style.display || link.style.display !== 'none');
+        const visibleLinks = section.querySelectorAll('a[href*="datasets/"]');
+        let hasVisibleLinks = false;
+        
+        visibleLinks.forEach(link => {
+            if (link.style.display !== 'none') {
+                hasVisibleLinks = true;
+            }
         });
         
         // Show/hide section based on whether it has visible items
-        if (section.querySelector('.sidebar-section-title')) {
-            section.style.display = hasVisibleLinks ? 'block' : 'none';
+        const sectionTitle = section.querySelector('.sidebar-item-text, .sidebar-section-title, h3');
+        if (sectionTitle && !section.querySelector('a[href*="datasets/"]')) {
+            // This is a section header
+            const parentElement = section.parentElement || section;
+            parentElement.style.display = hasVisibleLinks ? 'block' : 'none';
         }
     });
 }

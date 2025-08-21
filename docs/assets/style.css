@@ -379,6 +379,46 @@
 }
 
 
+/* Variable Filter Section */
+.variable-filter-section {
+    margin-bottom: 1.5rem;
+}
+
+.variable-filter-wrapper {
+    position: relative;
+    max-width: 400px;
+    margin-bottom: 0.5rem;
+}
+
+.variable-filter-input {
+    width: 100%;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.variable-filter-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 45, 114, 0.1);
+}
+
+.variable-filter-icon {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    pointer-events: none;
+}
+
+.variable-count {
+    font-size: 0.875rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
 /* Variables Grid Layout */
 .variables-grid {
     display: grid;
@@ -738,6 +778,49 @@
     background: white;
 }
 
+/* Drawer Availability Badges */
+.drawer-availability-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.125rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.drawer-availability-badge.public {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.drawer-availability-badge.restricted {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Drawer Filter Select */
+.availability-filter-drawer {
+    margin-top: 0.75rem;
+}
+
+.drawer-filter-select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.drawer-filter-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 45, 114, 0.1);
+}
+
 /* Variable Filter in Drawer */
 .drawer-filter .variable-filter {
     position: relative;
@@ -765,12 +848,6 @@
     transform: translateY(-50%);
     color: #6c757d;
     pointer-events: none;
-}
-
-.variable-count {
-    font-size: 0.875rem;
-    color: #6c757d;
-    font-style: italic;
 }
 
 .var-summary-section {

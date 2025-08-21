@@ -94,15 +94,19 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../year_coverage.html"> 
+<span class="menu-text">Year Coverage</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://sidr.table1.org" target="_blank"> 
-<span class="menu-text">Dashboard</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="https://www.jhsph.edu" target="_blank"> 
 <span class="menu-text">JHSPH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://nursing.jhu.edu" target="_blank"> 
+<span class="menu-text">JH Nursing</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://github.com/jhusidr" target="_blank"> 
@@ -119,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datasets/number_of_fqhcs.html"><span data-availability="public">Number of Federally Qualified Health Centers (FQHCs) <span class="availability-badge public"><i class="fas fa-users"></i> Public</span></span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datasets/number_of_fqhcs.html">Number of Federally Qualified Health Centers (FQHCs) 🔓</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -151,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datasets/number_of_fqhcs.html"><span data-availability="public">Number of Federally Qualified Health Centers (FQHCs) <span class="availability-badge public"><i class="fas fa-users"></i> Public</span></span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../datasets/number_of_fqhcs.html">Number of Federally Qualified Health Centers (FQHCs) 🔓</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Number of Federally Qualified Health Centers (FQHCs)</h1>
 <p class="subtitle lead">number_of_fqhcs</p>
@@ -270,9 +274,9 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="variables">Variables</h2>
 <p>This dataset contains 4 variables covering 2009.</p>
 <div class="variable-filter-section">
-        <div class="variable-filter">
-            <input type="text" id="variable-filter" placeholder="Filter variables...">
-            <i class="fas fa-search"></i>
+        <div class="variable-filter-wrapper">
+            <input type="text" id="variable-filter" class="variable-filter-input" placeholder="Filter variables...">
+            <i class="fas fa-search variable-filter-icon"></i>
         </div>
         <div id="variable-count" class="variable-count">Showing all variables</div>
     </div>
@@ -353,6 +357,13 @@ ul.task-list li input[type="checkbox"] {
                 <div class="variable-filter">
                     <input type="text" id="datafiles-filter" placeholder="Search datasets...">
                     <i class="fas fa-search"></i>
+                </div>
+                <div class="availability-filter-drawer">
+                    <select id="drawer-availability-filter" class="drawer-filter-select">
+                        <option value="">All Availability</option>
+                        <option value="public">Public Only</option>
+                        <option value="restricted">Restricted Only</option>
+                    </select>
                 </div>
                 <div id="datafiles-count" class="variable-count">Showing all datasets</div>
             </div>
