@@ -10,9 +10,9 @@ sources:
   url: ''
   accessed: ''
   citation: ''
-description: A low-income tract with at least 500 people, or 33 percent of the population,
-  living more than one mile (urban areas) or more than 10 miles (rural areas) from
-  the nearest supermarket, supercenter, or large grocery store.
+description: Tracts with at least 500 people, or 33 percent of the population, living
+  more than one mile (urban areas) or more than 10 miles (rural areas) from the nearest
+  supermarket, supercenter, or large grocery store.
 data_quality:
   limitations: ''
 data_summary:
@@ -28,7 +28,7 @@ data_summary:
 variables:
 - var_name: lila_tracts_1_and_10_2010
   type: boolean
-  description: ''
+  description: Low income and low access measured at 1 and 10 miles
   keep: true
   source: tv_vars
   time_varying: true

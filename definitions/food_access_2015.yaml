@@ -28,7 +28,8 @@ data_summary:
 variables:
 - var_name: lila_tracts_1_and_10_2015
   type: boolean
-  description: ''
+  description: Flag for low income and low access tract measured at 1 mile for urban
+    areas and 10 miles for rural areas
   keep: true
   source: tv_vars
   time_varying: true

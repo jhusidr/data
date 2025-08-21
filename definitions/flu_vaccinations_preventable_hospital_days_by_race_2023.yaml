@@ -14,13 +14,13 @@ description: Flu vaccination & preventable hospital says, by race (2023)
 data_quality:
   limitations: ''
 data_summary:
-  sha256_hash: c60da5266e72e3a8f6d380a40b01a4b52b7f87a1f3c1b147689c7d3b54690672
+  sha256_hash: a8a0b3f7be21f698aa8f60b4c52fbe63d58ef7be393ad7792a2aee1c1cde808a
   rows: 3193
-  variable_count: 14
+  variable_count: 22
   admin_variable_count: 4
-  non_admin_variable_count: 10
-  non_admin_missing_pct: 47.51
-  data_size_mb: 0.25
+  non_admin_variable_count: 18
+  non_admin_missing_pct: 61.17
+  data_size_mb: 0.33
   years_covered:
   - 2023
 race_eth_coverage:
@@ -31,6 +31,64 @@ race_eth_coverage:
 - nhpi
 - white
 variables:
+- var_name: fluvacc_aapi_2023
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2023
+  summary:
+    missing_pct: 60.3
+    unique_count: 71
+    max_length: 4
+    min_length: 3
+    avg_length: 3.4
+- var_name: fluvacc_aapi_white_2023
+  type: string
+  description: Flu vaccinations (%) in AAPI - flu vaccinations (%) in White by county
+    in 2023
+  keep: true
+  source: tv_vars
+  time_varying: true
+  years:
+  - 2023
+  summary:
+    missing_pct: 60.3
+    unique_count: 65
+    max_length: 5
+    min_length: 3
+    avg_length: 3.3
+- var_name: fluvacc_aian_2023
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2023
+  summary:
+    missing_pct: 78.0
+    unique_count: 68
+    max_length: 4
+    min_length: 3
+    avg_length: 3.2
+- var_name: fluvacc_aian_white_2023
+  type: string
+  description: Flu vaccinations (%) in AIAN - flu vaccinations (%) in White by county
+    in 2023
+  keep: true
+  source: tv_vars
+  time_varying: true
+  years:
+  - 2023
+  summary:
+    missing_pct: 78.0
+    unique_count: 67
+    max_length: 5
+    min_length: 3
+    avg_length: 3.3
 - var_name: fluvacc_black_2023
   type: string
   description: ''
@@ -103,6 +161,62 @@ variables:
     max_length: 4
     min_length: 3
     avg_length: 3.8
+- var_name: prevhosp_aapi_2023
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2023
+  summary:
+    missing_pct: 86.4
+    unique_count: 394
+    max_length: 7
+    min_length: 3
+    avg_length: 3.4
+- var_name: prevhosp_aapi_white_2023
+  type: string
+  description: Preventable hospital stays AAPI - White by county in 2023
+  keep: true
+  source: tv_vars
+  time_varying: true
+  years:
+  - 2023
+  summary:
+    missing_pct: 86.4
+    unique_count: 400
+    max_length: 7
+    min_length: 3
+    avg_length: 3.4
+- var_name: prevhosp_aian_2023
+  type: string
+  description: ''
+  keep: false
+  source: unknown
+  time_varying: true
+  years:
+  - 2023
+  summary:
+    missing_pct: 88.3
+    unique_count: 364
+    max_length: 7
+    min_length: 3
+    avg_length: 3.4
+- var_name: prevhosp_aian_white_2023
+  type: string
+  description: Preventable hospital stays AIAN - White by county in 2023
+  keep: true
+  source: tv_vars
+  time_varying: true
+  years:
+  - 2023
+  summary:
+    missing_pct: 88.3
+    unique_count: 364
+    max_length: 7
+    min_length: 3
+    avg_length: 3.3
 - var_name: prevhosp_black_2023
   type: string
   description: ''
