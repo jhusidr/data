@@ -3,6 +3,7 @@ domain: healthcare
 indicator: number_hospitals_chemotherapy
 indicator_file: number_hospitals_chemotherapy.csv
 geography: county
+availability: public
 sources:
 - title: Agency for Healthcare Research and Quality
   authors: ''

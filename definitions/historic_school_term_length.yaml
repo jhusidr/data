@@ -3,6 +3,7 @@ domain: education
 indicator: historic_school_term_length
 indicator_file: historic_school_term_length.csv
 geography: state
+availability: public
 sources:
 - title: National Center for Education Statistics
   authors: ''

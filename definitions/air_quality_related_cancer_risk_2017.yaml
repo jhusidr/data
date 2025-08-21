@@ -3,6 +3,7 @@ domain: environment
 indicator: air_quality_related_cancer_risk_2017
 indicator_file: air_quality_related_cancer_risk_2017.csv
 geography: census_tract
+availability: public
 sources:
 - title: United States Environmental Protection Agency
   authors: ''

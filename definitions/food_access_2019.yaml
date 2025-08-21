@@ -3,6 +3,7 @@ domain: neighborhood
 indicator: food_access_2019
 indicator_file: food_access_2019.csv
 geography: census_tract
+availability: public
 sources:
 - title: Economic Research Service (ERS), U.S. Department of Agriculture
   authors: ''

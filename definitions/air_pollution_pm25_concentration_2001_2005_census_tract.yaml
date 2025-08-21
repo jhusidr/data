@@ -3,6 +3,7 @@ domain: environment
 indicator: air_pollution_pm25_concentration_2001_2005_census_tract
 indicator_file: air_pollution_pm25_concentration_2001_2005_census_tract.csv
 geography: census_tract
+availability: public
 sources:
 - title: CDC National Environmental Public Health Tracking Network
   authors: ''

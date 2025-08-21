@@ -3,6 +3,7 @@ domain: media_marketing
 indicator: taxes_on_chips_soda_2014
 indicator_file: taxes_on_chips_soda_2014.csv
 geography: county
+availability: public
 sources:
 - title: Economic Research Service of the U.S. Department of Agriculture
   authors: ''

@@ -3,6 +3,7 @@ domain: healthcare
 indicator: number_ambulatory_surgical_centers
 indicator_file: number_ambulatory_surgical_centers.csv
 geography: county
+availability: public
 sources:
 - title: Agency for Healthcare Research and Quality
   authors: ''

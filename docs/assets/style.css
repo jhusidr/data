@@ -869,6 +869,22 @@
     background-color: #5a6268;
 }
 
+/* Restricted Notice */
+.restricted-notice {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 8px;
+    color: #856404;
+}
+
+.restricted-notice i {
+    font-size: 1.2rem;
+}
+
 /* Footer Navigation */
 .footer-nav {
     margin-top: 3rem;

@@ -3,6 +3,7 @@ domain: environment
 indicator: adult_asthma_by_race
 indicator_file: adult_asthma_by_race.csv
 geography: state
+availability: public
 sources:
 - title: Kaiser Family Foundation
   authors: ''

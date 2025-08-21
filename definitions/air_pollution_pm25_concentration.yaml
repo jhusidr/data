@@ -3,6 +3,7 @@ domain: environment
 indicator: air_pollution_pm25_concentration
 indicator_file: air_pollution_pm25_concentration.csv
 geography: county
+availability: public
 sources:
 - title: CDC National Environmental Public Health Tracking Network
   authors: ''

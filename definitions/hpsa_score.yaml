@@ -3,6 +3,7 @@ domain: healthcare
 indicator: hpsa_score
 indicator_file: hpsa_score.csv
 geography: county
+availability: public
 sources:
 - title: Health Resources and Services Administration
   authors: ''

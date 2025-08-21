@@ -3,6 +3,7 @@ domain: environment
 indicator: landfills
 indicator_file: landfills.csv
 geography: zipcode
+availability: public
 sources:
 - title: United States Environmental Protection Agency
   authors: ''

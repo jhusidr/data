@@ -3,6 +3,7 @@ domain: healthcare
 indicator: number_hospitals_with_eds
 indicator_file: number_hospitals_with_eds.csv
 geography: county
+availability: public
 sources:
 - title: Agency for Healthcare Research and Quality
   authors: ''

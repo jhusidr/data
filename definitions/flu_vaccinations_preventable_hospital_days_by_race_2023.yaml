@@ -3,15 +3,16 @@ domain: healthcare
 indicator: flu_vaccinations_preventable_hospital_days_by_race_2023
 indicator_file: flu_vaccinations_preventable_hospital_days_by_race_2023.csv
 geography: county
+availability: public
 sources:
-- title: ''
+- title: Centers for Disease Control and Prevention (CDC)
   authors: ''
   year: ''
-  url: ''
+  url: https://www.cdc.gov/
   accessed: ''
   citation: ''
-  license: ''
-  comments: ''
+  license: Public Domain
+  comments: U.S. Government Work
 description: Flu vaccination & preventable hospital says, by race (2023)
 data_quality:
   limitations: ''

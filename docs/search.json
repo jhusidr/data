@@ -38,7 +38,7 @@
     "href": "datasets/hpsa_score.html#download",
     "title": "HPSA Score",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "HPSA Score"
     ]
@@ -88,7 +88,7 @@
     "href": "datasets/flu_vaccinations_preventable_hospital_days_by_race_2022.html#download",
     "title": "Flu vaccinations & preventable hospital days by race: 2022",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Flu vaccinations & preventable hospital days by race: 2022"
     ]
@@ -98,7 +98,7 @@
     "href": "datasets/flu_vaccinations_preventable_hospital_days_by_race_2022.html#data-source",
     "title": "Flu vaccinations & preventable hospital days by race: 2022",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,193\n        \n\n        \n            File Size\n            0.34 MB\n        \n\n        \n            Total Variables\n            22\n        \n\n        \n            Non-Admin Variables\n            18\n        \n\n        \n            Overall Missing %\n            59.9%\n        \n\n        \n            SHA256 Hash\n            79b6f30d555a8ca2...",
+    "text": "Data Source\n\n\nCenters for Disease Control and Prevention (CDC)\nAvailable at: https://www.cdc.gov/\nLicense: Public Domain\nNotes: U.S. Government Work\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,193\n        \n\n        \n            File Size\n            0.34 MB\n        \n\n        \n            Total Variables\n            22\n        \n\n        \n            Non-Admin Variables\n            18\n        \n\n        \n            Overall Missing %\n            59.9%\n        \n\n        \n            SHA256 Hash\n            79b6f30d555a8ca2...",
     "crumbs": [
       "Flu vaccinations & preventable hospital days by race: 2022"
     ]
@@ -138,7 +138,7 @@
     "href": "datasets/police_involved_deaths_by_race.html#download",
     "title": "Police-involved deaths by race",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Police-involved deaths by race"
     ]
@@ -188,7 +188,7 @@
     "href": "datasets/air_pollution_o3_concentration.html#download",
     "title": "Air pollution: o3 concentration",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Air pollution: o3 concentration"
     ]
@@ -238,7 +238,7 @@
     "href": "datasets/flu_vaccinations_preventable_hospital_days_by_race_2020.html#download",
     "title": "Flu vaccinations & preventable hospital days by race: 2020",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Flu vaccinations & preventable hospital days by race: 2020"
     ]
@@ -248,7 +248,7 @@
     "href": "datasets/flu_vaccinations_preventable_hospital_days_by_race_2020.html#data-source",
     "title": "Flu vaccinations & preventable hospital days by race: 2020",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,194\n        \n\n        \n            File Size\n            0.42 MB\n        \n\n        \n            Total Variables\n            23\n        \n\n        \n            Non-Admin Variables\n            18\n        \n\n        \n            Overall Missing %\n            58.2%\n        \n\n        \n            SHA256 Hash\n            b01f85bcc51c63f4...",
+    "text": "Data Source\n\n\nCenters for Disease Control and Prevention (CDC)\nAvailable at: https://www.cdc.gov/\nLicense: Public Domain\nNotes: U.S. Government Work\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,194\n        \n\n        \n            File Size\n            0.42 MB\n        \n\n        \n            Total Variables\n            23\n        \n\n        \n            Non-Admin Variables\n            18\n        \n\n        \n            Overall Missing %\n            58.2%\n        \n\n        \n            SHA256 Hash\n            b01f85bcc51c63f4...",
     "crumbs": [
       "Flu vaccinations & preventable hospital days by race: 2020"
     ]
@@ -288,7 +288,7 @@
     "href": "datasets/home_loan_denials_by_race.html#download",
     "title": "Home loan denials by race",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Home loan denials by race"
     ]
@@ -338,7 +338,7 @@
     "href": "datasets/flu_vaccinations_preventable_hospital_days_by_race_2019.html#download",
     "title": "Flu vaccinations & preventable hospital days by race: 2019",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Flu vaccinations & preventable hospital days by race: 2019"
     ]
@@ -388,7 +388,7 @@
     "href": "datasets/number_skilled_nursing_facilities.html#download",
     "title": "Number of Skilled Nursing Facilities",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Number of Skilled Nursing Facilities"
     ]
@@ -438,7 +438,7 @@
     "href": "datasets/nursing_facility_certified_beds.html#download",
     "title": "Nursing Facility Certified Beds",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Nursing Facility Certified Beds"
     ]
@@ -488,7 +488,7 @@
     "href": "datasets/historic_lynching.html#download",
     "title": "Historic lynching",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Historic lynching"
     ]
@@ -538,7 +538,7 @@
     "href": "datasets/distance_to_pediatric_icu.html#download",
     "title": "Distance to Pediatric ICU",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Distance to Pediatric ICU"
     ]
@@ -588,7 +588,7 @@
     "href": "datasets/number_mental_health_centers.html#download",
     "title": "Number of Mental Health Centers",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Number of Mental Health Centers"
     ]
@@ -638,7 +638,7 @@
     "href": "datasets/taxes_on_chips_soda_2014.html#download",
     "title": "Taxes on chips and soda: 2014",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Taxes on chips and soda: 2014"
     ]
@@ -688,7 +688,7 @@
     "href": "datasets/air_quality_related_cancer_risk_2019.html#download",
     "title": "Air quality related cancer risk: 2019",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Air quality related cancer risk: 2019"
     ]
@@ -738,7 +738,7 @@
     "href": "datasets/home_loan_denials_category_counts.html#download",
     "title": "Count of White/Black/Other Race/Spanish Families by income category",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Count of White/Black/Other Race/Spanish Families by income category"
     ]
@@ -788,7 +788,7 @@
     "href": "datasets/number_ambulatory_surgical_centers.html#download",
     "title": "Number of Ambulatory Surgical Centers",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Number of Ambulatory Surgical Centers"
     ]
@@ -838,7 +838,7 @@
     "href": "datasets/total_obstetric_care_facilities.html#download",
     "title": "Total Number of Obstetric Care Facilities",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Total Number of Obstetric Care Facilities"
     ]
@@ -888,7 +888,7 @@
     "href": "datasets/legislature_pct_black.html#download",
     "title": "Legislature % Black",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Legislature % Black"
     ]
@@ -938,7 +938,7 @@
     "href": "datasets/distance_to_alcohol_drug_care.html#download",
     "title": "Distance to Alcohol and Drug Inpatient Care",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Distance to Alcohol and Drug Inpatient Care"
     ]
@@ -988,7 +988,7 @@
     "href": "datasets/air_quality_related_cancer_risk_2017.html#download",
     "title": "Air quality related cancer risk: 2017",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Air quality related cancer risk: 2017"
     ]
@@ -1038,7 +1038,7 @@
     "href": "datasets/taxes_on_chips_soda_2008.html#download",
     "title": "Taxes on chips and soda: 2008",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Taxes on chips and soda: 2008"
     ]
@@ -1088,7 +1088,7 @@
     "href": "datasets/distance_to_ed.html#download",
     "title": "Distance to Emergency Department",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Distance to Emergency Department"
     ]
@@ -1138,7 +1138,7 @@
     "href": "datasets/firearm_dealers.html#download",
     "title": "Firearm dealers",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Firearm dealers"
     ]
@@ -1188,7 +1188,7 @@
     "href": "datasets/number_hospitals_alcohol_drug_care.html#download",
     "title": "Number of Hospitals with Alcohol/Drug Inpatient Care",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Number of Hospitals with Alcohol/Drug Inpatient Care"
     ]
@@ -1238,7 +1238,7 @@
     "href": "datasets/distance_to_health_clinic.html#download",
     "title": "Distance to Health Clinic",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Distance to Health Clinic"
     ]
@@ -1288,7 +1288,7 @@
     "href": "datasets/generational_income_mobility.html#download",
     "title": "Generational income mobility",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Generational income mobility"
     ]
@@ -1338,7 +1338,7 @@
     "href": "datasets/voting_wait_time_by_race.html#download",
     "title": "Voting wait time by race",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Voting wait time by race"
     ]
@@ -1388,7 +1388,7 @@
     "href": "datasets/air_pollution_o3_concentration_2016_2020_census_tract.html#download",
     "title": "Air pollution: o3 concentration 2016-2020 (census tract)",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Air pollution: o3 concentration 2016-2020 (census tract)"
     ]
@@ -1438,7 +1438,7 @@
     "href": "datasets/number_nursing_facilities.html#download",
     "title": "Number of Nursing Facilities",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Number of Nursing Facilities"
     ]
@@ -1488,7 +1488,7 @@
     "href": "datasets/historic_redlining.html#download",
     "title": "Historic Redlining",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Historic Redlining"
     ]
@@ -1538,7 +1538,7 @@
     "href": "datasets/air_pollution_pm25_concentration.html#download",
     "title": "Air pollution: pm2.5 concentration",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Air pollution: pm2.5 concentration"
     ]
@@ -1588,7 +1588,7 @@
     "href": "datasets/healthcare_uninsured_disparity.html#download",
     "title": "Black-White disparity in health insurance",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Black-White disparity in health insurance"
     ]
@@ -1638,7 +1638,7 @@
     "href": "datasets/historic_college_completion_by_race.html#download",
     "title": "Historic college completion by race",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Historic college completion by race"
     ]
@@ -1688,7 +1688,7 @@
     "href": "datasets/landfills.html#download",
     "title": "Landfills",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Landfills"
     ]
@@ -1738,7 +1738,7 @@
     "href": "datasets/number_hospices.html#download",
     "title": "Number of Hospices",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Number of Hospices"
     ]
@@ -1788,7 +1788,7 @@
     "href": "datasets/number_hospitals_chemotherapy.html#download",
     "title": "Number of Hospitals with Chemotherapy",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Number of Hospitals with Chemotherapy"
     ]
@@ -1838,7 +1838,7 @@
     "href": "datasets/number_hospitals_pediatric_icu.html#download",
     "title": "Number of Hospitals with Pediatric ICU",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Number of Hospitals with Pediatric ICU"
     ]
@@ -1888,7 +1888,7 @@
     "href": "datasets/number_hospitals_with_eds.html#download",
     "title": "Number of Hospitals with Emergency Departments",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Number of Hospitals with Emergency Departments"
     ]
@@ -1938,7 +1938,7 @@
     "href": "datasets/number_hospitals_obstetric_care.html#download",
     "title": "Number of Hospitals with Obstetric Care",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Number of Hospitals with Obstetric Care"
     ]
@@ -1988,7 +1988,7 @@
     "href": "datasets/employment_discrimination_lawsuits.html#download",
     "title": "Employment discrimination lawsuits",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Employment discrimination lawsuits"
     ]
@@ -2038,7 +2038,7 @@
     "href": "datasets/water_contamination_arsenic.html#download",
     "title": "Water Contamination - Arsenic Levels",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Water Contamination - Arsenic Levels"
     ]
@@ -2088,7 +2088,7 @@
     "href": "datasets/food_access_2015.html#download",
     "title": "Food access: 2015",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Food access: 2015"
     ]
@@ -2138,7 +2138,7 @@
     "href": "datasets/skilled_nursing_facilities_beds.html#download",
     "title": "Skilled Nursing Facilities Beds",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Skilled Nursing Facilities Beds"
     ]
@@ -2188,7 +2188,7 @@
     "href": "datasets/median_home_value.html#download",
     "title": "Median Home Value",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Median Home Value"
     ]
@@ -2238,7 +2238,7 @@
     "href": "datasets/school_segregation_lawsuits_elementary_grades_1970.html#download",
     "title": "School segregation of students in elementary grades, 1970",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "School segregation of students in elementary grades, 1970"
     ]
@@ -2288,7 +2288,7 @@
     "href": "datasets/major_housing_issues.html#download",
     "title": "Major housing issues",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Major housing issues"
     ]
@@ -2338,7 +2338,7 @@
     "href": "datasets/number_hospitals_burn_care.html#download",
     "title": "Number of Hospitals with Burn Care",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Number of Hospitals with Burn Care"
     ]
@@ -2388,7 +2388,7 @@
     "href": "datasets/air_pollution_pm25_concentration_2016_2020_census_tract.html#download",
     "title": "Air pollution: PM2.5 concentration 2016-2020 (census tract)",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Air pollution: PM2.5 concentration 2016-2020 (census tract)"
     ]
@@ -2438,7 +2438,7 @@
     "href": "datasets/air_pollution_pm25_concentration_2006_2010_census_tract.html#download",
     "title": "Air pollution: PM2.5 concentration 2006-2010 (census tract)",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Air pollution: PM2.5 concentration 2006-2010 (census tract)"
     ]
@@ -2488,7 +2488,7 @@
     "href": "datasets/food_access_2010.html#download",
     "title": "Food access: 2010",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Food access: 2010"
     ]
@@ -2538,7 +2538,7 @@
     "href": "datasets/number_hospitals_medsurg_icu.html#download",
     "title": "Number of Hospitals with Medical-Surgical ICU",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Number of Hospitals with Medical-Surgical ICU"
     ]
@@ -2588,7 +2588,7 @@
     "href": "datasets/median_housing_rent.html#download",
     "title": "Median Housing Rent",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Median Housing Rent"
     ]
@@ -2638,7 +2638,7 @@
     "href": "datasets/wage_growth_over_time.html#download",
     "title": "Wage growth over time",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Wage growth over time"
     ]
@@ -2688,7 +2688,7 @@
     "href": "datasets/number_hospitals_psychiatric_care.html#download",
     "title": "Number of Hospitals with Psychiatric Care",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Number of Hospitals with Psychiatric Care"
     ]
@@ -2738,7 +2738,7 @@
     "href": "datasets/number_home_health_agencies.html#download",
     "title": "Number of Home Health Agencies",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Number of Home Health Agencies"
     ]
@@ -2788,7 +2788,7 @@
     "href": "datasets/school_segregation_lawsuits.html#download",
     "title": "School segregation lawsuits",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "School segregation lawsuits"
     ]
@@ -2838,7 +2838,7 @@
     "href": "datasets/number_of_fqhcs.html#download",
     "title": "Number of Federally Qualified Health Centers (FQHCs)",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Number of Federally Qualified Health Centers (FQHCs)"
     ]
@@ -2888,7 +2888,7 @@
     "href": "datasets/air_pollution_o3_concentration_2006_2010_census_tract.html#download",
     "title": "Air pollution: o3 concentration 2006-2010 (census tract)",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Air pollution: o3 concentration 2006-2010 (census tract)"
     ]
@@ -2938,7 +2938,7 @@
     "href": "datasets/distance_to_medsurg_icu.html#download",
     "title": "Distance to Medical-Surgical ICU",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Distance to Medical-Surgical ICU"
     ]
@@ -2988,7 +2988,7 @@
     "href": "datasets/distance_to_obstetrics_care.html#download",
     "title": "Distance to Obstetrics Care",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Distance to Obstetrics Care"
     ]
@@ -3038,7 +3038,7 @@
     "href": "datasets/census_return_rate.html#download",
     "title": "Census return rate",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Census return rate"
     ]
@@ -3088,7 +3088,7 @@
     "href": "datasets/number_hospitals_ambulance_services.html#download",
     "title": "Number of Hospitals with Ambulance Services",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Number of Hospitals with Ambulance Services"
     ]
@@ -3138,7 +3138,7 @@
     "href": "datasets/income_inequality.html#download",
     "title": "Income Inequality",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Income Inequality"
     ]
@@ -3188,7 +3188,7 @@
     "href": "datasets/air_pollution_pm25_concentration_2001_2005_census_tract.html#download",
     "title": "Air pollution: PM2.5 concentration 2001-2005 (census tract)",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Air pollution: PM2.5 concentration 2001-2005 (census tract)"
     ]
@@ -3238,7 +3238,7 @@
     "href": "datasets/air_quality_related_cancer_risk_2018.html#download",
     "title": "Air quality related cancer risk: 2018",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Air quality related cancer risk: 2018"
     ]
@@ -3288,7 +3288,7 @@
     "href": "datasets/taxes_on_chips_soda_2011.html#download",
     "title": "Taxes on chips and soda: 2011",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Taxes on chips and soda: 2011"
     ]
@@ -3338,7 +3338,7 @@
     "href": "datasets/residential_segregation.html#download",
     "title": "Residential segregation",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Residential segregation"
     ]
@@ -3388,7 +3388,7 @@
     "href": "datasets/school_dropouts.html#download",
     "title": "School Dropouts",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "School Dropouts"
     ]
@@ -3438,7 +3438,7 @@
     "href": "datasets/historic_school_term_length.html#download",
     "title": "Historic school term length",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Historic school term length"
     ]
@@ -3488,7 +3488,7 @@
     "href": "datasets/job_growth_over_time.html#download",
     "title": "Job growth over time",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Job growth over time"
     ]
@@ -3538,7 +3538,7 @@
     "href": "datasets/adult_asthma_by_race.html#download",
     "title": "Adult asthma by race",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Adult asthma by race"
     ]
@@ -3588,7 +3588,7 @@
     "href": "datasets/air_pollution_o3_concentration_2011_2015_census_tract.html#download",
     "title": "Air pollution: o3 concentration 2011-2015 (census tract)",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Air pollution: o3 concentration 2011-2015 (census tract)"
     ]
@@ -3638,7 +3638,7 @@
     "href": "datasets/racial_income_inequality.html#download",
     "title": "Racial income inequality",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Racial income inequality"
     ]
@@ -3688,7 +3688,7 @@
     "href": "datasets/air_pollution_pm25_concentration_2011_2015_census_tract.html#download",
     "title": "Air pollution: PM2.5 concentration 2011-2015 (census tract)",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Air pollution: PM2.5 concentration 2011-2015 (census tract)"
     ]
@@ -3738,7 +3738,7 @@
     "href": "datasets/incarcerations_by_race.html#download",
     "title": "Incarcerations by race",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Incarcerations by race"
     ]
@@ -3788,7 +3788,7 @@
     "href": "datasets/air_pollution_o3_concentration_2001_2005_census_tract.html#download",
     "title": "Air pollution: o3 concentration 2001-2005 (census tract)",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Air pollution: o3 concentration 2001-2005 (census tract)"
     ]
@@ -3838,7 +3838,7 @@
     "href": "datasets/flu_vaccinations_preventable_hospital_days_by_race_2021.html#download",
     "title": "Flu vaccinations & preventable hospital days by race: 2021",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Flu vaccinations & preventable hospital days by race: 2021"
     ]
@@ -3848,7 +3848,7 @@
     "href": "datasets/flu_vaccinations_preventable_hospital_days_by_race_2021.html#data-source",
     "title": "Flu vaccinations & preventable hospital days by race: 2021",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,193\n        \n\n        \n            File Size\n            0.34 MB\n        \n\n        \n            Total Variables\n            22\n        \n\n        \n            Non-Admin Variables\n            18\n        \n\n        \n            Overall Missing %\n            59.4%\n        \n\n        \n            SHA256 Hash\n            8901ae25a13941b2...",
+    "text": "Data Source\n\n\nCenters for Disease Control and Prevention (CDC)\nAvailable at: https://www.cdc.gov/\nLicense: Public Domain\nNotes: U.S. Government Work\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,193\n        \n\n        \n            File Size\n            0.34 MB\n        \n\n        \n            Total Variables\n            22\n        \n\n        \n            Non-Admin Variables\n            18\n        \n\n        \n            Overall Missing %\n            59.4%\n        \n\n        \n            SHA256 Hash\n            8901ae25a13941b2...",
     "crumbs": [
       "Flu vaccinations & preventable hospital days by race: 2021"
     ]
@@ -3888,7 +3888,7 @@
     "href": "datasets/housing_units_no_vehicle.html#download",
     "title": "Housing Units Without Vehicle",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "Housing Units Without Vehicle"
     ]
@@ -3938,7 +3938,7 @@
     "href": "datasets/flu_vaccinations_preventable_hospital_days_by_race_2023.html#download",
     "title": "Flu vaccinations & preventable hospital days by race: 2023",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Flu vaccinations & preventable hospital days by race: 2023"
     ]
@@ -3948,7 +3948,7 @@
     "href": "datasets/flu_vaccinations_preventable_hospital_days_by_race_2023.html#data-source",
     "title": "Flu vaccinations & preventable hospital days by race: 2023",
     "section": "Data Source",
-    "text": "Data Source\nSource information not yet available.\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,193\n        \n\n        \n            File Size\n            0.33 MB\n        \n\n        \n            Total Variables\n            22\n        \n\n        \n            Non-Admin Variables\n            18\n        \n\n        \n            Overall Missing %\n            61.2%\n        \n\n        \n            SHA256 Hash\n            a8a0b3f7be21f698...",
+    "text": "Data Source\n\n\nCenters for Disease Control and Prevention (CDC)\nAvailable at: https://www.cdc.gov/\nLicense: Public Domain\nNotes: U.S. Government Work\n\n\n\n\nDataset Statistics\n\n\n        \n            Total Rows\n            3,193\n        \n\n        \n            File Size\n            0.33 MB\n        \n\n        \n            Total Variables\n            22\n        \n\n        \n            Non-Admin Variables\n            18\n        \n\n        \n            Overall Missing %\n            61.2%\n        \n\n        \n            SHA256 Hash\n            a8a0b3f7be21f698...",
     "crumbs": [
       "Flu vaccinations & preventable hospital days by race: 2023"
     ]
@@ -3988,7 +3988,7 @@
     "href": "datasets/food_access_2019.html#download",
     "title": "Food access: 2019",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         Download CSV\n    \n    \n         Direct Link",
     "crumbs": [
       "Food access: 2019"
     ]
@@ -4038,7 +4038,7 @@
     "href": "datasets/school_segregation_lawsuits_elementary_grades_1980.html#download",
     "title": "School segregation of students in elementary grades, 1980",
     "section": "Download",
-    "text": "Download\n\n    \n         Download CSV\n    \n    \n         Direct Link",
+    "text": "Download\n\n\n    \n         \n        Restricted Access: Contact us for access to this data.",
     "crumbs": [
       "School segregation of students in elementary grades, 1980"
     ]

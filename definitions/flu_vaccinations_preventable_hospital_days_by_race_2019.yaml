@@ -3,6 +3,7 @@ domain: healthcare
 indicator: flu_vaccinations_preventable_hospital_days_by_race_2019
 indicator_file: flu_vaccinations_preventable_hospital_days_by_race_2019.csv
 geography: county
+availability: public
 sources:
 - title: Centers for Medicare and Medicaid Services
   authors: ''

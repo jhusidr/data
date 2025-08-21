@@ -3,6 +3,7 @@ domain: healthcare
 indicator: number_hospitals_medsurg_icu
 indicator_file: number_hospitals_medsurg_icu.csv
 geography: county
+availability: public
 sources:
 - title: Agency for Healthcare Research and Quality
   authors: ''
