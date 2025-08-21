@@ -186,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
         <div class="overview-item">
             <div class="overview-label">Availability</div>
-            <div class="overview-value"><span class="availability-badge public"><i class="fas fa-unlock"></i> Public</span></div>
+            <div class="overview-value"><span class="availability-badge public"><i class="fas fa-users"></i> Public</span></div>
         </div>
         <div class="overview-item">
             <div class="overview-label">Years</div>
@@ -2479,6 +2479,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "adult_asthma_by_race",
     "geography": "state",
+    "availability": "public",
     "description": "% (GROUP) with asthma - % White with asthma by state in XXXX year ",
     "years": [
       2013,
@@ -2508,6 +2509,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "air_pollution_pm25_concentration_2001_2005_census_tract",
     "geography": "census_tract",
+    "availability": "public",
     "description": "PM2.5 concentration at the Census tract level",
     "years": [
       2001,
@@ -2526,6 +2528,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "air_pollution_pm25_concentration_2006_2010_census_tract",
     "geography": "census_tract",
+    "availability": "public",
     "description": "PM2.5 concentration at the Census tract level",
     "years": [
       2006,
@@ -2544,6 +2547,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "air_pollution_pm25_concentration_2011_2015_census_tract",
     "geography": "census_tract",
+    "availability": "public",
     "description": "PM2.5 concentration at the Census tract level",
     "years": [
       2011,
@@ -2562,6 +2566,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "air_pollution_pm25_concentration_2016_2020_census_tract",
     "geography": "census_tract",
+    "availability": "public",
     "description": "PM2.5 concentration at the Census tract level",
     "years": [
       2016,
@@ -2579,6 +2584,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "air_pollution_o3_concentration",
     "geography": "county",
+    "availability": "public",
     "description": "O3 concentration at the Census tract level",
     "years": [
       2016,
@@ -2596,6 +2602,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "air_pollution_o3_concentration_2001_2005_census_tract",
     "geography": "census_tract",
+    "availability": "public",
     "description": "O3 concentration at the Census tract level",
     "years": [
       2001,
@@ -2614,6 +2621,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "air_pollution_o3_concentration_2006_2010_census_tract",
     "geography": "census_tract",
+    "availability": "public",
     "description": "O3 concentration at the Census tract level",
     "years": [
       2006,
@@ -2632,6 +2640,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "air_pollution_o3_concentration_2011_2015_census_tract",
     "geography": "census_tract",
+    "availability": "public",
     "description": "O3 concentration at the Census tract level",
     "years": [
       2011,
@@ -2650,6 +2659,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "air_pollution_o3_concentration_2016_2020_census_tract",
     "geography": "census_tract",
+    "availability": "public",
     "description": "O3 concentration at the Census tract level",
     "years": [
       2016,
@@ -2668,6 +2678,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "air_pollution_pm25_concentration",
     "geography": "county",
+    "availability": "public",
     "description": "Annual average PM2.5 concentration (\u03bcg/m3) (monitor + modeled data)",
     "years": [
       2001,
@@ -2700,6 +2711,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "air_quality_related_cancer_risk_2017",
     "geography": "census_tract",
+    "availability": "public",
     "description": "Probability of contracting cancer over the course of a lifetime, assuming continuous exposure (assumed in NATA to be 70 years)",
     "years": [
       2017
@@ -2714,6 +2726,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "air_quality_related_cancer_risk_2018",
     "geography": "census_tract",
+    "availability": "public",
     "description": "Probability of contracting cancer over the course of a lifetime, assuming continuous exposure (assumed in NATA to be 70 years)",
     "years": [
       2018
@@ -2728,6 +2741,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "air_quality_related_cancer_risk_2019",
     "geography": "census_tract",
+    "availability": "public",
     "description": "Probability of contracting cancer over the course of a lifetime, assuming continuous exposure (assumed in NATA to be 70 years)",
     "years": [
       2019
@@ -2742,6 +2756,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "healthcare_uninsured_disparity",
     "geography": "state",
+    "availability": "public",
     "description": "1970/1980 Black college completion (%) - White college completion (%)",
     "years": [
       2006,
@@ -2774,6 +2789,7 @@ const allDatasets = [
     "domain": "civics",
     "indicator": "census_return_rate",
     "geography": "census_tract",
+    "availability": "restricted",
     "description": "The 2010 Census return rate, measured as the number of 2010 Census mail forms completed and returned over the number of valid occupied housing units where a Census form was expected to be delivered for mail return to Census. Taken from the Census planning database.",
     "years": [
       2010
@@ -2788,6 +2804,7 @@ const allDatasets = [
     "domain": "income_credit_wealth",
     "indicator": "home_loan_denials_category_counts",
     "geography": "county",
+    "availability": "restricted",
     "description": "Counts by race/ethnicity category. ",
     "years": [
       1969
@@ -2805,6 +2822,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "distance_to_alcohol_drug_care",
     "geography": "county",
+    "availability": "public",
     "description": "County-level distances to nearest alcohol and drug inpatient care facilities.",
     "years": [
       2009
@@ -2819,6 +2837,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "distance_to_ed",
     "geography": "county",
+    "availability": "public",
     "description": "County-level data on distance to nearest emergency department.",
     "years": [
       2009
@@ -2833,6 +2852,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "distance_to_health_clinic",
     "geography": "county",
+    "availability": "public",
     "description": "County-level distances to nearest health clinic.",
     "years": [
       2009
@@ -2847,6 +2867,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "distance_to_medsurg_icu",
     "geography": "county",
+    "availability": "public",
     "description": "County-level distances to nearest medical-surgical intensive care unit.",
     "years": [
       2009
@@ -2861,6 +2882,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "distance_to_obstetrics_care",
     "geography": "county",
+    "availability": "public",
     "description": "County-level distances to nearest obstetrics care facility.",
     "years": [
       2009
@@ -2875,6 +2897,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "distance_to_pediatric_icu",
     "geography": "county",
+    "availability": "public",
     "description": "County-level distances to nearest pediatric intensive care unit.",
     "years": [
       2009
@@ -2889,6 +2912,7 @@ const allDatasets = [
     "domain": "employment",
     "indicator": "employment_discrimination_lawsuits",
     "geography": "state",
+    "availability": "restricted",
     "description": "# of federal charges for employment discrimination based on race per 100,000 Black residents in XXXX year",
     "years": [
       2012,
@@ -2914,6 +2938,7 @@ const allDatasets = [
     "domain": "media_marketing",
     "indicator": "firearm_dealers",
     "geography": "zipcode",
+    "availability": "restricted",
     "description": "Number of firearm dealers (Federal Firearms License (FFL) type 01 - Dealer in firearms other than destructive devices including Gunsmiths & FFL type 09 - Dealer in destructive devices were counted by Zipcode)",
     "years": [
       2021
@@ -2928,6 +2953,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "flu_vaccinations_preventable_hospital_days_by_race_2019",
     "geography": "county",
+    "availability": "public",
     "description": "Flu vaccination & preventable hospital says, by race (2019)",
     "years": [
       2019
@@ -2949,6 +2975,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "flu_vaccinations_preventable_hospital_days_by_race_2020",
     "geography": "county",
+    "availability": "public",
     "description": "Flu vaccination & preventable hospital says, by race (2020)",
     "years": [
       2020
@@ -2970,6 +2997,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "flu_vaccinations_preventable_hospital_days_by_race_2021",
     "geography": "county",
+    "availability": "public",
     "description": "Flu vaccination & preventable hospital says, by race (2021)",
     "years": [
       2021
@@ -2991,6 +3019,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "flu_vaccinations_preventable_hospital_days_by_race_2022",
     "geography": "county",
+    "availability": "public",
     "description": "Flu vaccination & preventable hospital says, by race (2022)",
     "years": [
       2022
@@ -3012,6 +3041,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "flu_vaccinations_preventable_hospital_days_by_race_2023",
     "geography": "county",
+    "availability": "public",
     "description": "Flu vaccination & preventable hospital says, by race (2023)",
     "years": [
       2023
@@ -3033,6 +3063,7 @@ const allDatasets = [
     "domain": "neighborhood",
     "indicator": "food_access_2010",
     "geography": "census_tract",
+    "availability": "public",
     "description": "Tracts with at least 500 people, or 33 percent of the population, living more than one mile (urban areas) or more than 10 miles (rural areas) from the nearest supermarket, supercenter, or large grocery store.",
     "years": [
       2010
@@ -3047,6 +3078,7 @@ const allDatasets = [
     "domain": "neighborhood",
     "indicator": "food_access_2015",
     "geography": "census_tract",
+    "availability": "public",
     "description": "A low-income tract with at least 500 people, or 33 percent of the population, living more than one mile (urban areas) or more than 10 miles (rural areas) from the nearest supermarket, supercenter, or large grocery store.",
     "years": [
       2015
@@ -3061,6 +3093,7 @@ const allDatasets = [
     "domain": "neighborhood",
     "indicator": "food_access_2019",
     "geography": "census_tract",
+    "availability": "public",
     "description": "A low-income tract with at least 500 people, or 33 percent of the population, living more than one mile (urban areas) or more than 10 miles (rural areas) from the nearest supermarket, supercenter, or large grocery store.",
     "years": [
       2019
@@ -3075,6 +3108,7 @@ const allDatasets = [
     "domain": "income_credit_wealth",
     "indicator": "generational_income_mobility",
     "geography": "county",
+    "availability": "restricted",
     "description": "",
     "years": [
       1980,
@@ -3097,6 +3131,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "hpsa_score",
     "geography": "county",
+    "availability": "public",
     "description": "Categorized health professional shortage area (HPSA) sore (None of the county is shortage area; Part of county is shortage area; Whole county is shortage area)",
     "years": [
       2022,
@@ -3112,6 +3147,7 @@ const allDatasets = [
     "domain": "policing",
     "indicator": "historic_redlining",
     "geography": "census_tract",
+    "availability": "restricted",
     "description": "Census tract-level data on historic redlining practices from 1940.",
     "years": [
       1940
@@ -3126,6 +3162,7 @@ const allDatasets = [
     "domain": "education",
     "indicator": "historic_college_completion_by_race",
     "geography": "county",
+    "availability": "restricted",
     "description": "1970/1980 Black college completion (%) - White college completion (%)",
     "years": [
       1970,
@@ -3144,6 +3181,7 @@ const allDatasets = [
     "domain": "policing",
     "indicator": "historic_lynching",
     "geography": "county",
+    "availability": "restricted",
     "description": "# of lynchings of Black residents between 1877-1950/Black residents in 1940 * 100,000",
     "years": [
       1940
@@ -3160,6 +3198,7 @@ const allDatasets = [
     "domain": "education",
     "indicator": "historic_school_term_length",
     "geography": "state",
+    "availability": "public",
     "description": "School term length (days) in all schools for each year, by racial group.",
     "years": [
       1920,
@@ -3205,6 +3244,7 @@ const allDatasets = [
     "domain": "income_credit_wealth",
     "indicator": "home_loan_denials_by_race",
     "geography": "county",
+    "availability": "restricted",
     "description": "Loan denial % for Black borrowers compared to white borrowers",
     "years": [
       2007,
@@ -3232,6 +3272,7 @@ const allDatasets = [
     "domain": "income_credit_wealth",
     "indicator": "housing_units_no_vehicle",
     "geography": "county",
+    "availability": "restricted",
     "description": "County-level percentage of housing units without access to a vehicle.",
     "years": [
       2009
@@ -3246,6 +3287,7 @@ const allDatasets = [
     "domain": "policing",
     "indicator": "incarcerations_by_race",
     "geography": "county",
+    "availability": "restricted",
     "description": "Incarcerations by race",
     "years": [
       1970,
@@ -3311,6 +3353,7 @@ const allDatasets = [
     "domain": "income_credit_wealth",
     "indicator": "income_inequality",
     "geography": "county",
+    "availability": "restricted",
     "description": "County-level income inequality measured by the Gini Index.",
     "years": [
       2009
@@ -3325,6 +3368,7 @@ const allDatasets = [
     "domain": "employment",
     "indicator": "job_growth_over_time",
     "geography": "census_tract",
+    "availability": "restricted",
     "description": "Average annualized job growth rate over the time period 2004 to 2013. Constructed using LODES (LEHD Origin-Destination Employment Statistic) - WAC (Workplace Area Characteristics) data files provided by the Census Bureau.",
     "years": [
       1990,
@@ -3344,6 +3388,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "landfills",
     "geography": "zipcode",
+    "availability": "public",
     "description": "Count of open/closed landfill sites by ZipCode as of July 2023",
     "years": [
       2023
@@ -3358,6 +3403,7 @@ const allDatasets = [
     "domain": "civics",
     "indicator": "legislature_pct_black",
     "geography": "state",
+    "availability": "restricted",
     "description": "(Black legislatures in XXXX year in a state / Black population in XXXX year in a state) - (White legislatures in XXXX year in a state / White population in XXXX year in a state). Black and White population data were from ACS 5-year estimates (2011-2015, 2016-2020)",
     "years": [
       2015,
@@ -3378,6 +3424,7 @@ const allDatasets = [
     "domain": "neighborhood",
     "indicator": "major_housing_issues",
     "geography": "county",
+    "availability": "restricted",
     "description": "Count and proportion of housing units in need of major repairs in 1940",
     "years": [
       1940
@@ -3392,6 +3439,7 @@ const allDatasets = [
     "domain": "income_credit_wealth",
     "indicator": "median_home_value",
     "geography": "county",
+    "availability": "restricted",
     "description": "County-level median home values from the American Community Survey.",
     "years": [
       2009
@@ -3406,6 +3454,7 @@ const allDatasets = [
     "domain": "income_credit_wealth",
     "indicator": "median_housing_rent",
     "geography": "county",
+    "availability": "restricted",
     "description": "County-level median housing rent from the American Community Survey.",
     "years": [
       2009
@@ -3420,6 +3469,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_ambulatory_surgical_centers",
     "geography": "county",
+    "availability": "public",
     "description": "County-level rate of ambulatory surgical centers.",
     "years": [
       2009
@@ -3434,6 +3484,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_of_fqhcs",
     "geography": "county",
+    "availability": "public",
     "description": "County-level data on the rate of Federally Qualified Health Centers (FQHCs) per population.",
     "years": [
       2009
@@ -3448,6 +3499,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_home_health_agencies",
     "geography": "county",
+    "availability": "public",
     "description": "County-level rate of home health agencies.",
     "years": [
       2009
@@ -3462,6 +3514,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_hospices",
     "geography": "county",
+    "availability": "public",
     "description": "County-level rate of hospice facilities.",
     "years": [
       2009
@@ -3476,6 +3529,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_hospitals_alcohol_drug_care",
     "geography": "county",
+    "availability": "public",
     "description": "County-level rate of hospitals with alcohol and drug inpatient care services.",
     "years": [
       2009
@@ -3490,6 +3544,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_hospitals_ambulance_services",
     "geography": "county",
+    "availability": "public",
     "description": "County-level rate of hospitals with ambulance services.",
     "years": [
       2009
@@ -3504,6 +3559,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_hospitals_burn_care",
     "geography": "county",
+    "availability": "public",
     "description": "County-level rate of hospitals with burn care units.",
     "years": [
       2009
@@ -3518,6 +3574,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_hospitals_chemotherapy",
     "geography": "county",
+    "availability": "public",
     "description": "County-level rate of hospitals with chemotherapy services.",
     "years": [
       2009
@@ -3532,6 +3589,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_hospitals_with_eds",
     "geography": "county",
+    "availability": "public",
     "description": "County-level rate of hospitals with emergency departments.",
     "years": [
       2009
@@ -3546,6 +3604,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_hospitals_medsurg_icu",
     "geography": "county",
+    "availability": "public",
     "description": "County-level rate of hospitals with medical-surgical intensive care units.",
     "years": [
       2009
@@ -3560,6 +3619,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_hospitals_obstetric_care",
     "geography": "county",
+    "availability": "public",
     "description": "County-level rate of hospitals with obstetric care services.",
     "years": [
       2009
@@ -3574,6 +3634,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_hospitals_pediatric_icu",
     "geography": "county",
+    "availability": "restricted",
     "description": "County-level rate of hospitals with pediatric intensive care units.",
     "years": [
       2009
@@ -3588,6 +3649,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_hospitals_psychiatric_care",
     "geography": "county",
+    "availability": "restricted",
     "description": "County-level rate of hospitals with psychiatric care services.",
     "years": [
       2009
@@ -3602,6 +3664,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_mental_health_centers",
     "geography": "county",
+    "availability": "restricted",
     "description": "County-level rate of community mental health centers.",
     "years": [
       2009
@@ -3616,6 +3679,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_nursing_facilities",
     "geography": "county",
+    "availability": "restricted",
     "description": "County-level rate of nursing facilities.",
     "years": [
       2009
@@ -3630,6 +3694,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "number_skilled_nursing_facilities",
     "geography": "county",
+    "availability": "restricted",
     "description": "County-level rate of skilled nursing facilities.",
     "years": [
       2009
@@ -3644,6 +3709,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "nursing_facility_certified_beds",
     "geography": "county",
+    "availability": "restricted",
     "description": "County-level rate of certified nursing facility beds.",
     "years": [
       2009
@@ -3658,6 +3724,7 @@ const allDatasets = [
     "domain": "policing",
     "indicator": "police_involved_deaths_by_race",
     "geography": "county",
+    "availability": "restricted",
     "description": "Police-involved deaths by race",
     "years": [
       2013,
@@ -3685,6 +3752,7 @@ const allDatasets = [
     "domain": "income_credit_wealth",
     "indicator": "racial_income_inequality",
     "geography": "census_tract",
+    "availability": "restricted",
     "description": "Ratio of median white to median black income",
     "years": [
       2000
@@ -3702,6 +3770,7 @@ const allDatasets = [
     "domain": "neighborhood",
     "indicator": "residential_segregation",
     "geography": "county",
+    "availability": "restricted",
     "description": "Index of dissimilarity of Black and White residential segregation",
     "years": [
       2016,
@@ -3726,6 +3795,7 @@ const allDatasets = [
     "domain": "education",
     "indicator": "school_dropouts",
     "geography": "county",
+    "availability": "restricted",
     "description": "Proportion of Whites ages 16 to 21 who are not high school graduate or not enrolled (dropped out) Proportion of Blacks ages 16 to 21 who are not high school graduate or not enrolled (dropped out)whdrop - bldrop whdrop / bldrop",
     "years": [
       1970
@@ -3740,6 +3810,7 @@ const allDatasets = [
     "domain": "education",
     "indicator": "school_segregation_lawsuits",
     "geography": "county",
+    "availability": "restricted",
     "description": "School segregation lawsuits by year and county.",
     "years": [
       1952,
@@ -3804,6 +3875,7 @@ const allDatasets = [
     "domain": "education",
     "indicator": "school_segregation_lawsuits_elementary_grades_1970",
     "geography": "school_district",
+    "availability": "restricted",
     "description": "School segregation lawsuits by year and county.",
     "years": [
       1970
@@ -3818,6 +3890,7 @@ const allDatasets = [
     "domain": "education",
     "indicator": "school_segregation_lawsuits_elementary_grades_1980",
     "geography": "school_district",
+    "availability": "restricted",
     "description": "School segregation lawsuits by year and county.",
     "years": [
       1980
@@ -3832,6 +3905,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "skilled_nursing_facilities_beds",
     "geography": "county",
+    "availability": "restricted",
     "description": "County-level rate of skilled nursing facility beds.",
     "years": [
       2009
@@ -3846,6 +3920,7 @@ const allDatasets = [
     "domain": "media_marketing",
     "indicator": "taxes_on_chips_soda_2008",
     "geography": "county",
+    "availability": "public",
     "description": "Tax rate on chips in vending machines in 2008",
     "years": [
       2008
@@ -3860,6 +3935,7 @@ const allDatasets = [
     "domain": "media_marketing",
     "indicator": "taxes_on_chips_soda_2011",
     "geography": "county",
+    "availability": "public",
     "description": "Tax rate on chips in vending machines in 2011",
     "years": [
       2011
@@ -3874,6 +3950,7 @@ const allDatasets = [
     "domain": "media_marketing",
     "indicator": "taxes_on_chips_soda_2014",
     "geography": "county",
+    "availability": "public",
     "description": "Tax rate on chips in vending machines in 2014",
     "years": [
       2014
@@ -3888,6 +3965,7 @@ const allDatasets = [
     "domain": "healthcare",
     "indicator": "total_obstetric_care_facilities",
     "geography": "county",
+    "availability": "restricted",
     "description": "County-level total count of hospitals with obstetric care.",
     "years": [
       2009
@@ -3902,6 +3980,7 @@ const allDatasets = [
     "domain": "civics",
     "indicator": "voting_wait_time_by_race",
     "geography": "congressional_district",
+    "availability": "restricted",
     "description": "Estimates of the disparity in voting wait times",
     "years": [
       2016
@@ -3918,6 +3997,7 @@ const allDatasets = [
     "domain": "employment",
     "indicator": "wage_growth_over_time",
     "geography": "census_tract",
+    "availability": "restricted",
     "description": "Wages are constructed by dividing the average high school graduate annual earnings by the product of overall average weekly hours worked and 52. The difference in logarithms between high school graduate wages in 2010-2014 and school graduate wages in 2005-2009. Wages are measured in the 2005-2009 and 2010-2014 American Community Surveys.",
     "years": [
       1990,
@@ -3937,6 +4017,7 @@ const allDatasets = [
     "domain": "environment",
     "indicator": "water_contamination_arsenic",
     "geography": "county",
+    "availability": "restricted",
     "description": "County-level water contamination data focusing on arsenic levels in community water systems.",
     "years": [
       2009

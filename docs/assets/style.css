@@ -166,11 +166,12 @@
     gap: 1rem;
     flex-wrap: wrap;
     align-items: flex-end;
+    width: 100%;
 }
 
 .filter-group {
     flex: 1;
-    min-width: 200px;
+    min-width: 180px;
 }
 
 .filter-group label {
@@ -181,9 +182,14 @@
 
 .filter-group select {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
     border: 1px solid var(--border-color);
     border-radius: 0.25rem;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 16px 12px;
+    appearance: none;
 }
 
 .btn-reset {
